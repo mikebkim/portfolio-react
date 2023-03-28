@@ -33,7 +33,7 @@ const TechnologiesPage = ({ allImages }) => {
                                     />
                                 </div>
                                 <div className="flip-card-back">
-                                    <h3>{image}</h3>
+                                    <h3>Test</h3>
                                 </div>
                             </div>
                         </div>

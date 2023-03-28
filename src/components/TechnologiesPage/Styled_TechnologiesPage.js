@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-const Styled_SkillsPage = styled.div`
-.SkillsPage {
+const Styled_TechnologiesPage = styled.div`
+.TechnologiesPage {
     max-height: 80vh;
     margin-top: 8vh;
     margin-left: auto;
@@ -10,4 +10,4 @@ const Styled_SkillsPage = styled.div`
 }
 `
 
-export default Styled_SkillsPage
+export default Styled_TechnologiesPage

@@ -9,7 +9,7 @@ import './App.css'
 
 // Pages
 import HomePage from './components/HomePage/HomePage'
-import SkillsPage from './components/SkillsPage/SkillsPage'
+import TechnologiesPage from './components/TechnologiesPage/TechnologiesPage'
 import ProjectsPage from './components/ProjectsPage/ProjectsPage'
 
 // Components
@@ -38,7 +38,7 @@ class App extends Component {
           <Routes>
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route exact path='/home' element={<HomePage />} />
-            <Route exact path='/technologies' element={<SkillsPage allImages={allImages} />} />
+            <Route exact path='/technologies' element={<TechnologiesPage allImages={allImages} />} />
             <Route exact path='/projects' element={<ProjectsPage />} />
           </Routes>
         </Router>

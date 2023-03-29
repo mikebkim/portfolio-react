@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 const Styled_TechnologiesPage = styled.div`
+
 .TechnologiesPage {
     max-height: 80vh;
-    margin-top: 8vh;
     margin-left: auto;
     margin-right: auto;
-    width: 95vw;
+    width: 55vw;
 
     img {
         height: auto;
@@ -14,8 +14,6 @@ const Styled_TechnologiesPage = styled.div`
     }
 
     .technologies-list {
-        height: 90vh;
-        width: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;

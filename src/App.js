@@ -11,12 +11,19 @@ import './App.css'
 import HomePage from './components/HomePage/HomePage'
 import TechnologiesPage from './components/TechnologiesPage/TechnologiesPage'
 import ProjectsPage from './components/ProjectsPage/ProjectsPage'
+import ContactPage from './components/ContactPage/ContactPage'
 
 // Components
 import NavBar from './components/NavBar/NavBar'
 
 // Images
-// import * from "./images"
+import MK_Resume from "./files/MK_Resume.pdf"
+
+// Icons
+import home from "./icons/01_home.png"
+import technologies from "./icons/02_technologies.png"
+import projects from "./icons/03_projects.png"
+import contact from "./icons/04_contact.png"
 
 function importAll(r) {
   let images = {}
@@ -30,16 +37,18 @@ class App extends Component {
     return (
       <div className="App">
         <Router>
-          <div className='app-header'>
-            <h1 className='main-header'>
-            </h1>
-          </div>
-          <NavBar />
+          <NavBar
+            iconHome={home}
+            iconTechnologies={technologies}
+            iconProjects={projects}
+            iconContact={contact}
+          />
           <Routes>
             <Route path="/" element={<Navigate replace to="/home" />} />
-            <Route exact path='/home' element={<HomePage />} />
+            <Route exact path='/home' element={<HomePage resume={MK_Resume} />} />
             <Route exact path='/technologies' element={<TechnologiesPage allImages={allImages} />} />
             <Route exact path='/projects' element={<ProjectsPage />} />
+            <Route exact path='/contact' element={<ContactPage />} />
           </Routes>
         </Router>
       </div>

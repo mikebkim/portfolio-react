@@ -23,7 +23,7 @@ const TechnologiesPage = ({ allImages }) => {
                         const imageName = ((image[0].toUpperCase().split("_").pop())).split(".PNG")
                         const cssImage = image[0].includes("css") ? <img
                             className="tech-image"
-                            width="35px"
+                            width="37px"
                             height="auto"
                             src={image[1]}
                             key={imageName}

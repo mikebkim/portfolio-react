@@ -4,8 +4,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const TechnologiesPage = ({ allImages }) => {
-    const allImagesArray = Object.values(allImages)
-    console.log("🚀 ~ file: TechnologiesPage.jsx:8 ~ TechnologiesPage ~ allImagesArray:", allImagesArray)
+    const allImagesArray = Object.entries(allImages)
     useEffect(() => {
         AOS.init()
     }, [])
@@ -21,29 +20,31 @@ const TechnologiesPage = ({ allImages }) => {
                 </div>
                 <div className="technologies-list">
                     {allImagesArray.map(image => {
-                        const cssImage = image.includes("css") ? <img
+                        const imageName = ((image[0].toUpperCase().split("_").pop())).split(".PNG")
+                        const cssImage = image[0].includes("css") ? <img
                             className="tech-image"
                             width="35px"
                             height="auto"
-                            src={image}
-                            key={image}
-                            alt={image}
+                            src={image[1]}
+                            key={imageName}
+                            alt={imageName}
                         /> : <img
                             className="tech-image"
-                            src={image}
-                            key={image}
-                            alt={image}
+                            src={image[1]}
+                            key={imageName}
+                            alt={imageName}
                         />
 
                         return <div
                             className="flip-card aos-init aos-animate"
+                            key={imageName}
                         >
                             <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     {cssImage}
                                 </div>
                                 <div className="flip-card-back">
-                                    <h3>Test</h3>
+                                    <h3>{imageName}</h3>
                                 </div>
                             </div>
                         </div>

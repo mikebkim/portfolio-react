@@ -72,6 +72,7 @@ const Styled_TechnologiesPage = styled.div`
         background-color: black;
         color: white;
         transform: rotateY(180deg);
+        font-size: 10px;
     }
 }
 `

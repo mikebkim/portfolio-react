@@ -5,6 +5,7 @@ import 'aos/dist/aos.css'
 
 const TechnologiesPage = ({ allImages }) => {
     const allImagesArray = Object.values(allImages)
+    console.log("🚀 ~ file: TechnologiesPage.jsx:8 ~ TechnologiesPage ~ allImagesArray:", allImagesArray.sort())
     useEffect(() => {
         AOS.init()
     }, [])

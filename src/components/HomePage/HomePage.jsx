@@ -11,6 +11,7 @@ const HomePage = ({ resume, iconDownload }) => {
                     <h1>MIKE KIM</h1>
                     <p>Los Angeles, CA</p>
                 </div>
+                <hr />
 
                 <div className="home">
                     <p className="home-about">I am a Full-Stack Developer with a focus on Front-End development.

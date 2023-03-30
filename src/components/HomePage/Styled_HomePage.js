@@ -1,18 +1,61 @@
 import styled from "styled-components"
 
 const Styled_HomePage = styled.div`
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .HomePage {
     margin-left: auto;
     margin-right: auto;
     max-width: 90vw;
     margin-top: 3rem;
 
+    h1 {
+        margin-bottom: 0.2rem;
+        margin: 0;
+    }
+
     p {
         color: lightgrey;
-        margin-left: 1rem;
+        margin: 0;
+    }
+
+    & > .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
     }
 
     & > .home {
+        margin-left: 1rem;
+
+        & > .home-about {
+            margin-top: 1rem;
+        }
+
         & > .resume {
             margin-top: 1.5rem;
             margin-left: 0.5rem;
@@ -28,7 +71,7 @@ const Styled_HomePage = styled.div`
                     width: 13rem;
                     background: transparent;
                     border: 1px solid white;
-                    transition: ease-out 250ms;
+                    transition: ease-in-out 300ms;
                     cursor: pointer;
                     font-weight: bold;
                     color: white;
@@ -49,7 +92,7 @@ const Styled_HomePage = styled.div`
                     width: 13rem;
                     background: white;
                     border: 1px solid white;
-                    transition: ease-out 250ms;
+                    transition: ease-in-out 300ms;
                     cursor: pointer;
                     color: black;
                     fill: white;

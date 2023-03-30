@@ -7,6 +7,14 @@ const Styled_ContactPage = styled.div`
     max-width: 90vw;
     margin-top: 3rem;
 
+    [data-aos] {
+        transition-duration: 2s;
+    }
+
+    h1 {
+        margin-bottom: 0.2rem;
+    }
+
     p {
         color: lightgrey;
         margin-bottom: 2rem;
@@ -70,7 +78,7 @@ const Styled_ContactPage = styled.div`
                 border-radius: 2rem;
                 width: 9rem;
                 height: 2rem;
-                transition: ease-out 250ms;
+                transition: ease-in-out 300ms;
                 font-weight: bold;
                 margin: 1rem auto;
             }
@@ -84,7 +92,7 @@ const Styled_ContactPage = styled.div`
                 border-radius: 2rem;
                 width: 9rem;
                 height: 2rem;
-                transition: ease-out 250ms;
+                transition: ease-in-out 300ms;
                 font-weight: bold;
                 margin: 1rem auto;
             }
@@ -98,6 +106,10 @@ const Styled_ContactPage = styled.div`
         margin-right: auto;
         max-width: 90vw;
         margin-top: 3rem;
+
+        h1 {
+            margin-bottom: 0.2rem;
+        }
 
         p {
             color: lightgrey;
@@ -162,7 +174,7 @@ const Styled_ContactPage = styled.div`
                     border-radius: 2rem;
                     width: 9rem;
                     height: 2rem;
-                    transition: ease-out 250ms;
+                    transition: ease-in-out 300ms;
                     font-weight: bold;
                     margin: 1rem auto;
                 }
@@ -176,7 +188,7 @@ const Styled_ContactPage = styled.div`
                     border-radius: 2rem;
                     width: 9rem;
                     height: 2rem;
-                    transition: ease-out 250ms;
+                    transition: ease-in-out 300ms;
                     font-weight: bold;
                     margin: 1rem auto;
                 }

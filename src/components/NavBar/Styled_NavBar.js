@@ -1,6 +1,30 @@
 import styled from "styled-components"
 
 const Styled_NavBar = styled.div`
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
 
 // Desktop
 .NavBar {
@@ -9,7 +33,6 @@ const Styled_NavBar = styled.div`
     height: 4rem;
     align-items: center;
     margin-top: 1rem;
-
 
     & > .nav-link {
         text-decoration: none;
@@ -23,6 +46,26 @@ const Styled_NavBar = styled.div`
         height: 3rem;
         width: 3rem;
         border: 1px solid white;
+        transition: ease-in-out 300ms;
+
+        & > img {
+            width: 2rem;
+        }
+    }
+
+    & > .nav-link:hover {
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+        color: black;
+        fill: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 3rem;
+        border: 1px solid white;
+        transition: ease-in-out 300ms;
 
         & > img {
             width: 2rem;
@@ -49,6 +92,7 @@ const Styled_NavBar = styled.div`
             fill: white;
             width: 18rem;
             z-index: -1;
+            animation: fadeIn 2s;
         }
 
         & > img {
@@ -102,6 +146,7 @@ const Styled_NavBar = styled.div`
                     fill: white;
                     width: max-content;
                     z-index: -1;
+                    animation: fadeIn 2s;
                 }
 
                 & > img {

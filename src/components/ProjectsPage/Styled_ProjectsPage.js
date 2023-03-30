@@ -7,8 +7,17 @@ const Styled_ProjectsPage = styled.div`
     max-width: 90vw;
     margin-top: 3rem;
 
+    [data-aos] {
+        transition-duration: 2s;
+    }
+
+    h1 {
+        margin-bottom: 0.2rem;
+    }
+
     p {
         color: lightgrey;
+        margin-left: 1rem;
     }
 
     .project-laptop {
@@ -52,7 +61,11 @@ const Styled_ProjectsPage = styled.div`
     margin-right: auto;
     max-width: 90vw;
     margin-top: 3rem;
-
+    
+    h1 {
+        margin-bottom: 0.2rem;
+    }
+    
     p {
         color: lightgrey;
     }

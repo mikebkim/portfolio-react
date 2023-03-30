@@ -19,12 +19,13 @@ const ProjectsPage = ({
             <div className="ProjectsPage">
                 <div className="header">
                     <h1>PROJECTS</h1>
+                    <hr />
                     <p className="description">
                         Below are my projects and technologies I used to create them.
                     </p>
                 </div>
 
-                <div className="projects-flex">
+                <div className="projects-flex" data-aos="fade-left">
                     <a className="project-link" href="https://marblejerky.herokuapp.com/" target="_blank">
                         <img className="project-laptop" src={iconMarble} alt="marblejerky" />
                     </a>
@@ -36,7 +37,7 @@ const ProjectsPage = ({
                     </div>
                 </div>
 
-                <div className="projects-flex">
+                <div className="projects-flex" data-aos="fade-right">
                     <a className="project-link" href="https://game-it.herokuapp.com/" target="_blank">
                         <img className="project-laptop" src={iconGameit} alt="gameit" />
                     </a>
@@ -50,7 +51,7 @@ const ProjectsPage = ({
                     </div>
                 </div>
 
-                <div className="projects-flex">
+                <div className="projects-flex" data-aos="fade-left">
                     <a className="project-link" href="https://sessionsmusic.herokuapp.com/" target="_blank">
                         <img className="project-laptop" src={iconSessions} alt="sessionsmusic" />
                     </a>
@@ -62,7 +63,7 @@ const ProjectsPage = ({
                     </div>
                 </div>
 
-                <div className="projects-flex">
+                <div className="projects-flex" data-aos="fade-right">
                     <a className="project-link" href="https://mikebkim.github.io/blackjack/" target="_blank">
                         <img className="project-laptop" src={iconBlackjack} alt="blackjack" />
                     </a>

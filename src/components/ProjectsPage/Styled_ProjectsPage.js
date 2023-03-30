@@ -10,7 +10,31 @@ const Styled_ProjectsPage = styled.div`
 
     p {
         color: lightgrey;
-        margin-left: 1rem;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+
+    .project-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-flex {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    .project {  
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        padding: 0px 5rem;
+        justify-content: center;
+        align-items: center;
     }
 }
 `

@@ -40,7 +40,6 @@ const Styled_NavBar = styled.div`
         border-radius: 2rem;
         height: 3rem;
         width: 3rem;
-        transition: ease-in-out 350ms;
 
         & > .nav-line-selected {
             position: absolute;
@@ -50,7 +49,6 @@ const Styled_NavBar = styled.div`
             fill: white;
             width: 18rem;
             z-index: -1;
-            transition: ease-in-out 350ms;
         }
 
         & > img {
@@ -60,64 +58,58 @@ const Styled_NavBar = styled.div`
 }
 
 // MOBILE
-
 @media (max-width: 1000px) {
-.NavBar {
-    display: flex;
-    justify-content: space-around;
-    height: 4rem;
-    align-items: center;
-    margin-top: 1rem;
-
-    & > .nav-link {
-        text-decoration: none;
-        align-items: center;
+    .NavBar {
         display: flex;
-        justify-content: center;
-        background-color: transparent;
-        color: white;
-        fill: black;
-        border-radius: 2rem;
-        height: 3rem;
-        width: 3rem;
-        border: 1px solid white;
+        justify-content: space-around;
+        height: 4rem;
+        align-items: center;
+        margin-top: 1rem;
 
-        & > img {
-            width: 2rem;
-            /* background-color: white;
-            color: white;
-            border-radius: 2rem; */
+            & > .nav-link {
+                text-decoration: none;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                background-color: transparent;
+                color: white;
+                fill: black;
+                border-radius: 2rem;
+                height: 3rem;
+                width: 3rem;
+                border: 1px solid white;
+
+                & > img {
+                    width: 2rem;
+                }
+            }
+
+            & > .selected {
+                text-decoration: none;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                background-color: white;
+                color: black;
+                fill: black;
+                border-radius: 2rem;
+                height: 3rem;
+                width: 3rem;
+
+                & > .nav-line-selected {
+                    margin-top: 5rem;
+                    color: white;
+                    fill: white;
+                    width: max-content;
+                    z-index: -1;
+                }
+
+                & > img {
+                    width: 2rem;
+                }
+            }
         }
     }
-
-    & > .selected {
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        background-color: white;
-        color: black;
-        fill: black;
-        border-radius: 2rem;
-        height: 3rem;
-        width: 3rem;
-        transition: ease-in-out 350ms;
-
-        & > .nav-line-selected {
-            margin-top: 5rem;
-            color: white;
-            fill: white;
-            width: max-content;
-            z-index: -1;
-            transition: ease-in-out 350ms;
-        }
-
-        & > img {
-            width: 2rem;
-        }
-        }
-    }
-}
 `
 
 export default Styled_NavBar

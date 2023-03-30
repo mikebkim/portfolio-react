@@ -4,7 +4,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 const TechnologiesPage = ({ allImages }) => {
+
     const allImagesArray = Object.entries(allImages)
+    
     useEffect(() => {
         AOS.init()
     }, [])

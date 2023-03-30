@@ -5,7 +5,7 @@ const Styled_TechnologiesPage = styled.div`
 .TechnologiesPage {
     margin-left: auto;
     margin-right: auto;
-    max-width: 55vw;
+    max-width: 90vw;
     margin-top: 3rem;
 
     p {
@@ -40,7 +40,6 @@ const Styled_TechnologiesPage = styled.div`
 
     .flip-card-inner {
         background-color: lightslategray;
-        /* background-color: rgb(250 250 250); */
         position: relative;
         width: 100%;
         height: 100%;

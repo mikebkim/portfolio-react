@@ -4,7 +4,7 @@ const Styled_HomePage = styled.div`
 .HomePage {
     margin-left: auto;
     margin-right: auto;
-    max-width: 55vw;
+    max-width: 90vw;
     margin-top: 3rem;
 
     p {

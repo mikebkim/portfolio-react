@@ -4,7 +4,7 @@ const Styled_ContactPage = styled.div`
 .ContactPage {
     margin-left: auto;
     margin-right: auto;
-    max-width: 55vw;
+    max-width: 90vw;
     margin-top: 3rem;
 
     p {

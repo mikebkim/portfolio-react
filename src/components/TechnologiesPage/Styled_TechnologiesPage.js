@@ -75,6 +75,10 @@ const Styled_TechnologiesPage = styled.div`
         font-size: 11px;
         border-radius: 10px;
     }
+
+    [data-aos] {
+        transition-duration: 2s;
+    }
 }
 `
 

@@ -18,7 +18,7 @@ const TechnologiesPage = ({ allImages }) => {
                         websites.
                     </p>
                 </div>
-                <div className="technologies-list">
+                <div className="technologies-list" data-aos="fade-up">
                     {allImagesArray.map(image => {
                         const imageName = ((image[0].toUpperCase().split("_").pop())).split(".PNG")
                         const cssImage = image[0].includes("css" || "react") ? <img

@@ -20,6 +20,7 @@ const NavBar = ({ iconHome, iconTechnologies, iconProjects, iconContact }) => {
                 <Link to="/projects" className={selectedTab.includes("projects") ? "selected" : "nav-link"}><img src={iconProjects} /></Link>
                 <Link to="/contact" className={selectedTab.includes("contact") ? "selected" : "nav-link"}><img src={iconContact} /></Link>
             </div>
+            <div className="nav-line"></div>
         </Styled_NavBar>
     )
 }

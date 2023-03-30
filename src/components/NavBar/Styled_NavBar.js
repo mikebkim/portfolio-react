@@ -1,35 +1,58 @@
 import styled from "styled-components"
 
 const Styled_NavBar = styled.div`
+.nav-line {
+    border-bottom: 1px solid white;
+    margin-top: -2rem;
+    box-shadow: 1px 1px 1px 1px;
+    color: white;
+    fill: white;
+}
+
 .NavBar {
     display: flex;
     justify-content: space-around;
-    height: 5rem;
+    height: 4rem;
     align-items: center;
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
 
-    img {
-        width: 10%;
-        background-color: white;
-        border-radius: 2rem;
-        box-shadow: 0px 0px 4px 4px;
-    }
 
     & > .nav-link {
         text-decoration: none;
-        color: white;
         align-items: center;
         display: flex;
         justify-content: center;
+        box-shadow: 0px 0px 4px 4px;
+        background-color: white;
+        color: white;
+        fill: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 3rem;
+
+        & > img {
+            width: 2rem;
+            /* background-color: white;
+            color: white;
+            border-radius: 2rem; */
+        }
     }
 
     & > .selected {
         text-decoration: none;
-        color: white;
         align-items: center;
         display: flex;
         justify-content: center;
+        box-shadow: 0px 0px 4px 4px;
+        background-color: white;
+        color: white;
+        fill: white;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 3rem;
+
+        & > img {
+            width: 2rem;
+        }
     }
 }
 `

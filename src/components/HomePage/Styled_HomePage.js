@@ -5,7 +5,8 @@ const Styled_HomePage = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 0 10rem;
+    margin: 1rem auto;
+    padding: 0 2rem;
 
     & > .main-title {
         display: flex;
@@ -32,6 +33,19 @@ const Styled_HomePage = styled.div`
                     border: none;
                     transition: ease-out 250ms;
                     cursor: pointer;
+                    font-weight: bold;
+
+                    & > .icon-download {
+                        height: auto;
+                        width: 10%;
+                    }
+
+                    & > .icon-download:hover {
+                        height: auto;
+                        width: 10%;
+                        color: white;
+                        fill: white;
+                    }
                 }
 
                 & > .resume-button:hover {
@@ -42,6 +56,9 @@ const Styled_HomePage = styled.div`
                     border: none;
                     transition: ease-out 250ms;
                     cursor: pointer;
+                    color: white;
+                    fill: white;
+                    font-weight: bold;
                 }
             }
         }

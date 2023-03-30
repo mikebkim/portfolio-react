@@ -24,7 +24,6 @@ const Styled_TechnologiesPage = styled.div`
     }
 
     .flip-card {
-        background-color: rgb(250 250 250);
         width: 100px;
         height: 100px;
         perspective: 1000px;
@@ -35,6 +34,7 @@ const Styled_TechnologiesPage = styled.div`
     }
 
     .flip-card-inner {
+        background-color: rgb(250 250 250);
         position: relative;
         width: 100%;
         height: 100%;

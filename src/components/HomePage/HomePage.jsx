@@ -1,7 +1,7 @@
 import React from 'react'
 import Styled_HomePage from "./Styled_HomePage";
 
-const HomePage = ({ resume }) => {
+const HomePage = ({ resume, iconDownload }) => {
     return (
         <Styled_HomePage>
             <div className="HomePage">
@@ -21,10 +21,9 @@ const HomePage = ({ resume }) => {
                         applications
                         that can help people within their daily lives.
                     </p>
-                    <p><a href="/projects" className="projects-button">VIEW MY PROJECTS</a></p>
                     <div className="resume">
                         <form method="get" action={resume} target="_blank">
-                            <button className="resume-button" type="submit">RESUME</button>
+                            <button className="resume-button" type="submit">RESUME <img className="icon-download" src={iconDownload} /></button>
                         </form>
                     </div>
                 </div>

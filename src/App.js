@@ -24,6 +24,7 @@ import home from "./icons/01_home.png"
 import technologies from "./icons/02_technologies.png"
 import projects from "./icons/03_projects.png"
 import contact from "./icons/04_contact.png"
+import download from "./icons/05_download.png"
 
 function importAll(r) {
   let images = {}
@@ -45,7 +46,7 @@ class App extends Component {
           />
           <Routes>
             <Route path="/" element={<Navigate replace to="/home" />} />
-            <Route exact path='/home' element={<HomePage resume={MK_Resume} />} />
+            <Route exact path='/home' element={<HomePage resume={MK_Resume} iconDownload={download} />} />
             <Route exact path='/technologies' element={<TechnologiesPage allImages={allImages} />} />
             <Route exact path='/projects' element={<ProjectsPage />} />
             <Route exact path='/contact' element={<ContactPage />} />

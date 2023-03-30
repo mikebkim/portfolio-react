@@ -2,10 +2,9 @@ import styled from "styled-components"
 
 const Styled_ContactPage = styled.div`
 .ContactPage {
-    max-height: 80vh;
     margin-left: auto;
     margin-right: auto;
-    width: 55vw;
+    max-width: 55vw;
     margin-top: 3rem;
 
     p {
@@ -73,6 +72,7 @@ const Styled_ContactPage = styled.div`
                 height: 2rem;
                 transition: ease-out 250ms;
                 font-weight: bold;
+                margin: 0 auto;
             }
 
             & > .contact-button:hover {
@@ -86,6 +86,7 @@ const Styled_ContactPage = styled.div`
                 height: 2rem;
                 transition: ease-out 250ms;
                 font-weight: bold;
+                margin: 0 auto;
             }
         }
     }

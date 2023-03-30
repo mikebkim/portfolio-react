@@ -21,7 +21,7 @@ const TechnologiesPage = ({ allImages }) => {
                 <div className="technologies-list">
                     {allImagesArray.map(image => {
                         const imageName = ((image[0].toUpperCase().split("_").pop())).split(".PNG")
-                        const cssImage = image[0].includes("css") ? <img
+                        const cssImage = image[0].includes("css" || "react") ? <img
                             className="tech-image"
                             width="37px"
                             height="auto"
@@ -39,7 +39,7 @@ const TechnologiesPage = ({ allImages }) => {
                             className="flip-card aos-init aos-animate"
                             key={imageName}
                         >
-                            <div className="flip-card-inner" data-aos="fade-up">
+                            <div className="flip-card-inner">
                                 <div className="flip-card-front">
                                     {cssImage}
                                 </div>

@@ -15,7 +15,6 @@ const ProjectsPage = ({ }) => {
                             <img className="project-image" src="https://i.imgur.com/y9Qv7P4.png" alt="marblejerky" />
                         </a>
                         <div className="project">
-                            <br />
                             <h2>Marble</h2>
                             <p className="project-description">An eCommerce site that sells beef jerky. Check out the products!</p>
                             <div>Technologies Used</div>
@@ -27,7 +26,6 @@ const ProjectsPage = ({ }) => {
                             <img className="project-image" src="https://i.imgur.com/HYAOWEm.png" alt="gameit" />
                         </a>
                         <div className="project">
-                            <br />
                             <h2>game.it</h2>
                             <p className="project-description">An app that allows users to compile, share, and chat about video games.
                             </p>
@@ -41,7 +39,6 @@ const ProjectsPage = ({ }) => {
                             <img className="project-image" src="https://i.imgur.com/zq5BFK2.png" alt="sessionsmusic" />
                         </a>
                         <div className="project">
-                            <br />
                             <h2>Sessions</h2>
                             <p className="project-description">A music tutor app that allows musicians to book sessions together.</p>
                             <div>Technologies Used</div>
@@ -53,7 +50,6 @@ const ProjectsPage = ({ }) => {
                             <img className="project-image" src="https://i.imgur.com/vPL9pko.png" alt="blackjack" />
                         </a>
                         <div className="project">
-                            <br />
                             <h2>Blackjack</h2>
                             <p className="project-description">A simple Blackjack game. You start off with $1,000. How much will you
                                 win?</p>

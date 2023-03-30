@@ -2,15 +2,16 @@ import styled from "styled-components"
 
 const Styled_ProjectsPage = styled.div`
 .ProjectsPage {
-    display: flex;
-    justify-content: space-around;
-    width: 95%;
-    height: 2rem;
-    align-items: center;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    // margin-top: 0.5rem;
-    margin: 0.5rem auto;
+    max-height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55vw;
+    margin-top: 3rem;
+
+    p {
+        color: lightgrey;
+        margin-left: 1rem;
+    }
 }
 `
 

@@ -13,7 +13,7 @@ const TechnologiesPage = ({ allImages }) => {
         <Styled_TechnologiesPage>
             <div className="TechnologiesPage">
                 <div className="header">
-                    <h1>Technologies</h1>
+                    <h1>TECHNOLOGIES</h1>
                     <p className="description">Below are languages, frameworks, tools, and ancillary technologies I provide when building
                         websites.
                     </p>
@@ -39,7 +39,7 @@ const TechnologiesPage = ({ allImages }) => {
                             className="flip-card aos-init aos-animate"
                             key={imageName}
                         >
-                            <div className="flip-card-inner">
+                            <div className="flip-card-inner" data-aos="fade-up">
                                 <div className="flip-card-front">
                                     {cssImage}
                                 </div>

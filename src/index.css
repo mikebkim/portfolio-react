@@ -1,10 +1,10 @@
 body {
   margin: 0;
   font-family: Gill Sans;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #282c34;
+  background-color: rgb(39, 50, 56);
   color: white;
 }
 

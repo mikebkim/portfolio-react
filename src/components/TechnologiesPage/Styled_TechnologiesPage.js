@@ -7,6 +7,12 @@ const Styled_TechnologiesPage = styled.div`
     margin-left: auto;
     margin-right: auto;
     width: 55vw;
+    margin-top: 3rem;
+
+    p {
+        color: lightgrey;
+        margin-left: 1rem;
+    }
 
     img {
         height: auto;
@@ -35,6 +41,7 @@ const Styled_TechnologiesPage = styled.div`
 
     .flip-card-inner {
         background-color: rgb(250 250 250);
+        /* background-color: rgb(250 250 250); */
         position: relative;
         width: 100%;
         height: 100%;
@@ -67,8 +74,8 @@ const Styled_TechnologiesPage = styled.div`
     }
 
     .flip-card-back {
-        background-color: black;
-        color: white;
+        background-color: white;
+        color: black;
         transform: rotateY(180deg);
         font-size: 10px;
     }

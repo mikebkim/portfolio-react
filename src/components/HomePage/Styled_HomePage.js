@@ -2,61 +2,52 @@ import styled from "styled-components"
 
 const Styled_HomePage = styled.div`
 .HomePage {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 1rem auto;
-    padding: 0 2rem;
+    max-height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55vw;
+    margin-top: 3rem;
 
-    & > .main-title {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-
-        & > h1 {
-            margin: 1rem 0 0 0;
-        }
-
-        & > h2 {
-            margin: 0;
-        }
+    p {
+        color: lightgrey;
+        margin-left: 1rem;
     }
 
     & > .home {
         & > .resume {
             & > form {
                 & > .resume-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     border-radius: 2rem;
                     height: 3rem;
-                    width: 7rem;
-                    background: lightgrey;
-                    border: none;
+                    width: 13rem;
+                    background: lightslategray;
+                    border: 1px solid white;
                     transition: ease-out 250ms;
                     cursor: pointer;
                     font-weight: bold;
+                    color: white;
 
-                    & > .icon-download {
-                        height: auto;
-                        width: 10%;
-                    }
-
-                    & > .icon-download:hover {
-                        height: auto;
-                        width: 10%;
-                        color: white;
-                        fill: white;
+                    & > svg {
+                        margin-bottom: 0.3rem;
+                        margin-left: 0.5rem;
                     }
                 }
 
                 & > .resume-button:hover {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     border-radius: 2rem;
                     height: 3rem;
-                    width: 7rem;
-                    background: green;
-                    border: none;
+                    width: 13rem;
+                    background: white;
+                    border: 1px solid white;
                     transition: ease-out 250ms;
                     cursor: pointer;
-                    color: white;
+                    color: black;
                     fill: white;
                     font-weight: bold;
                 }

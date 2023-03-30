@@ -14,6 +14,7 @@ const Styled_NavBar = styled.div`
     justify-content: space-around;
     height: 4rem;
     align-items: center;
+    margin-top: 1rem;
 
 
     & > .nav-link {
@@ -21,9 +22,8 @@ const Styled_NavBar = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        box-shadow: 0px 0px 4px 4px;
         background-color: white;
-        color: white;
+        color: black;
         fill: white;
         border-radius: 2rem;
         height: 3rem;
@@ -43,9 +43,9 @@ const Styled_NavBar = styled.div`
         display: flex;
         justify-content: center;
         box-shadow: 0px 0px 4px 4px;
-        background-color: white;
+        background-color: black;
         color: white;
-        fill: white;
+        fill: black;
         border-radius: 2rem;
         height: 3rem;
         width: 3rem;

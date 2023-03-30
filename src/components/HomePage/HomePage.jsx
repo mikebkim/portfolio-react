@@ -1,13 +1,15 @@
 import React from 'react'
 import Styled_HomePage from "./Styled_HomePage";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 const HomePage = ({ resume, iconDownload }) => {
     return (
         <Styled_HomePage>
             <div className="HomePage">
-                <div className="main-title">
+                <div className="header">
                     <h1>MIKE KIM</h1>
-                    <h2>Los Angeles, CA</h2>
+                    <p>Los Angeles, CA</p>
                 </div>
 
                 <div className="home">
@@ -23,7 +25,7 @@ const HomePage = ({ resume, iconDownload }) => {
                     </p>
                     <div className="resume">
                         <form method="get" action={resume} target="_blank">
-                            <button className="resume-button" type="submit">RESUME <img className="icon-download" src={iconDownload} /></button>
+                            <button className="resume-button" type="submit">DOWNLOAD RESUME <FontAwesomeIcon icon={faDownload} /></button>
                         </form>
                     </div>
                 </div>

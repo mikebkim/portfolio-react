@@ -14,15 +14,19 @@ const Styled_HomePage = styled.div`
 
     & > .home {
         & > .resume {
+            margin-top: 1.5rem;
+            margin-left: 0.5rem;
+
             & > form {
                 & > .resume-button {
+                    font-family: "Gill Sans";
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     border-radius: 2rem;
-                    height: 3rem;
+                    height: 2rem;
                     width: 13rem;
-                    background: lightslategray;
+                    background: transparent;
                     border: 1px solid white;
                     transition: ease-out 250ms;
                     cursor: pointer;
@@ -36,11 +40,12 @@ const Styled_HomePage = styled.div`
                 }
 
                 & > .resume-button:hover {
+                    font-family: "Gill Sans";
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     border-radius: 2rem;
-                    height: 3rem;
+                    height: 2rem;
                     width: 13rem;
                     background: white;
                     border: 1px solid white;

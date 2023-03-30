@@ -4,20 +4,25 @@ const Styled_ProjectsPage = styled.div`
 .ProjectsPage {
     margin-left: auto;
     margin-right: auto;
-    max-width: 55vw;
+    max-width: 90vw;
     margin-top: 3rem;
 
     p {
         color: lightgrey;
     }
 
-    img {
-        height: auto;
+    .project-laptop {
+        position: relative;
         width: 100%;
+        margin-top: 1rem;
     }
 
-    [data-aos] {
-        transition-duration: 2s;
+    .project-image {
+        position: absolute;
+        min-height: 40%;
+        max-height: 40%;
+        width: 29%;
+        transform: scale(0);
     }
     
     & > .projects-flex {
@@ -52,9 +57,17 @@ const Styled_ProjectsPage = styled.div`
         color: lightgrey;
     }
 
-    img {
-        height: auto;
+    .project-laptop {
+        position: relative;
         width: 100%;
+    }
+
+    .project-image {
+        position: absolute;
+        min-height: 40%;
+        max-height: 40%;
+        width: 29%;
+        transform: scale(0);
     }
     
     & > .projects-flex {
@@ -71,7 +84,7 @@ const Styled_ProjectsPage = styled.div`
         & > .project {  
             display: flex;
             flex-direction: column;
-            width: fit-content;
+            padding: 0;
             justify-content: start;
             align-items: center;
         }

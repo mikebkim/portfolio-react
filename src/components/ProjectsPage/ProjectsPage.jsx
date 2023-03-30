@@ -3,7 +3,12 @@ import Styled_ProjectsPage from "./Styled_ProjectsPage";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const ProjectsPage = ({ }) => {
+const ProjectsPage = ({
+    iconBlackjack,
+    iconMarble,
+    iconSessions,
+    iconGameit
+}) => {
 
     useEffect(() => {
         AOS.init()
@@ -19,9 +24,9 @@ const ProjectsPage = ({ }) => {
                     </p>
                 </div>
 
-                <div className="projects-flex" data-aos="fade-right">
+                <div className="projects-flex">
                     <a className="project-link" href="https://marblejerky.herokuapp.com/" target="_blank">
-                        <img className="project-image" src="https://i.imgur.com/y9Qv7P4.png" alt="marblejerky" />
+                        <img className="project-laptop" src={iconMarble} alt="marblejerky" />
                     </a>
                     <div className="project">
                         <h2>Marble</h2>
@@ -31,9 +36,9 @@ const ProjectsPage = ({ }) => {
                     </div>
                 </div>
 
-                <div className="projects-flex" data-aos="fade-left">
+                <div className="projects-flex">
                     <a className="project-link" href="https://game-it.herokuapp.com/" target="_blank">
-                        <img className="project-image" src="https://i.imgur.com/HYAOWEm.png" alt="gameit" />
+                        <img className="project-laptop" src={iconGameit} alt="gameit" />
                     </a>
                     <div className="project">
                         <h2>game.it</h2>
@@ -45,9 +50,9 @@ const ProjectsPage = ({ }) => {
                     </div>
                 </div>
 
-                <div className="projects-flex" data-aos="fade-right">
+                <div className="projects-flex">
                     <a className="project-link" href="https://sessionsmusic.herokuapp.com/" target="_blank">
-                        <img className="project-image" src="https://i.imgur.com/zq5BFK2.png" alt="sessionsmusic" />
+                        <img className="project-laptop" src={iconSessions} alt="sessionsmusic" />
                     </a>
                     <div className="project">
                         <h2>Sessions</h2>
@@ -57,9 +62,9 @@ const ProjectsPage = ({ }) => {
                     </div>
                 </div>
 
-                <div className="projects-flex" data-aos="fade-left">
+                <div className="projects-flex">
                     <a className="project-link" href="https://mikebkim.github.io/blackjack/" target="_blank">
-                        <img className="project-image" src="https://i.imgur.com/vPL9pko.png" alt="blackjack" />
+                        <img className="project-laptop" src={iconBlackjack} alt="blackjack" />
                     </a>
                     <div className="project">
                         <h2>Blackjack</h2>

@@ -72,8 +72,9 @@ const Styled_TechnologiesPage = styled.div`
     }
 
     .flip-card-back {
-        background-color: white;
-        color: black;
+        background-color: whitesmoke;
+        color: rgb(39, 50, 56);
+        fill: rgb(39, 50, 56);
         transform: rotateY(180deg);
         font-size: 11px;
         border-radius: 10px;

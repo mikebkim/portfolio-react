@@ -24,11 +24,11 @@ const NavBar = ({ iconHome, iconTechnologies, iconProjects, iconContact }) => {
     return (
         <Styled_NavBar>
             <div className="NavBar">
-                <Link to="/home" className={selectedTab.includes("home") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faHome} />
-                    <div className="nav-line-selected">{selectedTab.includes("home") ? "HOME" : ""}</div>
+                <Link to="/home" className={selectedTab.includes("home") ? "selected-right" : "nav-link"}><FontAwesomeIcon icon={faHome} />
+                    <div className="nav-line-selected-right">{selectedTab.includes("home") ? "HOME" : ""}</div>
                 </Link>
-                <Link to="/technologies" className={selectedTab.includes("technologies") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faCode} />
-                    <div className="nav-line-selected">{selectedTab.includes("technologies") ? "TECHNOLOGIES" : ""}</div>
+                <Link to="/technologies" className={selectedTab.includes("technologies") ? "selected-right" : "nav-link"}><FontAwesomeIcon icon={faCode} />
+                    <div className="nav-line-selected-right">{selectedTab.includes("technologies") ? "TECHNOLOGIES" : ""}</div>
                 </Link>
                 <Link to="/projects" className={selectedTab.includes("projects") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faLayerGroup} />
                     <div className="nav-line-selected">{selectedTab.includes("projects") ? "PROJECTS" : ""}</div>

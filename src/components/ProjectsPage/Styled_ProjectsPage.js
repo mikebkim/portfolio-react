@@ -51,6 +51,24 @@ const Styled_ProjectsPage = styled.div`
             padding: 0px 5rem;
             justify-content: center;
             align-items: center;
+
+            & > .tech-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                & > .tech-name {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 6rem;
+                    padding: 0.5rem;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    background-color: white;
+                    color: black;
+                }
+            }
         }
     }
 }
@@ -100,6 +118,24 @@ const Styled_ProjectsPage = styled.div`
             padding: 0;
             justify-content: start;
             align-items: center;
+
+            & > .tech-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                
+                & > .tech-name {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-width: 6rem;
+                    padding: 0.5rem;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    background-color: white;
+                    color: black;
+                }
+            }
         }
     }
 }

@@ -21,13 +21,13 @@ const ContactPage = ({ }) => {
                 </div>
                 <form action="https://formspree.io/mikebkim@gmail.com" method="POST" target="_blank">
                     <div className="contact-form">
-                        <span className="form-inputs" data-aos="fade-left">NAME</span>
+                        <span className="form-inputs">NAME</span>
                         <input className="contact-name" placeholder="" type="text" name="name" />
-                        <span className="form-inputs" data-aos="fade-left">EMAIL</span>
-                        <input className="contact-email" placeholder="" type="text" name="subject" required />
-                        <span className="form-inputs" data-aos="fade-left">SUBJECT</span>
-                        <input className="contact-email" placeholder="" type="email" name="_replyto" required />
-                        <span className="form-inputs" data-aos="fade-left">MESSAGE</span>
+                        <span className="form-inputs">EMAIL</span>
+                        <input className="contact-email" placeholder="" type="email" name="email" required />
+                        <span className="form-inputs">SUBJECT</span>
+                        <input className="contact-subject" placeholder="" type="text" name="subject" required />
+                        <span className="form-inputs">MESSAGE</span>
                         <textarea
                             className="contact-message"
                             placeholder=""

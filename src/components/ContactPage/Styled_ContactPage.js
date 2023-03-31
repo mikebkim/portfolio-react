@@ -56,6 +56,18 @@ const Styled_ContactPage = styled.div`
                 padding: 5px 0;
             }
 
+            & > .contact-subject {
+                font-family: Gill Sans;
+                margin-bottom: 2.5rem;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                color: white;
+                border-bottom: 1px solid white;
+                outline: none;
+                padding: 5px 0;
+            }
+
             & > .contact-message {
                 font-family: Gill Sans;
                 margin-bottom: 0.5rem;

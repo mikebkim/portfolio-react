@@ -6,7 +6,7 @@ const Styled_TechnologiesPage = styled.div`
     margin-left: auto;
     margin-right: auto;
     max-width: 90vw;
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     h1 {
         margin-bottom: 0.2rem;
@@ -90,7 +90,7 @@ const Styled_TechnologiesPage = styled.div`
         margin-left: auto;
         margin-right: auto;
         max-width: 90vw;
-        margin-top: 3rem;
+        margin-top: 2rem;
 
         h1 {
 

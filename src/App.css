@@ -4,3 +4,14 @@
   margin: 0 auto;
   color: white;
 }
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.toggle-dark-button {
+  display: flex;
+  position: absolute;
+  margin-left: 1rem;
+}

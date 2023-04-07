@@ -4,31 +4,6 @@ const Styled_NavBar = styled.div`
 
 // Desktop
 .NavBar {
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-    @-moz-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-    @-webkit-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-    @-o-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
-    @-ms-keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-
     @keyframes slidein {
         0% {
             color: rgb(39, 50, 56);
@@ -127,7 +102,7 @@ const Styled_NavBar = styled.div`
         width: 3rem;
         border: 1px solid white;
         --box-shadow-color: white;
-        box-shadow: 0px 0px 2px 2px var(--box-shadow-color);
+        /* box-shadow: 0px 0px 2px 2px var(--box-shadow-color); */
 
         & > .nav-line-selected {
             position: absolute;
@@ -159,7 +134,7 @@ const Styled_NavBar = styled.div`
         width: 3rem;
         border: 1px solid white;
         --box-shadow-color: white;
-        box-shadow: 0px 0px 2px 2px var(--box-shadow-color);
+        /* box-shadow: 0px 0px 2px 2px var(--box-shadow-color); */
 
         & > .nav-line-selected-right {
             display: flex;

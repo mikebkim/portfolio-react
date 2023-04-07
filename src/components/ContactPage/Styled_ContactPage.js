@@ -5,7 +5,7 @@ const Styled_ContactPage = styled.div`
     margin-left: auto;
     margin-right: auto;
     max-width: 90vw;
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     [data-aos] {
         transition-duration: 2s;
@@ -117,7 +117,7 @@ const Styled_ContactPage = styled.div`
         margin-left: auto;
         margin-right: auto;
         max-width: 90vw;
-        margin-top: 3rem;
+        margin-top: 2rem;
 
         h1 {
             margin-bottom: 0.2rem;

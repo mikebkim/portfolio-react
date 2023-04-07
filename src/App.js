@@ -15,6 +15,7 @@ import ContactPage from './components/ContactPage/ContactPage'
 
 // Components
 import NavBar from './components/NavBar/NavBar'
+import Switch from '@mui/material/Switch';
 
 // Images
 import MK_Resume from "./files/MK_Resume.pdf"
@@ -35,7 +36,13 @@ function importAll(r) {
   r.keys().forEach((item, index) => { images[item.replace('./', '')] = r(item) })
   return images
 }
+
 const allImages = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/))
+
+function toggleDarkMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 
 class App extends Component {
   render() {
@@ -48,6 +55,12 @@ class App extends Component {
             iconProjects={projects}
             iconContact={contact}
           />
+          <div
+            className="toggle-dark-button"
+            onClick={() => toggleDarkMode()}
+          >
+            <Switch />
+          </div>
           <Routes>
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route exact path='/home' element={<HomePage resume={MK_Resume} iconDownload={download} />} />

@@ -112,7 +112,7 @@ const Styled_ContactPage = styled.div`
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     .ContactPage {
         margin-left: auto;
         margin-right: auto;

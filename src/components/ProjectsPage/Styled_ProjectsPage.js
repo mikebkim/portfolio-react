@@ -73,7 +73,7 @@ const Styled_ProjectsPage = styled.div`
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     .ProjectsPage {
     margin-left: auto;
     margin-right: auto;

@@ -39,11 +39,6 @@ function importAll(r) {
 
 const allImages = importAll(require.context('./images', false, /\.(png|jpe?g|svg)$/))
 
-function toggleDarkMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
-
 class App extends Component {
   render() {
     return (
@@ -54,13 +49,8 @@ class App extends Component {
             iconTechnologies={technologies}
             iconProjects={projects}
             iconContact={contact}
+            switchComponent={<Switch color="default" />}
           />
-          <div
-            className="toggle-dark-button"
-            onClick={() => toggleDarkMode()}
-          >
-            <Switch color="default" />
-          </div>
           <Routes>
             <Route path="/" element={<Navigate replace to="/home" />} />
             <Route exact path='/home' element={<HomePage resume={MK_Resume} iconDownload={download} />} />

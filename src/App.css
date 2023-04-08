@@ -10,9 +10,13 @@
   color: white;
 }
 
-.toggle-dark-button {
+.dark-button {
+  position: fixed;
   display: flex;
-  position: absolute;
-  bottom: 23rem;
-  margin: 1rem;
+  justify-content: right;
+  align-items: end;
+}
+
+.toggle {
+
 }

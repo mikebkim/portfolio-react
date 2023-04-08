@@ -85,7 +85,7 @@ const Styled_TechnologiesPage = styled.div`
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 600px) {
     .TechnologiesPage {
         margin-left: auto;
         margin-right: auto;

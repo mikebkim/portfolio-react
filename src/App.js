@@ -59,7 +59,7 @@ class App extends Component {
             className="toggle-dark-button"
             onClick={() => toggleDarkMode()}
           >
-            <Switch />
+            <Switch color="default" />
           </div>
           <Routes>
             <Route path="/" element={<Navigate replace to="/home" />} />

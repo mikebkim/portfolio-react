@@ -6,12 +6,13 @@
 }
 
 .dark-mode {
-  background-color: black;
+  background-color: rgb(25, 31, 34);
   color: white;
 }
 
 .toggle-dark-button {
   display: flex;
   position: absolute;
-  margin-left: 1rem;
+  bottom: 23rem;
+  margin: 1rem;
 }

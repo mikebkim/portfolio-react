@@ -30,8 +30,8 @@ const NavBar = ({ iconHome, iconTechnologies, iconProjects, iconContact, switchC
 
     return (
         <Styled_NavBar>
-            {toggleDark === false ? <div>DARK</div> : <div>LIGHT</div>}
             <div className="dark-button">
+                {toggleDark === false ? <div>DARK</div> : <div>LIGHT</div>}
                 <div
                     className="toggle"
                     onClick={toggleDarkMode}

@@ -13,12 +13,8 @@
 .dark-button {
   position: fixed;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  margin-left: 0.5rem;
-}
-
-.toggle {
-
+  width: 100%;
 }

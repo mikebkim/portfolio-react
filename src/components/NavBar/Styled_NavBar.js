@@ -14,13 +14,13 @@ const Styled_NavBar = styled.div`
         }
 
         from {
-            margin-left: 10%;
+            margin-left: 12%;
             width: 0;
         }
 
         to {
-            margin-right: 11rem;
-            width: 10%;
+            margin-right: 12%;
+            width: 12%;
         }
     }
 
@@ -35,13 +35,13 @@ const Styled_NavBar = styled.div`
         }
 
         from {
-            margin-right: 10%;
+            margin-right: 12%;
             width: 0;
         }
 
         to {
-            margin-left: 11rem;
-            width: 10%;
+            margin-left: 12%;
+            width: 12%;
         }
     }
 
@@ -107,10 +107,10 @@ const Styled_NavBar = styled.div`
             position: absolute;
             border-bottom: 3px solid white;
             margin-top: -1rem;
-            margin-right: 11rem;
+            margin-right: 12%;
             color: white;
             fill: white;
-            width: 10%;
+            width: 12%;
             z-index: -1;
             animation: 1s slidein;
         }
@@ -141,10 +141,10 @@ const Styled_NavBar = styled.div`
             position: absolute;
             border-bottom: 3px solid white;
             margin-top: -1rem;
-            margin-left: 11rem;
+            margin-left: 12%;
             color: white;
             fill: white;
-            width: 10%;
+            width: 12%;
             z-index: -1;
             animation: 1s slideinright;
         }
@@ -156,7 +156,7 @@ const Styled_NavBar = styled.div`
 }
 
 // MOBILE
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .NavBar {
         display: flex;
         justify-content: space-around;
@@ -215,8 +215,8 @@ const Styled_NavBar = styled.div`
 
                 & > .nav-line-selected {
                     margin-top: 6rem;
-                    margin-left: 0;
-                    margin-right: 0;
+                    margin-left: 12%;
+                    margin-right: 12%;
                     color: white;
                     fill: white;
                     width: max-content;
@@ -243,8 +243,8 @@ const Styled_NavBar = styled.div`
 
                 & > .nav-line-selected-right {
                     margin-top: 6rem;
-                    margin-left: 0;
-                    margin-right: 0;
+                    margin-left: 12%;
+                    margin-right: 12%;
                     color: white;
                     fill: white;
                     width: max-content;

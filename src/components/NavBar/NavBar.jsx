@@ -6,10 +6,9 @@ import { faHome, faCode, faLayerGroup, faPhone } from '@fortawesome/free-solid-s
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const NavBar = ({ iconHome, iconTechnologies, iconProjects, iconContact, switchComponent }) => {
+const NavBar = () => {
 
     const [selectedTab, setSelectedTab] = useState('')
-    const [toggleDark, setToggleDark] = useState(false)
 
     const location = useLocation()
 
@@ -21,25 +20,8 @@ const NavBar = ({ iconHome, iconTechnologies, iconProjects, iconContact, switchC
         AOS.init()
     }, [])
 
-
-    function toggleDarkMode() {
-        var element = document.body;
-        element.classList.toggle("dark-mode")
-        setToggleDark(!toggleDark)
-    }
-
     return (
         <Styled_NavBar>
-            <div className="dark-button">
-                {toggleDark === false ? <div>DARK</div> : <div>LIGHT</div>}
-                <div
-                    className="toggle"
-                    onClick={toggleDarkMode}
-                >
-                    {switchComponent}
-                </div>
-            </div>
-
             <div className="NavBar">
                 <Link to="/home" className={selectedTab.includes("home") ? "selected-right" : "nav-link"}><FontAwesomeIcon icon={faHome} />
                     <div className="nav-line-selected-right">{selectedTab.includes("home") ? "HOME" : ""}</div>

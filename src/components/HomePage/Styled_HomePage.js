@@ -5,6 +5,8 @@ const Styled_HomePage = styled.div`
     margin-left: 15rem;
     margin-right: auto;
     width: 70vw;
+    overflow: auto;
+    height: 84vh;
 
     h1 {
         margin-bottom: 0.2rem;

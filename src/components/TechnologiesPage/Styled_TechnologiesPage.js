@@ -6,6 +6,7 @@ const Styled_TechnologiesPage = styled.div`
     margin-left: 15rem;
     margin-right: auto;
     width: 70vw;
+    height: 84vh;
 
     h1 {
         margin-bottom: 0.2rem;

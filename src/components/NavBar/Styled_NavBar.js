@@ -14,13 +14,13 @@ const Styled_NavBar = styled.div`
         }
 
         from {
-            margin-left: 10rem;
+            margin-left: 9rem;
             width: 0;
         }
 
         to {
-            margin-right: 10rem;
-            width: 9rem;
+            margin-right: 9rem;
+            width: 11rem;
         }
     }
 
@@ -35,24 +35,24 @@ const Styled_NavBar = styled.div`
         }
 
         from {
-            margin-right: 10rem;
+            margin-right: 9rem;
             width: 0;
         }
 
         to {
-            margin-left: 10rem;
-            width: 9rem;
+            margin-left: 9rem;
+            width: 11rem;
         }
     }
 
-    position: fixed;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
+    justify-content: space-between;
+    height: 84vh;
     align-items: center;
     top: 0;
-    margin: 0 1rem;
+    margin: 2rem;
     z-index: 1;
    
 
@@ -107,67 +107,51 @@ const Styled_NavBar = styled.div`
         width: 3rem;
         border: 1px solid white;
         --box-shadow-color: white;
-        transition: ease-in-out 300ms;
+        box-shadow: 0 0 4px 4px var(--box-shadow-color);
+        transition: ease-in-out 100ms;
 
         & > .nav-line-selected {
             display: flex;
             flex-direction: row-reverse;
             position: absolute;
-            border-bottom: 3px solid white;
+            border-bottom: 2px solid white;
             margin-top: -1rem;
-            margin-left: 10rem;
+            margin-left: 9rem;
             color: white;
             fill: white;
-            width: 9rem;
+            width: 11rem;
             z-index: -1;
             animation: 1s slideinright;
         }
-
-        & > img {
-            width: 2rem;
-        }
-    }
-
-    & > .selected-right {
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        background-color: white;
-        color: black;
-        fill: black;
-        border-radius: 2rem;
-        height: 3rem;
-        width: 3rem;
-        border: 1px solid white;
-        --box-shadow-color: white;
-        /* box-shadow: 0px 0px 2px 2px var(--box-shadow-color); */
-
-        & > .nav-line-selected-right {
-            /* display: flex;
-            flex-direction: row-reverse;
-            position: absolute;
-            border-bottom: 3px solid white;
-            margin-top: -1rem;
-            margin-left: 10rem;
-            color: white;
-            fill: white;
-            width: 9rem;
-            z-index: -1;
-            animation: 1s slideinright; */
-            display: flex;
-            flex-direction: row-reverse;
-            position: absolute;
-            border-bottom: 3px solid white;
-            margin-top: -1rem;
-            margin-left: 10rem;
-            color: white;
-            fill: white;
-            width: 9rem;
-            z-index: -1;
-            animation: 1s slideinright;
+        
+        /* & > .nav-line-selected-home {
+             position: absolute;
+            border-left: 2px solid white;
+            height: 6rem;
+            z-index: -2;
         }
 
+        & > .nav-line-selected-technologies {
+             position: absolute;
+            border-left: 2px solid white;
+            height: 6rem;
+            z-index: -2;
+        }
+
+        & > .nav-line-selected-projects {
+             position: absolute;
+            border-left: 2px solid white;
+            height: 6rem;
+            z-index: -2;
+        }
+
+        & > .nav-line-selected-contact {
+            position: absolute;
+            border-left: 2px solid white;
+            height: 6rem;
+            z-index: -2;
+        } */
+        
         & > img {
             width: 2rem;
         }
@@ -177,7 +161,7 @@ const Styled_NavBar = styled.div`
 // MOBILE
 @media only screen and (max-width: 768px) {
     .NavBar {
-        position: fixed;
+        position: absolute;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -238,35 +222,6 @@ const Styled_NavBar = styled.div`
                 width: 3rem;
 
                 & > .nav-line-selected {
-                    margin-top: 6rem;
-                    margin-left: 10rem;
-                    margin-right: 10rem;
-                    font-size: 12px;
-                    color: white;
-                    fill: white;
-                    width: max-content;
-                    z-index: -1;
-                    animation: none;
-                }
-
-                & > img {
-                    width: 2rem;
-                }
-            }
-
-            & > .selected-right {
-                text-decoration: none;
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                background-color: white;
-                color: black;
-                fill: black;
-                border-radius: 2rem;
-                height: 3rem;
-                width: 3rem;
-
-                & > .nav-line-selected-right {
                     margin-top: 6rem;
                     margin-left: 10rem;
                     margin-right: 10rem;

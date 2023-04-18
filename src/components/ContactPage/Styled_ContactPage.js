@@ -5,6 +5,7 @@ const Styled_ContactPage = styled.div`
     margin-left: 15rem;
     margin-right: auto;
     width: 70vw;
+    height: 84vh;
 
     [data-aos] {
         transition-duration: 2s;

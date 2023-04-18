@@ -74,7 +74,7 @@ const Styled_ProjectsPage = styled.div`
 
 @media only screen and (max-width: 768px) {
     .ProjectsPage {
-        margin: 0 5rem;
+        margin: 0 0 0 6rem;
         max-width: 768px;
     
     h1 {
@@ -112,6 +112,7 @@ const Styled_ProjectsPage = styled.div`
         & > .project {  
             display: flex;
             flex-direction: column;
+            width: auto;
             padding: 0;
             justify-content: start;
             align-items: center;

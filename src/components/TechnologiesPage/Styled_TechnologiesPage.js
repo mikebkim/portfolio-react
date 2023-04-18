@@ -86,7 +86,7 @@ const Styled_TechnologiesPage = styled.div`
 
 @media only screen and (max-width: 768px) {
     .TechnologiesPage {
-            margin: 0 5rem;
+            margin: 0 0 0 6rem;
             max-width: 768px;
 
         h1 {

@@ -177,14 +177,14 @@ const Styled_NavBar = styled.div`
 // MOBILE
 @media only screen and (max-width: 768px) {
     .NavBar {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
         align-items: center;
         top: 0;
-        margin: 0 1rem;
+        margin: 0 0 0 1.5rem;
         z-index: 1;
        
 
@@ -241,6 +241,7 @@ const Styled_NavBar = styled.div`
                     margin-top: 6rem;
                     margin-left: 10rem;
                     margin-right: 10rem;
+                    font-size: 12px;
                     color: white;
                     fill: white;
                     width: max-content;
@@ -269,6 +270,7 @@ const Styled_NavBar = styled.div`
                     margin-top: 6rem;
                     margin-left: 10rem;
                     margin-right: 10rem;
+                    font-size: 12px;
                     color: white;
                     fill: white;
                     width: max-content;

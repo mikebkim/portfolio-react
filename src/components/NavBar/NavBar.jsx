@@ -8,8 +8,31 @@ import 'aos/dist/aos.css'
 
 const NavBar = () => {
 
-    const [selectedTab, setSelectedTab] = useState('')
+    // const navData = [
+    //     {
+    //         title: "HOME",
+    //         linkTo: "/home",
+    //         icon: faHome
+    //     },
+    //     {
+    //         title: "TECHNOLOGIES",
+    //         linkTo: "/technologies",
+    //         icon: faCode
+    //     },
+    //     {
+    //         title: "PROJECTS",
+    //         linkTo: "/projects",
+    //         icon: faLayerGroup
+    //     },
+    //     {
+    //         title: "CONTACT",
+    //         linkTo: "/contact",
+    //         icon: faPhone
+    //     },
+    // ]
 
+    const [selectedTab, setSelectedTab] = useState('')
+    // const [navItems, setNavItems] = useState(navData)
     const location = useLocation()
 
     useEffect(() => {
@@ -20,9 +43,30 @@ const NavBar = () => {
         AOS.init()
     }, [])
 
+
+    // const moveItemToFront = (index) => {
+    //     const selectedItem = navItems[index]
+    //     const newOrder = [selectedItem, ...navItems.slice(0, index), ...navItems.slice(index + 1)]
+    //     setNavItems(newOrder)
+    // }
+
     return (
         <Styled_NavBar>
             <div className="NavBar">
+                {/* {navItems.map((item, index) => {
+                    return <Link
+                        onClick={() => moveItemToFront(index)}
+                        to={`${item.linkTo}`}
+                        className={selectedTab.includes(item.title.toLocaleLowerCase()) ? "selected-right" : "nav-link"}
+                    >
+                        <FontAwesomeIcon icon={item.icon} />
+                        <div
+                            className="nav-line-selected-right"
+                        >
+                            {selectedTab.includes(item.title.toLocaleLowerCase()) ? item.title : ""}
+                        </div>
+                    </Link>
+                })} */}
                 <Link to="/home" className={selectedTab.includes("home") ? "selected-right" : "nav-link"}><FontAwesomeIcon icon={faHome} />
                     <div className="nav-line-selected-right">{selectedTab.includes("home") ? "HOME" : ""}</div>
                 </Link>

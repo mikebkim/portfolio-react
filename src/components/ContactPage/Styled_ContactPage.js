@@ -2,13 +2,8 @@ import styled from "styled-components"
 
 const Styled_ContactPage = styled.div`
 .ContactPage {
-    /* margin-left: auto;
-    margin-right: auto;
-    max-width: 90vw;
-    margin-top: 6rem; */
     margin-left: 15rem;
     margin-right: auto;
-    margin-top: 6rem;
     width: 70vw;
 
     [data-aos] {
@@ -118,10 +113,8 @@ const Styled_ContactPage = styled.div`
 
 @media only screen and (max-width: 768px) {
     .ContactPage {
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 768px;
-        margin-top: 6rem;
+            margin: 0 5rem;
+            max-width: 768px;
 
         h1 {
             margin-bottom: 0.2rem;

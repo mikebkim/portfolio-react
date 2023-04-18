@@ -44,16 +44,7 @@ const Styled_NavBar = styled.div`
             width: 9rem;
         }
     }
-    /* position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: rgb(39, 50, 56); */
+
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -63,7 +54,7 @@ const Styled_NavBar = styled.div`
     top: 0;
     margin: 0 1rem;
     z-index: 1;
-    background-color: rgb(39, 50, 56);
+   
 
     & > .nav-link {
         text-decoration: none;
@@ -77,6 +68,7 @@ const Styled_NavBar = styled.div`
         height: 3rem;
         width: 3rem;
         border: 1px solid white;
+        transition: ease-in-out 300ms;
 
         & > img {
             width: 2rem;
@@ -115,18 +107,9 @@ const Styled_NavBar = styled.div`
         width: 3rem;
         border: 1px solid white;
         --box-shadow-color: white;
-        /* box-shadow: 0px 0px 2px 2px var(--box-shadow-color); */
+        transition: ease-in-out 300ms;
 
         & > .nav-line-selected {
-            /* position: absolute;
-            border-bottom: 3px solid white;
-            margin-top: -1rem;
-            margin-right: 10rem;
-            color: white;
-            fill: white;
-            width: 9rem;
-            z-index: -1;
-            animation: 1s slidein; */
             display: flex;
             flex-direction: row-reverse;
             position: absolute;
@@ -194,16 +177,16 @@ const Styled_NavBar = styled.div`
 // MOBILE
 @media only screen and (max-width: 768px) {
     .NavBar {
+        position: absolute;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-around;
+        height: 100%;
         align-items: center;
-        height: 4rem;
-        width: 100%;
         top: 0;
         margin: 0 1rem;
         z-index: 1;
-        background-color: rgb(39, 50, 56);
+       
 
             & > .nav-link {
                 text-decoration: none;

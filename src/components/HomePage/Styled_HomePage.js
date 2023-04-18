@@ -2,18 +2,12 @@ import styled from "styled-components"
 
 const Styled_HomePage = styled.div`
 .HomePage {
-    /* margin-left: auto;
-    margin-right: auto;
-    max-width: 90vw;
-    margin-top: 6rem; */
     margin-left: 15rem;
     margin-right: auto;
-    margin-top: 6rem;
     width: 70vw;
 
     h1 {
         margin-bottom: 0.2rem;
-        margin: 0;
     }
 
     p {
@@ -83,14 +77,11 @@ const Styled_HomePage = styled.div`
 
 @media only screen and (max-width: 768px) {
         .HomePage {
-            margin-left: auto;
-            margin-right: auto;
+            margin: 0 5rem;
             max-width: 768px;
-            margin-top: 6rem;
 
         h1 {
             margin-bottom: 0.2rem;
-            margin: 0;
         }
 
         p {

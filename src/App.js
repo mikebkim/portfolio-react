@@ -15,6 +15,7 @@ import ContactPage from './components/ContactPage/ContactPage'
 // Components
 import NavBar from './components/NavBar/NavBar'
 import Switch from '@mui/material/Switch';
+import './App.css';
 
 // Images
 import MK_Resume from "./files/MK_Resume.pdf"
@@ -45,6 +46,15 @@ const App = () => {
 
   return (
     <div className="App">
+      <div className="dark-button">
+        {toggleDark === false ? <div>DARK</div> : <div>LIGHT</div>}
+        <div
+          className="toggle"
+          onClick={toggleDarkMode}
+        >
+          <Switch color="default" />
+        </div>
+      </div>
       <Router>
         <NavBar />
         <Routes>
@@ -55,15 +65,6 @@ const App = () => {
           <Route exact path='/contact' element={<ContactPage />} />
         </Routes>
       </Router>
-      <div className="dark-button">
-        {toggleDark === false ? <div>DARK</div> : <div>LIGHT</div>}
-        <div
-          className="toggle"
-          onClick={toggleDarkMode}
-        >
-          <Switch color="default" />
-        </div>
-      </div>
     </div>
   )
 }

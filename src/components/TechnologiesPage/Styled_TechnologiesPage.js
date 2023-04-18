@@ -3,10 +3,14 @@ import styled from "styled-components"
 const Styled_TechnologiesPage = styled.div`
 
 .TechnologiesPage {
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     max-width: 90vw;
-    margin-top: 2rem;
+    margin-top: 6rem; */
+    margin-left: 15rem;
+    margin-right: auto;
+    margin-top: 6rem;
+    width: 70vw;
 
     h1 {
         margin-bottom: 0.2rem;
@@ -85,12 +89,12 @@ const Styled_TechnologiesPage = styled.div`
     }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .TechnologiesPage {
         margin-left: auto;
         margin-right: auto;
-        max-width: 90vw;
-        margin-top: 2rem;
+        max-width: 768px;
+        margin-top: 6rem;
 
         h1 {
 

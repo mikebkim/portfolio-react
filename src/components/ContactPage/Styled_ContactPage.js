@@ -2,10 +2,14 @@ import styled from "styled-components"
 
 const Styled_ContactPage = styled.div`
 .ContactPage {
-    margin-left: auto;
+    /* margin-left: auto;
     margin-right: auto;
     max-width: 90vw;
-    margin-top: 2rem;
+    margin-top: 6rem; */
+    margin-left: 15rem;
+    margin-right: auto;
+    margin-top: 6rem;
+    width: 70vw;
 
     [data-aos] {
         transition-duration: 2s;
@@ -22,7 +26,7 @@ const Styled_ContactPage = styled.div`
     }
 
     & > form {
-        margin-left: 2rem;
+        margin: 2rem;
 
         & > .contact-form {
             display: flex;
@@ -112,12 +116,12 @@ const Styled_ContactPage = styled.div`
     }
 }
 
-@media (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .ContactPage {
         margin-left: auto;
         margin-right: auto;
-        max-width: 90vw;
-        margin-top: 2rem;
+        max-width: 768px;
+        margin-top: 6rem;
 
         h1 {
             margin-bottom: 0.2rem;

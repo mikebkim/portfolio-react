@@ -11,10 +11,8 @@
 }
 
 .dark-button {
-  position: fixed;
   display: flex;
+  justify-content: end;
   flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
   width: 100%;
 }

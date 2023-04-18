@@ -5,7 +5,6 @@ import {
   Route,
   Navigate
 } from 'react-router-dom'
-import './App.css'
 
 // Pages
 import HomePage from './components/HomePage/HomePage'
@@ -47,9 +46,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <NavBar
-          switchComponent={<Switch color="default" />}
-        />
+        <NavBar />
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
           <Route exact path='/home' element={<HomePage resume={MK_Resume} iconDownload={download} />} />

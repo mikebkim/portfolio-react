@@ -1,15 +1,22 @@
 import styled from "styled-components"
 
 const Styled_HomePage = styled.div`
+
+[data-aos] {
+    transition-duration: 1s !important;
+}
+
 .HomePage {
-    margin-left: 15rem;
-    margin-right: auto;
-    width: 70vw;
-    overflow: auto;
+    margin: 0 auto;
+    width: 50vw;
     height: 84vh;
 
     h1 {
         margin-bottom: 0.2rem;
+    }
+
+    h5 {
+        margin: 0 0 0 0.5rem;
     }
 
     p {
@@ -80,7 +87,7 @@ const Styled_HomePage = styled.div`
 @media only screen and (max-width: 768px) {
         .HomePage {
             margin: 0 0 0 6rem;
-            max-width: 768px;
+            width: 65vw;
 
         h1 {
             margin-bottom: 0.2rem;

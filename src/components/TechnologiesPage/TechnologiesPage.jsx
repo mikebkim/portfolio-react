@@ -13,7 +13,7 @@ const TechnologiesPage = ({ allImages }) => {
 
     return (
         <Styled_TechnologiesPage>
-            <div className="TechnologiesPage">
+            <div className="TechnologiesPage" data-aos="fade-up">
                 <div className="header">
                     <h1>TECHNOLOGIES</h1>
                     <hr />

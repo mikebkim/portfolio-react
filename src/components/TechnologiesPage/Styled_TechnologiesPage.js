@@ -2,10 +2,13 @@ import styled from "styled-components"
 
 const Styled_TechnologiesPage = styled.div`
 
+[data-aos] {
+    transition-duration: 1s !important;
+}
+
 .TechnologiesPage {
-    margin-left: 15rem;
-    margin-right: auto;
-    width: 70vw;
+    margin: 0 auto;
+    width: 50vw;
     height: 84vh;
 
     h1 {
@@ -88,7 +91,7 @@ const Styled_TechnologiesPage = styled.div`
 @media only screen and (max-width: 768px) {
     .TechnologiesPage {
             margin: 0 0 0 6rem;
-            max-width: 768px;
+            width: 65vw;
 
         h1 {
             margin-bottom: 0.2rem;

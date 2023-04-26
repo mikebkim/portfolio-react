@@ -16,7 +16,7 @@ const ProjectsPage = ({
 
     return (
         <Styled_ProjectsPage>
-            <div className="ProjectsPage">
+            <div className="ProjectsPage" data-aos="fade-up">
                 <div className="header">
                     <h1>PROJECTS</h1>
                     <hr />

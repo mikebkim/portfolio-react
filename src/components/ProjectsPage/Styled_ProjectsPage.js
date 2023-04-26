@@ -1,10 +1,14 @@
 import styled from "styled-components"
 
 const Styled_ProjectsPage = styled.div`
+
+[data-aos] {
+    transition-duration: 1s !important;
+}
+
 .ProjectsPage {
-    margin-left: 15rem;
-    margin-right: auto;
-    width: 70vw;
+    margin: 0 auto;
+    width: 50vw;
     height: 84vh;
 
     [data-aos] {
@@ -48,7 +52,6 @@ const Styled_ProjectsPage = styled.div`
             display: flex;
             flex-direction: column;
             width: 90vw;
-            padding: 0px 5rem;
             justify-content: center;
             align-items: center;
 
@@ -76,7 +79,7 @@ const Styled_ProjectsPage = styled.div`
 @media only screen and (max-width: 768px) {
     .ProjectsPage {
         margin: 0 0 0 6rem;
-        max-width: 768px;
+        width: 65vw;
     
     h1 {
         margin-bottom: 0.2rem;
@@ -114,7 +117,7 @@ const Styled_ProjectsPage = styled.div`
             display: flex;
             flex-direction: column;
             width: auto;
-            padding: 0;
+            /* padding: 0; */
             justify-content: start;
             align-items: center;
 

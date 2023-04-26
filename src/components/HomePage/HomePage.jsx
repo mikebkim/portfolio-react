@@ -1,18 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Styled_HomePage from "./Styled_HomePage";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
-const HomePage = ({ resume, iconDownload }) => {
+const HomePage = ({ resume }) => {
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
     return (
         <Styled_HomePage>
-            <div className="HomePage">
+            <div className="HomePage" data-aos="fade-up">
                 <div className="header">
                     <h1>MIKE KIM</h1>
-                    <p>Los Angeles, CA</p>
                 </div>
                 <hr />
 
+                <h5>Los Angeles, CA</h5>
                 <div className="home">
                     <p className="home-about">I am a Full-Stack Developer with a focus on Front-End development.
                         <br />

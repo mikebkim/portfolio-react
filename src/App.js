@@ -59,7 +59,7 @@ const App = () => {
         <NavBar />
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
-          <Route exact path='/home' element={<HomePage resume={MK_Resume} iconDownload={download} />} />
+          <Route exact path='/home' element={<HomePage resume={MK_Resume} />} />
           <Route exact path='/technologies' element={<TechnologiesPage allImages={allImages} />} />
           <Route exact path='/projects' element={<ProjectsPage iconBlackjack={blackjackicon} iconMarble={marbleicon} iconSessions={sessionsicon} iconGameit={gameiticon} />} />
           <Route exact path='/contact' element={<ContactPage />} />

@@ -45,7 +45,7 @@ const Styled_NavBar = styled.div`
         }
     }
 
-    position: absolute;
+    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -161,13 +161,13 @@ const Styled_NavBar = styled.div`
 // MOBILE
 @media only screen and (max-width: 768px) {
     .NavBar {
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 100%;
         align-items: center;
-        top: 0;
+        /* top: 0; */
         margin: 0 0 0 1.5rem;
         z-index: 1;
        

@@ -11,7 +11,7 @@ const ContactPage = ({ }) => {
 
     return (
         <Styled_ContactPage>
-            <div className="ContactPage">
+            <div className="ContactPage" data-aos="fade-up">
                 <div className="header">
                     <h1>CONTACT</h1>
                     <hr />

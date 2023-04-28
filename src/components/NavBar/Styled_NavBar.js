@@ -1,6 +1,7 @@
 import styled from "styled-components"
 
 const Styled_NavBar = styled.div`
+
 // Desktop
 .NavBar {
     @keyframes slidein {
@@ -48,13 +49,12 @@ const Styled_NavBar = styled.div`
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 84vh;
+    justify-content: space-around;
+    height: 100%;
     align-items: center;
-    top: 0;
-    margin: 2rem;
+    background-color: rgb(24, 24, 24);
+    width: 8rem;
     z-index: 1;
-   
 
     & > .nav-link {
         text-decoration: none;
@@ -159,7 +159,7 @@ const Styled_NavBar = styled.div`
 }
 
 // MOBILE
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .NavBar {
         position: fixed;
         display: flex;
@@ -167,8 +167,9 @@ const Styled_NavBar = styled.div`
         justify-content: space-around;
         height: 100%;
         align-items: center;
+        width: 8rem;
         /* top: 0; */
-        margin: 0 0 0 1.5rem;
+        /* margin: 0 0 0 1.5rem; */
         z-index: 1;
        
 

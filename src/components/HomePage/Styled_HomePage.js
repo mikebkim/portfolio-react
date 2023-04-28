@@ -12,6 +12,7 @@ const Styled_HomePage = styled.div`
     height: 84vh;
 
     h1 {
+        color: rgb(115, 248, 217);
         margin-bottom: 0.2rem;
     }
 
@@ -86,7 +87,7 @@ const Styled_HomePage = styled.div`
 
 @media only screen and (max-width: 768px) {
         .HomePage {
-            margin: 0 0 0 6rem;
+            margin: 0 0 0 10rem;
             width: 65vw;
 
         h1 {
@@ -95,7 +96,7 @@ const Styled_HomePage = styled.div`
 
         p {
             color: lightgrey;
-            margin: 0;
+            margin-left: 1rem;
         }
 
         & > .header {

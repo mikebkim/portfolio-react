@@ -6,7 +6,7 @@ import { faHome, faCode, faLayerGroup, faPhone, faArrowUp } from '@fortawesome/f
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
-const NavBar = () => {
+const NavBar = ({ personalLogo }) => {
 
     // const navData = [
     //     {
@@ -65,8 +65,8 @@ const NavBar = () => {
                         >
                             {selectedTab.includes(item.title.toLocaleLowerCase()) ? item.title : ""}
                         </div>
-                    </Link>
-                })} */}
+                        </Link>
+                    })} */}
                 <Link to="/home" className={selectedTab.includes("home") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faHome} />
                     <div className="nav-line-selected-home"></div>
                     <div className="nav-line-selected">

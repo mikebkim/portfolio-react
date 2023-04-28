@@ -11,11 +11,8 @@ const Styled_ProjectsPage = styled.div`
     width: 50vw;
     height: 84vh;
 
-    [data-aos] {
-        transition-duration: 2s;
-    }
-
     h1 {
+        color: rgb(115, 248, 217);
         margin-bottom: 0.2rem;
     }
 
@@ -78,7 +75,7 @@ const Styled_ProjectsPage = styled.div`
 
 @media only screen and (max-width: 768px) {
     .ProjectsPage {
-        margin: 0 0 0 6rem;
+        margin: 0 0 0 10rem;
         width: 65vw;
     
     h1 {
@@ -87,6 +84,7 @@ const Styled_ProjectsPage = styled.div`
     
     p {
         color: lightgrey;
+        margin-left: 1rem;
     }
 
     .project-laptop {

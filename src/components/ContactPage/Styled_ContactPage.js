@@ -16,6 +16,7 @@ const Styled_ContactPage = styled.div`
     }
 
     h1 {
+        color: rgb(115, 248, 217);
         margin-bottom: 0.2rem;
     }
 
@@ -118,7 +119,7 @@ const Styled_ContactPage = styled.div`
 
 @media only screen and (max-width: 768px) {
     .ContactPage {
-            margin: 0 0 0 6rem;
+            margin: 0 0 0 10rem;
             width: 65vw;
 
         h1 {

@@ -17,7 +17,8 @@ const TechnologiesPage = ({ allImages }) => {
                 <div className="header">
                     <h1>TECHNOLOGIES</h1>
                     <hr />
-                    <p className="description">Below are languages, frameworks, tools, and ancillary technologies I provide when building
+                    <p className="description">
+                        Below are languages, frameworks, tools, and ancillary technologies I provide when building
                         websites.
                     </p>
                 </div>

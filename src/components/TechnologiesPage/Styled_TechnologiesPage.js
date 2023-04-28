@@ -12,6 +12,7 @@ const Styled_TechnologiesPage = styled.div`
     height: 84vh;
 
     h1 {
+        color: rgb(115, 248, 217);
         margin-bottom: 0.2rem;
     }
 
@@ -90,13 +91,13 @@ const Styled_TechnologiesPage = styled.div`
 
 @media only screen and (max-width: 768px) {
     .TechnologiesPage {
-            margin: 0 0 0 6rem;
+            margin: 0 0 0 10rem;
             width: 65vw;
-
+        
         h1 {
             margin-bottom: 0.2rem;
         }
-
+        
         p {
             color: lightgrey;
             margin-left: 1rem;

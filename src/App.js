@@ -26,6 +26,7 @@ import blackjackicon from "./icons/blackjackicon.png"
 import gameiticon from "./icons/gameiticon.png"
 import marbleicon from "./icons/marbleicon.png"
 import sessionsicon from "./icons/sessionsicon.png"
+import personal_logo from "./icons/personal_logo.png"
 
 const App = () => {
   const [toggleDark, setToggleDark] = useState(false)
@@ -46,7 +47,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className="dark-button">
+      {/* <div className="dark-button">
         {toggleDark === false ? <div>DARK</div> : <div>LIGHT</div>}
         <div
           className="toggle"
@@ -54,9 +55,9 @@ const App = () => {
         >
           <Switch color="default" />
         </div>
-      </div>
+      </div> */}
       <Router>
-        <NavBar />
+        <NavBar personalLogo={personal_logo} />
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
           <Route exact path='/home' element={<HomePage resume={MK_Resume} />} />

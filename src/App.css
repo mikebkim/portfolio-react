@@ -1,11 +1,13 @@
 .App {
   max-width: 100%;
-  min-height: 84vh;
+  height: 84vh;
   margin: 0 auto;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-.dark-mode {
+/* .dark-mode {
   background-color: rgb(25, 31, 34);
   color: white;
 }
@@ -17,4 +19,4 @@
   flex-direction: row;
   align-items: center;
   margin-left: 0.5rem;
-}
+} */

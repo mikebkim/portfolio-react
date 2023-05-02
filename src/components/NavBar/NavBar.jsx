@@ -67,30 +67,38 @@ const NavBar = ({ personalLogo }) => {
                         </div>
                         </Link>
                     })} */}
-                <Link to="/home" className={selectedTab.includes("home") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faHome} />
-                    <div className="nav-line-selected-home"></div>
-                    <div className="nav-line-selected">
-                        {selectedTab.includes("home") ? "HOME" : ""}
-                    </div>
-                </Link>
-                <Link to="/technologies" className={selectedTab.includes("technologies") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faCode} />
-                    <div className="nav-line-selected-technologies"></div>
-                    <div className="nav-line-selected">
-                        {selectedTab.includes("technologies") ? "TECHNOLOGIES" : ""}
-                    </div>
-                </Link>
-                <Link to="/projects" className={selectedTab.includes("projects") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faLayerGroup} />
-                    <div className="nav-line-selected-projects"></div>
-                    <div className="nav-line-selected">
-                        {selectedTab.includes("projects") ? "PROJECTS" : ""}
-                    </div>
-                </Link>
-                <Link to="/contact" className={selectedTab.includes("contact") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faPhone} />
-                    <div className="nav-line-selected-contact"></div>
-                    <div className="nav-line-selected">
-                        {selectedTab.includes("contact") ? "CONTACT" : ""}
-                    </div>
-                </Link>
+                <div className={selectedTab.includes("home") ? "nav-box selected-box" : "nav-box"}>
+                    <Link to="/home" className={selectedTab.includes("home") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faHome} />
+                        <div className="nav-line-selected-home"></div>
+                        <div className="nav-line-selected">
+                            {selectedTab.includes("home") ? "HOME" : ""}
+                        </div>
+                    </Link>
+                </div>
+                <div className={selectedTab.includes("technologies") ? "nav-box selected-box" : "nav-box"}>
+                    <Link to="/technologies" className={selectedTab.includes("technologies") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faCode} />
+                        <div className="nav-line-selected-technologies"></div>
+                        <div className="nav-line-selected">
+                            {selectedTab.includes("technologies") ? "TECHNOLOGIES" : ""}
+                        </div>
+                    </Link>
+                </div>
+                <div className={selectedTab.includes("projects") ? "nav-box selected-box" : "nav-box"}>
+                    <Link to="/projects" className={selectedTab.includes("projects") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faLayerGroup} />
+                        <div className="nav-line-selected-projects"></div>
+                        <div className="nav-line-selected">
+                            {selectedTab.includes("projects") ? "PROJECTS" : ""}
+                        </div>
+                    </Link>
+                </div>
+                <div className={selectedTab.includes("contact") ? "nav-box selected-box" : "nav-box"}>
+                    <Link to="/contact" className={selectedTab.includes("contact") ? "selected" : "nav-link"}><FontAwesomeIcon icon={faPhone} />
+                        <div className="nav-line-selected-contact"></div>
+                        <div className="nav-line-selected">
+                            {selectedTab.includes("contact") ? "CONTACT" : ""}
+                        </div>
+                    </Link>
+                </div>
             </div>
         </Styled_NavBar>
     )

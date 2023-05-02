@@ -8,16 +8,26 @@ const Styled_HomePage = styled.div`
 
 .HomePage {
     margin: 0 auto;
-    width: 50vw;
+    width: 60vw;
     height: 84vh;
 
     h1 {
         color: rgb(115, 248, 217);
-        margin-bottom: 0.2rem;
+        margin: 5rem 0 0 0;
+        font-size: 4rem;
+    }
+
+    h2 {
+        color: rgb(115, 248, 217);
+        margin: 0 0 0 0;
+        font-size: 4rem;
     }
 
     h5 {
-        margin: 0 0 0 0.5rem;
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        width: 100%;
     }
 
     p {
@@ -27,8 +37,7 @@ const Styled_HomePage = styled.div`
 
     & > .header {
         display: flex;
-        justify-content: space-between;
-        align-items: baseline;
+        flex-direction: column;
     }
 
     & > .home {
@@ -87,8 +96,9 @@ const Styled_HomePage = styled.div`
 
 @media only screen and (max-width: 768px) {
         .HomePage {
-            margin: 0 0 0 10rem;
+            margin: 0 0 0 7rem;
             width: 65vw;
+            height: 84vh;
 
         h1 {
             margin-bottom: 0.2rem;

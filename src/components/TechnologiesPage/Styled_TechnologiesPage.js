@@ -8,12 +8,13 @@ const Styled_TechnologiesPage = styled.div`
 
 .TechnologiesPage {
     margin: 0 auto;
-    width: 50vw;
+    width: 60vw;
     height: 84vh;
 
     h1 {
         color: rgb(115, 248, 217);
-        margin-bottom: 0.2rem;
+        margin: 5rem 0 0 0;
+        font-size: 4rem;
     }
 
     p {
@@ -33,7 +34,7 @@ const Styled_TechnologiesPage = styled.div`
         margin-top: 10vh;
         align-items: center;
         margin: 0 auto;
-        max-width: 55vw;
+        max-width: 65vw;
     }
 
     .flip-card {
@@ -91,8 +92,9 @@ const Styled_TechnologiesPage = styled.div`
 
 @media only screen and (max-width: 768px) {
     .TechnologiesPage {
-            margin: 0 0 0 10rem;
+            margin: 0 0 0 7rem;
             width: 65vw;
+            height: 84vh;
         
         h1 {
             margin-bottom: 0.2rem;

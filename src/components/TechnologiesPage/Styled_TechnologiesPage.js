@@ -9,7 +9,8 @@ const Styled_TechnologiesPage = styled.div`
 .TechnologiesPage {
     margin: 0 auto;
     width: 60vw;
-    height: 84vh;
+    height: 100%;
+    overflow: auto;
 
     h1 {
         color: rgb(115, 248, 217);
@@ -27,7 +28,7 @@ const Styled_TechnologiesPage = styled.div`
         max-width: 50%;
     }
 
-    .technologies-list {
+    & > .technologies-list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -94,7 +95,8 @@ const Styled_TechnologiesPage = styled.div`
     .TechnologiesPage {
             margin: 0 0 0 7rem;
             width: 65vw;
-            height: 84vh;
+            height: 100%;
+            overflow: auto;
         
         h1 {
             margin-bottom: 0.2rem;
@@ -110,12 +112,10 @@ const Styled_TechnologiesPage = styled.div`
             max-width: 50%;
         }
 
-        .technologies-list {
+        & > .technologies-list {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            max-height: 80vh;
-            margin-top: 10vh;
             align-items: center;
             margin: 0 auto;
             max-width: 90vw;

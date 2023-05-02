@@ -145,33 +145,6 @@ const Styled_NavBar = styled.div`
                 animation: 1s slideinright;
             }
             
-            /* & > .nav-line-selected-home {
-                position: absolute;
-                border-left: 2px solid white;
-                height: 6rem;
-                z-index: -2;
-            }
-
-            & > .nav-line-selected-technologies {
-                position: absolute;
-                border-left: 2px solid white;
-                height: 6rem;
-                z-index: -2;
-            }
-
-            & > .nav-line-selected-projects {
-                position: absolute;
-                border-left: 2px solid white;
-                height: 6rem;
-                z-index: -2;
-            }
-
-            & > .nav-line-selected-contact {
-                position: absolute;
-                border-left: 2px solid white;
-                height: 6rem;
-                z-index: -2;
-            } */
             
             & > img {
                 width: 2rem;

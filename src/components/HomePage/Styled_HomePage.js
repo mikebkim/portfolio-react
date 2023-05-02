@@ -9,7 +9,8 @@ const Styled_HomePage = styled.div`
 .HomePage {
     margin: 0 auto;
     width: 60vw;
-    height: 84vh;
+    height: 100%;
+    overflow: auto;
 
     h1 {
         color: rgb(115, 248, 217);
@@ -98,7 +99,8 @@ const Styled_HomePage = styled.div`
         .HomePage {
             margin: 0 0 0 7rem;
             width: 65vw;
-            height: 84vh;
+            height: 100%;
+            overflow: auto;
 
         h1 {
             margin-bottom: 0.2rem;

@@ -9,7 +9,8 @@ const Styled_ContactPage = styled.div`
 .ContactPage {
     margin: 0 auto;
     width: 60vw;
-    height: 84vh;
+    height: 100%;
+    overflow: auto;
 
     [data-aos] {
         transition-duration: 2s;
@@ -122,7 +123,8 @@ const Styled_ContactPage = styled.div`
     .ContactPage {
             margin: 0 0 0 7rem;
             width: 65vw;
-            height: 84vh;
+            height: 100%;
+            overflow: auto;
 
         h1 {
             margin-bottom: 0.2rem;

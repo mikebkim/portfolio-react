@@ -12,15 +12,25 @@ const Styled_HomePage = styled.div`
     overflow: auto;
 
     h1 {
-      color: rgb(115, 248, 217);
+      color: white;
       margin: 5rem 0 0 0;
       font-size: 4rem;
     }
 
     h2 {
-      color: rgb(115, 248, 217);
+      color: white;
       margin: 0 0 0 0;
       font-size: 4rem;
+
+      & > .home-name {
+        color: rgb(115, 248, 217);
+      }
+    }
+
+    h3 {
+      color: white;
+      margin: 0 0 0 0;
+      font-size: 2rem;
     }
 
     h5 {
@@ -96,13 +106,37 @@ const Styled_HomePage = styled.div`
 
   @media only screen and (max-width: 768px) {
     .HomePage {
-      margin: 0 0 0 7rem;
+      margin: 0 0 0 10rem;
       width: 65vw;
       height: 100%;
       overflow: auto;
 
       h1 {
         margin-bottom: 0.2rem;
+        font-size: 2rem;
+      }
+
+      h2 {
+        color: white;
+        margin: 0 0 0 0;
+        font-size: 2rem;
+
+        & > .home-name {
+          color: rgb(115, 248, 217);
+        }
+      }
+
+      h3 {
+        color: white;
+        margin: 0 0 0 0;
+        font-size: 1rem;
+      }
+
+      h5 {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0;
+        width: 100%;
       }
 
       p {

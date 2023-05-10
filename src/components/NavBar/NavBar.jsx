@@ -80,6 +80,7 @@ const NavBar = ({ personalLogo }) => {
           <Link
             to="/home"
             className={selectedTab.includes("home") ? "selected" : "nav-link"}
+            title="Home"
           >
             <FontAwesomeIcon icon={faHome} />
             <div className="nav-line-selected-home"></div>
@@ -100,6 +101,7 @@ const NavBar = ({ personalLogo }) => {
             className={
               selectedTab.includes("technologies") ? "selected" : "nav-link"
             }
+            title="Technologies"
           >
             <FontAwesomeIcon icon={faCode} />
             <div className="nav-line-selected-technologies"></div>
@@ -120,6 +122,7 @@ const NavBar = ({ personalLogo }) => {
             className={
               selectedTab.includes("projects") ? "selected" : "nav-link"
             }
+            title="Projects"
           >
             <FontAwesomeIcon icon={faLayerGroup} />
             <div className="nav-line-selected-projects"></div>
@@ -138,6 +141,7 @@ const NavBar = ({ personalLogo }) => {
             className={
               selectedTab.includes("contact") ? "selected" : "nav-link"
             }
+            title="Contact"
           >
             <FontAwesomeIcon icon={faPhone} />
             <div className="nav-line-selected-contact"></div>

@@ -14,8 +14,11 @@ const HomePage = ({ resume }) => {
     <Styled_HomePage>
       <div className="HomePage" data-aos="fade-up">
         <div className="header">
-          <h1>HELLO,</h1>
-          <h2>I'M MIKE KIM</h2>
+          <h1>HI,</h1>
+          <h2>
+            I'M <span className="home-name">MIKE KIM</span>,
+          </h2>
+          <h3>web developer</h3>
         </div>
         <h5>Los Angeles, CA</h5>
         <hr />

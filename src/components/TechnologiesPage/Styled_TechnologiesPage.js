@@ -92,13 +92,14 @@ const Styled_TechnologiesPage = styled.div`
 
   @media only screen and (max-width: 768px) {
     .TechnologiesPage {
-      margin: 0 0 0 7rem;
+      margin: 0 0 0 10rem;
       width: 65vw;
       height: 100%;
       overflow: auto;
 
       h1 {
         margin-bottom: 0.2rem;
+        font-size: 2rem;
       }
 
       p {

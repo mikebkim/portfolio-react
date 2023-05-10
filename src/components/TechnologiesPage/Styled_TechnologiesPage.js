@@ -8,11 +8,10 @@ const Styled_TechnologiesPage = styled.div`
   .TechnologiesPage {
     margin: 0 auto;
     width: 60vw;
-    height: 100%;
-    overflow: auto;
+    height: 84vh;
 
     h1 {
-      color: rgb(115, 248, 217);
+      color: rgb(1, 200, 200);
       margin: 5rem 0 0 0;
       font-size: 4rem;
     }
@@ -48,7 +47,7 @@ const Styled_TechnologiesPage = styled.div`
     }
 
     .flip-card-inner {
-      background-color: rgb(39, 50, 56);
+      background-color: lightgray;
       position: relative;
       width: 100%;
       height: 100%;
@@ -77,9 +76,9 @@ const Styled_TechnologiesPage = styled.div`
     }
 
     .flip-card-back {
-      background-color: whitesmoke;
-      color: rgb(39, 50, 56);
-      fill: rgb(39, 50, 56);
+      background-color: rgb(1, 200, 200);
+      color: lightgrey;
+      fill: lightgrey;
       transform: rotateY(180deg);
       font-size: 11px;
       border-radius: 10px;
@@ -94,8 +93,7 @@ const Styled_TechnologiesPage = styled.div`
     .TechnologiesPage {
       margin: 0 0 0 10rem;
       width: 65vw;
-      height: 100%;
-      overflow: auto;
+      height: 84vh;
 
       h1 {
         margin-bottom: 0.2rem;
@@ -132,7 +130,7 @@ const Styled_TechnologiesPage = styled.div`
       }
 
       .flip-card-inner {
-        background-color: lightslategray;
+        background-color: lightgray;
         position: relative;
         width: 100%;
         height: 100%;
@@ -161,8 +159,8 @@ const Styled_TechnologiesPage = styled.div`
       }
 
       .flip-card-back {
-        background-color: black;
-        color: white;
+        background-color: rgb(1, 200, 200);
+        color: lightgrey;
         transform: rotateY(180deg);
         font-size: 11px;
         border-radius: 10px;

@@ -8,27 +8,26 @@ const Styled_HomePage = styled.div`
   .HomePage {
     margin: 0 auto;
     width: 60vw;
-    height: 100%;
-    overflow: auto;
+    height: 84vh
 
     h1 {
-      color: white;
+      color: lightgrey;
       margin: 5rem 0 0 0;
       font-size: 4rem;
     }
 
     h2 {
-      color: white;
+      color: lightgrey;
       margin: 0 0 0 0;
       font-size: 4rem;
 
       & > .home-name {
-        color: rgb(115, 248, 217);
+        color: rgb(1, 200, 200);
       }
     }
 
     h3 {
-      color: white;
+      color: lightgrey;
       margin: 0 0 0 0;
       font-size: 2rem;
     }
@@ -71,14 +70,14 @@ const Styled_HomePage = styled.div`
             height: 2rem;
             width: 13rem;
             background: transparent;
-            border: 1px solid white;
+            border: 1px solid lightgrey;
             transition: ease-in-out 300ms;
             cursor: pointer;
             font-weight: bold;
-            color: white;
+            color: lightgrey;
 
             & > svg {
-              margin-bottom: 0.3rem;
+              margin-bottom: 0.2rem;
               margin-left: 0.5rem;
             }
           }
@@ -91,12 +90,12 @@ const Styled_HomePage = styled.div`
             border-radius: 2rem;
             height: 2rem;
             width: 13rem;
-            background: white;
-            border: 1px solid white;
+            background: lightgrey;
+            border: 1px solid lightgrey;
             transition: ease-in-out 300ms;
             cursor: pointer;
-            color: black;
-            fill: white;
+            color: rgb(1, 200, 200);
+            fill: lightgrey;
             font-weight: bold;
           }
         }
@@ -108,8 +107,7 @@ const Styled_HomePage = styled.div`
     .HomePage {
       margin: 0 0 0 10rem;
       width: 65vw;
-      height: 100%;
-      overflow: auto;
+      height: 84vh;
 
       h1 {
         margin-bottom: 0.2rem;
@@ -117,17 +115,17 @@ const Styled_HomePage = styled.div`
       }
 
       h2 {
-        color: white;
+        color: lightgrey;
         margin: 0 0 0 0;
         font-size: 2rem;
 
         & > .home-name {
-          color: rgb(115, 248, 217);
+          color: rgb(1, 200, 200);
         }
       }
 
       h3 {
-        color: white;
+        color: lightgrey;
         margin: 0 0 0 0;
         font-size: 1rem;
       }
@@ -171,14 +169,14 @@ const Styled_HomePage = styled.div`
               height: 2rem;
               width: 13rem;
               background: transparent;
-              border: 1px solid white;
+              border: 1px solid lightgrey;
               transition: ease-in-out 300ms;
               cursor: pointer;
               font-weight: bold;
-              color: white;
+              color: lightgrey;
 
               & > svg {
-                margin-bottom: 0.3rem;
+                margin-bottom: 0.2rem;
                 margin-left: 0.5rem;
               }
             }
@@ -191,12 +189,12 @@ const Styled_HomePage = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: white;
-              border: 1px solid white;
+              background: lightgrey;
+              border: 1px solid lightgrey;
               transition: ease-in-out 300ms;
               cursor: pointer;
-              color: black;
-              fill: white;
+              color: rgb(1, 200, 200);
+              fill: lightgrey;
               font-weight: bold;
             }
           }

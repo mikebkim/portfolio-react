@@ -41,7 +41,7 @@ const ProjectsPage = ({
             <p className="project-description">
               An eCommerce site that sells beef jerky. Check out the products!
             </p>
-            <div>Technologies Used</div>
+            <h3>Technologies Used</h3>
             <div className="tech-list">
               <p className="tech-name">HTML</p>
               <p className="tech-name">CSS - Bootstrap</p>
@@ -65,7 +65,7 @@ const ProjectsPage = ({
               An app that allows users to compile, share, and chat about video
               games.
             </p>
-            <div>Technologies Used</div>
+            <h3>Technologies Used</h3>
             <div className="tech-list">
               <p className="tech-name">HTML</p>
               <p className="tech-name">CSS - Bulma</p>
@@ -97,7 +97,7 @@ const ProjectsPage = ({
             <p className="project-description">
               A music tutor app that allows musicians to book sessions together.
             </p>
-            <div>Technologies Used</div>
+            <h3>Technologies Used</h3>
             <div className="tech-list">
               <p className="tech-name">HTML</p>
               <p className="tech-name">CSS</p>
@@ -125,7 +125,7 @@ const ProjectsPage = ({
               A simple Blackjack game. You start off with $1,000. How much will
               you win?
             </p>
-            <div>Technologies Used</div>
+            <h3>Technologies Used</h3>
             <div className="tech-list">
               <p className="tech-name">HTML</p>
               <p className="tech-name">CSS</p>

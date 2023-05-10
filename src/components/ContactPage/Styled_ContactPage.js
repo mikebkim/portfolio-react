@@ -8,15 +8,14 @@ const Styled_ContactPage = styled.div`
   .ContactPage {
     margin: 0 auto;
     width: 60vw;
-    height: 100%;
-    overflow: auto;
+    height: 84vh
 
     [data-aos] {
       transition-duration: 2s;
     }
 
     h1 {
-      color: rgb(115, 248, 217);
+      color: rgb(1, 200, 200);
       margin: 5rem 0 0 0;
       font-size: 4rem;
     }
@@ -44,8 +43,8 @@ const Styled_ContactPage = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: white;
-          border-bottom: 1px solid white;
+          color: lightgrey;
+          border-bottom: 1px solid lightgrey;
           outline: none;
           padding: 5px 0;
         }
@@ -56,8 +55,8 @@ const Styled_ContactPage = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: white;
-          border-bottom: 1px solid white;
+          color: lightgrey;
+          border-bottom: 1px solid lightgrey;
           outline: none;
           padding: 5px 0;
         }
@@ -68,8 +67,8 @@ const Styled_ContactPage = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: white;
-          border-bottom: 1px solid white;
+          color: lightgrey;
+          border-bottom: 1px solid lightgrey;
           outline: none;
           padding: 5px 0;
         }
@@ -80,8 +79,8 @@ const Styled_ContactPage = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: white;
-          border-bottom: 1px solid white;
+          color: lightgrey;
+          border-bottom: 1px solid lightgrey;
           outline: none;
           height: 8rem;
           padding: 5px 0;
@@ -90,8 +89,8 @@ const Styled_ContactPage = styled.div`
         & > .contact-button {
           font-family: Gill Sans;
           background-color: transparent;
-          border: 1px solid white;
-          color: white;
+          border: 1px solid lightgrey;
+          color: lightgrey;
           cursor: pointer;
           border-radius: 2rem;
           width: 9rem;
@@ -103,8 +102,8 @@ const Styled_ContactPage = styled.div`
 
         & > .contact-button:hover {
           font-family: Gill Sans;
-          background-color: white;
-          border: 1px solid white;
+          background-color: lightgrey;
+          border: 1px solid lightgrey;
           color: black;
           cursor: pointer;
           border-radius: 2rem;
@@ -122,12 +121,12 @@ const Styled_ContactPage = styled.div`
     .ContactPage {
       margin: 0 0 0 10rem;
       width: 65vw;
-      height: 100%;
-      overflow: auto;
+      height: 84vh;
 
       h1 {
         margin-bottom: 0.2rem;
         font-size: 2rem;
+        color: rgb(1, 200, 200);
       }
 
       p {
@@ -153,8 +152,8 @@ const Styled_ContactPage = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: white;
-            border-bottom: 1px solid white;
+            color: lightgrey;
+            border-bottom: 1px solid lightgrey;
             outline: none;
             padding: 5px 0;
           }
@@ -165,8 +164,8 @@ const Styled_ContactPage = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: white;
-            border-bottom: 1px solid white;
+            color: lightgrey;
+            border-bottom: 1px solid lightgrey;
             outline: none;
             padding: 5px 0;
           }
@@ -177,8 +176,8 @@ const Styled_ContactPage = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: white;
-            border-bottom: 1px solid white;
+            color: lightgrey;
+            border-bottom: 1px solid lightgrey;
             outline: none;
             height: 8rem;
             padding: 5px 0;
@@ -187,8 +186,8 @@ const Styled_ContactPage = styled.div`
           & > .contact-button {
             font-family: Gill Sans;
             background-color: transparent;
-            border: 1px solid white;
-            color: white;
+            border: 1px solid lightgrey;
+            color: lightgrey;
             cursor: pointer;
             border-radius: 2rem;
             width: 9rem;
@@ -200,8 +199,8 @@ const Styled_ContactPage = styled.div`
 
           & > .contact-button:hover {
             font-family: Gill Sans;
-            background-color: white;
-            border: 1px solid white;
+            background-color: lightgrey;
+            border: 1px solid lightgrey;
             color: black;
             cursor: pointer;
             border-radius: 2rem;

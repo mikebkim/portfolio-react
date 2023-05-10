@@ -58,21 +58,22 @@ const Styled_NavBar = styled.div`
     z-index: 1;
 
     & > .nav-box:last-child {
-      border-bottom: 2px solid rgb(115, 248, 217);
+      border-bottom: 5px solid rgb(1, 200, 200);
     }
 
     & > .nav-box {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 2px solid rgb(115, 248, 217);
-      border-bottom: 0;
+      border: 5px solid rgb(1, 200, 200);
       height: 100%;
       width: 100%;
-      margin: 0 auto;
+      margin: 0.018rem auto;
 
       &.selected-box {
-        background-color: rgb(115, 248, 217);
+        background-color: rgb(1, 200, 200);
+        transition: ease-in-out 300ms;
+        border: 5px solid lightgrey;
       }
 
       & > .nav-link {
@@ -81,12 +82,12 @@ const Styled_NavBar = styled.div`
         display: flex;
         justify-content: center;
         background-color: transparent;
-        color: rgb(115, 248, 217);
-        fill: rgb(115, 248, 217);
+        color: rgb(1, 200, 200);
+        fill: rgb(1, 200, 200);
         border-radius: 2rem;
         height: 3rem;
         width: 3rem;
-        border: 1px solid rgb(115, 248, 217);
+        border: 5px solid rgb(1, 200, 200);
         transition: ease-in-out 300ms;
 
         & > img {
@@ -99,14 +100,14 @@ const Styled_NavBar = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        background-color: white;
-        color: black;
-        fill: white;
+        background-color: rgb(1, 200, 200);
+        color: lightgrey;
+        fill: lightgrey;
         border-radius: 2rem;
         height: 3rem;
         width: 3rem;
-        border: 1px solid white;
-        transition: ease-in-out 250ms;
+        border: 5px solid white;
+        transition: ease-in-out 300ms;
 
         & > img {
           width: 2rem;
@@ -118,26 +119,26 @@ const Styled_NavBar = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        background-color: white;
-        color: black;
-        fill: black;
+        background-color: rgb(1, 200, 200);
+        color: lightgrey;
+        fill: lightgrey;
         border-radius: 2rem;
         height: 3rem;
         width: 3rem;
-        border: 1px solid white;
-        --box-shadow-color: white;
-        box-shadow: 0 0 4px 4px var(--box-shadow-color);
-        transition: ease-in-out 100ms;
+        border: 5px solid lightgrey;
+        /* --box-shadow-color: lightgrey; */
+        /* box-shadow: 0 0 4px 4px var(--box-shadow-color); */
+        transition: ease-in-out 300ms;
 
         & > .nav-line-selected {
           display: flex;
           flex-direction: row-reverse;
           position: absolute;
-          border-bottom: 2px solid rgb(115, 248, 217);
+          border-bottom: 5px solid lightgrey;
           margin-top: -1rem;
           margin-left: 14rem;
-          color: rgb(115, 248, 217);
-          fill: white;
+          color: lightgrey;
+          fill: lightgrey;
           width: 8rem;
           z-index: -1;
           animation: 1s slideinright;
@@ -164,21 +165,22 @@ const Styled_NavBar = styled.div`
       z-index: 1;
 
       & > .nav-box:last-child {
-        border-bottom: 2px solid white;
+        border-bottom: 5px solid rgb(1, 200, 200);
       }
 
       & > .nav-box {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 2px solid rgb(115, 248, 217);
-        border-bottom: 0;
+        border: 5px solid rgb(1, 200, 200);
         height: 100%;
         width: 100%;
-        margin: 0 auto;
+        margin: 0.018rem auto;
 
         &.selected-box {
-          background-color: rgb(115, 248, 217);
+          background-color: rgb(1, 200, 200);
+          transition: ease-in-out 300ms;
+          border: 5px solid lightgrey;
         }
 
         & > .nav-link {
@@ -187,12 +189,13 @@ const Styled_NavBar = styled.div`
           display: flex;
           justify-content: center;
           background-color: transparent;
-          color: rgb(115, 248, 217);
-          fill: black;
+          color: rgb(1, 200, 200);
+          fill: rgb(1, 200, 200);
           border-radius: 2rem;
           height: 3rem;
           width: 3rem;
-          border: 1px solid rgb(115, 248, 217);
+          border: 5px solid rgb(1, 200, 200);
+          transition: ease-in-out 300ms;
 
           & > img {
             width: 2rem;
@@ -204,14 +207,14 @@ const Styled_NavBar = styled.div`
           align-items: center;
           display: flex;
           justify-content: center;
-          background-color: white;
-          color: black;
-          fill: white;
+          background-color: rgb(1, 200, 200);
+          color: lightgrey;
+          fill: lightgrey;
           border-radius: 2rem;
           height: 3rem;
           width: 3rem;
-          border: 1px solid white;
-          transition: ease-in-out 250ms;
+          border: 5px solid white;
+          transition: ease-in-out 300ms;
 
           & > img {
             width: 2rem;
@@ -223,24 +226,27 @@ const Styled_NavBar = styled.div`
           align-items: center;
           display: flex;
           justify-content: center;
-          background-color: white;
-          color: black;
-          fill: black;
+          background-color: rgb(1, 200, 200);
+          color: lightgrey;
+          fill: lightgrey;
           border-radius: 2rem;
           height: 3rem;
           width: 3rem;
+          border: 5px solid lightgrey;
+          transition: ease-in-out 300ms;
+          margin-bottom: 1rem;
 
           & > .nav-line-selected {
-            margin-top: 6rem;
+            margin-top: 5rem;
             margin-left: 10rem;
             margin-right: 10rem;
             font-size: 12px;
-            color: black;
-            fill: black;
+            color: lightgrey;
+            fill: lightgrey;
             width: max-content;
             z-index: 0;
             animation: none;
-            border-bottom: 2px solid black;
+            border-bottom: 5px solid lightgrey;
           }
 
           & > img {

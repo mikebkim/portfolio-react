@@ -15,7 +15,7 @@ const TechnologiesPage = ({ allImages }) => {
   useEffect(() => {
     function handleResizeHeader() {
       const width = window.innerWidth;
-      const newFontSize = width / 15;
+      const newFontSize = width / 20;
 
       setFontSize(newFontSize);
     }

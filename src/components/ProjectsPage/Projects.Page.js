@@ -121,7 +121,7 @@ export const ProjectsPageWrap = styled.div`
 
       .project-laptop {
         position: relative;
-        width: 60%;
+        width: 100%;
       }
 
       & > .header {

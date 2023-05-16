@@ -20,6 +20,7 @@ import "./App.css";
 
 // Images
 import MK_Resume from "./files/MK_Resume.pdf";
+// import panda from "./files/panda.jpg";
 
 // Icons
 // import download from "./icons/05_download.png";

@@ -5,7 +5,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const HomePage = ({ resume }) => {
+const HomePage = ({ resume, panda }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -22,6 +22,15 @@ const HomePage = ({ resume }) => {
         </div>
         <h5>Los Angeles, CA</h5>
         <hr />
+
+        {/* <img
+          className="panda"
+          width="100px"
+          height="auto"
+          src={panda}
+          key={panda}
+          alt={panda}
+        /> */}
 
         <div className="home">
           <p className="home-about">

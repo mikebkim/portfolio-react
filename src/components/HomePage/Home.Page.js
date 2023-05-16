@@ -10,6 +10,12 @@ export const HomePageWrap = styled.div`
     width: 60vw;
     height: 84vh;
 
+    .panda {
+      display: flex;
+      margin: 0 auto;
+      border-radius: 100%;
+    }
+
     h1 {
       color: lightgrey;
       margin: 3rem 0 0 0;
@@ -50,7 +56,7 @@ export const HomePageWrap = styled.div`
       flex-direction: column;
       justify-content: center;
       width: 100%;
-      align-items: center;
+      align-items: start;
 
       & > hr {
         width: 100%;

@@ -1,6 +1,33 @@
 import styled from "styled-components";
 
 export const HomePageWrap = styled.div`
+  @keyframes slideup {
+    0% {
+      color: lightgrey;
+      fill: transparent;
+    }
+
+    50% {
+      color: lightgrey;
+      fill: transparent;
+    }
+
+    75% {
+      color: rgb(29, 29, 29);
+      fill: transparent;
+    }
+
+    from {
+      margin-bottom: 0.2rem;
+      margin-left: 0.5rem;
+    }
+
+    to {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+    }
+  }
+
   [data-aos] {
     transition-duration: 1s !important;
   }
@@ -13,7 +40,7 @@ export const HomePageWrap = styled.div`
     .panda {
       display: flex;
       margin: 0 auto;
-      border-radius: 100%;
+      /* border-radius: 100%; */
     }
 
     h1 {
@@ -57,6 +84,8 @@ export const HomePageWrap = styled.div`
       justify-content: center;
       width: 100%;
       align-items: start;
+      border-bottom: 5px solid rgb(1, 200, 200);
+      padding-bottom: 0.5rem;
 
       & > hr {
         width: 100%;
@@ -83,10 +112,9 @@ export const HomePageWrap = styled.div`
             height: 2rem;
             width: 13rem;
             background: transparent;
-            border: 1px solid lightgrey;
+            border: 2px solid lightgrey;
             transition: ease-in-out 300ms;
             cursor: pointer;
-            font-weight: bold;
             color: lightgrey;
 
             & > svg {
@@ -103,13 +131,19 @@ export const HomePageWrap = styled.div`
             border-radius: 2rem;
             height: 2rem;
             width: 13rem;
-            background: lightgrey;
-            border: 1px solid lightgrey;
+            background: rgb(1, 200, 200);
+            border: 5px solid lightgrey;
             transition: ease-in-out 300ms;
             cursor: pointer;
-            color: rgb(1, 200, 200);
+            color: lightgrey;
             fill: lightgrey;
-            font-weight: bold;
+
+            & > svg {
+              /* position: absolute; */
+              margin-bottom: 0.2rem;
+              margin-left: 0.5rem;
+              animation: 1s slideup;
+            }
           }
         }
       }

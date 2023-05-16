@@ -31,7 +31,7 @@ const TechnologiesPage = ({ allImages }) => {
       <div className="TechnologiesPage" data-aos="fade-up">
         <div className="header">
           <h1 style={{ fontSize: `${fontSize}px` }}>TECHNOLOGIES</h1>
-          <hr />
+          {/* <hr /> */}
           <p className="description">
             Below are languages, frameworks, tools, and ancillary technologies I
             provide when building websites.

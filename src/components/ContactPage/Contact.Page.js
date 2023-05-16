@@ -17,6 +17,8 @@ export const ContactPageWrap = styled.div`
     h1 {
       color: rgb(1, 200, 200);
       margin: 3rem 0 0 0;
+      border-bottom: 5px solid rgb(1, 200, 200);
+      padding-bottom: 0.5rem;
       /* font-size: 4rem; */
     }
 

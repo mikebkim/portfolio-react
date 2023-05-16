@@ -276,7 +276,7 @@ export const NavBarWrap = styled.div`
             width: max-content;
             z-index: 0;
             animation: none;
-            border-bottom: 5px solid lightgrey;
+            border-bottom: none;
 
             & > .nav-title {
               position: static;

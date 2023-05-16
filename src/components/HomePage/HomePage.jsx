@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import pandablack from "./pandablack.png";
 
-const HomePage = ({ resume, panda }) => {
+const HomePage = ({ resume }) => {
   useEffect(() => {
     AOS.init();
   }, []);
@@ -14,23 +15,24 @@ const HomePage = ({ resume, panda }) => {
     <HomePageWrap>
       <div className="HomePage" data-aos="fade-up">
         <div className="header">
-          <h1>HI,</h1>
+          <h1>
+            HI,{" "}
+            {/* <img
+              className="panda"
+              width="100px"
+              height="auto"
+              src={pandablack}
+              key={pandablack}
+              alt={pandablack}
+            /> */}
+          </h1>
           <h2>
             I'M <span className="home-name">MIKE KIM</span>,
           </h2>
           <h3>web developer</h3>
         </div>
         <h5>Los Angeles, CA</h5>
-        <hr />
-
-        {/* <img
-          className="panda"
-          width="100px"
-          height="auto"
-          src={panda}
-          key={panda}
-          alt={panda}
-        /> */}
+        {/* <hr /> */}
 
         <div className="home">
           <p className="home-about">

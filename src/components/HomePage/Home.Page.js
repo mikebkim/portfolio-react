@@ -12,7 +12,7 @@ export const HomePageWrap = styled.div`
 
     h1 {
       color: lightgrey;
-      margin: 5rem 0 0 0;
+      margin: 3rem 0 0 0;
       font-size: 4rem;
     }
 
@@ -112,9 +112,10 @@ export const HomePageWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .HomePage {
-      margin: 0 0 0 7rem;
+      margin: 0 auto;
       width: 65vw;
       height: 84vh;
+      padding: 3rem 0 0 5rem;
 
       h1 {
         margin-bottom: 0.2rem;

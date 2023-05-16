@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ProjectsPageWrap } from "./Projects.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -13,11 +13,27 @@ const ProjectsPage = ({
     AOS.init();
   }, []);
 
+  const [fontSize, setFontSize] = useState(20);
+
+  useEffect(() => {
+    function handleResizeHeader() {
+      const width = window.innerWidth;
+      const newFontSize = width / 15;
+
+      setFontSize(newFontSize);
+    }
+
+    window.addEventListener("resize", handleResizeHeader);
+    handleResizeHeader();
+
+    return () => window.removeEventListener("resize", handleResizeHeader);
+  }, []);
+
   return (
     <ProjectsPageWrap>
       <div className="ProjectsPage" data-aos="fade-up">
         <div className="header">
-          <h1>PROJECTS</h1>
+          <h1 style={{ fontSize: `${fontSize}px` }}>PROJECTS</h1>
           <hr />
           <p className="description">
             Below are my projects and technologies I used to create them.

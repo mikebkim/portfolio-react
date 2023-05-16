@@ -12,13 +12,13 @@ export const TechnologiesPageWrap = styled.div`
 
     h1 {
       color: rgb(1, 200, 200);
-      margin: 5rem 0 0 0;
-      font-size: 4rem;
+      margin: 3rem 0 0 0;
+      /* font-size: 4rem; */
     }
 
     p {
       color: lightgrey;
-      margin-left: 1rem;
+      margin: 1rem auto;
       font-size: 1.2rem;
     }
 
@@ -104,20 +104,20 @@ export const TechnologiesPageWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .TechnologiesPage {
-      margin: 0 0 0 7rem;
+      margin: 0 auto;
       width: 65vw;
       height: 84vh;
+      padding: 0 0 0 5rem;
 
-      h1 {
+      /* h1 {
         margin-bottom: 0.2rem;
         font-size: 1.7rem;
         margin-top: 1rem;
-      }
+      } */
 
       p {
         color: lightgrey;
-        margin: 1rem 0;
-        width: 100%;
+        margin: 1rem auto;
       }
 
       img {
@@ -134,7 +134,6 @@ export const TechnologiesPageWrap = styled.div`
 
         & > hr {
           width: 100%;
-          height: 2.5px;
         }
       }
 

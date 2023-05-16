@@ -12,8 +12,8 @@ export const ProjectsPageWrap = styled.div`
 
     h1 {
       color: rgb(1, 200, 200);
-      margin: 5rem 0 0 0;
-      font-size: 4rem;
+      margin: 3rem 0 0 0;
+      /* font-size: 4rem; */
     }
 
     h2 {
@@ -29,7 +29,7 @@ export const ProjectsPageWrap = styled.div`
 
     p {
       color: lightgrey;
-      margin: 1rem;
+      margin: 1rem auto;
       font-size: 1.2rem;
     }
 
@@ -37,14 +37,6 @@ export const ProjectsPageWrap = styled.div`
       position: relative;
       width: 100%;
       margin-top: 1rem;
-    }
-
-    .project-image {
-      position: absolute;
-      min-height: 40%;
-      max-height: 40%;
-      width: 29%;
-      transform: scale(0);
     }
 
     & > .header {
@@ -61,7 +53,7 @@ export const ProjectsPageWrap = styled.div`
 
     & > .projects-flex {
       display: flex;
-      margin-bottom: 2rem;
+      margin: 3rem 0;
 
       & > .project-link {
         display: flex;
@@ -100,15 +92,16 @@ export const ProjectsPageWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .ProjectsPage {
-      margin: 0 0 0 7rem;
+      margin: 0 auto;
       width: 65vw;
       height: 84vh;
+      padding: 0 0 0 5rem;
 
-      h1 {
+      /* h1 {
         margin-bottom: 0.2rem;
         font-size: 1.7rem;
         margin-top: 1rem;
-      }
+      } */
 
       h2 {
         color: rgb(1, 200, 200);
@@ -123,21 +116,12 @@ export const ProjectsPageWrap = styled.div`
 
       p {
         color: lightgrey;
-        margin: 1rem 0;
-        width: 100%;
+        margin: 1rem auto;
       }
 
       .project-laptop {
         position: relative;
-        width: 100%;
-      }
-
-      .project-image {
-        position: absolute;
-        min-height: 40%;
-        max-height: 40%;
-        width: 29%;
-        transform: scale(0);
+        width: 60%;
       }
 
       & > .header {
@@ -149,14 +133,13 @@ export const ProjectsPageWrap = styled.div`
 
         & > hr {
           width: 100%;
-          height: 2.5px;
         }
       }
 
       & > .projects-flex {
         display: flex;
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin: 3rem 0;
 
         & > .project-link {
           display: flex;

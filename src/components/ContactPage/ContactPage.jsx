@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ContactPageWrap } from "./Contact.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -8,11 +8,27 @@ const ContactPage = () => {
     AOS.init();
   }, []);
 
+  const [fontSize, setFontSize] = useState(20);
+
+  useEffect(() => {
+    function handleResizeHeader() {
+      const width = window.innerWidth;
+      const newFontSize = width / 15;
+
+      setFontSize(newFontSize);
+    }
+
+    window.addEventListener("resize", handleResizeHeader);
+    handleResizeHeader();
+
+    return () => window.removeEventListener("resize", handleResizeHeader);
+  }, []);
+
   return (
     <ContactPageWrap>
       <div className="ContactPage" data-aos="fade-up">
         <div className="header">
-          <h1>CONTACT</h1>
+          <h1 style={{ fontSize: `${fontSize}px` }}>CONTACT</h1>
           <hr />
           <p className="description">Feel free to contact me!</p>
         </div>

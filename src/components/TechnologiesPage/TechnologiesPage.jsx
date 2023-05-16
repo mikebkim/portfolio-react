@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import TechnologiesPageWrap from "./Technologies.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,11 +10,27 @@ const TechnologiesPage = ({ allImages }) => {
     AOS.init();
   }, []);
 
+  const [fontSize, setFontSize] = useState(20);
+
+  useEffect(() => {
+    function handleResizeHeader() {
+      const width = window.innerWidth;
+      const newFontSize = width / 15;
+
+      setFontSize(newFontSize);
+    }
+
+    window.addEventListener("resize", handleResizeHeader);
+    handleResizeHeader();
+
+    return () => window.removeEventListener("resize", handleResizeHeader);
+  }, []);
+
   return (
     <TechnologiesPageWrap>
       <div className="TechnologiesPage" data-aos="fade-up">
         <div className="header">
-          <h1>TECHNOLOGIES</h1>
+          <h1 style={{ fontSize: `${fontSize}px` }}>TECHNOLOGIES</h1>
           <hr />
           <p className="description">
             Below are languages, frameworks, tools, and ancillary technologies I

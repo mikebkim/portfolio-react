@@ -19,11 +19,24 @@ const Styled_TechnologiesPage = styled.div`
     p {
       color: lightgrey;
       margin-left: 1rem;
+      font-size: 1.2rem;
     }
 
     img {
       height: auto;
       max-width: 50%;
+    }
+
+    & > .header {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+
+      & > hr {
+        width: 100%;
+      }
     }
 
     & > .technologies-list {
@@ -47,7 +60,7 @@ const Styled_TechnologiesPage = styled.div`
     }
 
     .flip-card-inner {
-      background-color: lightgray;
+      background-color: lightgrey;
       position: relative;
       width: 100%;
       height: 100%;
@@ -55,7 +68,7 @@ const Styled_TechnologiesPage = styled.div`
       transition: transform 0.6s;
       transform-style: preserve-3d;
       border-radius: 10px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 3px 3px rgb(1, 200, 200);
     }
 
     .flip-card:hover .flip-card-inner {
@@ -91,23 +104,38 @@ const Styled_TechnologiesPage = styled.div`
 
   @media only screen and (max-width: 768px) {
     .TechnologiesPage {
-      margin: 0 0 0 10rem;
+      margin: 0 0 0 7rem;
       width: 65vw;
       height: 84vh;
 
       h1 {
         margin-bottom: 0.2rem;
-        font-size: 2rem;
+        font-size: 1.7rem;
+        margin-top: 1rem;
       }
 
       p {
         color: lightgrey;
-        margin-left: 1rem;
+        margin: 1rem 0;
+        width: 100%;
       }
 
       img {
         height: auto;
         max-width: 50%;
+      }
+
+      & > .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+
+        & > hr {
+          width: 100%;
+          height: 2.5px;
+        }
       }
 
       & > .technologies-list {
@@ -130,7 +158,7 @@ const Styled_TechnologiesPage = styled.div`
       }
 
       .flip-card-inner {
-        background-color: lightgray;
+        background-color: lightgrey;
         position: relative;
         width: 100%;
         height: 100%;
@@ -138,7 +166,7 @@ const Styled_TechnologiesPage = styled.div`
         transition: transform 0.6s;
         transform-style: preserve-3d;
         border-radius: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 3px 3px rgb(1, 200, 200);
       }
 
       .flip-card:hover .flip-card-inner {
@@ -161,6 +189,7 @@ const Styled_TechnologiesPage = styled.div`
       .flip-card-back {
         background-color: rgb(1, 200, 200);
         color: lightgrey;
+        fill: lightgrey;
         transform: rotateY(180deg);
         font-size: 11px;
         border-radius: 10px;

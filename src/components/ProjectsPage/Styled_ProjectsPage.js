@@ -8,7 +8,7 @@ const Styled_ProjectsPage = styled.div`
   .ProjectsPage {
     margin: 0 auto;
     width: 60vw;
-    height: 84vh;
+    height: 84vh
 
     h1 {
       color: rgb(1, 200, 200);
@@ -30,7 +30,6 @@ const Styled_ProjectsPage = styled.div`
     p {
       color: lightgrey;
       margin: 1rem;
-      font-size: 1.2rem;
     }
 
     .project-laptop {
@@ -45,18 +44,6 @@ const Styled_ProjectsPage = styled.div`
       max-height: 40%;
       width: 29%;
       transform: scale(0);
-    }
-
-    & > .header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      align-items: center;
-
-      & > hr {
-        width: 100%;
-      }
     }
 
     & > .projects-flex {
@@ -85,8 +72,7 @@ const Styled_ProjectsPage = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 8rem;
-            margin: 0.5rem;
+            min-width: 6rem;
             padding: 0.5rem;
             border: 1px solid lightgrey;
             border-radius: 5px;
@@ -100,14 +86,13 @@ const Styled_ProjectsPage = styled.div`
 
   @media only screen and (max-width: 768px) {
     .ProjectsPage {
-      margin: 0 0 0 7rem;
+      margin: 0 0 0 10rem;
       width: 65vw;
       height: 84vh;
 
       h1 {
         margin-bottom: 0.2rem;
-        font-size: 1.7rem;
-        margin-top: 1rem;
+        font-size: 2rem;
       }
 
       h2 {
@@ -123,8 +108,7 @@ const Styled_ProjectsPage = styled.div`
 
       p {
         color: lightgrey;
-        margin: 1rem 0;
-        width: 100%;
+        margin: 1rem;
       }
 
       .project-laptop {
@@ -138,19 +122,6 @@ const Styled_ProjectsPage = styled.div`
         max-height: 40%;
         width: 29%;
         transform: scale(0);
-      }
-
-      & > .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-
-        & > hr {
-          width: 100%;
-          height: 2.5px;
-        }
       }
 
       & > .projects-flex {
@@ -181,8 +152,7 @@ const Styled_ProjectsPage = styled.div`
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 8rem;
-              margin: 0.5rem;
+              min-width: 6rem;
               padding: 0.5rem;
               border: 1px solid lightgrey;
               border-radius: 5px;

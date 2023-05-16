@@ -8,7 +8,7 @@ const Styled_HomePage = styled.div`
   .HomePage {
     margin: 0 auto;
     width: 60vw;
-    height: 84vh;
+    height: 84vh
 
     h1 {
       color: lightgrey;
@@ -42,32 +42,25 @@ const Styled_HomePage = styled.div`
     p {
       color: lightgrey;
       margin: 0;
-      font-size: 1.2rem;
     }
 
     & > .header {
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      width: 100%;
-      align-items: center;
-
-      & > hr {
-        width: 100%;
-      }
     }
 
     & > .home {
       margin-left: 1rem;
+
+      & > .home-about {
+        margin-top: 1rem;
+      }
 
       & > .resume {
         margin-top: 1.5rem;
         margin-left: 0.5rem;
 
         & > form {
-          justify-content: center;
-          display: flex;
-
           & > .resume-button {
             font-family: "Gill Sans";
             display: flex;
@@ -112,14 +105,13 @@ const Styled_HomePage = styled.div`
 
   @media only screen and (max-width: 768px) {
     .HomePage {
-      margin: 0 0 0 7rem;
+      margin: 0 0 0 10rem;
       width: 65vw;
       height: 84vh;
 
       h1 {
         margin-bottom: 0.2rem;
         font-size: 2rem;
-        margin-top: 1rem;
       }
 
       h2 {
@@ -134,8 +126,8 @@ const Styled_HomePage = styled.div`
 
       h3 {
         color: lightgrey;
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
+        margin: 0 0 0 0;
+        font-size: 1rem;
       }
 
       h5 {
@@ -147,13 +139,7 @@ const Styled_HomePage = styled.div`
 
       p {
         color: lightgrey;
-        margin: 1rem 0;
-        width: 100%;
-      }
-
-      & > hr {
-        width: 100%;
-        height: 2.5px;
+        margin-left: 1rem;
       }
 
       & > .header {
@@ -165,14 +151,15 @@ const Styled_HomePage = styled.div`
       & > .home {
         margin-left: 1rem;
 
+        & > .home-about {
+          margin-top: 1rem;
+        }
+
         & > .resume {
           margin-top: 1.5rem;
           margin-left: 0.5rem;
 
           & > form {
-            justify-content: center;
-            display: flex;
-
             & > .resume-button {
               font-family: "Gill Sans";
               display: flex;

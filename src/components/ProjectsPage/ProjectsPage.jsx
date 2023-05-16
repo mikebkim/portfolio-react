@@ -29,6 +29,7 @@ const ProjectsPage = ({
             className="project-link"
             href="https://marblejerky.herokuapp.com/"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="project-laptop"
@@ -56,6 +57,7 @@ const ProjectsPage = ({
             className="project-link"
             href="https://game-it.herokuapp.com/"
             target="_blank"
+            rel="noreferrer"
           >
             <img className="project-laptop" src={iconGameit} alt="gameit" />
           </a>
@@ -85,6 +87,7 @@ const ProjectsPage = ({
             className="project-link"
             href="https://sessionsmusic.herokuapp.com/"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="project-laptop"
@@ -112,6 +115,7 @@ const ProjectsPage = ({
             className="project-link"
             href="https://mikebkim.github.io/blackjack/"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               className="project-laptop"

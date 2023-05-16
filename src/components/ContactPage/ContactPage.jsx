@@ -3,7 +3,7 @@ import Styled_ContactPage from "./Styled_ContactPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const ContactPage = ({}) => {
+const ContactPage = () => {
   useEffect(() => {
     AOS.init();
   }, []);

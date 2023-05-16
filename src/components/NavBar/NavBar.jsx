@@ -6,8 +6,7 @@ import {
   faHome,
   faCode,
   faLayerGroup,
-  faPhone,
-  faArrowUp,
+  faPhone
 } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -39,7 +38,6 @@ const NavBar = ({ personalLogo }) => {
   const [selectedTab, setSelectedTab] = useState("");
   // const [navItems, setNavItems] = useState(navData)
   const location = useLocation();
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     setSelectedTab(JSON.stringify(location));

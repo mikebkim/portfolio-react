@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,14 +14,14 @@ import ContactPage from "./components/ContactPage/ContactPage";
 
 // Components
 import NavBar from "./components/NavBar/NavBar";
-import Switch from "@mui/material/Switch";
+// import Switch from "@mui/material/Switch";
 import "./App.css";
 
 // Images
 import MK_Resume from "./files/MK_Resume.pdf";
 
 // Icons
-import download from "./icons/05_download.png";
+// import download from "./icons/05_download.png";
 import blackjackicon from "./icons/blackjackicon.png";
 import gameiticon from "./icons/gameiticon.png";
 import marbleicon from "./icons/marbleicon.png";
@@ -29,7 +29,7 @@ import sessionsicon from "./icons/sessionsicon.png";
 import personal_logo from "./icons/personal_logo.png";
 
 const App = () => {
-  const [toggleDark, setToggleDark] = useState(false);
+  // const [toggleDark, setToggleDark] = useState(false);
 
   function importAll(r) {
     let images = {};
@@ -43,11 +43,11 @@ const App = () => {
     require.context("./images", false, /\.(png|jpe?g|svg)$/)
   );
 
-  function toggleDarkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-    setToggleDark(!toggleDark);
-  }
+  // function toggleDarkMode() {
+  //   var element = document.body;
+  //   element.classList.toggle("dark-mode");
+  //   setToggleDark(!toggleDark);
+  // }
 
   return (
     <div className="App">

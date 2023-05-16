@@ -60,7 +60,7 @@ const App = () => {
           <Switch color="default" />
         </div>
       </div> */}
-      <Router>
+      <Router basename="/">
         <NavBar personalLogo={personal_logo} />
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />

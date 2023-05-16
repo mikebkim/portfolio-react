@@ -1,11 +1,11 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route,
-//   Navigate,
-// } from "react-router-dom";
+// import { Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 
 // Pages
 import HomePage from "./components/HomePage/HomePage";
@@ -61,7 +61,7 @@ const App = () => {
           <Switch color="default" />
         </div>
       </div> */}
-      {/* <Router basename="/">
+      <Router basename="/">
         <NavBar personalLogo={personal_logo} />
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
@@ -85,8 +85,8 @@ const App = () => {
           />
           <Route exact path="/contact" element={<ContactPage />} />
         </Routes>
-      </Router> */}
-      <NavBar personalLogo={personal_logo} />
+      </Router>
+      {/* <NavBar personalLogo={personal_logo} />
       <Routes>
         <Route path="/" element={<Navigate replace to="/home" />} />
         <Route exact path="/home" element={<HomePage resume={MK_Resume} />} />
@@ -108,7 +108,7 @@ const App = () => {
           }
         />
         <Route exact path="/contact" element={<ContactPage />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 };

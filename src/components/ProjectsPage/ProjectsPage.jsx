@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Styled_ProjectsPage from "./Styled_ProjectsPage";
+import { ProjectsPageWrap } from "./Projects.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -14,7 +14,7 @@ const ProjectsPage = ({
   }, []);
 
   return (
-    <Styled_ProjectsPage>
+    <ProjectsPageWrap>
       <div className="ProjectsPage" data-aos="fade-up">
         <div className="header">
           <h1>PROJECTS</h1>
@@ -138,7 +138,7 @@ const ProjectsPage = ({
           </div>
         </div>
       </div>
-    </Styled_ProjectsPage>
+    </ProjectsPageWrap>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Styled_TechnologiesPage from "./Styled_TechnologiesPage";
+import TechnologiesPageWrap from "./Technologies.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,7 +11,7 @@ const TechnologiesPage = ({ allImages }) => {
   }, []);
 
   return (
-    <Styled_TechnologiesPage>
+    <TechnologiesPageWrap>
       <div className="TechnologiesPage" data-aos="fade-up">
         <div className="header">
           <h1>TECHNOLOGIES</h1>
@@ -60,7 +60,7 @@ const TechnologiesPage = ({ allImages }) => {
           })}
         </div>
       </div>
-    </Styled_TechnologiesPage>
+    </TechnologiesPageWrap>
   );
 };
 

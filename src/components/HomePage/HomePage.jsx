@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Styled_HomePage from "./Styled_HomePage";
+import { HomePageWrap } from "./Home.Page";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
@@ -11,7 +11,7 @@ const HomePage = ({ resume }) => {
   }, []);
 
   return (
-    <Styled_HomePage>
+    <HomePageWrap>
       <div className="HomePage" data-aos="fade-up">
         <div className="header">
           <h1>HI,</h1>
@@ -44,7 +44,7 @@ const HomePage = ({ resume }) => {
           </div>
         </div>
       </div>
-    </Styled_HomePage>
+    </HomePageWrap>
   );
 };
 

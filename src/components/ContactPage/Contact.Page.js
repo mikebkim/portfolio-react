@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Styled_ContactPage = styled.div`
+export const ContactPageWrap = styled.div`
   [data-aos] {
     transition-duration: 1s !important;
   }
@@ -246,4 +246,4 @@ const Styled_ContactPage = styled.div`
   }
 `;
 
-export default Styled_ContactPage;
+export default ContactPageWrap;

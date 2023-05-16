@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Styled_HomePage = styled.div`
+export const HomePageWrap = styled.div`
   [data-aos] {
     transition-duration: 1s !important;
   }
@@ -217,4 +217,4 @@ const Styled_HomePage = styled.div`
   }
 `;
 
-export default Styled_HomePage;
+export default HomePageWrap;

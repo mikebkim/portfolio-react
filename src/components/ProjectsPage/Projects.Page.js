@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Styled_ProjectsPage = styled.div`
+export const ProjectsPageWrap = styled.div`
   [data-aos] {
     transition-duration: 1s !important;
   }
@@ -196,4 +196,4 @@ const Styled_ProjectsPage = styled.div`
   }
 `;
 
-export default Styled_ProjectsPage;
+export default ProjectsPageWrap;

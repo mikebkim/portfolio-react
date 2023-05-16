@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Styled_TechnologiesPage = styled.div`
+export const TechnologiesPageWrap = styled.div`
   [data-aos] {
     transition-duration: 1s !important;
   }
@@ -202,4 +202,4 @@ const Styled_TechnologiesPage = styled.div`
   }
 `;
 
-export default Styled_TechnologiesPage;
+export default TechnologiesPageWrap;

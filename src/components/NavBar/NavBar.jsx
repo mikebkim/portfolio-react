@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Styled_NavBar from "./Styled_NavBar";
+import { NavBarWrap } from "./Nav.Bar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faHome,
   faCode,
   faLayerGroup,
-  faPhone
+  faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -54,7 +54,7 @@ const NavBar = ({ personalLogo }) => {
   // }
 
   return (
-    <Styled_NavBar>
+    <NavBarWrap>
       <div className="NavBar">
         {/* {navItems.map((item, index) => {
                     return <Link
@@ -165,7 +165,7 @@ const NavBar = ({ personalLogo }) => {
           </Link>
         </div>
       </div>
-    </Styled_NavBar>
+    </NavBarWrap>
   );
 };
 

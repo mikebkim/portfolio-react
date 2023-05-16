@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Styled_NavBar = styled.div`
+export const NavBarWrap = styled.div`
   // Desktop
   .NavBar {
     @keyframes slideinright {
@@ -313,4 +313,4 @@ const Styled_NavBar = styled.div`
   }
 `;
 
-export default Styled_NavBar;
+export default NavBarWrap;

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Styled_ContactPage from "./Styled_ContactPage";
+import { ContactPageWrap } from "./Contact.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -9,7 +9,7 @@ const ContactPage = () => {
   }, []);
 
   return (
-    <Styled_ContactPage>
+    <ContactPageWrap>
       <div className="ContactPage" data-aos="fade-up">
         <div className="header">
           <h1>CONTACT</h1>
@@ -60,7 +60,7 @@ const ContactPage = () => {
           </div>
         </form>
       </div>
-    </Styled_ContactPage>
+    </ContactPageWrap>
   );
 };
 

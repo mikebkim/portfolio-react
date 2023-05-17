@@ -17,7 +17,7 @@ export const TechnologiesPageWrap = styled.div`
     }
 
     to {
-      width: 100%;
+      width: 100px;
     }
   }
 
@@ -29,6 +29,36 @@ export const TechnologiesPageWrap = styled.div`
     margin: 0 auto;
     width: 60vw;
     height: 84vh;
+
+    img {
+      max-width: 100% !important;
+    }
+
+    & > .tech-box {
+      width: 100% !important;
+      height: 100% !important;
+      border: 1px solid black !important;
+      position: relative !important;
+
+      & > .box {
+        width: 50px;
+        height: 65px;
+        perspective: 1000px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgrey !important;
+        text-align: center;
+        text-decoration: none;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        border-radius: 10px;
+        box-shadow: 0 0 3px 3px rgb(1, 200, 200);
+        /* animation: 1s openfrommiddle ease-in-out; */
+        border: none !important;
+      }
+    }
 
     h1 {
       color: rgb(1, 200, 200);

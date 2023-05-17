@@ -6,6 +6,8 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
+import { DndProvider } from "react-dnd";
+import { HTML5Backend } from "react-dnd-html5-backend";
 
 // Pages
 import HomePage from "./components/HomePage/HomePage";
@@ -70,7 +72,11 @@ const App = () => {
           <Route
             exact
             path="/technologies"
-            element={<TechnologiesPage allImages={allImages} />}
+            element={
+              <DndProvider backend={HTML5Backend}>
+                <TechnologiesPage allImages={allImages} />
+              </DndProvider>
+            }
           />
           <Route
             exact
@@ -81,6 +87,7 @@ const App = () => {
                 iconMarble={marbleicon}
                 iconSessions={sessionsicon}
                 iconGameit={gameiticon}
+                allImages={allImages}
               />
             }
           />

@@ -1,9 +1,15 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
+import { Container } from "./Container.js";
 import TechnologiesPageWrap from "./Technologies.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const TechnologiesPage = ({ allImages }) => {
+  const [hideSourceOnDrag, setHideSourceOnDrag] = useState(true);
+  const toggle = useCallback(
+    () => setHideSourceOnDrag(!hideSourceOnDrag),
+    [hideSourceOnDrag]
+  );
   const allImagesArray = Object.entries(allImages);
 
   useEffect(() => {
@@ -37,14 +43,30 @@ const TechnologiesPage = ({ allImages }) => {
             provide when building websites.
           </p>
         </div>
-
-        <div className="technologies-list" data-aos="fade-up">
+        <Container
+          hideSourceOnDrag={hideSourceOnDrag}
+          allImagesArray={allImagesArray}
+        />
+        <p>
+          <label htmlFor="hideSourceOnDrag">
+            <input
+              id="hideSourceOnDrag"
+              type="checkbox"
+              role="checkbox"
+              checked={hideSourceOnDrag}
+              onChange={toggle}
+            />
+            <small>Hide the source item while dragging</small>
+          </label>
+        </p>
+        {/* <div className="technologies-list" data-aos="fade-up">
           {allImagesArray.map((image) => {
             const imageName = image[0]
               .toUpperCase()
               .split("_")
               .pop()
               .split(".PNG");
+            <Container hideSourceOnDrag={hideSourceOnDrag} allImagesArray={allImagesArray} />;
             const cssImage = image[0].includes("css" || "react") ? (
               <img
                 className="tech-image"
@@ -74,7 +96,7 @@ const TechnologiesPage = ({ allImages }) => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </TechnologiesPageWrap>
   );

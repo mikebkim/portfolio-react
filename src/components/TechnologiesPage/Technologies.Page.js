@@ -1,6 +1,26 @@
 import styled from "styled-components";
 
 export const TechnologiesPageWrap = styled.div`
+  @keyframes openfrommiddle {
+    0% {
+      color: transparent;
+      fill: transparent;
+    }
+
+    50% {
+      color: transparent;
+      fill: transparent;
+    }
+
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 100%;
+    }
+  }
+
   [data-aos] {
     transition-duration: 1s !important;
   }
@@ -62,19 +82,20 @@ export const TechnologiesPageWrap = styled.div`
     }
 
     .flip-card-inner {
-      background-color: lightgrey;
+      /* background-color: lightgrey; */
       position: relative;
       width: 100%;
       height: 100%;
       text-align: center;
-      transition: transform 0.6s;
-      transform-style: preserve-3d;
+      /* transition: transform 0.6s; */
+      /* transform-style: preserve-3d; */
       border-radius: 10px;
-      box-shadow: 0 0 3px 3px rgb(1, 200, 200);
+      /* box-shadow: 0 0 3px 3px rgb(1, 200, 200); */
+      /* animation: 1s openfrommiddle ease-in-out; */
     }
 
     .flip-card:hover .flip-card-inner {
-      transform: rotateY(180deg);
+      /* transform: scale(0, 0.5); */
     }
 
     .flip-card-front,
@@ -88,15 +109,17 @@ export const TechnologiesPageWrap = styled.div`
       height: 100%;
       -webkit-backface-visibility: hidden;
       backface-visibility: hidden;
+      z-index: 1;
     }
 
     .flip-card-back {
-      background-color: rgb(1, 200, 200);
+      /* background-color: rgb(1, 200, 200); */
       color: lightgrey;
       fill: lightgrey;
-      transform: rotateY(180deg);
+      /* transform: rotateY(180deg); */
       font-size: 11px;
       border-radius: 10px;
+      z-index: 1;
     }
 
     [data-aos] {
@@ -159,19 +182,19 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       .flip-card-inner {
-        background-color: lightgrey;
+        /* background-color: lightgrey; */
         position: relative;
         width: 100%;
         height: 100%;
         text-align: center;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
+        /* transition: transform 0.6s; */
+        /* transform-style: preserve-3d; */
         border-radius: 10px;
-        box-shadow: 0 0 3px 3px rgb(1, 200, 200);
+        /* box-shadow: 0 0 3px 3px rgb(1, 200, 200); */
       }
 
       .flip-card:hover .flip-card-inner {
-        transform: rotateY(180deg);
+        /* transform: rotateY(180deg); */
       }
 
       .flip-card-front,
@@ -188,10 +211,10 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       .flip-card-back {
-        background-color: rgb(1, 200, 200);
+        /* background-color: rgb(1, 200, 200); */
         color: lightgrey;
         fill: lightgrey;
-        transform: rotateY(180deg);
+        /* transform: rotateY(180deg); */
         font-size: 11px;
         border-radius: 10px;
       }

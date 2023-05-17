@@ -20,7 +20,7 @@ export const ProjectsPageWrap = styled.div`
 
     h2 {
       color: rgb(1, 200, 200);
-      font-weight: 900;
+      font-weight: 700;
       margin: 0;
     }
 
@@ -56,6 +56,12 @@ export const ProjectsPageWrap = styled.div`
     & > .projects-flex {
       display: flex;
       margin: 3rem 0;
+      border-bottom: 5px solid rgb(1, 200, 200);
+      padding-bottom: 4rem;
+
+      &:last-child {
+        border: none;
+      }
 
       & > .project-link {
         display: flex;

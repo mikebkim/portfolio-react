@@ -8,7 +8,10 @@ const ProjectsPage = ({
   iconMarble,
   iconSessions,
   iconGameit,
+  allImages,
 }) => {
+  const allImagesArray = Object.entries(allImages);
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -62,7 +65,20 @@ const ProjectsPage = ({
             <div className="tech-list">
               <p className="tech-name">HTML</p>
               <p className="tech-name">CSS - Bootstrap</p>
-              <p className="tech-name">MERN Stack</p>
+              <p className="tech-name">MongoDB</p>
+              <p className="tech-name">Express</p>
+              <p className="tech-name">
+                React{" "}
+                <img
+                  className="tech-image"
+                  width="37px"
+                  height="auto"
+                  src={allImagesArray[4][0]}
+                  key={""}
+                  alt={""}
+                />
+              </p>
+              <p className="tech-name">Node</p>
               <p className="tech-name">MLab</p>
             </div>
           </div>

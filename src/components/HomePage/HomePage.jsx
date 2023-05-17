@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import pandablack from "./pandablack.png";
+// import pandablack from "./pandablack.png";
 
 const HomePage = ({ resume }) => {
   useEffect(() => {

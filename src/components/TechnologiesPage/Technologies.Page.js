@@ -36,7 +36,9 @@ export const TechnologiesPageWrap = styled.div`
 
     & > .drag-options {
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      margin: 1rem 0;
 
       & > .reset-button {
         font-family: "Gill Sans";
@@ -51,6 +53,22 @@ export const TechnologiesPageWrap = styled.div`
         transition: ease-in-out 300ms;
         cursor: pointer;
         color: lightgrey;
+
+        &:hover {
+          font-family: "Gill Sans";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2rem;
+          height: 2rem;
+          width: 13rem;
+          background: rgb(1, 200, 200);
+          border: 5px solid lightgrey;
+          transition: ease-in-out 300ms;
+          cursor: pointer;
+          color: lightgrey;
+          fill: lightgrey;
+        }
       }
 
       & > .flip-button {
@@ -66,21 +84,39 @@ export const TechnologiesPageWrap = styled.div`
         transition: ease-in-out 300ms;
         cursor: pointer;
         color: lightgrey;
+
+        &:hover {
+          font-family: "Gill Sans";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 2rem;
+          height: 2rem;
+          width: 13rem;
+          background: rgb(1, 200, 200);
+          border: 5px solid lightgrey;
+          transition: ease-in-out 300ms;
+          cursor: pointer;
+          color: lightgrey;
+          fill: lightgrey;
+        }
       }
     }
 
     & > .tech-box {
       height: 20rem;
-      border: 1px solid black !important;
+      border: 5px solid lightgrey !important;
+      border-radius: 10px;
       position: relative !important;
       display: flex;
       flex-wrap: wrap;
       overflow: auto;
+      align-items: center;
       justify-content: center !important;
 
       & > .box {
-        width: 50px;
-        height: 65px;
+        width: 40px;
+        height: 55px;
         perspective: 1000px;
         margin: 10px;
         display: flex;
@@ -92,8 +128,7 @@ export const TechnologiesPageWrap = styled.div`
         transition: transform 0.6s;
         transform-style: preserve-3d;
         border-radius: 10px;
-        box-shadow: 0 0 3px 3px rgb(1, 200, 200);
-        border: none !important;
+        border: 5px solid rgb(1, 200, 200) !important;
         position: relative !important;
       }
     }
@@ -167,28 +202,22 @@ export const TechnologiesPageWrap = styled.div`
       animation: 1s ease-in-out openfrommiddle;
     }
 
-    .flip-card-front,
     .flip-card-back {
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 10px;
       position: absolute;
       width: 100%;
       height: 100%;
       z-index: 1;
       transition: transform 0.6s ease 0s;
       transform-style: preserve-3d;
-      animation: 1s ease-in-out openfrommiddle;
-    }
-
-    .flip-card-back {
       background-color: rgb(1, 200, 200);
       color: lightgrey;
       fill: lightgrey;
       font-size: 10px;
       border-radius: 10px;
-      z-index: 1;
+      animation: 1s ease-in-out openfrommiddle;
     }
 
     [data-aos] {
@@ -205,7 +234,8 @@ export const TechnologiesPageWrap = styled.div`
 
       & > .tech-box {
         height: 84vh;
-        border: 1px solid black !important;
+        border: 5px solid lightgrey !important;
+        border-radius: 10px;
         position: relative !important;
         display: flex;
         flex-wrap: wrap;
@@ -226,7 +256,6 @@ export const TechnologiesPageWrap = styled.div`
           transition: transform 0.6s;
           transform-style: preserve-3d;
           border-radius: 10px;
-          box-shadow: 0 0 3px 3px rgb(1, 200, 200);
           border: none !important;
         }
       }
@@ -291,7 +320,6 @@ export const TechnologiesPageWrap = styled.div`
         animation: 1s ease-in-out openfrommiddle;
       }
 
-      .flip-card-front,
       .flip-card-back {
         display: flex;
         justify-content: center;

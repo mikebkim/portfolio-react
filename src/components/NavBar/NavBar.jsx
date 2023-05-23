@@ -11,7 +11,7 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const NavBar = ({}) => {
+const NavBar = () => {
   const [selectedTab, setSelectedTab] = useState("");
   const location = useLocation();
 

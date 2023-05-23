@@ -232,12 +232,6 @@ export const TechnologiesPageWrap = styled.div`
         }
       }
 
-      /* h1 {
-        margin-bottom: 0.2rem;
-        font-size: 1.7rem;
-        margin-top: 1rem;
-      } */
-
       p {
         color: lightgrey;
         margin: 1rem auto;
@@ -280,27 +274,22 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       .flip-card-inner {
-        /* background-color: lightgrey; */
         position: relative;
-        width: 100px;
-        height: 100%;
+        height: auto;
         text-align: center;
-        /* transition: transform 0.6s; */
-        /* transform-style: preserve-3d; */
-        border-radius: 10px;
-        /* box-shadow: 0 0 3px 3px rgb(1, 200, 200); */
+        transition: transform 0.6s ease 0s;
+        transform-style: preserve-3d;
+        animation: 1s ease-in-out openfrommiddle;
       }
 
       .flip-card-inner-max {
-        /* background-color: lightgrey; */
         position: relative;
-        width: 100px;
-        height: 100%;
+        max-width: 35px !important;
+        height: auto;
         text-align: center;
-        /* transition: transform 0.6s; */
-        /* transform-style: preserve-3d; */
-        border-radius: 10px;
-        /* box-shadow: 0 0 3px 3px rgb(1, 200, 200); */
+        transition: transform 0.6s ease 0s;
+        transform-style: preserve-3d;
+        animation: 1s ease-in-out openfrommiddle;
       }
 
       .flip-card-front,

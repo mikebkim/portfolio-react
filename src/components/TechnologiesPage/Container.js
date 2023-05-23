@@ -61,21 +61,23 @@ export const Container = ({ boxes, setBoxes, isFlipped }) => {
           .split("_")
           .pop()
           .split(".PNG");
-        const cssImage = titleBack.includes("css" || "react") ? (
-          <img
-            className="flip-card-inner-max"
-            src={title}
-            key={imageName}
-            alt={imageName}
-          />
-        ) : (
-          <img
-            className="flip-card-inner"
-            src={title}
-            key={imageName}
-            alt={imageName}
-          />
-        );
+        const cssImage =
+          titleBack.includes("css") ||
+          titleBack.includes("heroku") ? (
+            <img
+              className="flip-card-inner-max"
+              src={title}
+              key={imageName}
+              alt={imageName}
+            />
+          ) : (
+            <img
+              className="flip-card-inner"
+              src={title}
+              key={imageName}
+              alt={imageName}
+            />
+          );
         return (
           <Box
             key={key}

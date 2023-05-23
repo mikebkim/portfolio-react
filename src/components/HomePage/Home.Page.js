@@ -40,7 +40,6 @@ export const HomePageWrap = styled.div`
     .panda {
       display: flex;
       margin: 0 auto;
-      /* border-radius: 100%; */
     }
 
     h1 {
@@ -139,7 +138,6 @@ export const HomePageWrap = styled.div`
             fill: lightgrey;
 
             & > svg {
-              /* position: absolute; */
               margin-bottom: 0.2rem;
               margin-left: 0.5rem;
               animation: 1s slideup;

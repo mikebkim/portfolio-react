@@ -11,32 +11,8 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const NavBar = ({ personalLogo }) => {
-  // const navData = [
-  //     {
-  //         title: "HOME",
-  //         linkTo: "/home",
-  //         icon: faHome
-  //     },
-  //     {
-  //         title: "TECHNOLOGIES",
-  //         linkTo: "/technologies",
-  //         icon: faCode
-  //     },
-  //     {
-  //         title: "PROJECTS",
-  //         linkTo: "/projects",
-  //         icon: faLayerGroup
-  //     },
-  //     {
-  //         title: "CONTACT",
-  //         linkTo: "/contact",
-  //         icon: faPhone
-  //     },
-  // ]
-
+const NavBar = ({}) => {
   const [selectedTab, setSelectedTab] = useState("");
-  // const [navItems, setNavItems] = useState(navData)
   const location = useLocation();
 
   useEffect(() => {
@@ -47,29 +23,9 @@ const NavBar = ({ personalLogo }) => {
     AOS.init();
   }, []);
 
-  // const moveItemToFront = (index) => {
-  //     const selectedItem = navItems[index]
-  //     const newOrder = [selectedItem, ...navItems.slice(0, index), ...navItems.slice(index + 1)]
-  //     setNavItems(newOrder)
-  // }
-
   return (
     <NavBarWrap>
       <div className="NavBar">
-        {/* {navItems.map((item, index) => {
-                    return <Link
-                        onClick={() => moveItemToFront(index)}
-                        to={`${item.linkTo}`}
-                        className={selectedTab.includes(item.title.toLocaleLowerCase()) ? "selected" : "nav-link"}
-                    >
-                        <FontAwesomeIcon icon={item.icon} />
-                        <div
-                            className="nav-line-selected"
-                        >
-                            {selectedTab.includes(item.title.toLocaleLowerCase()) ? item.title : ""}
-                        </div>
-                        </Link>
-                    })} */}
         <div
           className={
             selectedTab.includes("home") ? "nav-box selected-box" : "nav-box"

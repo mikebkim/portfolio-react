@@ -37,7 +37,6 @@ const ProjectsPage = ({
       <div className="ProjectsPage" data-aos="fade-up">
         <div className="header">
           <h1 style={{ fontSize: `${fontSize}px` }}>PROJECTS</h1>
-          {/* <hr /> */}
           <p className="description">
             Below are my projects and technologies I used to create them.
           </p>

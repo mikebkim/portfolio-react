@@ -19,7 +19,6 @@ export const ContactPageWrap = styled.div`
       margin: 3rem 0 0 0;
       border-bottom: 5px solid rgb(1, 200, 200);
       padding-bottom: 0.5rem;
-      /* font-size: 4rem; */
     }
 
     p {
@@ -139,12 +138,6 @@ export const ContactPageWrap = styled.div`
       width: 65vw;
       height: 84vh;
       padding: 0 0 0 5rem;
-
-      /* h1 {
-        margin-bottom: 0.2rem;
-        font-size: 1.7rem;
-        margin-top: 1rem;
-      } */
 
       p {
         color: lightgrey;

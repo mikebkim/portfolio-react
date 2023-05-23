@@ -17,7 +17,7 @@ export const TechnologiesPageWrap = styled.div`
     }
 
     to {
-      width: 100px;
+      width: 100%;
     }
   }
 
@@ -103,7 +103,6 @@ export const TechnologiesPageWrap = styled.div`
       margin: 3rem 0 0 0;
       border-bottom: 5px solid rgb(1, 200, 200);
       padding-bottom: 0.5rem;
-      /* font-size: 4rem; */
     }
 
     p {
@@ -185,9 +184,9 @@ export const TechnologiesPageWrap = styled.div`
 
     .flip-card-back {
       background-color: rgb(1, 200, 200);
-      color: black;
-      fill: black;
-      font-size: 11px;
+      color: lightgrey;
+      fill: lightgrey;
+      font-size: 10px;
       border-radius: 10px;
       z-index: 1;
     }
@@ -299,18 +298,13 @@ export const TechnologiesPageWrap = styled.div`
         align-items: center;
         border-radius: 10px;
         position: absolute;
-        width: 100%;
-        height: 100%;
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
+        animation: 1s ease-in-out openfrommiddle;
       }
 
       .flip-card-back {
-        /* background-color: rgb(1, 200, 200); */
-        color: black;
+        color: lightgrey;
         fill: lightgrey;
-        /* transform: rotateY(180deg); */
-        font-size: 11px;
+        font-size: 10px;
         border-radius: 10px;
       }
 

@@ -15,7 +15,6 @@ export const ProjectsPageWrap = styled.div`
       margin: 3rem 0 0 0;
       border-bottom: 5px solid rgb(1, 200, 200);
       padding-bottom: 0.5rem;
-      /* font-size: 4rem; */
     }
 
     h2 {
@@ -105,12 +104,6 @@ export const ProjectsPageWrap = styled.div`
       height: 84vh;
       padding: 0 0 0 5rem;
 
-      /* h1 {
-        margin-bottom: 0.2rem;
-        font-size: 1.7rem;
-        margin-top: 1rem;
-      } */
-
       h2 {
         color: rgb(1, 200, 200);
         font-weight: 900;
@@ -159,7 +152,6 @@ export const ProjectsPageWrap = styled.div`
           display: flex;
           flex-direction: column;
           width: auto;
-          /* padding: 0; */
           justify-content: start;
           align-items: center;
 

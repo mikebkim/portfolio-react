@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// import pandablack from "./pandablack.png";
 
 const HomePage = ({ resume }) => {
   useEffect(() => {
@@ -17,14 +16,6 @@ const HomePage = ({ resume }) => {
         <div className="header">
           <h1>
             HI,{" "}
-            {/* <img
-              className="panda"
-              width="100px"
-              height="auto"
-              src={pandablack}
-              key={pandablack}
-              alt={pandablack}
-            /> */}
           </h1>
           <h2>
             I'M <span className="home-name">MIKE KIM</span>,

@@ -3,12 +3,7 @@ import { useCallback, useState, useEffect } from "react";
 import { useDrop } from "react-dnd";
 import { Box } from "./Box.js";
 import { ItemTypes } from "./ItemTypes.js";
-// const styles = {
-//   width: 300,
-//   height: 300,
-//   border: "1px solid white",
-//   position: "relative",
-// };
+
 export const Container = ({ boxes, setBoxes, isFlipped }) => {
   const [fontSize, setFontSize] = useState(20);
 
@@ -62,8 +57,7 @@ export const Container = ({ boxes, setBoxes, isFlipped }) => {
           .pop()
           .split(".PNG");
         const cssImage =
-          titleBack.includes("css") ||
-          titleBack.includes("heroku") ? (
+          titleBack.includes("css") || titleBack.includes("heroku") ? (
             <img
               className="flip-card-inner-max"
               src={title}
@@ -84,33 +78,12 @@ export const Container = ({ boxes, setBoxes, isFlipped }) => {
             id={key}
             left={left}
             top={top}
-            // hideSourceOnDrag={hideSourceOnDrag}
           >
-            {/* {!isFlipped ? (
-              <img
-                className={"flip-card-inner"}
-                src={title}
-                key={title}
-                alt={title}
-              />
-            ) : (
-              <div className="flip-card aos-init aos-animate" key={title}>
-                <div className="flip-card-inner">
-                  <div className="flip-card-back">
-                    <h3>{imageName}</h3>
-                  </div>
-                </div>
-              </div>
-            )} */}
             {!isFlipped ? (
               cssImage
             ) : (
-              <div className="flip-card aos-init aos-animate" key={title}>
-                <div className="flip-card-inner">
-                  <div className="flip-card-back">
-                    <h3>{imageName}</h3>
-                  </div>
-                </div>
+              <div className="flip-card-back">
+                <h3>{imageName}</h3>
               </div>
             )}
           </Box>

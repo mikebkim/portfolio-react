@@ -12,17 +12,3 @@ hr {
   height: 5px;
   background-color: rgb(1, 200, 200);
 }
-
-/* .dark-mode {
-  background-color: rgb(25, 31, 34);
-  color: lightgrey;
-}
-
-.dark-button {
-  position: sticky;
-  display: flex;
-  justify-content: end;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 0.5rem;
-} */

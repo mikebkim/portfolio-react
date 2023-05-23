@@ -5,11 +5,6 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const TechnologiesPage = ({ allImages }) => {
-  // const [hideSourceOnDrag, setHideSourceOnDrag] = useState(true);
-  // const toggle = useCallback(
-  //   () => setHideSourceOnDrag(!hideSourceOnDrag),
-  //   [hideSourceOnDrag]
-  // );
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlipCards = () => {
@@ -72,14 +67,12 @@ const TechnologiesPage = ({ allImages }) => {
       <div className="TechnologiesPage" data-aos="fade-up">
         <div className="header">
           <h1 style={{ fontSize: `${fontSize}px` }}>TECHNOLOGIES</h1>
-          {/* <hr /> */}
           <p className="description">
             Below are languages, frameworks, tools, and ancillary technologies I
             provide when building websites.
           </p>
         </div>
         <Container
-          // hideSourceOnDrag={hideSourceOnDrag}
           allImagesArray={allImagesArray}
           setBoxes={setBoxes}
           boxes={boxes}
@@ -87,22 +80,9 @@ const TechnologiesPage = ({ allImages }) => {
           isFlipped={isFlipped}
         />
         <div className="drag-options">
-          {/* <label htmlFor="hideSourceOnDrag">
-            <input
-              id="hideSourceOnDrag"
-              type="checkbox"
-              role="checkbox"
-              checked={hideSourceOnDrag}
-              onChange={toggle}
-            />
-            {hideSourceOnDrag ? <small>Drag</small> : <small>Throw</small>}
-          </label> */}
           <button
             className="flip-button"
             type="submit"
-            // role="checkbox"
-            // checked={true}
-            // onChange={() => setBoxes(defaultBoxes)}
             onClick={() => handleFlipCards()}
           >
             Flip Cards
@@ -115,44 +95,6 @@ const TechnologiesPage = ({ allImages }) => {
             Reset Box
           </button>
         </div>
-        {/* <div className="technologies-list" data-aos="fade-up">
-          {allImagesArray.map((image) => {
-            const imageName = image[0]
-              .toUpperCase()
-              .split("_")
-              .pop()
-              .split(".PNG");
-            <Container hideSourceOnDrag={hideSourceOnDrag} allImagesArray={allImagesArray} />;
-            const cssImage = image[0].includes("css" || "react") ? (
-              <img
-                className="tech-image"
-                width="37px"
-                height="auto"
-                src={image[1]}
-                key={imageName}
-                alt={imageName}
-              />
-            ) : (
-              <img
-                className="tech-image"
-                src={image[1]}
-                key={imageName}
-                alt={imageName}
-              />
-            );
-
-            return (
-              <div className="flip-card aos-init aos-animate" key={imageName}>
-                <div className="flip-card-inner">
-                  <div className="flip-card-front">{cssImage}</div>
-                  <div className="flip-card-back">
-                    <h3>{imageName}</h3>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div> */}
       </div>
     </TechnologiesPageWrap>
   );

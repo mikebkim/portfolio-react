@@ -13,7 +13,7 @@ export const ProjectsPageWrap = styled.div`
     h1 {
       color: rgb(1, 200, 200);
       margin: 3rem 0 0 0;
-      border-bottom: 5px solid rgb(1, 200, 200);
+      border-bottom: 5px solid lightgrey;
       padding-bottom: 0.5rem;
     }
 
@@ -55,7 +55,7 @@ export const ProjectsPageWrap = styled.div`
     & > .projects-flex {
       display: flex;
       margin: 3rem 0;
-      border-bottom: 5px solid rgb(1, 200, 200);
+      border-bottom: 5px solid lightgrey;
       padding-bottom: 4rem;
 
       &:last-child {
@@ -91,6 +91,9 @@ export const ProjectsPageWrap = styled.div`
             border-radius: 5px;
             background-color: lightgrey;
             color: black;
+
+            & > .tech-image {
+            }
           }
         }
       }

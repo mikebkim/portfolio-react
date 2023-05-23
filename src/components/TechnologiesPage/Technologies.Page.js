@@ -240,11 +240,12 @@ export const TechnologiesPageWrap = styled.div`
         display: flex;
         flex-wrap: wrap;
         overflow: auto;
+        align-items: center;
         justify-content: center !important;
 
         & > .box {
-          width: 50px;
-          height: 65px;
+          width: 40px;
+          height: 55px;
           perspective: 1000px;
           margin: 10px;
           display: flex;
@@ -256,7 +257,8 @@ export const TechnologiesPageWrap = styled.div`
           transition: transform 0.6s;
           transform-style: preserve-3d;
           border-radius: 10px;
-          border: none !important;
+          border: 5px solid rgb(1, 200, 200) !important;
+          position: relative !important;
         }
       }
 

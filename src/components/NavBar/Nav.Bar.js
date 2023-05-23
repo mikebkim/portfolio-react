@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const NavBarWrap = styled.div`
   // Desktop
-  .NavBar {
+  /* .NavBar {
     @keyframes slideinright {
       0% {
         color: transparent;
@@ -181,40 +181,57 @@ export const NavBarWrap = styled.div`
         }
       }
     }
-  }
+  } */
 
   // MOBILE
-  @media only screen and (max-width: 1320px) {
-    .NavBar {
-      position: fixed;
+  /* @media only screen and (max-width: 1320px) { */
+  .NavBar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+    z-index: 1;
+    margin: 0 1rem;
+
+    a {
+      text-decoration: none;
+      color: lightgrey;
+    }
+
+    & > .nav-box:last-child {
+      border-bottom: 5px solid rgb(1, 200, 200);
+    }
+
+    & > .nav-box {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
-      height: 100%;
+      justify-content: center;
       align-items: center;
-      width: 5rem;
-      z-index: 1;
+      border: 5px solid rgb(1, 200, 200);
+      height: 6rem;
+      width: 6rem;
+      border-radius: 10px;
 
-      & > .nav-box:last-child {
-        border-bottom: 5px solid rgb(1, 200, 200);
+      &:hover {
+        border: 5px solid lightgrey;
+        transition: ease-in-out 300ms;
       }
 
-      & > .nav-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 5px solid rgb(1, 200, 200);
-        height: 100%;
-        width: 100%;
-        margin: 0.017rem auto;
+      & > .nav-title {
+        font-size: 10px;
+        font-weight: 700;
+      }
 
-        &.selected-box {
-          background-color: rgb(1, 200, 200);
-          transition: ease-in-out 300ms;
-          border: 5px solid lightgrey;
-        }
+      &.selected-box {
+        background-color: rgb(1, 200, 200);
+        transition: ease-in-out 300ms;
+        border: 5px solid lightgrey;
+      }
 
-        & > .nav-link {
+      & > .nav-link {
+        & > svg {
           text-decoration: none;
           align-items: center;
           display: flex;
@@ -222,95 +239,33 @@ export const NavBarWrap = styled.div`
           background-color: transparent;
           color: rgb(1, 200, 200);
           fill: rgb(1, 200, 200);
-          border-radius: 2rem;
-          height: 3rem;
-          width: 3rem;
-          border: 5px solid rgb(1, 200, 200);
           transition: ease-in-out 300ms;
 
-          & > img {
-            width: 2rem;
-          }
-        }
-
-        & > .nav-link:hover {
-          text-decoration: none;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          background-color: rgb(1, 200, 200);
-          color: lightgrey;
-          fill: lightgrey;
-          border-radius: 2rem;
-          height: 3rem;
-          width: 3rem;
-          border: 5px solid white;
-          transition: ease-in-out 300ms;
-
-          & > img {
-            width: 2rem;
-          }
-        }
-
-        & > .selected {
-          text-decoration: none;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          background-color: rgb(1, 200, 200);
-          color: lightgrey;
-          fill: lightgrey;
-          border-radius: 2rem;
-          height: 3rem;
-          width: 3rem;
-          border: 5px solid lightgrey;
-          transition: ease-in-out 300ms;
-          margin-bottom: 1rem;
-
-          & > .nav-line-selected {
-            margin-top: 5rem;
-            margin-left: 10rem;
-            margin-right: 10rem;
+          &:hover {
             color: lightgrey;
             fill: lightgrey;
-            width: max-content;
-            z-index: 0;
-            animation: none;
-            border-bottom: none;
-
-            & > .nav-title {
-              position: static;
-              display: flex;
-              color: lightgrey;
-              margin-top: 0.5rem;
-              font-size: 9px;
-              font-weight: bolder;
-            }
-          }
-
-          & > .nav-line-selected-home {
-            border-right: none;
-          }
-
-          & > .nav-line-selected-technologies {
-            border-right: none;
-          }
-
-          & > .nav-line-selected-projects {
-            border-right: none;
-          }
-
-          & > .nav-line-selected-contact {
-            border-right: none;
-          }
-
-          & > img {
-            width: 2rem;
           }
         }
       }
+
+      & > .selected {
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(1, 200, 200);
+        color: lightgrey;
+        fill: lightgrey;
+        border-radius: 2rem;
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid lightgrey;
+        transition: ease-in-out 300ms;
+        margin-bottom: 0.5rem;
+      }
     }
   }
+  /* } */
 `;
 
 export default NavBarWrap;

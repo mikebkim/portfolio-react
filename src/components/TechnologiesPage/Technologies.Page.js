@@ -171,7 +171,6 @@ export const TechnologiesPageWrap = styled.div`
       margin-top: 10vh;
       align-items: center;
       margin: 0 auto;
-      max-width: 65vw;
     }
 
     .flip-card {
@@ -187,6 +186,7 @@ export const TechnologiesPageWrap = styled.div`
     .flip-card-inner {
       position: relative;
       height: auto;
+      max-width: 60px !important;
       text-align: center;
       transition: transform 0.6s ease 0s;
       transform-style: preserve-3d;
@@ -195,7 +195,7 @@ export const TechnologiesPageWrap = styled.div`
 
     .flip-card-inner-max {
       position: relative;
-      max-width: 30px !important;
+      max-width: 40px !important;
       height: auto;
       text-align: center;
       transition: transform 0.6s ease 0s;
@@ -231,10 +231,9 @@ export const TechnologiesPageWrap = styled.div`
       margin: 0 auto;
       width: 65vw;
       height: 84vh;
-      padding: 0 0 0 5rem;
+      padding: 0 0 0 9rem;
 
       & > .tech-box {
-        height: 84vh;
         border: 5px solid lightgrey !important;
         border-radius: 10px;
         position: relative !important;
@@ -316,7 +315,6 @@ export const TechnologiesPageWrap = styled.div`
 
       .flip-card-inner-max {
         position: relative;
-        max-width: 30px !important;
         height: auto;
         text-align: center;
         transition: transform 0.6s ease 0s;

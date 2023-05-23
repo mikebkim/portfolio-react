@@ -13,7 +13,7 @@ export const ProjectsPageWrap = styled.div`
     h1 {
       color: rgb(1, 200, 200);
       margin: 3rem 0 0 0;
-      border-bottom: 5px solid lightgrey;
+      border-bottom: 5px solid rgb(1, 200, 200);
       padding-bottom: 0.5rem;
     }
 
@@ -105,7 +105,7 @@ export const ProjectsPageWrap = styled.div`
       margin: 0 auto;
       width: 65vw;
       height: 84vh;
-      padding: 0 0 0 5rem;
+      padding: 0 0 0 9rem;
 
       h2 {
         color: rgb(1, 200, 200);

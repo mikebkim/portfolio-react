@@ -113,6 +113,7 @@ export const TechnologiesPageWrap = styled.div`
       overflow: auto;
       align-items: center;
       justify-content: center !important;
+      padding: 1rem 0;
 
       & > .box {
         width: 40px;
@@ -194,7 +195,7 @@ export const TechnologiesPageWrap = styled.div`
 
     .flip-card-inner-max {
       position: relative;
-      max-width: 35px !important;
+      max-width: 30px !important;
       height: auto;
       text-align: center;
       transition: transform 0.6s ease 0s;
@@ -242,6 +243,7 @@ export const TechnologiesPageWrap = styled.div`
         overflow: auto;
         align-items: center;
         justify-content: center !important;
+        padding: 1rem 0;
 
         & > .box {
           width: 40px;
@@ -314,7 +316,7 @@ export const TechnologiesPageWrap = styled.div`
 
       .flip-card-inner-max {
         position: relative;
-        max-width: 35px !important;
+        max-width: 30px !important;
         height: auto;
         text-align: center;
         transition: transform 0.6s ease 0s;

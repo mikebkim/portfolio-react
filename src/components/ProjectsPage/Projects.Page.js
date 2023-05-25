@@ -87,10 +87,9 @@ export const ProjectsPageWrap = styled.div`
             width: 8rem;
             margin: 0.5rem;
             padding: 0.5rem;
-            border: 1px solid lightgrey;
             border-radius: 5px;
-            background-color: lightgrey;
-            color: black;
+            background-color: rgb(1, 200, 200, 0.5);
+            color: rgb(1, 200, 200);
 
             & > .tech-image {
             }
@@ -170,10 +169,9 @@ export const ProjectsPageWrap = styled.div`
               width: 8rem;
               margin: 0.5rem;
               padding: 0.5rem;
-              border: 1px solid lightgrey;
               border-radius: 5px;
-              background-color: lightgrey;
-              color: black;
+              background-color: rgb(1, 200, 200, 0.5);
+              color: lightgrey;
             }
           }
         }

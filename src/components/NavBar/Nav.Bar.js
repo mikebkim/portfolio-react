@@ -201,6 +201,7 @@ export const NavBarWrap = styled.div`
     & > .nav-line {
       border-left: 3px solid rgb(1, 200, 200);
       height: 5%;
+      border-radius: 50px;
     }
 
     a {

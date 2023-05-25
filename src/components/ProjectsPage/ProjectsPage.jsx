@@ -69,6 +69,7 @@ const ProjectsPage = ({
             </div>
           </div>
         </div>
+        <hr />
 
         <div className="projects-flex">
           <a
@@ -99,7 +100,7 @@ const ProjectsPage = ({
             </div>
           </div>
         </div>
-
+        <hr />
         <div className="projects-flex">
           <a
             className="project-link"
@@ -127,7 +128,7 @@ const ProjectsPage = ({
             </div>
           </div>
         </div>
-
+        <hr />
         <div className="projects-flex">
           <a
             className="project-link"

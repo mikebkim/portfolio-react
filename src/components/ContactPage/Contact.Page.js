@@ -59,7 +59,7 @@ export const ContactPageWrap = styled.div`
           background-color: transparent;
           border: none;
           color: lightgrey;
-          border-bottom: 1px solid lightgrey;
+          border-bottom: 1px solid rgb(1, 200, 200, 0.5);
           outline: none;
           padding: 5px 0;
         }
@@ -71,7 +71,7 @@ export const ContactPageWrap = styled.div`
           background-color: transparent;
           border: none;
           color: lightgrey;
-          border-bottom: 1px solid lightgrey;
+          border-bottom: 1px solid rgb(1, 200, 200, 0.5);
           outline: none;
           padding: 5px 0;
         }
@@ -83,7 +83,7 @@ export const ContactPageWrap = styled.div`
           background-color: transparent;
           border: none;
           color: lightgrey;
-          border-bottom: 1px solid lightgrey;
+          border-bottom: 1px solid rgb(1, 200, 200, 0.5);
           outline: none;
           padding: 5px 0;
         }
@@ -95,38 +95,42 @@ export const ContactPageWrap = styled.div`
           background-color: transparent;
           border: none;
           color: lightgrey;
-          border-bottom: 1px solid lightgrey;
+          border-bottom: 1px solid rgb(1, 200, 200, 0.5);
           outline: none;
           height: 8rem;
           padding: 5px 0;
         }
 
         & > .contact-button {
-          font-family: Gill Sans;
-          background-color: transparent;
-          border: 1px solid lightgrey;
-          color: lightgrey;
-          cursor: pointer;
+          font-family: "Gill Sans";
+          display: flex;
+          justify-content: center;
+          align-items: center;
           border-radius: 2rem;
-          width: 9rem;
           height: 2rem;
+          width: 13rem;
+          background: rgb(1, 200, 200, 0.5);
+          border: 2px solid rgb(1, 200, 200, 0.5);
           transition: ease-in-out 300ms;
-          font-weight: bold;
-          margin: 1rem auto;
-        }
+          cursor: pointer;
+          color: rgb(1, 200, 200);
+          margin: 0.5rem auto;
 
-        & > .contact-button:hover {
-          font-family: Gill Sans;
-          background-color: lightgrey;
-          border: 1px solid lightgrey;
-          color: black;
-          cursor: pointer;
-          border-radius: 2rem;
-          width: 9rem;
-          height: 2rem;
-          transition: ease-in-out 300ms;
-          font-weight: bold;
-          margin: 1rem auto;
+          &:hover {
+            font-family: "Gill Sans";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2rem;
+            height: 2rem;
+            width: 13rem;
+            background: rgb(1, 200, 200);
+            border: 5px solid rgb(1, 200, 200);
+            transition: ease-in-out 300ms;
+            cursor: pointer;
+            color: lightgrey;
+            fill: lightgrey;
+          }
         }
       }
     }
@@ -176,7 +180,7 @@ export const ContactPageWrap = styled.div`
             background-color: transparent;
             border: none;
             color: lightgrey;
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid rgb(1, 200, 200, 0.5);
             outline: none;
             padding: 5px 0;
           }
@@ -188,7 +192,7 @@ export const ContactPageWrap = styled.div`
             background-color: transparent;
             border: none;
             color: lightgrey;
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid rgb(1, 200, 200, 0.5);
             outline: none;
             padding: 5px 0;
           }
@@ -200,7 +204,7 @@ export const ContactPageWrap = styled.div`
             background-color: transparent;
             border: none;
             color: lightgrey;
-            border-bottom: 1px solid lightgrey;
+            border-bottom: 1px solid rgb(1, 200, 200, 0.5);
             outline: none;
             height: 8rem;
             padding: 5px 0;

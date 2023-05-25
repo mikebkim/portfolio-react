@@ -48,11 +48,11 @@ export const TechnologiesPageWrap = styled.div`
         border-radius: 2rem;
         height: 2rem;
         width: 13rem;
-        background: transparent;
-        border: 2px solid lightgrey;
+        background: rgb(1, 200, 200, 0.5);
+        border: 2px solid rgb(1, 200, 200, 0.5);
         transition: ease-in-out 300ms;
         cursor: pointer;
-        color: lightgrey;
+        color: rgb(1, 200, 200);
 
         &:hover {
           font-family: "Gill Sans";
@@ -63,7 +63,7 @@ export const TechnologiesPageWrap = styled.div`
           height: 2rem;
           width: 13rem;
           background: rgb(1, 200, 200);
-          border: 5px solid lightgrey;
+          border: 5px solid rgb(1, 200, 200);
           transition: ease-in-out 300ms;
           cursor: pointer;
           color: lightgrey;
@@ -79,11 +79,11 @@ export const TechnologiesPageWrap = styled.div`
         border-radius: 2rem;
         height: 2rem;
         width: 13rem;
-        background: transparent;
-        border: 2px solid lightgrey;
+        background: rgb(1, 200, 200, 0.5);
+        border: 2px solid rgb(1, 200, 200, 0.5);
         transition: ease-in-out 300ms;
         cursor: pointer;
-        color: lightgrey;
+        color: rgb(1, 200, 200);
 
         &:hover {
           font-family: "Gill Sans";
@@ -94,7 +94,7 @@ export const TechnologiesPageWrap = styled.div`
           height: 2rem;
           width: 13rem;
           background: rgb(1, 200, 200);
-          border: 5px solid lightgrey;
+          border: 5px solid rgb(1, 200, 200);
           transition: ease-in-out 300ms;
           cursor: pointer;
           color: lightgrey;
@@ -105,7 +105,7 @@ export const TechnologiesPageWrap = styled.div`
 
     & > .tech-box {
       height: 20rem;
-      border: 5px solid lightgrey !important;
+      border: 5px solid rgb(1, 200, 200) !important;
       border-radius: 10px;
       position: relative !important;
       display: flex;
@@ -223,7 +223,7 @@ export const TechnologiesPageWrap = styled.div`
       padding: 0 0 0 9rem;
 
       & > .tech-box {
-        border: 5px solid lightgrey !important;
+        border: 5px solid rgb(1, 200, 200) !important;
         border-radius: 10px;
         position: relative !important;
         display: flex;

@@ -44,15 +44,20 @@ const NavBar = () => {
             ""
           )}
         </Link>
+        <div className="nav-line"></div>
         <Link
           to="/technologies"
           className={
-            selectedTab.includes("technologies") ? "nav-box selected-box" : "nav-box"
+            selectedTab.includes("technologies")
+              ? "nav-box selected-box"
+              : "nav-box"
           }
           title="Technologies"
         >
           <div
-            className={selectedTab.includes("technologies") ? "selected" : "nav-link"}
+            className={
+              selectedTab.includes("technologies") ? "selected" : "nav-link"
+            }
           >
             <FontAwesomeIcon icon={faCode} />
           </div>
@@ -62,15 +67,20 @@ const NavBar = () => {
             ""
           )}
         </Link>
+        <div className="nav-line"></div>
         <Link
           to="/projects"
           className={
-            selectedTab.includes("projects") ? "nav-box selected-box" : "nav-box"
+            selectedTab.includes("projects")
+              ? "nav-box selected-box"
+              : "nav-box"
           }
           title="Projects"
         >
           <div
-            className={selectedTab.includes("projects") ? "selected" : "nav-link"}
+            className={
+              selectedTab.includes("projects") ? "selected" : "nav-link"
+            }
           >
             <FontAwesomeIcon icon={faLayerGroup} />
           </div>
@@ -80,6 +90,7 @@ const NavBar = () => {
             ""
           )}
         </Link>
+        <div className="nav-line"></div>
         <Link
           to="/contact"
           className={
@@ -88,7 +99,9 @@ const NavBar = () => {
           title="Contact"
         >
           <div
-            className={selectedTab.includes("contact") ? "selected" : "nav-link"}
+            className={
+              selectedTab.includes("contact") ? "selected" : "nav-link"
+            }
           >
             <FontAwesomeIcon icon={faPhone} />
           </div>

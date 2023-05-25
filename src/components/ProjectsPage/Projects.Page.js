@@ -87,12 +87,9 @@ export const ProjectsPageWrap = styled.div`
             width: 8rem;
             margin: 0.5rem;
             padding: 0.5rem;
-            border-radius: 5px;
+            border-radius: 50px;
             background-color: rgb(1, 200, 200, 0.5);
             color: rgb(1, 200, 200);
-
-            & > .tech-image {
-            }
           }
         }
       }

@@ -189,15 +189,20 @@ export const NavBarWrap = styled.div`
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 100%;
     -webkit-box-align: center;
     align-items: center;
     background-color: black;
-    border: 3px solid rgb(1, 200, 200);
+    /* border: 3px solid rgb(1, 200, 200); */
     width: 0rem;
     z-index: 1;
     margin-left: 4rem;
+
+    & > .nav-line {
+      border-left: 3px solid rgb(1, 200, 200);
+      height: 5%;
+    }
 
     a {
       text-decoration: none;
@@ -223,6 +228,7 @@ export const NavBarWrap = styled.div`
       &:hover {
         border: 5px solid lightgrey;
         transition: ease-in-out 300ms;
+        background-color: rgb(1, 200, 200, 0.5);
       }
 
       & > .nav-title {

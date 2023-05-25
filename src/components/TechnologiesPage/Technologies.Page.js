@@ -186,21 +186,21 @@ export const TechnologiesPageWrap = styled.div`
     .flip-card-inner {
       position: relative;
       height: auto;
-      max-width: 60px !important;
+      /* max-width: 60px !important; */
       text-align: center;
-      transition: transform 0.6s ease 0s;
+      /* transition: transform 0.6s ease 0s;
       transform-style: preserve-3d;
-      animation: 1s ease-in-out openfrommiddle;
+      animation: 1s ease-in-out openfrommiddle; */
     }
 
     .flip-card-inner-max {
       position: relative;
-      max-width: 40px !important;
+      /* max-width: 40px !important; */
       height: auto;
       text-align: center;
-      transition: transform 0.6s ease 0s;
+      /* transition: transform 0.6s ease 0s;
       transform-style: preserve-3d;
-      animation: 1s ease-in-out openfrommiddle;
+      animation: 1s ease-in-out openfrommiddle; */
     }
 
     .flip-card-back {
@@ -308,18 +308,18 @@ export const TechnologiesPageWrap = styled.div`
         position: relative;
         height: auto;
         text-align: center;
-        transition: transform 0.6s ease 0s;
+        /* transition: transform 0.6s ease 0s;
         transform-style: preserve-3d;
-        animation: 1s ease-in-out openfrommiddle;
+        animation: 1s ease-in-out openfrommiddle; */
       }
 
       .flip-card-inner-max {
         position: relative;
         height: auto;
         text-align: center;
-        transition: transform 0.6s ease 0s;
+        /* transition: transform 0.6s ease 0s;
         transform-style: preserve-3d;
-        animation: 1s ease-in-out openfrommiddle;
+        animation: 1s ease-in-out openfrommiddle; */
       }
 
       .flip-card-back {

@@ -20,12 +20,14 @@ export const ProjectsPageWrap = styled.div`
     h2 {
       color: rgb(1, 200, 200);
       font-weight: 700;
+      font-size: 36px;
       margin: 0;
     }
 
     h3 {
       margin: 0 0 1rem 0;
       color: lightgrey;
+      border-bottom: 3px solid lightgrey;
     }
 
     p {
@@ -105,7 +107,8 @@ export const ProjectsPageWrap = styled.div`
 
       h2 {
         color: rgb(1, 200, 200);
-        font-weight: 900;
+        font-weight: 700;
+        font-size: 36px;
         margin: 0;
       }
 

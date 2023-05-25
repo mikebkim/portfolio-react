@@ -194,7 +194,6 @@ export const NavBarWrap = styled.div`
     -webkit-box-align: center;
     align-items: center;
     background-color: black;
-    /* border: 3px solid rgb(1, 200, 200); */
     width: 0rem;
     z-index: 1;
     margin-left: 4rem;
@@ -207,10 +206,6 @@ export const NavBarWrap = styled.div`
     a {
       text-decoration: none;
       color: lightgrey;
-    }
-
-    & > .nav-box:last-child {
-      border-bottom: 5px solid rgb(1, 200, 200);
     }
 
     & > .nav-box {
@@ -226,7 +221,7 @@ export const NavBarWrap = styled.div`
       cursor: pointer;
 
       &:hover {
-        border: 5px solid lightgrey;
+        border: 5px solid rgb(1, 200, 200);
         transition: ease-in-out 300ms;
         background-color: rgb(1, 200, 200, 0.5);
       }
@@ -237,7 +232,7 @@ export const NavBarWrap = styled.div`
       }
 
       &.selected-box {
-        background-color: rgb(1, 200, 200);
+        background-color: rgb(1, 200, 200, 0.5);
         transition: ease-in-out 300ms;
         border: 5px solid rgb(1, 200, 200);
       }
@@ -265,13 +260,10 @@ export const NavBarWrap = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        /* background-color: rgb(1, 200, 200); */
         color: lightgrey;
         fill: lightgrey;
-        /* border-radius: 2rem; */
         height: 3rem;
         width: 3rem;
-        /* border: 5px solid lightgrey; */
         transition: ease-in-out 300ms;
         margin-bottom: 0.5rem;
       }

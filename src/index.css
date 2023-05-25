@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Gill Sans";
+  font-family: 'Gill Sans', sans-serif;
   letter-spacing: -0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

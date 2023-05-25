@@ -103,7 +103,6 @@ export const HomePageWrap = styled.div`
           display: flex;
 
           & > .resume-button {
-            font-family: "Gill Sans";
             display: flex;
             justify-content: center;
             align-items: center;
@@ -117,7 +116,6 @@ export const HomePageWrap = styled.div`
             color: rgb(1, 200, 200);
 
             &:hover {
-              font-family: "Gill Sans";
               display: flex;
               justify-content: center;
               align-items: center;
@@ -212,7 +210,6 @@ export const HomePageWrap = styled.div`
             display: flex;
 
             & > .resume-button {
-              font-family: "Gill Sans";
               display: flex;
               justify-content: center;
               align-items: center;
@@ -233,7 +230,6 @@ export const HomePageWrap = styled.div`
             }
 
             & > .resume-button:hover {
-              font-family: "Gill Sans";
               display: flex;
               justify-content: center;
               align-items: center;

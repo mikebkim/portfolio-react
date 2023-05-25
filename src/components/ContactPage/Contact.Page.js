@@ -53,7 +53,6 @@ export const ContactPageWrap = styled.div`
         }
 
         & > .contact-name {
-          font-family: Gill Sans;
           margin-bottom: 2.5rem;
           width: 100%;
           background-color: transparent;
@@ -65,7 +64,6 @@ export const ContactPageWrap = styled.div`
         }
 
         & > .contact-email {
-          font-family: Gill Sans;
           margin-bottom: 2.5rem;
           width: 100%;
           background-color: transparent;
@@ -77,7 +75,6 @@ export const ContactPageWrap = styled.div`
         }
 
         & > .contact-subject {
-          font-family: Gill Sans;
           margin-bottom: 2.5rem;
           width: 100%;
           background-color: transparent;
@@ -89,7 +86,6 @@ export const ContactPageWrap = styled.div`
         }
 
         & > .contact-message {
-          font-family: Gill Sans;
           margin-bottom: 0.5rem;
           width: 100%;
           background-color: transparent;
@@ -174,7 +170,6 @@ export const ContactPageWrap = styled.div`
           }
 
           & > .contact-name {
-            font-family: Gill Sans;
             margin-bottom: 2.5rem;
             width: 100%;
             background-color: transparent;
@@ -186,7 +181,6 @@ export const ContactPageWrap = styled.div`
           }
 
           & > .contact-email {
-            font-family: Gill Sans;
             margin-bottom: 2.5rem;
             width: 100%;
             background-color: transparent;
@@ -198,7 +192,6 @@ export const ContactPageWrap = styled.div`
           }
 
           & > .contact-message {
-            font-family: Gill Sans;
             margin-bottom: 0.5rem;
             width: 100%;
             background-color: transparent;
@@ -211,7 +204,6 @@ export const ContactPageWrap = styled.div`
           }
 
           & > .contact-button {
-            font-family: Gill Sans;
             background-color: transparent;
             border: 1px solid lightgrey;
             color: lightgrey;
@@ -225,7 +217,6 @@ export const ContactPageWrap = styled.div`
           }
 
           & > .contact-button:hover {
-            font-family: Gill Sans;
             background-color: lightgrey;
             border: 1px solid lightgrey;
             color: black;

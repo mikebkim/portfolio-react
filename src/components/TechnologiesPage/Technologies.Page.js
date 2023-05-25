@@ -41,7 +41,6 @@ export const TechnologiesPageWrap = styled.div`
       margin: 1rem 0;
 
       & > .reset-button {
-        font-family: "Gill Sans";
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,7 +54,6 @@ export const TechnologiesPageWrap = styled.div`
         color: rgb(1, 200, 200);
 
         &:hover {
-          font-family: "Gill Sans";
           display: flex;
           justify-content: center;
           align-items: center;
@@ -72,7 +70,6 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       & > .flip-button {
-        font-family: "Gill Sans";
         display: flex;
         justify-content: center;
         align-items: center;
@@ -86,7 +83,6 @@ export const TechnologiesPageWrap = styled.div`
         color: rgb(1, 200, 200);
 
         &:hover {
-          font-family: "Gill Sans";
           display: flex;
           justify-content: center;
           align-items: center;

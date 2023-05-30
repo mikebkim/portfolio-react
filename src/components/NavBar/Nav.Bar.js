@@ -233,6 +233,7 @@ export const NavBarWrap = styled.div`
       & > .nav-title {
         font-size: 9px;
         font-weight: 700;
+        transition: ease-in-out 300ms;
       }
 
       &.selected-box {
@@ -266,8 +267,8 @@ export const NavBarWrap = styled.div`
         justify-content: center;
         color: lightgrey;
         fill: lightgrey;
-        height: 3rem;
-        width: 3rem;
+        height: 2rem;
+        width: 2rem;
         transition: ease-in-out 300ms;
         margin-bottom: 0.5rem;
       }

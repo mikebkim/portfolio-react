@@ -191,12 +191,15 @@ export const NavBarWrap = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     height: 100%;
+    height: -moz-available; /* WebKit-based browsers will ignore this. */
+    height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    height: fill-available;
     -webkit-box-align: center;
     align-items: center;
-    background-color: black;
-    width: 0rem;
+    background-color: rgb(1, 200, 200, 0.5);
     z-index: 1;
-    margin-left: 4rem;
+    padding: 0 2rem;
+    border: 5px solid rgb(1, 200, 200);
 
     & > .nav-line {
       border-left: 3px solid rgb(1, 200, 200);

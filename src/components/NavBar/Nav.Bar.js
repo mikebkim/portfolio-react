@@ -218,8 +218,8 @@ export const NavBarWrap = styled.div`
       justify-content: center;
       align-items: center;
       border: 5px solid rgb(1, 200, 200);
-      height: 6rem;
-      width: 6rem;
+      height: 5rem;
+      width: 5rem;
       border-radius: 10px;
       background-color: rgb(29, 29, 29);
       cursor: pointer;
@@ -231,7 +231,7 @@ export const NavBarWrap = styled.div`
       }
 
       & > .nav-title {
-        font-size: 10px;
+        font-size: 9px;
         font-weight: 700;
       }
 

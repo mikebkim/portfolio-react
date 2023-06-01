@@ -199,6 +199,7 @@ export const NavBarWrap = styled.div`
     background-color: rgb(1, 200, 200, 0.5);
     z-index: 1;
     padding: 0 1rem;
+    border-radius: 5px;
     border: 5px solid rgb(1, 200, 200);
 
     & > .nav-line {

@@ -189,14 +189,14 @@ export const NavBarWrap = styled.div`
     position: fixed;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 100%;
     height: -moz-available; /* WebKit-based browsers will ignore this. */
     height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
     height: fill-available;
     -webkit-box-align: center;
     align-items: center;
-    background-color: rgb(1, 200, 200, 0.5);
+    background-color: rgb(30, 30, 30);
     z-index: 1;
     padding: 0 1rem;
     border-radius: 5px;
@@ -222,7 +222,7 @@ export const NavBarWrap = styled.div`
       height: 5rem;
       width: 5rem;
       border-radius: 10px;
-      background-color: rgb(29, 29, 29);
+      background-color: rgb(30, 30, 30);
       cursor: pointer;
 
       &:hover {

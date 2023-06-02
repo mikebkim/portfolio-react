@@ -216,33 +216,36 @@ export const HomePageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: transparent;
-              border: 1px solid lightgrey;
+              background: rgb(1, 200, 200, 0.5);
+              border: 2px solid rgb(1, 200, 200, 0.5);
               transition: ease-in-out 300ms;
               cursor: pointer;
-              font-weight: bold;
-              color: lightgrey;
+              color: rgb(1, 200, 200);
 
+              &:hover {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 2rem;
+                height: 2rem;
+                width: 13rem;
+                background: rgb(1, 200, 200);
+                border: 5px solid rgb(1, 200, 200);
+                transition: ease-in-out 300ms;
+                cursor: pointer;
+                color: lightgrey;
+                fill: lightgrey;
+
+                & > svg {
+                  margin-bottom: 0.2rem;
+                  margin-left: 0.5rem;
+                  animation: 1s slideup;
+                }
+              }
               & > svg {
                 margin-bottom: 0.2rem;
                 margin-left: 0.5rem;
               }
-            }
-
-            & > .resume-button:hover {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border-radius: 2rem;
-              height: 2rem;
-              width: 13rem;
-              background: lightgrey;
-              border: 1px solid lightgrey;
-              transition: ease-in-out 300ms;
-              cursor: pointer;
-              color: rgb(1, 200, 200);
-              fill: lightgrey;
-              font-weight: bold;
             }
           }
         }

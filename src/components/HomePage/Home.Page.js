@@ -148,9 +148,9 @@ export const HomePageWrap = styled.div`
   @media only screen and (max-width: 768px) {
     .HomePage {
       margin: 0px auto;
-      width: 60vw;
+      width: 65vw;
       height: 84vh;
-      padding: 3rem 0px 0px 8rem;
+      padding: 3rem 0px 0px 4rem;
 
       h1 {
         margin-bottom: 0.2rem;

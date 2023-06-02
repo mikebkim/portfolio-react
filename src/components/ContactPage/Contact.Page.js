@@ -137,7 +137,7 @@ export const ContactPageWrap = styled.div`
       margin: 0 auto;
       width: 65vw;
       height: 84vh;
-      padding: 0 0 0 9rem;
+      padding: 0 0 0 4rem;
 
       p {
         color: lightgrey;

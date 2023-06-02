@@ -185,6 +185,120 @@ export const NavBarWrap = styled.div`
 
   // MOBILE
   /* @media only screen and (max-width: 1320px) { */
+
+  a:hover {
+    text-decoration: none;
+    color: lightgrey;
+  }
+  a:focus {
+    text-decoration: none;
+    color: lightgrey;
+  }
+  a:active {
+    text-decoration: none;
+    color: lightgrey;
+  }
+
+  .nav-burger {
+    margin: 0.5rem;
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+
+    & > .nav-burger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 5rem;
+      background-color: rgb(1, 1, 1, 0.1);
+      margin: 0.5rem 0;
+      transition: ease-in-out 300ms;
+      /* border: 5px solid rgb(1, 200, 200); */
+      /* border-radius: 10px; */
+
+      & > .nav-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        width: 4rem;
+        cursor: pointer;
+        border-bottom: 3px solid rgb(1, 200, 200);
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        & > .nav-title {
+          font-size: 9px;
+          font-weight: 700;
+          transition: ease-in-out 300ms;
+        }
+
+        &.selected-box {
+          transition: ease-in-out 300ms;
+          text-decoration: none !important;
+          color: lightgrey;
+        }
+
+        & > .nav-link {
+          & > svg {
+            height: 1rem;
+            width: 1rem;
+            text-decoration: none;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            color: rgb(1, 200, 200);
+            fill: rgb(1, 200, 200);
+            transition: ease-in-out 300ms;
+
+            &:hover {
+              color: lightgrey;
+              fill: lightgrey;
+            }
+          }
+        }
+
+        & > .selected {
+          text-decoration: none;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          color: lightgrey;
+          fill: lightgrey;
+          height: 1.5rem;
+          width: 2rem;
+          transition: ease-in-out 300ms;
+          margin-bottom: 0.5rem;
+
+          & > svg {
+            height: 1rem;
+            width: 1rem;
+            text-decoration: none;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            color: lightgrey;
+            fill: lightgrey;
+            transition: ease-in-out 300ms;
+
+            &:hover {
+              color: lightgrey;
+              fill: lightgrey;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .NavBar {
     position: fixed;
     display: flex;

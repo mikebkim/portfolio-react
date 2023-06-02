@@ -58,7 +58,7 @@ export const ProjectsPageWrap = styled.div`
 
     & > .projects-flex {
       display: flex;
-      margin: 3rem 0;
+      margin: 2rem 0;
 
       &:last-child {
         border: none;
@@ -103,7 +103,7 @@ export const ProjectsPageWrap = styled.div`
       margin: 0 auto;
       width: 65vw;
       height: 84vh;
-      padding: 0 0 0 9rem;
+      padding: 0 0 0 4rem;
 
       h2 {
         color: rgb(1, 200, 200);
@@ -142,7 +142,7 @@ export const ProjectsPageWrap = styled.div`
       & > .projects-flex {
         display: flex;
         flex-direction: column;
-        margin: 3rem 0;
+        margin: 1rem 0;
 
         & > .project-link {
           display: flex;

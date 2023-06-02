@@ -216,7 +216,7 @@ export const TechnologiesPageWrap = styled.div`
       margin: 0 auto;
       width: 65vw;
       height: 84vh;
-      padding: 0 0 0 9rem;
+      padding: 0 0 0 4rem;
 
       & > .tech-box {
         border: 5px solid rgb(1, 200, 200) !important;

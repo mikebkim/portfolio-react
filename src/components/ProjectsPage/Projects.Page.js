@@ -11,9 +11,10 @@ export const ProjectsPageWrap = styled.div`
     height: 84vh;
 
     hr {
-      width: 10rem;
+      max-width: 80rem;
       margin: 0 auto;
       border-radius: 50px;
+      height: 0.1rem;
     }
 
     h1 {
@@ -81,12 +82,14 @@ export const ProjectsPageWrap = styled.div`
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          width: 20rem;
 
           & > .tech-name {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 10rem;
+            width: 7rem;
+            font-size: 15px;
             margin: 0.5rem;
             padding: 0.5rem;
             border-radius: 50px;
@@ -170,7 +173,7 @@ export const ProjectsPageWrap = styled.div`
               font-size: 15px;
               margin: 0.5rem;
               padding: 0.5rem;
-              border-radius: 5px;
+              border-radius: 50px;
               background-color: rgb(1, 200, 200, 0.5);
               color: rgb(1, 200, 200);
             }

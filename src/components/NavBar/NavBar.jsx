@@ -138,12 +138,13 @@ const NavBar = () => {
             <FontAwesomeIcon
               icon={faBars}
               onClick={() => setIsBurgerOpen(!isBurgerOpen)}
-              style={{ color: "rgb(1, 200, 200)" }}
+              className="burger-open"
             />
           ) : (
             <FontAwesomeIcon
               icon={faBars}
               onClick={() => setIsBurgerOpen(!isBurgerOpen)}
+              className="burger-close"
             />
           )}
           {isBurgerOpen ? (

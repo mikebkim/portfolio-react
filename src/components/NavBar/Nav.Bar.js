@@ -199,6 +199,17 @@ export const NavBarWrap = styled.div`
     color: lightgrey;
   }
 
+  .burger-open {
+    color: rgb(1, 200, 200);
+    transform: rotate(180deg);
+    transition: ease-in-out 300ms;
+  }
+
+  .burger-close {
+    color: lightgrey;
+    transition: ease-in-out 300ms;
+  }
+
   .nav-burger {
     margin: 0.5rem;
     width: 1rem;
@@ -310,11 +321,11 @@ export const NavBarWrap = styled.div`
     height: fill-available;
     -webkit-box-align: center;
     align-items: center;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(1, 1, 1, 0.1);
     z-index: 1;
     padding: 0 1rem;
     border-radius: 5px;
-    border: 5px solid rgb(1, 200, 200);
+    /* border: 5px solid rgb(1, 200, 200); */
 
     & > .nav-line {
       border-left: 3px solid rgb(1, 200, 200);

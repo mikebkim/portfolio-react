@@ -85,14 +85,14 @@ const TechnologiesPage = ({ allImages }) => {
             type="submit"
             onClick={() => handleFlipCards()}
           >
-            Flip Cards
+            FLIP CARDS
           </button>
           <button
             className="reset-button"
             type="submit"
             onClick={() => setBoxes(defaultBoxes)}
           >
-            Reset Box
+            RESET BOX
           </button>
         </div>
       </div>

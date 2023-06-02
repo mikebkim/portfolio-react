@@ -46,7 +46,7 @@ export const TechnologiesPageWrap = styled.div`
         align-items: center;
         border-radius: 2rem;
         height: 2rem;
-        width: 13rem;
+        width: 10rem;
         background: rgb(1, 200, 200, 0.5);
         border: 2px solid rgb(1, 200, 200, 0.5);
         transition: ease-in-out 300ms;
@@ -59,7 +59,7 @@ export const TechnologiesPageWrap = styled.div`
           align-items: center;
           border-radius: 2rem;
           height: 2rem;
-          width: 13rem;
+          width: 10rem;
           background: rgb(1, 200, 200);
           border: 5px solid rgb(1, 200, 200);
           transition: ease-in-out 300ms;
@@ -75,7 +75,7 @@ export const TechnologiesPageWrap = styled.div`
         align-items: center;
         border-radius: 2rem;
         height: 2rem;
-        width: 13rem;
+        width: 10rem;
         background: rgb(1, 200, 200, 0.5);
         border: 2px solid rgb(1, 200, 200, 0.5);
         transition: ease-in-out 300ms;
@@ -88,7 +88,7 @@ export const TechnologiesPageWrap = styled.div`
           align-items: center;
           border-radius: 2rem;
           height: 2rem;
-          width: 13rem;
+          width: 10rem;
           background: rgb(1, 200, 200);
           border: 5px solid rgb(1, 200, 200);
           transition: ease-in-out 300ms;

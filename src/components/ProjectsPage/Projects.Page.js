@@ -171,7 +171,7 @@ export const ProjectsPageWrap = styled.div`
               padding: 0.5rem;
               border-radius: 5px;
               background-color: rgb(1, 200, 200, 0.5);
-              color: lightgrey;
+              color: rgb(1, 200, 200);
             }
           }
         }

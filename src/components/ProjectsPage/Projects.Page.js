@@ -166,7 +166,8 @@ export const ProjectsPageWrap = styled.div`
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 10rem;
+              width: 7rem;
+              font-size: 15px;
               margin: 0.5rem;
               padding: 0.5rem;
               border-radius: 5px;

@@ -82,6 +82,7 @@ export const NavBarWrap = styled.div`
     cursor: pointer;
     font-size: 2rem;
     position: absolute;
+    position: fixed;
 
     & > .nav-burger-menu {
       display: flex;

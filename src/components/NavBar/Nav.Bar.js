@@ -1,190 +1,55 @@
 import styled from "styled-components";
 
 export const NavBarWrap = styled.div`
-  // Desktop
-  /* .NavBar {
-    @keyframes slideinright {
-      0% {
-        color: transparent;
-        fill: transparent;
-      }
-
-      75% {
-        color: transparent;
-        fill: transparent;
-      }
-
-      from {
-        margin-right: 10rem;
-        width: 0;
-      }
-
-      to {
-        margin-left: 8rem;
-        width: 2rem;
-      }
+  @keyframes slideleft {
+    0% {
+      color: lightgrey;
+      fill: transparent;
     }
 
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-    align-items: center;
-    width: 6rem;
-    z-index: 1;
-
-    & > .nav-box:last-child {
-      border-bottom: 5px solid rgb(1, 200, 200);
+    50% {
+      color: lightgrey;
+      fill: transparent;
     }
 
-    & > .nav-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 5px solid rgb(1, 200, 200);
-      height: 100%;
-      width: 100%;
-      margin: 0.017rem auto;
-
-      &.selected-box {
-        background-color: rgb(1, 200, 200);
-        transition: ease-in-out 300ms;
-        border: 5px solid lightgrey;
-      }
-
-      & > .nav-link {
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        background-color: transparent;
-        color: rgb(1, 200, 200);
-        fill: rgb(1, 200, 200);
-        border-radius: 2rem;
-        height: 3rem;
-        width: 3rem;
-        border: 5px solid rgb(1, 200, 200);
-        transition: ease-in-out 300ms;
-
-        & > img {
-          width: 2rem;
-        }
-      }
-
-      & > .nav-link:hover {
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        background-color: rgb(1, 200, 200);
-        color: lightgrey;
-        fill: lightgrey;
-        border-radius: 2rem;
-        height: 3rem;
-        width: 3rem;
-        border: 5px solid white;
-        transition: ease-in-out 300ms;
-
-        & > img {
-          width: 2rem;
-        }
-      }
-
-      & > .selected {
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        background-color: rgb(1, 200, 200);
-        color: lightgrey;
-        fill: lightgrey;
-        border-radius: 2rem;
-        height: 3rem;
-        width: 3rem;
-        border: 5px solid lightgrey;
-        transition: ease-in-out 300ms;
-
-        & > .nav-line-selected {
-          display: flex;
-          flex-direction: row-reverse;
-          position: absolute;
-          border-bottom: 5px solid lightgrey;
-          margin-left: 8rem;
-          color: lightgrey;
-          fill: lightgrey;
-          width: 2rem;
-          z-index: -1;
-          animation: 1s slideinright;
-
-          & > .nav-title {
-            position: absolute;
-            left: 2.5rem;
-            bottom: -0.7rem;
-          }
-        }
-
-        & > .nav-line-selected-home {
-          display: flex;
-          flex-direction: row-reverse;
-          position: absolute;
-          border-right: 5px solid lightgrey;
-          margin-left: 10rem;
-          color: lightgrey;
-          fill: lightgrey;
-          height: 2rem;
-          z-index: -1;
-          animation: 1s slideinright;
-        }
-
-        & > .nav-line-selected-technologies {
-          display: flex;
-          flex-direction: row-reverse;
-          position: absolute;
-          border-right: 5px solid lightgrey;
-          margin-left: 10rem;
-          color: lightgrey;
-          fill: lightgrey;
-          height: 2rem;
-          z-index: -1;
-          animation: 1s slideinright;
-        }
-
-        & > .nav-line-selected-projects {
-          display: flex;
-          flex-direction: row-reverse;
-          position: absolute;
-          border-right: 5px solid lightgrey;
-          margin-left: 10rem;
-          color: lightgrey;
-          fill: lightgrey;
-          height: 2rem;
-          z-index: -1;
-          animation: 1s slideinright;
-        }
-
-        & > .nav-line-selected-contact {
-          display: flex;
-          flex-direction: row-reverse;
-          position: absolute;
-          border-right: 5px solid lightgrey;
-          margin-left: 10rem;
-          color: lightgrey;
-          fill: lightgrey;
-          height: 2rem;
-          z-index: -1;
-          animation: 1s slideinright;
-        }
-
-        & > img {
-          width: 2rem;
-        }
-      }
+    75% {
+      color: rgb(29, 29, 29);
+      fill: transparent;
     }
-  } */
 
-  // MOBILE
-  /* @media only screen and (max-width: 1320px) { */
+    from {
+      margin-left: -10rem;
+    }
+
+    to {
+      margin: 0.5rem 0px;
+    }
+  }
+
+  @keyframes slideright {
+    0% {
+      color: lightgrey;
+      fill: transparent;
+    }
+
+    50% {
+      color: lightgrey;
+      fill: transparent;
+    }
+
+    75% {
+      color: rgb(29, 29, 29);
+      fill: transparent;
+    }
+
+    from {
+      margin: 0.5rem 0px;
+    }
+
+    to {
+      margin-left: -10rem;
+    }
+  }
 
   a:hover {
     text-decoration: none;
@@ -202,12 +67,12 @@ export const NavBarWrap = styled.div`
   .burger-open {
     color: rgb(1, 200, 200);
     transform: rotate(180deg);
-    transition: ease-in-out 300ms;
+    transition: ease-in-out 1s;
   }
 
   .burger-close {
     color: lightgrey;
-    transition: ease-in-out 300ms;
+    transition: ease-in-out 1s;
   }
 
   .nav-burger {
@@ -227,8 +92,14 @@ export const NavBarWrap = styled.div`
       background-color: rgb(1, 1, 1, 0.1);
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
-      /* border: 5px solid rgb(1, 200, 200); */
-      /* border-radius: 10px; */
+      height: 30rem;
+      animation: 1s slideleft;
+
+      & > .nav-line {
+        border-right: 3px solid lightgrey;
+        border-radius: 10px;
+        height: 1.5rem;
+      }
 
       & > .nav-box {
         display: flex;
@@ -238,7 +109,6 @@ export const NavBarWrap = styled.div`
         height: 4rem;
         width: 4rem;
         cursor: pointer;
-        border-bottom: 3px solid rgb(1, 200, 200);
 
         &:last-child {
           border-bottom: none;
@@ -248,6 +118,7 @@ export const NavBarWrap = styled.div`
           font-size: 9px;
           font-weight: 700;
           transition: ease-in-out 300ms;
+          color: rgb(1, 200, 200);
         }
 
         &.selected-box {
@@ -258,39 +129,8 @@ export const NavBarWrap = styled.div`
 
         & > .nav-link {
           & > svg {
-            height: 1rem;
-            width: 1rem;
-            text-decoration: none;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-color: transparent;
-            color: rgb(1, 200, 200);
-            fill: rgb(1, 200, 200);
-            transition: ease-in-out 300ms;
-
-            &:hover {
-              color: lightgrey;
-              fill: lightgrey;
-            }
-          }
-        }
-
-        & > .selected {
-          text-decoration: none;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          color: lightgrey;
-          fill: lightgrey;
-          height: 1.5rem;
-          width: 2rem;
-          transition: ease-in-out 300ms;
-          margin-bottom: 0.5rem;
-
-          & > svg {
-            height: 1rem;
-            width: 1rem;
+            height: 1.5rem;
+            width: 1.5rem;
             text-decoration: none;
             align-items: center;
             display: flex;
@@ -301,8 +141,39 @@ export const NavBarWrap = styled.div`
             transition: ease-in-out 300ms;
 
             &:hover {
-              color: lightgrey;
-              fill: lightgrey;
+              color: rgb(1, 200, 200);
+              fill: rgb(1, 200, 200);
+            }
+          }
+        }
+
+        & > .selected {
+          text-decoration: none;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          color: rgb(1, 200, 200);
+          fill: rgb(1, 200, 200);
+          height: 1.5rem;
+          width: 1.5rem;
+          transition: ease-in-out 300ms;
+          margin-bottom: 0.5rem;
+
+          & > svg {
+            height: 1.5rem;
+            width: 1.5rem;
+            text-decoration: none;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            background-color: transparent;
+            color: rgb(1, 200, 200);
+            fill: rgb(1, 200, 200);
+            transition: ease-in-out 300ms;
+
+            &:hover {
+              color: rgb(1, 200, 200);
+              fill: rgb(1, 200, 200);
             }
           }
         }
@@ -316,8 +187,8 @@ export const NavBarWrap = styled.div`
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    height: -moz-available; /* WebKit-based browsers will ignore this. */
-    height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    height: -moz-available;
+    height: -webkit-fill-available;
     height: fill-available;
     -webkit-box-align: center;
     align-items: center;
@@ -325,7 +196,6 @@ export const NavBarWrap = styled.div`
     z-index: 1;
     padding: 0 1rem;
     border-radius: 5px;
-    /* border: 5px solid rgb(1, 200, 200); */
 
     & > .nav-line {
       border-left: 3px solid rgb(1, 200, 200);
@@ -400,7 +270,6 @@ export const NavBarWrap = styled.div`
       }
     }
   }
-  /* } */
 `;
 
 export default NavBarWrap;

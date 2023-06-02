@@ -67,12 +67,12 @@ export const NavBarWrap = styled.div`
   .burger-open {
     color: rgb(1, 200, 200);
     transform: rotate(180deg);
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
   }
 
   .burger-close {
     color: lightgrey;
-    transition: ease-in-out 1s;
+    transition: ease-in-out 0.5s;
   }
 
   .nav-burger {
@@ -94,7 +94,7 @@ export const NavBarWrap = styled.div`
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
       height: 30rem;
-      animation: 1s slideleft;
+      animation: 0.5s slideleft;
 
       & > .nav-line {
         border-right: 3px solid lightgrey;

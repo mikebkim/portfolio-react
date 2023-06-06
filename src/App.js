@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -41,13 +41,40 @@ const App = () => {
     require.context("./images", false, /\.(png|jpe?g|svg)$/)
   );
 
+  const [toggleHeader, setToggleHeader] = useState(false);
+
   return (
     <div className="App">
       <Router>
-        <NavBar personalLogo={personal_logo} />
+        <NavBar personalLogo={personal_logo} toggleHeader={toggleHeader} />
+        {toggleHeader ? (
+          <div
+            className="dont-click-fix"
+            onClick={() => setToggleHeader(!toggleHeader)}
+          >
+            FIX ME!
+          </div>
+        ) : (
+          <div
+            className="dont-click"
+            onClick={() => setToggleHeader(!toggleHeader)}
+          >
+            DON'T CLICK ME!
+          </div>
+        )}
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
-          <Route exact path="/home" element={<HomePage resume={MK_Resume} />} />
+          <Route
+            exact
+            path="/home"
+            element={
+              <HomePage
+                resume={MK_Resume}
+                setToggleHeader={setToggleHeader}
+                toggleHeader={toggleHeader}
+              />
+            }
+          />
           <Route
             exact
             path="/technologies"

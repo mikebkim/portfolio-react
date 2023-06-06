@@ -75,6 +75,7 @@ export const HomePageWrap = styled.div`
       color: lightgrey;
       margin: 0;
       font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
 
     & > .header {
@@ -85,6 +86,24 @@ export const HomePageWrap = styled.div`
       align-items: start;
       border-bottom: 5px solid rgb(1, 200, 200);
       padding-bottom: 0.5rem;
+
+      & > hr {
+        width: 100%;
+      }
+    }
+
+    & > .header-rebel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      align-items: start;
+      border-bottom: 5px solid rgb(299, 1, 1);
+      padding-bottom: 0.5rem;
+
+      & > .rebel-name {
+        color: rgb(299, 1, 1);
+      }
 
       & > hr {
         width: 100%;
@@ -110,7 +129,7 @@ export const HomePageWrap = styled.div`
             height: 2rem;
             width: 13rem;
             background: rgb(1, 200, 200, 0.5);
-            border: 2px solid rgb(1, 200, 200, 0.5);
+            border: 2px solid rgb(1, 200, 200);
             transition: ease-in-out 300ms;
             cursor: pointer;
             color: rgb(1, 200, 200);
@@ -122,8 +141,57 @@ export const HomePageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: rgb(1, 200, 200);
+              background: rgb(1, 200, 200, 0.6);
               border: 5px solid rgb(1, 200, 200);
+              transition: ease-in-out 300ms;
+              cursor: pointer;
+              color: lightgrey;
+              fill: lightgrey;
+
+              & > svg {
+                margin-bottom: 0.2rem;
+                margin-left: 0.5rem;
+                animation: 1s slideup;
+              }
+            }
+            & > svg {
+              margin-bottom: 0.2rem;
+              margin-left: 0.5rem;
+            }
+          }
+        }
+      }
+
+      & > .resume-rebel {
+        margin-top: 1.5rem;
+        margin-left: 0.5rem;
+
+        & > form {
+          justify-content: center;
+          display: flex;
+
+          & > .resume-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 2rem;
+            height: 2rem;
+            width: 13rem;
+            background: rgb(200, 1, 1, 0.5);
+            border: 2px solid rgb(200, 1, 1);
+            transition: ease-in-out 300ms;
+            cursor: pointer;
+            color: rgb(299, 1, 1);
+
+            &:hover {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 2rem;
+              height: 2rem;
+              width: 13rem;
+              background-color: rgb(200, 1, 1, 0.6);
+              border: 5px solid rgb(200, 1, 1);
               transition: ease-in-out 300ms;
               cursor: pointer;
               color: lightgrey;
@@ -151,6 +219,24 @@ export const HomePageWrap = styled.div`
       width: 65vw;
       height: 84vh;
       padding: 3rem 0px 0px 4rem;
+
+      & > .dont-click {
+        top: 1rem;
+        left: 3rem;
+        position: absolute;
+        width: max-content;
+        cursor: pointer;
+        color: rgb(299, 1, 1);
+      }
+
+      & > .dont-click-fix {
+        top: 1rem;
+        left: 3rem;
+        position: absolute;
+        width: max-content;
+        cursor: pointer;
+        color: green;
+      }
 
       h1 {
         margin-bottom: 0.2rem;

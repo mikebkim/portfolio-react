@@ -12,3 +12,42 @@ hr {
   height: 5px;
   background-color: rgb(1, 200, 200);
 }
+
+
+.dont-click {
+  top: 1rem;
+  right: 1rem;
+  position: absolute;
+  width: max-content;
+  cursor: pointer;
+  color: rgb(299, 1, 1);
+}
+
+.dont-click-fix {
+  top: 1rem;
+  right: 1rem;
+  position: absolute;
+  width: max-content;
+  cursor: pointer;
+  color: rgb(1, 299, 1);
+}
+
+@media only screen and (max-width: 768px) {
+  .dont-click {
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+    width: max-content;
+    cursor: pointer;
+    color: rgb(299, 1, 1);
+  }
+
+  .dont-click-fix {
+    top: 1rem;
+    right: 1rem;
+    position: absolute;
+    width: max-content;
+    cursor: pointer;
+    color: rgb(1, 299, 1);
+  }
+}

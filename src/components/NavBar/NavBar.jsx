@@ -12,7 +12,7 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const NavBar = () => {
+const NavBar = ({ toggleHeader }) => {
   const [selectedTab, setSelectedTab] = useState("");
   const location = useLocation();
 
@@ -47,7 +47,13 @@ const NavBar = () => {
           <Link
             to="/home"
             className={
-              selectedTab.includes("home") ? "nav-box selected-box" : "nav-box"
+              selectedTab.includes("home")
+                ? toggleHeader
+                  ? `${"nav-box-rebel selected-box"}`
+                  : `${"nav-box selected-box"}`
+                : toggleHeader
+                ? `${"nav-box-rebel"}`
+                : `${"nav-box"}`
             }
             title="Home"
           >
@@ -62,13 +68,17 @@ const NavBar = () => {
               ""
             )}
           </Link>
-          <div className="nav-line"></div>
+          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
           <Link
             to="/technologies"
             className={
               selectedTab.includes("technologies")
-                ? "nav-box selected-box"
-                : "nav-box"
+                ? toggleHeader
+                  ? `${"nav-box-rebel selected-box"}`
+                  : `${"nav-box selected-box"}`
+                : toggleHeader
+                ? `${"nav-box-rebel"}`
+                : `${"nav-box"}`
             }
             title="Technologies"
           >
@@ -85,13 +95,17 @@ const NavBar = () => {
               ""
             )}
           </Link>
-          <div className="nav-line"></div>
+          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
           <Link
             to="/projects"
             className={
               selectedTab.includes("projects")
-                ? "nav-box selected-box"
-                : "nav-box"
+                ? toggleHeader
+                  ? `${"nav-box-rebel selected-box"}`
+                  : `${"nav-box selected-box"}`
+                : toggleHeader
+                ? `${"nav-box-rebel"}`
+                : `${"nav-box"}`
             }
             title="Projects"
           >
@@ -108,13 +122,17 @@ const NavBar = () => {
               ""
             )}
           </Link>
-          <div className="nav-line"></div>
+          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
           <Link
             to="/contact"
             className={
               selectedTab.includes("contact")
-                ? "nav-box selected-box"
-                : "nav-box"
+                ? toggleHeader
+                  ? `${"nav-box-rebel selected-box"}`
+                  : `${"nav-box selected-box"}`
+                : toggleHeader
+                ? `${"nav-box-rebel"}`
+                : `${"nav-box"}`
             }
             title="Contact"
           >
@@ -138,13 +156,13 @@ const NavBar = () => {
             <FontAwesomeIcon
               icon={faBars}
               onClick={() => setIsBurgerOpen(!isBurgerOpen)}
-              className="burger-open"
+              className={toggleHeader ? "burger-open-rebel" : "burger-open"}
             />
           ) : (
             <FontAwesomeIcon
               icon={faBars}
               onClick={() => setIsBurgerOpen(!isBurgerOpen)}
-              className="burger-close"
+              className={toggleHeader ? "burger-close-rebel" : "burger-close"}
             />
           )}
           {isBurgerOpen ? (
@@ -153,8 +171,12 @@ const NavBar = () => {
                 to="/home"
                 className={
                   selectedTab.includes("home")
-                    ? "nav-box selected-box"
-                    : "nav-box"
+                    ? toggleHeader
+                      ? `${"nav-box-rebel selected-box"}`
+                      : `${"nav-box selected-box"}`
+                    : toggleHeader
+                    ? `${"nav-box-rebel"}`
+                    : `${"nav-box"}`
                 }
                 title="Home"
               >
@@ -171,13 +193,19 @@ const NavBar = () => {
                   ""
                 )}
               </Link>
-              <div className="nav-line"></div>
+              <div
+                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
+              ></div>
               <Link
                 to="/technologies"
                 className={
                   selectedTab.includes("technologies")
-                    ? "nav-box selected-box"
-                    : "nav-box"
+                    ? toggleHeader
+                      ? `${"nav-box-rebel selected-box"}`
+                      : `${"nav-box selected-box"}`
+                    : toggleHeader
+                    ? `${"nav-box-rebel"}`
+                    : `${"nav-box"}`
                 }
                 title="Technologies"
               >
@@ -196,13 +224,19 @@ const NavBar = () => {
                   ""
                 )}
               </Link>
-              <div className="nav-line"></div>
+              <div
+                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
+              ></div>
               <Link
                 to="/projects"
                 className={
                   selectedTab.includes("projects")
-                    ? "nav-box selected-box"
-                    : "nav-box"
+                    ? toggleHeader
+                      ? `${"nav-box-rebel selected-box"}`
+                      : `${"nav-box selected-box"}`
+                    : toggleHeader
+                    ? `${"nav-box-rebel"}`
+                    : `${"nav-box"}`
                 }
                 title="Projects"
               >
@@ -219,13 +253,19 @@ const NavBar = () => {
                   ""
                 )}
               </Link>
-              <div className="nav-line"></div>
+              <div
+                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
+              ></div>
               <Link
                 to="/contact"
                 className={
                   selectedTab.includes("contact")
-                    ? "nav-box selected-box"
-                    : "nav-box"
+                    ? toggleHeader
+                      ? `${"nav-box-rebel selected-box"}`
+                      : `${"nav-box selected-box"}`
+                    : toggleHeader
+                    ? `${"nav-box-rebel"}`
+                    : `${"nav-box"}`
                 }
                 title="Contact"
               >

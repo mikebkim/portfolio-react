@@ -104,13 +104,13 @@ export const NavBarWrap = styled.div`
       background-color: rgb(1, 1, 1, 0.1);
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
-      height: 30rem;
+      height: 20rem;
       animation: 0.5s slideleft;
 
       & > .nav-line {
-        border-right: 3px solid lightgrey;
-        border-radius: 10px;
-        height: 1.5rem;
+        border-bottom: 2px solid rgb(1, 200, 200);
+        width: 100%;
+        border-radius: 50px;
       }
 
       & > .nav-box {
@@ -191,8 +191,8 @@ export const NavBarWrap = styled.div`
         }
       }
       & > .nav-line-rebel {
-        border-left: 3px solid rgb(200, 1, 1);
-        height: 5%;
+        border-bottom: 2px solid rgb(200, 1, 1);
+        width: 100%;
         border-radius: 50px;
       }
 
@@ -293,8 +293,8 @@ export const NavBarWrap = styled.div`
     border-radius: 5px;
 
     & > .nav-line {
-      border-left: 3px solid rgb(1, 200, 200);
-      height: 5%;
+      border-bottom: 2px solid rgb(1, 200, 200);
+      width: 100%;
       border-radius: 50px;
     }
 
@@ -368,8 +368,8 @@ export const NavBarWrap = styled.div`
     // ---------------- REBEL ---------------- //
 
     & > .nav-line-rebel {
-      border-left: 3px solid rgb(200, 1, 1);
-      height: 5%;
+      border-bottom: 2px solid rgb(200, 1, 1);
+      width: 100%;
       border-radius: 50px;
     }
 

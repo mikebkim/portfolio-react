@@ -37,6 +37,11 @@ export const ProjectsPageWrap = styled.div`
       border-bottom: 3px solid lightgrey;
     }
 
+    h6 {
+      margin: 0.5rem;
+      color: rgb(200, 1, 1);
+    }
+
     p {
       color: lightgrey;
       margin: 1rem auto;
@@ -213,6 +218,11 @@ export const ProjectsPageWrap = styled.div`
       margin: 0 0 1rem 0;
       color: lightgrey;
       border-bottom: 3px solid lightgrey;
+    }
+
+    h6 {
+      margin: 0.5rem;
+      color: rgb(200, 1, 1);
     }
 
     p {

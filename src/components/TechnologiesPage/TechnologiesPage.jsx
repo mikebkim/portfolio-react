@@ -188,6 +188,7 @@ const TechnologiesPage = ({ allImages, toggleHeader }) => {
         <div className="TechnologiesPage-rebel" data-aos="fade-up">
           <div className="header">
             <h1 style={{ fontSize: `${fontSize}px` }}>TECHNOLOGIES</h1>
+            <h6>you're still a rebel...</h6>
             <p className="description">
               Below are languages, frameworks, tools, and ancillary technologies
               I provide when building websites.

@@ -21,6 +21,11 @@ export const ContactPageWrap = styled.div`
       padding-bottom: 0.5rem;
     }
 
+    h6 {
+      margin: 0.5rem;
+      color: rgb(200, 1, 1);
+    }
+
     p {
       color: lightgrey;
       margin: 1rem auto;
@@ -253,6 +258,11 @@ export const ContactPageWrap = styled.div`
       margin: 3rem 0 0 0;
       border-bottom: 5px solid rgb(200, 1, 1);
       padding-bottom: 0.5rem;
+    }
+
+    h6 {
+      margin: 0.5rem;
+      color: rgb(200, 1, 1);
     }
 
     p {

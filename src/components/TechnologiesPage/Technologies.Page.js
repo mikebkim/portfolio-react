@@ -137,6 +137,11 @@ export const TechnologiesPageWrap = styled.div`
       padding-bottom: 0.5rem;
     }
 
+    h6 {
+      margin: 0.5rem;
+      color: rgb(200, 1, 1);
+    }
+
     p {
       color: lightgrey;
       margin: 1rem auto;
@@ -424,6 +429,11 @@ export const TechnologiesPageWrap = styled.div`
       padding-bottom: 0.5rem;
     }
 
+    h6 {
+      margin: 0.5rem;
+      color: rgb(200, 1, 1);
+    }
+
     p {
       color: lightgrey;
       margin: 1rem auto;
@@ -529,7 +539,7 @@ export const TechnologiesPageWrap = styled.div`
           transition: transform 0.6s;
           transform-style: preserve-3d;
           border-radius: 10px;
-          border: 5px solid rgb(200, 1, 1)!important;
+          border: 5px solid rgb(200, 1, 1) !important;
           position: relative !important;
         }
       }

@@ -30,6 +30,7 @@ const ContactPage = ({ toggleHeader }) => {
         <div className="ContactPage-rebel" data-aos="fade-up">
           <div className="header">
             <h1 style={{ fontSize: `${fontSize}px` }}>CONTACT</h1>
+            <h6>you're still a rebel...</h6>
             <p className="description">Feel free to contact me!</p>
           </div>
           <form

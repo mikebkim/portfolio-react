@@ -80,7 +80,10 @@ const App = () => {
             path="/technologies"
             element={
               <DndProvider backend={HTML5Backend}>
-                <TechnologiesPage allImages={allImages} />
+                <TechnologiesPage
+                  allImages={allImages}
+                  toggleHeader={toggleHeader}
+                />
               </DndProvider>
             }
           />
@@ -94,10 +97,15 @@ const App = () => {
                 iconSessions={sessionsicon}
                 iconGameit={gameiticon}
                 allImages={allImages}
+                toggleHeader={toggleHeader}
               />
             }
           />
-          <Route exact path="/contact" element={<ContactPage />} />
+          <Route
+            exact
+            path="/contact"
+            element={<ContactPage toggleHeader={toggleHeader} />}
+          />
         </Routes>
       </Router>
     </div>

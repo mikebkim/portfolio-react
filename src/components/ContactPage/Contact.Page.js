@@ -120,7 +120,7 @@ export const ContactPageWrap = styled.div`
             border-radius: 2rem;
             height: 2rem;
             width: 13rem;
-            background: rgb(1, 200, 200);
+            background: rgb(1, 200, 200, 0.5);
             border: 5px solid rgb(1, 200, 200);
             transition: ease-in-out 300ms;
             cursor: pointer;
@@ -212,7 +212,7 @@ export const ContactPageWrap = styled.div`
             height: 2rem;
             width: 13rem;
             background: rgb(1, 200, 200, 0.5);
-            border: 2px solid rgb(1, 200, 200, 0.5);
+            border: 2px solid rgb(1, 200, 200);
             transition: ease-in-out 300ms;
             cursor: pointer;
             color: rgb(1, 200, 200);
@@ -226,7 +226,7 @@ export const ContactPageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: rgb(1, 200, 200);
+              background: rgb(1, 200, 200, 0.5);
               border: 5px solid rgb(1, 200, 200);
               transition: ease-in-out 300ms;
               cursor: pointer;
@@ -354,7 +354,7 @@ export const ContactPageWrap = styled.div`
             border-radius: 2rem;
             height: 2rem;
             width: 13rem;
-            background: rgb(200, 1, 1);
+            background: rgb(200, 1, 1, 0.5);
             border: 5px solid rgb(200, 1, 1);
             transition: ease-in-out 300ms;
             cursor: pointer;
@@ -460,7 +460,7 @@ export const ContactPageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: rgb(200, 1, 1);
+              background: rgb(200, 1, 1, 0.5);
               border: 5px solid rgb(200, 1, 1);
               transition: ease-in-out 300ms;
               cursor: pointer;

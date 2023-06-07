@@ -100,11 +100,11 @@ export const NavBarWrap = styled.div`
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      width: 5rem;
+      width: 4.5rem;
       background-color: rgb(1, 1, 1, 0.1);
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
-      height: 20rem;
+      height: 15.5rem;
       animation: 0.5s slideleft;
 
       & > .nav-line {
@@ -127,7 +127,7 @@ export const NavBarWrap = styled.div`
         }
 
         & > .nav-title {
-          font-size: 9px;
+          font-size: 8px;
           font-weight: 700;
           transition: ease-in-out 300ms;
           color: rgb(1, 200, 200);
@@ -210,7 +210,7 @@ export const NavBarWrap = styled.div`
         }
 
         & > .nav-title {
-          font-size: 9px;
+          font-size: 8px;
           font-weight: 700;
           transition: ease-in-out 300ms;
           color: rgb(200, 1, 1);
@@ -322,7 +322,7 @@ export const NavBarWrap = styled.div`
       }
 
       & > .nav-title {
-        font-size: 9px;
+        font-size: 8px;
         font-weight: 700;
         transition: ease-in-out 300ms;
       }
@@ -392,7 +392,7 @@ export const NavBarWrap = styled.div`
       }
 
       & > .nav-title {
-        font-size: 9px;
+        font-size: 8px;
         font-weight: 700;
         transition: ease-in-out 300ms;
       }

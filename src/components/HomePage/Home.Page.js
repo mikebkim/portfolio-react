@@ -93,6 +93,18 @@ export const HomePageWrap = styled.div`
     }
 
     & > .header-rebel {
+      @keyframes pulse-black {
+        0% {
+          transform: scale(0.80);
+          color: rgb(50, 50, 50);
+        }
+
+        100% {
+          transform: scale(1);
+          color: rgb(299, 1, 1);
+        }
+      }
+
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -102,7 +114,9 @@ export const HomePageWrap = styled.div`
       padding-bottom: 0.5rem;
 
       & > .rebel-name {
-        color: rgb(299, 1, 1);
+        color: rgb(200, 1, 1);
+        transition: ease-in-out 300ms;
+        animation: pulse-black 2s infinite;
       }
 
       & > hr {

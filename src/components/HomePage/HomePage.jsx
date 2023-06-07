@@ -15,7 +15,7 @@ const HomePage = ({ resume, toggleHeader }) => {
       <div className="HomePage" data-aos="fade-up">
         {toggleHeader ? (
           <div className="header-rebel">
-            <h1>HI, </h1>
+            <h1>OH NO... </h1>
             <h2 className="rebel-name">YOU'RE A REBEL!</h2>
             <h3>habitual line stepper</h3>
             <h5>Risk Taker, USA</h5>

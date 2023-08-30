@@ -51,6 +51,36 @@ export const NavBarWrap = styled.div`
     }
   }
 
+  & > .social-links {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    align-items: end;
+    height: 100%;
+    width: 100%;
+    margin-top: -1rem;
+
+    & > .social-icon {
+      margin: 0 1rem;
+
+      & > .git {
+        color: lightgrey;
+      }
+
+      & > .linkedin {
+        color: rgb(8, 91, 187);
+      }
+
+      & > .instagram {
+        color: rgb(255, 0, 95);
+      }
+
+      & > .soundcloud {
+        color: orange;
+      }
+    }
+  }
+
   a:hover {
     text-decoration: none;
     color: lightgrey;

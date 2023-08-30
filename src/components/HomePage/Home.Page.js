@@ -55,6 +55,8 @@ export const HomePageWrap = styled.div`
 
       & > .home-name {
         color: rgb(1, 200, 200);
+        text-shadow: 0px 0px 10px;
+
       }
     }
 

@@ -135,6 +135,7 @@ export const TechnologiesPageWrap = styled.div`
       margin: 3rem 0 0 0;
       border-bottom: 5px solid rgb(1, 200, 200);
       padding-bottom: 0.5rem;
+      text-shadow: 0px 0px 10px;
     }
 
     h6 {

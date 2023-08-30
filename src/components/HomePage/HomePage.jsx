@@ -22,9 +22,9 @@ const HomePage = ({ resume, toggleHeader }) => {
           </div>
         ) : (
           <div className="header">
-            <h1>HI, </h1>
+            <h1>HI THERE,</h1>
             <h2>
-              I'M <span className="home-name">MIKE KIM</span>,
+              I'M <span className="home-name">MIKE KIM</span>
             </h2>
             <h3>web developer</h3>
             <h5>Los Angeles, CA</h5>

@@ -7,14 +7,13 @@ import {
   faCode,
   faLayerGroup,
   faPhone,
-  faBars,
+  faBars
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
-  faFacebook,
   faLinkedin,
   faInstagram,
-  faSoundcloud,
+  faSoundcloud
 } from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -51,7 +50,12 @@ const NavBar = ({ toggleHeader }) => {
     <NavBarWrap>
       <div class="social-links">
         <div className="social-icon">
-          <a href="https://github.com/mikebkim" className="git" target="_blank">
+          <a
+            href="https://github.com/mikebkim"
+            className="git"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FontAwesomeIcon icon={faGithub} />
           </a>
         </div>
@@ -60,6 +64,7 @@ const NavBar = ({ toggleHeader }) => {
             href="https://www.linkedin.com/in/mikebkim/"
             className="linkedin"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
@@ -69,6 +74,7 @@ const NavBar = ({ toggleHeader }) => {
             href="https://www.instagram.com/mikebkim/"
             className="instagram"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faInstagram} />
           </a>
@@ -78,6 +84,7 @@ const NavBar = ({ toggleHeader }) => {
             href="https://soundcloud.com/mikekim-1"
             className="soundcloud"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faSoundcloud} />
           </a>

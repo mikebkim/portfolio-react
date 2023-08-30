@@ -119,6 +119,7 @@ export const HomePageWrap = styled.div`
         color: rgb(200, 1, 1);
         transition: ease-in-out 300ms;
         animation: pulse-black 2s infinite;
+        text-shadow: 0px 0px 10px;
       }
 
       & > hr {

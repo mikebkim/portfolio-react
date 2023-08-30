@@ -53,30 +53,87 @@ export const NavBarWrap = styled.div`
 
   & > .social-links {
     display: flex;
-    position: absolute;
+    position: fixed;
     justify-content: flex-end;
-    align-items: end;
+    align-items: flex-end;
     height: 100%;
     width: 100%;
     margin-top: -1rem;
 
     & > .social-icon {
+      height: 3rem;
+      width: 3rem;
       margin: 0 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       & > .git {
         color: lightgrey;
+
+        & > svg {
+          height: 1rem;
+          width: 1rem;
+          transition: ease-in-out 0.5s;
+
+          &:hover {
+            height: 2rem;
+            width: 2rem;
+            transition: ease-in-out 0.5s;
+            color: darkgrey;
+          }
+        }
       }
 
       & > .linkedin {
-        color: rgb(8, 91, 187);
+        color: lightgrey;
+
+        & > svg {
+          height: 1rem;
+          width: 1rem;
+          transition: ease-in-out 0.5s;
+
+          &:hover {
+            height: 2rem;
+            width: 2rem;
+            transition: ease-in-out 0.5s;
+            color: rgb(8, 91, 187);
+          }
+        }
       }
 
       & > .instagram {
-        color: rgb(255, 0, 95);
+        color: lightgrey;
+
+        & > svg {
+          height: 1rem;
+          width: 1rem;
+          transition: ease-in-out 0.5s;
+
+          &:hover {
+            height: 2rem;
+            width: 2rem;
+            transition: ease-in-out 0.5s;
+            color: rgb(255, 0, 95);
+          }
+        }
       }
 
       & > .soundcloud {
-        color: orange;
+        color: lightgrey;
+
+        & > svg {
+          height: 1rem;
+          width: 1rem;
+          transition: ease-in-out 0.5s;
+
+          &:hover {
+            height: 2rem;
+            width: 2rem;
+            transition: ease-in-out 0.5s;
+            color: rgb(255, 101, 0);
+          }
+        }
       }
     }
   }

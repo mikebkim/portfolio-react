@@ -30,6 +30,7 @@ export const ProjectsPageWrap = styled.div`
       font-weight: 700;
       font-size: 36px;
       margin: 0;
+      text-shadow: 0px 0px 10px;
     }
 
     h3 {
@@ -214,6 +215,7 @@ export const ProjectsPageWrap = styled.div`
       font-weight: 700;
       font-size: 36px;
       margin: 0;
+      text-shadow: 0px 0px 10px;
     }
 
     h3 {

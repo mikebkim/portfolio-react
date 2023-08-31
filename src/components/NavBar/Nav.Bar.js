@@ -51,7 +51,7 @@ export const NavBarWrap = styled.div`
     }
   }
 
-  & > .social-links {
+  /* & > .social-links {
     display: flex;
     position: fixed;
     justify-content: flex-end;
@@ -136,7 +136,7 @@ export const NavBarWrap = styled.div`
         }
       }
     }
-  }
+  } */
 
   a:hover {
     text-decoration: none;
@@ -188,7 +188,7 @@ export const NavBarWrap = styled.div`
       justify-content: space-around;
       align-items: center;
       width: 4.5rem;
-      background-color: rgb(1, 1, 1, 0.1);
+      background-color: rgb(40, 40, 40);
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
       height: 15.5rem;
@@ -374,7 +374,7 @@ export const NavBarWrap = styled.div`
     height: fill-available;
     -webkit-box-align: center;
     align-items: center;
-    background-color: rgb(1, 1, 1, 0.1);
+    background-color: rgb(40, 40, 40);
     z-index: 1;
     padding: 0 1rem;
     border-radius: 5px;

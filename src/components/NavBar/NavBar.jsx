@@ -9,12 +9,6 @@ import {
   faPhone,
   faBars
 } from "@fortawesome/free-solid-svg-icons";
-import {
-  faGithub,
-  faLinkedin,
-  faInstagram,
-  faSoundcloud
-} from "@fortawesome/free-brands-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -48,48 +42,6 @@ const NavBar = ({ toggleHeader }) => {
 
   return (
     <NavBarWrap>
-      <div class="social-links">
-        <div className="social-icon">
-          <a
-            href="https://github.com/mikebkim"
-            className="git"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} />
-          </a>
-        </div>
-        <div className="social-icon">
-          <a
-            href="https://www.linkedin.com/in/mikebkim/"
-            className="linkedin"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-        </div>
-        <div className="social-icon">
-          <a
-            href="https://www.instagram.com/mikebkim/"
-            className="instagram"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </div>
-        <div className="social-icon">
-          <a
-            href="https://soundcloud.com/mikekim-1"
-            className="soundcloud"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon icon={faSoundcloud} />
-          </a>
-        </div>
-      </div>
       {windowWidth >= 768 ? (
         <div className="NavBar">
           <Link

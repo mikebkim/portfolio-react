@@ -8,7 +8,7 @@ const ProjectsPage = ({
   iconMarble,
   iconSessions,
   iconGameit,
-  toggleHeader,
+  toggleHeader
 }) => {
   useEffect(() => {
     AOS.init();

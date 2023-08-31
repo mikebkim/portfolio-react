@@ -16,6 +16,7 @@ import ContactPage from "./components/ContactPage/ContactPage";
 
 // Components
 import NavBar from "./components/NavBar/NavBar";
+import Footer from "./components/FooterBar/FooterBar";
 import "./App.css";
 
 // Images
@@ -108,6 +109,9 @@ const App = () => {
           />
         </Routes>
       </Router>
+      <React.Fragment>
+        <Footer />
+      </React.Fragment>
     </div>
   );
 };

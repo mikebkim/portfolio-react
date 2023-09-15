@@ -10,7 +10,7 @@ export const FooterWrap = styled.div`
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    height: 2rem;
+    height: 3rem;
 
     & > .social-links {
       display: flex;
@@ -34,8 +34,8 @@ export const FooterWrap = styled.div`
             transition: ease-in-out 0.5s;
 
             &:hover {
-              height: 2rem;
-              width: 2rem;
+              height: 1.5rem;
+              width: 1.5rem;
               transition: ease-in-out 0.5s;
               color: darkgrey;
             }
@@ -51,8 +51,8 @@ export const FooterWrap = styled.div`
             transition: ease-in-out 0.5s;
 
             &:hover {
-              height: 2rem;
-              width: 2rem;
+              height: 1.5rem;
+              width: 1.5rem;
               transition: ease-in-out 0.5s;
               color: rgb(8, 91, 187);
             }
@@ -68,8 +68,8 @@ export const FooterWrap = styled.div`
             transition: ease-in-out 0.5s;
 
             &:hover {
-              height: 2rem;
-              width: 2rem;
+              height: 1.5rem;
+              width: 1.5rem;
               transition: ease-in-out 0.5s;
               color: rgb(255, 0, 95);
             }
@@ -80,8 +80,8 @@ export const FooterWrap = styled.div`
           color: lightgrey;
 
           & > svg {
-            height: 1rem;
-            width: 1rem;
+            height: 1.5rem;
+            width: 1.5rem;
             transition: ease-in-out 0.5s;
 
             &:hover {

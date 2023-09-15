@@ -48,7 +48,7 @@ const App = () => {
     <div className="App">
       <Router>
         <NavBar personalLogo={personal_logo} toggleHeader={toggleHeader} />
-        {toggleHeader ? (
+        {/* {toggleHeader ? (
           <div
             className="dont-click-fix"
             onClick={() => setToggleHeader(!toggleHeader)}
@@ -62,7 +62,7 @@ const App = () => {
           >
             DON'T CLICK ME!
           </div>
-        )}
+        )} */}
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
           <Route

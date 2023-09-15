@@ -181,6 +181,7 @@ export const NavBarWrap = styled.div`
     font-size: 2rem;
     position: absolute;
     position: fixed;
+    z-index: 1;
 
     & > .nav-burger-menu {
       display: flex;

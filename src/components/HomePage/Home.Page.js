@@ -34,8 +34,11 @@ export const HomePageWrap = styled.div`
 
   .HomePage {
     margin: 0 auto;
-    width: 60vw;
-    height: 84vh;
+    width: 65vw;
+    /* height: 84vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .panda {
       display: flex;
@@ -46,17 +49,17 @@ export const HomePageWrap = styled.div`
       color: lightgrey;
       margin: 4rem 0 0 0;
       font-size: 4rem;
+      word-wrap: none;
     }
 
     h2 {
       color: lightgrey;
       margin: 0 0 0 0;
-      font-size: 4rem;
+      font-size: 7rem;
 
       & > .home-name {
         color: rgb(1, 200, 200);
         text-shadow: 0px 0px 10px;
-
       }
     }
 
@@ -97,7 +100,7 @@ export const HomePageWrap = styled.div`
     & > .header-rebel {
       @keyframes pulse-black {
         0% {
-          transform: scale(0.80);
+          transform: scale(0.8);
           color: rgb(50, 50, 50);
         }
 
@@ -234,8 +237,11 @@ export const HomePageWrap = styled.div`
     .HomePage {
       margin: 0px auto;
       width: 65vw;
-      height: 84vh;
+      /* height: 84vh; */
       padding: 3rem 0px 0px 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       & > .dont-click {
         top: 1rem;

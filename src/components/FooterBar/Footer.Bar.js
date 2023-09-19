@@ -2,12 +2,17 @@ import styled from "styled-components";
 
 export const FooterWrap = styled.div`
   .Footer {
-    background-color: rgb(40, 40, 40);
+    /* background-color: rgb(40, 40, 40); */
+    background: linear-gradient(
+      to right,
+      transparent 65%,
+      rgb(40, 40, 40) 100%
+    );
     top: 0;
     position: fixed;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     margin: 0 auto;
     height: 3rem;

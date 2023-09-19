@@ -228,6 +228,10 @@ export const NavBarWrap = styled.div`
         }
 
         & > .nav-link {
+          & > .nav-hover-home {
+            display: none;
+          }
+
           & > svg {
             height: 1.5rem;
             width: 1.5rem;
@@ -433,6 +437,37 @@ export const NavBarWrap = styled.div`
           transition: ease-in-out 300ms;
 
           &:hover {
+            display: block;
+            color: lightgrey;
+            fill: lightgrey;
+          }
+        }
+      }
+
+      & > .nav-link-hover {
+        text-decoration: none;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        color: lightgrey;
+        fill: lightgrey;
+        height: 2rem;
+        width: 2rem;
+        transition: ease-in-out 300ms;
+        margin-bottom: 0.5rem;
+
+        & > svg {
+          text-decoration: none;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          background-color: transparent;
+          color: lightgrey;
+          fill: lightgrey;
+          transition: ease-in-out 300ms;
+
+          &:hover {
+            display: block;
             color: lightgrey;
             fill: lightgrey;
           }

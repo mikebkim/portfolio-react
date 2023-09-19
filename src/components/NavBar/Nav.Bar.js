@@ -419,6 +419,12 @@ export const NavBarWrap = styled.div`
         transition: ease-in-out 300ms;
       }
 
+      & > .nav-title-hover {
+        font-size: 8px;
+        font-weight: 700;
+        transition: ease-in-out 300ms;
+      }
+
       &.selected-box {
         background-color: rgb(1, 200, 200, 0.5);
         transition: ease-in-out 300ms;
@@ -435,12 +441,6 @@ export const NavBarWrap = styled.div`
           color: rgb(1, 200, 200);
           fill: rgb(1, 200, 200);
           transition: ease-in-out 300ms;
-
-          &:hover {
-            display: block;
-            color: lightgrey;
-            fill: lightgrey;
-          }
         }
       }
 
@@ -465,12 +465,6 @@ export const NavBarWrap = styled.div`
           color: lightgrey;
           fill: lightgrey;
           transition: ease-in-out 300ms;
-
-          &:hover {
-            display: block;
-            color: lightgrey;
-            fill: lightgrey;
-          }
         }
       }
 

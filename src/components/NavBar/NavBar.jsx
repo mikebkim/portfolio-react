@@ -40,280 +40,288 @@ const NavBar = ({ toggleHeader }) => {
 
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
-  const [hoverStates, setHoverStates] = useState([false, false]);
-
-  const handleHover = (index, isHovered) => {
-    const newHoverStates = [...hoverStates];
-    newHoverStates[index] = isHovered;
-    setHoverStates(newHoverStates);
-  };
+  const [hoveredLink, setHoveredLink] = useState(null);
 
   return (
     <NavBarWrap>
-      {hoverStates.map((isHovered, index) => {
-        return windowWidth >= 768 ? (
-          <div className="NavBar">
-            <Link
-              to="/home"
+      {windowWidth >= 768 ? (
+        <div className="NavBar">
+          <Link
+            to="/home"
+            className={
+              selectedTab.includes("home")
+                ? toggleHeader
+                  ? `${"nav-box-rebel selected-box"}`
+                  : `${"nav-box selected-box"}`
+                : toggleHeader
+                ? `${"nav-box-rebel"}`
+                : `${"nav-box"}`
+            }
+            title="Home"
+            onMouseEnter={() => setHoveredLink("home")}
+            onMouseLeave={() => setHoveredLink(null)}
+          >
+            <div
               className={
                 selectedTab.includes("home")
-                  ? toggleHeader
-                    ? `${"nav-box-rebel selected-box"}`
-                    : `${"nav-box selected-box"}`
-                  : toggleHeader
-                  ? `${"nav-box-rebel"}`
-                  : `${"nav-box"}`
+                  ? "selected"
+                  : hoveredLink === "home"
+                  ? "nav-link-hover"
+                  : "nav-link"
               }
-              title="Home"
-              onMouseEnter={() => handleHover(index, true)}
-              onMouseLeave={() => handleHover(index, false)}
             >
-              <div
-                className={
-                  selectedTab.includes("home") ? "selected" : "nav-link"
-                }
-              >
-                <FontAwesomeIcon icon={faHome} />
-              </div>
-              {selectedTab.includes("home") ? (
-                <div className="nav-title">HOME</div>
-              ) : isHovered ? (
-                <div className="nav-title">HOME</div>
-              ) : (
-                ""
-              )}
-            </Link>
-            <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
-            <Link
-              to="/technologies"
+              <FontAwesomeIcon icon={faHome} />
+            </div>
+            {selectedTab.includes("home") ? (
+              <div className="nav-title">HOME</div>
+            ) : hoveredLink === "home" ? (
+              <div className="nav-title-hover">HOME</div>
+            ) : (
+              ""
+            )}
+          </Link>
+          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
+          <Link
+            to="/technologies"
+            className={
+              selectedTab.includes("technologies")
+                ? toggleHeader
+                  ? `${"nav-box-rebel selected-box"}`
+                  : `${"nav-box selected-box"}`
+                : toggleHeader
+                ? `${"nav-box-rebel"}`
+                : `${"nav-box"}`
+            }
+            title="Technologies"
+            onMouseEnter={() => setHoveredLink("technologies")}
+            onMouseLeave={() => setHoveredLink(null)}
+          >
+            <div
               className={
                 selectedTab.includes("technologies")
-                  ? toggleHeader
-                    ? `${"nav-box-rebel selected-box"}`
-                    : `${"nav-box selected-box"}`
-                  : toggleHeader
-                  ? `${"nav-box-rebel"}`
-                  : `${"nav-box"}`
+                  ? "selected"
+                  : hoveredLink === "technologies"
+                  ? "nav-link-hover"
+                  : "nav-link"
               }
-              title="Technologies"
-              onMouseEnter={() => handleHover(index, true)}
-              onMouseLeave={() => handleHover(index, false)}
             >
-              <div
-                className={
-                  selectedTab.includes("technologies") ? "selected" : "nav-link"
-                }
-              >
-                <FontAwesomeIcon icon={faCode} />
-              </div>
-              {selectedTab.includes("technologies") ? (
-                <div className="nav-title">TECHNOLOGIES</div>
-              ) : isHovered ? (
-                <div className="nav-title">TECHNOLOGIES</div>
-              ) : (
-                ""
-              )}
-            </Link>
-            <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
-            <Link
-              to="/projects"
+              <FontAwesomeIcon icon={faCode} />
+            </div>
+            {selectedTab.includes("technologies") ? (
+              <div className="nav-title">TECHNOLOGIES</div>
+            ) : hoveredLink === "technologies" ? (
+              <div className="nav-title">TECHNOLOGIES</div>
+            ) : (
+              ""
+            )}
+          </Link>
+          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
+          <Link
+            to="/projects"
+            className={
+              selectedTab.includes("projects")
+                ? toggleHeader
+                  ? `${"nav-box-rebel selected-box"}`
+                  : `${"nav-box selected-box"}`
+                : toggleHeader
+                ? `${"nav-box-rebel"}`
+                : `${"nav-box"}`
+            }
+            title="Projects"
+            onMouseEnter={() => setHoveredLink("projects")}
+            onMouseLeave={() => setHoveredLink(null)}
+          >
+            <div
               className={
                 selectedTab.includes("projects")
-                  ? toggleHeader
-                    ? `${"nav-box-rebel selected-box"}`
-                    : `${"nav-box selected-box"}`
-                  : toggleHeader
-                  ? `${"nav-box-rebel"}`
-                  : `${"nav-box"}`
+                  ? "selected"
+                  : hoveredLink === "projects"
+                  ? "nav-link-hover"
+                  : "nav-link"
               }
-              title="Projects"
-              onMouseEnter={() => handleHover(index, true)}
-              onMouseLeave={() => handleHover(index, false)}
             >
-              <div
-                className={
-                  selectedTab.includes("projects") ? "selected" : "nav-link"
-                }
-              >
-                <FontAwesomeIcon icon={faLayerGroup} />
-              </div>
-              {selectedTab.includes("projects") ? (
-                <div className="nav-title">PROJECTS</div>
-              ) : isHovered ? (
-                <div className="nav-title">PROJECTS</div>
-              ) : (
-                ""
-              )}
-            </Link>
-            <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
-            <Link
-              to="/contact"
+              <FontAwesomeIcon icon={faLayerGroup} />
+            </div>
+            {selectedTab.includes("projects") ? (
+              <div className="nav-title">PROJECTS</div>
+            ) : hoveredLink === "projects" ? (
+              <div className="nav-title">PROJECTS</div>
+            ) : (
+              ""
+            )}
+          </Link>
+          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
+          <Link
+            to="/contact"
+            className={
+              selectedTab.includes("contact")
+                ? toggleHeader
+                  ? `${"nav-box-rebel selected-box"}`
+                  : `${"nav-box selected-box"}`
+                : toggleHeader
+                ? `${"nav-box-rebel"}`
+                : `${"nav-box"}`
+            }
+            title="Contact"
+            onMouseEnter={() => setHoveredLink("contact")}
+            onMouseLeave={() => setHoveredLink(null)}
+          >
+            <div
               className={
                 selectedTab.includes("contact")
-                  ? toggleHeader
-                    ? `${"nav-box-rebel selected-box"}`
-                    : `${"nav-box selected-box"}`
-                  : toggleHeader
-                  ? `${"nav-box-rebel"}`
-                  : `${"nav-box"}`
+                  ? "selected"
+                  : hoveredLink === "contact"
+                  ? "nav-link-hover"
+                  : "nav-link"
               }
-              title="Contact"
-              onMouseEnter={() => handleHover(index, true)}
-              onMouseLeave={() => handleHover(index, false)}
             >
-              <div
-                className={
-                  selectedTab.includes("contact") ? "selected" : "nav-link"
-                }
-              >
-                <FontAwesomeIcon icon={faPhone} />
-              </div>
-              {selectedTab.includes("contact") ? (
-                <div className="nav-title">CONTACT</div>
-              ) : isHovered ? (
-                <div className="nav-title">CONTACT</div>
-              ) : (
-                ""
-              )}
-            </Link>
-          </div>
-        ) : (
-          <div className="nav-burger">
-            {isBurgerOpen ? (
-              <FontAwesomeIcon
-                icon={faBars}
-                onClick={() => setIsBurgerOpen(!isBurgerOpen)}
-                className={toggleHeader ? "burger-open-rebel" : "burger-open"}
-              />
+              <FontAwesomeIcon icon={faPhone} />
+            </div>
+            {selectedTab.includes("contact") ? (
+              <div className="nav-title">CONTACT</div>
+            ) : hoveredLink === "contact" ? (
+              <div className="nav-title">CONTACT</div>
             ) : (
-              <FontAwesomeIcon
-                icon={faBars}
-                onClick={() => setIsBurgerOpen(!isBurgerOpen)}
-                className={toggleHeader ? "burger-close-rebel" : "burger-close"}
-              />
+              ""
             )}
-            {isBurgerOpen ? (
-              <div className="nav-burger-menu">
-                <Link
-                  to="/home"
-                  className={
-                    selectedTab.includes("home")
-                      ? toggleHeader
-                        ? `${"nav-box-rebel selected-box"}`
-                        : `${"nav-box selected-box"}`
-                      : toggleHeader
-                      ? `${"nav-box-rebel"}`
-                      : `${"nav-box"}`
-                  }
-                  title="Home"
-                >
-                  <div
-                    className={
-                      selectedTab.includes("home") ? "selected" : "nav-link"
-                    }
-                  >
-                    <FontAwesomeIcon icon={faHome} />
-                  </div>
-                  {selectedTab.includes("home") ? (
-                    <div className="nav-title">HOME</div>
-                  ) : (
-                    ""
-                  )}
-                </Link>
+          </Link>
+        </div>
+      ) : (
+        <div className="nav-burger">
+          {isBurgerOpen ? (
+            <FontAwesomeIcon
+              icon={faBars}
+              onClick={() => setIsBurgerOpen(!isBurgerOpen)}
+              className={toggleHeader ? "burger-open-rebel" : "burger-open"}
+            />
+          ) : (
+            <FontAwesomeIcon
+              icon={faBars}
+              onClick={() => setIsBurgerOpen(!isBurgerOpen)}
+              className={toggleHeader ? "burger-close-rebel" : "burger-close"}
+            />
+          )}
+          {isBurgerOpen ? (
+            <div className="nav-burger-menu">
+              <Link
+                to="/home"
+                className={
+                  selectedTab.includes("home")
+                    ? toggleHeader
+                      ? `${"nav-box-rebel selected-box"}`
+                      : `${"nav-box selected-box"}`
+                    : toggleHeader
+                    ? `${"nav-box-rebel"}`
+                    : `${"nav-box"}`
+                }
+                title="Home"
+              >
                 <div
-                  className={toggleHeader ? "nav-line-rebel" : "nav-line"}
-                ></div>
-                <Link
-                  to="/technologies"
+                  className={
+                    selectedTab.includes("home") ? "selected" : "nav-link"
+                  }
+                >
+                  <FontAwesomeIcon icon={faHome} />
+                </div>
+                {selectedTab.includes("home") ? (
+                  <div className="nav-title">HOME</div>
+                ) : (
+                  ""
+                )}
+              </Link>
+              <div
+                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
+              ></div>
+              <Link
+                to="/technologies"
+                className={
+                  selectedTab.includes("technologies")
+                    ? toggleHeader
+                      ? `${"nav-box-rebel selected-box"}`
+                      : `${"nav-box selected-box"}`
+                    : toggleHeader
+                    ? `${"nav-box-rebel"}`
+                    : `${"nav-box"}`
+                }
+                title="Technologies"
+              >
+                <div
                   className={
                     selectedTab.includes("technologies")
-                      ? toggleHeader
-                        ? `${"nav-box-rebel selected-box"}`
-                        : `${"nav-box selected-box"}`
-                      : toggleHeader
-                      ? `${"nav-box-rebel"}`
-                      : `${"nav-box"}`
+                      ? "selected"
+                      : "nav-link"
                   }
-                  title="Technologies"
                 >
-                  <div
-                    className={
-                      selectedTab.includes("technologies")
-                        ? "selected"
-                        : "nav-link"
-                    }
-                  >
-                    <FontAwesomeIcon icon={faCode} />
-                  </div>
-                  {selectedTab.includes("technologies") ? (
-                    <div className="nav-title">TECHNOLOGIES</div>
-                  ) : (
-                    ""
-                  )}
-                </Link>
+                  <FontAwesomeIcon icon={faCode} />
+                </div>
+                {selectedTab.includes("technologies") ? (
+                  <div className="nav-title">TECHNOLOGIES</div>
+                ) : (
+                  ""
+                )}
+              </Link>
+              <div
+                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
+              ></div>
+              <Link
+                to="/projects"
+                className={
+                  selectedTab.includes("projects")
+                    ? toggleHeader
+                      ? `${"nav-box-rebel selected-box"}`
+                      : `${"nav-box selected-box"}`
+                    : toggleHeader
+                    ? `${"nav-box-rebel"}`
+                    : `${"nav-box"}`
+                }
+                title="Projects"
+              >
                 <div
-                  className={toggleHeader ? "nav-line-rebel" : "nav-line"}
-                ></div>
-                <Link
-                  to="/projects"
                   className={
-                    selectedTab.includes("projects")
-                      ? toggleHeader
-                        ? `${"nav-box-rebel selected-box"}`
-                        : `${"nav-box selected-box"}`
-                      : toggleHeader
-                      ? `${"nav-box-rebel"}`
-                      : `${"nav-box"}`
+                    selectedTab.includes("projects") ? "selected" : "nav-link"
                   }
-                  title="Projects"
                 >
-                  <div
-                    className={
-                      selectedTab.includes("projects") ? "selected" : "nav-link"
-                    }
-                  >
-                    <FontAwesomeIcon icon={faLayerGroup} />
-                  </div>
-                  {selectedTab.includes("projects") ? (
-                    <div className="nav-title">PROJECTS</div>
-                  ) : (
-                    ""
-                  )}
-                </Link>
+                  <FontAwesomeIcon icon={faLayerGroup} />
+                </div>
+                {selectedTab.includes("projects") ? (
+                  <div className="nav-title">PROJECTS</div>
+                ) : (
+                  ""
+                )}
+              </Link>
+              <div
+                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
+              ></div>
+              <Link
+                to="/contact"
+                className={
+                  selectedTab.includes("contact")
+                    ? toggleHeader
+                      ? `${"nav-box-rebel selected-box"}`
+                      : `${"nav-box selected-box"}`
+                    : toggleHeader
+                    ? `${"nav-box-rebel"}`
+                    : `${"nav-box"}`
+                }
+                title="Contact"
+              >
                 <div
-                  className={toggleHeader ? "nav-line-rebel" : "nav-line"}
-                ></div>
-                <Link
-                  to="/contact"
                   className={
-                    selectedTab.includes("contact")
-                      ? toggleHeader
-                        ? `${"nav-box-rebel selected-box"}`
-                        : `${"nav-box selected-box"}`
-                      : toggleHeader
-                      ? `${"nav-box-rebel"}`
-                      : `${"nav-box"}`
+                    selectedTab.includes("contact") ? "selected" : "nav-link"
                   }
-                  title="Contact"
                 >
-                  <div
-                    className={
-                      selectedTab.includes("contact") ? "selected" : "nav-link"
-                    }
-                  >
-                    <FontAwesomeIcon icon={faPhone} />
-                  </div>
-                  {selectedTab.includes("contact") ? (
-                    <div className="nav-title">CONTACT</div>
-                  ) : (
-                    ""
-                  )}
-                </Link>
-              </div>
-            ) : null}
-          </div>
-        );
-      })}
+                  <FontAwesomeIcon icon={faPhone} />
+                </div>
+                {selectedTab.includes("contact") ? (
+                  <div className="nav-title">CONTACT</div>
+                ) : (
+                  ""
+                )}
+              </Link>
+            </div>
+          ) : null}
+        </div>
+      )}
     </NavBarWrap>
   );
 };

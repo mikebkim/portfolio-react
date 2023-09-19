@@ -44,7 +44,7 @@ export const HomePageWrap = styled.div`
 
     h1 {
       color: lightgrey;
-      margin: 3rem 0 0 0;
+      margin: 4rem 0 0 0;
       font-size: 4rem;
     }
 

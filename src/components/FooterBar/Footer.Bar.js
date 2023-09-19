@@ -1,6 +1,28 @@
 import styled from "styled-components";
 
 export const FooterWrap = styled.div`
+  @keyframes slideup {
+    0% {
+      color: transparent;
+    }
+
+    50% {
+      color: transparent;
+    }
+
+    75% {
+      color: lightgrey;
+    }
+
+    from {
+      margin-left: -10rem;
+    }
+
+    to {
+      margin-left: 7rem;
+    }
+  }
+
   .Footer {
     /* background-color: rgb(40, 40, 40); */
     background: linear-gradient(
@@ -17,6 +39,14 @@ export const FooterWrap = styled.div`
     margin: 0 auto;
     height: 3rem;
 
+    .social-hover {
+      position: fixed;
+      transition: ease-in-out 300ms;
+      animation: 0.5s slideup;
+      margin-left: 7rem;
+      z-index: -1;
+    }
+
     & > .social-links {
       display: flex;
       justify-content: center;
@@ -25,13 +55,17 @@ export const FooterWrap = styled.div`
       & > .social-icon {
         height: 3rem;
         width: 3rem;
-        margin: 0 1rem;
+        margin: 0 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-right: 7rem;
 
         & > .git {
           color: lightgrey;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           & > svg {
             height: 1rem;
@@ -49,6 +83,9 @@ export const FooterWrap = styled.div`
 
         & > .linkedin {
           color: lightgrey;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           & > svg {
             height: 1rem;
@@ -66,6 +103,9 @@ export const FooterWrap = styled.div`
 
         & > .instagram {
           color: lightgrey;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           & > svg {
             height: 1rem;
@@ -83,6 +123,9 @@ export const FooterWrap = styled.div`
 
         & > .soundcloud {
           color: lightgrey;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           & > svg {
             height: 1.5rem;

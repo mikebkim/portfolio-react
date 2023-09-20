@@ -26,6 +26,31 @@ export const NavBarWrap = styled.div`
     }
   }
 
+  @keyframes slideham {
+    0% {
+      color: lightgrey;
+      fill: transparent;
+    }
+
+    50% {
+      color: lightgrey;
+      fill: transparent;
+    }
+
+    75% {
+      color: rgb(29, 29, 29);
+      fill: transparent;
+    }
+
+    from {
+      margin-left: -10rem;
+    }
+
+    to {
+      margin: 0.5rem 0;
+    }
+  }
+
   @keyframes slideright {
     0% {
       color: lightgrey;
@@ -193,7 +218,7 @@ export const NavBarWrap = styled.div`
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
       height: 15.5rem;
-      animation: 0.5s slideleft;
+      animation: 0.5s slideham;
 
       & > .nav-line {
         border-bottom: 2px solid rgb(1, 200, 200);

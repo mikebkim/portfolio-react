@@ -13,8 +13,9 @@ const Footer = () => {
   const [hoveredSocial, setHoveredSocial] = useState(null);
 
   return (
-    <FooterWrap>
+    <FooterWrap hoveredSocial={hoveredSocial}>
       <div className="Footer">
+        <div className="social-flex"></div>
         <div class="social-links">
           <div className="social-icon">
             <a

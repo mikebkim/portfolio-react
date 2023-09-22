@@ -15,7 +15,7 @@ export const FooterWrap = styled.div`
     }
 
     from {
-      margin-left: -3rem;
+      margin-left: -10rem;
     }
 
     to {
@@ -41,7 +41,7 @@ export const FooterWrap = styled.div`
     .social-hover {
       position: absolute;
       transition: ease-in-out 300ms;
-      animation: 0.5s slideleft;
+      animation: 1s slideleft;
       /* margin-left: 7rem; */
       padding-right: 0.3rem;
       z-index: 0;

@@ -24,10 +24,6 @@ export const FooterWrap = styled.div`
   }
 
   .Footer {
-    /* background-color: ${(props) =>
-      props.hoveredSocial === "linkedin"
-        ? "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)"
-        : "linear-gradient(to right, transparent 65%, rgb(8, 91, 187) 100%)"}; */
     background: linear-gradient(
       to right,
       transparent 65%,
@@ -45,7 +41,7 @@ export const FooterWrap = styled.div`
     .social-hover {
       position: absolute;
       transition: ease-in-out 300ms;
-      animation: 0.5s slideleft;
+      animation: 0.1ms slideleft;
       margin-left: 7rem;
       z-index: 1;
     }
@@ -58,6 +54,7 @@ export const FooterWrap = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 20rem;
 
       & > .social-icon {
         height: 3rem;
@@ -81,7 +78,7 @@ export const FooterWrap = styled.div`
 
             &:hover {
               height: 1.5rem;
-              width: 1.5rem;
+              width: 12rem;
               transition: ease-in-out 0.5s;
               color: darkgrey;
             }
@@ -101,7 +98,7 @@ export const FooterWrap = styled.div`
 
             &:hover {
               height: 1.5rem;
-              width: 1.5rem;
+              width: 12rem;
               transition: ease-in-out 0.5s;
               color: rgb(8, 91, 187);
             }
@@ -121,7 +118,7 @@ export const FooterWrap = styled.div`
 
             &:hover {
               height: 1.5rem;
-              width: 1.5rem;
+              width: 12rem;
               transition: ease-in-out 0.5s;
               color: rgb(255, 0, 95);
             }
@@ -140,8 +137,8 @@ export const FooterWrap = styled.div`
             transition: ease-in-out 0.5s;
 
             &:hover {
-              height: 2rem;
-              width: 2rem;
+              height: 1.5rem;
+              width: 12rem;
               transition: ease-in-out 0.5s;
               color: rgb(255, 101, 0);
             }
@@ -228,7 +225,7 @@ export const FooterWrap = styled.div`
 
               &:hover {
                 height: 1.5rem;
-                width: 1.5rem;
+                width: 12rem;
                 transition: ease-in-out 0.5s;
                 color: darkgrey;
               }
@@ -248,7 +245,7 @@ export const FooterWrap = styled.div`
 
               &:hover {
                 height: 1.5rem;
-                width: 1.5rem;
+                width: 12rem;
                 transition: ease-in-out 0.5s;
                 color: rgb(8, 91, 187);
               }
@@ -268,7 +265,7 @@ export const FooterWrap = styled.div`
 
               &:hover {
                 height: 1.5rem;
-                width: 1.5rem;
+                width: 12rem;
                 transition: ease-in-out 0.5s;
                 color: rgb(255, 0, 95);
               }
@@ -283,7 +280,7 @@ export const FooterWrap = styled.div`
 
             & > svg {
               height: 1.5rem;
-              width: 1.5rem;
+              width: 12rem;
               transition: ease-in-out 0.5s;
 
               &:hover {

@@ -225,7 +225,7 @@ export const FooterWrap = styled.div`
 
               &:hover {
                 height: 1.5rem;
-                width: 12rem;
+                width: 1.5rem;
                 transition: ease-in-out 0.5s;
                 color: darkgrey;
               }
@@ -245,7 +245,7 @@ export const FooterWrap = styled.div`
 
               &:hover {
                 height: 1.5rem;
-                width: 12rem;
+                width: 1.5rem;
                 transition: ease-in-out 0.5s;
                 color: rgb(8, 91, 187);
               }
@@ -265,7 +265,7 @@ export const FooterWrap = styled.div`
 
               &:hover {
                 height: 1.5rem;
-                width: 12rem;
+                width: 1.5rem;
                 transition: ease-in-out 0.5s;
                 color: rgb(255, 0, 95);
               }
@@ -280,7 +280,7 @@ export const FooterWrap = styled.div`
 
             & > svg {
               height: 1.5rem;
-              width: 12rem;
+              width: 1.5rem;
               transition: ease-in-out 0.5s;
 
               &:hover {

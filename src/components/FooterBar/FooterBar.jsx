@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FooterWrap } from "./Footer.Bar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -10,6 +10,20 @@ import {
 import "aos/dist/aos.css";
 
 const Footer = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const [hoveredSocial, setHoveredSocial] = useState(null);
 
   const socialLinks = [
@@ -64,7 +78,11 @@ const Footer = () => {
                 style={{
                   background:
                     hoveredSocial === link.id
-                      ? `${link.backgroundColor}`
+                      ? `${
+                          windowWidth >= 768
+                            ? link.backgroundColor
+                            : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)"
+                        }`
                       : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
                 }}
               >

@@ -15,11 +15,11 @@ export const FooterWrap = styled.div`
     }
 
     from {
-      margin-left: -10rem;
+      margin-left: -3rem;
     }
 
     to {
-      margin-left: 7rem;
+      margin-left: 0rem;
     }
   }
 
@@ -41,9 +41,13 @@ export const FooterWrap = styled.div`
     .social-hover {
       position: absolute;
       transition: ease-in-out 300ms;
-      animation: 0.1ms slideleft;
-      margin-left: 7rem;
-      z-index: 1;
+      animation: 0.5s slideleft;
+      /* margin-left: 7rem; */
+      padding-right: 0.3rem;
+      z-index: 0;
+      width: 12rem;
+      display: flex;
+      justify-content: flex-end;
     }
 
     & > .social-flex {
@@ -75,10 +79,11 @@ export const FooterWrap = styled.div`
             height: 1rem;
             width: 1rem;
             transition: ease-in-out 0.5s;
+            z-index: 1;
 
             &:hover {
               height: 1.5rem;
-              width: 12rem;
+              width: 1.5rem;
               transition: ease-in-out 0.5s;
               color: darkgrey;
             }
@@ -95,10 +100,11 @@ export const FooterWrap = styled.div`
             height: 1rem;
             width: 1rem;
             transition: ease-in-out 0.5s;
+            z-index: 1;
 
             &:hover {
               height: 1.5rem;
-              width: 12rem;
+              width: 1.5rem;
               transition: ease-in-out 0.5s;
               color: rgb(8, 91, 187);
             }
@@ -115,10 +121,11 @@ export const FooterWrap = styled.div`
             height: 1rem;
             width: 1rem;
             transition: ease-in-out 0.5s;
+            z-index: 1;
 
             &:hover {
               height: 1.5rem;
-              width: 12rem;
+              width: 1.5rem;
               transition: ease-in-out 0.5s;
               color: rgb(255, 0, 95);
             }
@@ -135,10 +142,11 @@ export const FooterWrap = styled.div`
             height: 1.5rem;
             width: 1.5rem;
             transition: ease-in-out 0.5s;
+            z-index: 1;
 
             &:hover {
-              height: 1.5rem;
-              width: 12rem;
+              height: 2rem;
+              width: 2rem;
               transition: ease-in-out 0.5s;
               color: rgb(255, 101, 0);
             }
@@ -172,12 +180,6 @@ export const FooterWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .Footer {
-      /* background-color: rgb(40, 40, 40); */
-      background: linear-gradient(
-        to right,
-        transparent 65%,
-        rgb(40, 40, 40) 100%
-      );
       top: 0;
       position: absolute;
       width: 100%;
@@ -193,6 +195,9 @@ export const FooterWrap = styled.div`
         animation: 0.5s slideup;
         margin: 3rem 0 auto;
         z-index: 1;
+        display: flex;
+        justify-content: center;
+        width: fit-content;
       }
 
       & > .social-flex {
@@ -210,7 +215,7 @@ export const FooterWrap = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 1rem;
+          margin-right: 0.5rem;
 
           & > .git {
             color: lightgrey;

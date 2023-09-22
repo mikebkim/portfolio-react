@@ -75,19 +75,33 @@ const Footer = () => {
                 title={link.id}
                 onMouseEnter={() => setHoveredSocial(link.id)}
                 onMouseLeave={() => setHoveredSocial(null)}
-                style={{
-                  background:
-                    hoveredSocial === link.id
-                      ? `${
-                          windowWidth >= 768
-                            ? link.backgroundColor
-                            : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)"
-                        }`
-                      : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
-                }}
+                // style={{
+                //   background:
+                //     hoveredSocial === link.id
+                //       ? `${
+                //           windowWidth >= 768
+                //             ? link.backgroundColor
+                //             : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)"
+                //         }`
+                //       : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
+                // }}
               >
                 {hoveredSocial === link.id ? (
-                  <div className="social-hover">{link.name}</div>
+                  <div
+                    className="social-hover"
+                    style={{
+                      background:
+                        hoveredSocial === link.id
+                          ? `${
+                              windowWidth >= 768
+                                ? link.backgroundColor
+                                : ""
+                            }`
+                          : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
+                    }}
+                  >
+                    {link.name}
+                  </div>
                 ) : (
                   ""
                 )}

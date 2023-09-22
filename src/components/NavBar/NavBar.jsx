@@ -215,6 +215,7 @@ const NavBar = ({ toggleHeader }) => {
                     : `${"nav-box"}`
                 }
                 title="Home"
+                onClick={() => setIsBurgerOpen(false)}
               >
                 <div
                   className={
@@ -244,6 +245,7 @@ const NavBar = ({ toggleHeader }) => {
                     : `${"nav-box"}`
                 }
                 title="Technologies"
+                onClick={() => setIsBurgerOpen(false)}
               >
                 <div
                   className={
@@ -275,6 +277,7 @@ const NavBar = ({ toggleHeader }) => {
                     : `${"nav-box"}`
                 }
                 title="Projects"
+                onClick={() => setIsBurgerOpen(false)}
               >
                 <div
                   className={
@@ -304,6 +307,7 @@ const NavBar = ({ toggleHeader }) => {
                     : `${"nav-box"}`
                 }
                 title="Contact"
+                onClick={() => setIsBurgerOpen(false)}
               >
                 <div
                   className={

@@ -43,11 +43,12 @@ export const FooterWrap = styled.div`
       transition: ease-in-out 300ms;
       animation: 1s slideleft;
       /* margin-left: 7rem; */
-      padding-right: 0.3rem;
+      padding-right: 0.4rem;
       z-index: 0;
       width: 12rem;
       display: flex;
       justify-content: flex-end;
+      border-radius: 5px;
     }
 
     & > .social-flex {

@@ -33,6 +33,7 @@ const Footer = () => {
       url: "https://github.com/mikebkim",
       fontId: faGithub,
       backgroundColor: "linear-gradient(to right, transparent 50%, darkgrey",
+      color: "ghostwhite",
     },
     {
       name: "LinkedIn",
@@ -41,6 +42,7 @@ const Footer = () => {
       fontId: faLinkedin,
       backgroundColor:
         "linear-gradient(to right, transparent 50%, rgb(8, 91, 187) 100%)",
+      color: "ghostwhite",
     },
     {
       name: "Instagram",
@@ -49,6 +51,7 @@ const Footer = () => {
       fontId: faInstagram,
       backgroundColor:
         "linear-gradient(to right, transparent 50%, rgb(255, 0, 95)",
+      color: "ghostwhite",
     },
     {
       name: "Soundcloud",
@@ -57,6 +60,7 @@ const Footer = () => {
       fontId: faSoundcloud,
       backgroundColor:
         "linear-gradient(to right, transparent 50%, rgb(255, 101, 0)",
+      color: "ghostwhite",
     },
   ];
 
@@ -92,12 +96,10 @@ const Footer = () => {
                     style={{
                       background:
                         hoveredSocial === link.id
-                          ? `${
-                              windowWidth >= 768
-                                ? link.backgroundColor
-                                : ""
-                            }`
+                          ? `${windowWidth >= 768 ? link.backgroundColor : ""}`
                           : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
+                      color:
+                        hoveredSocial === link.id ? link.color : link.color,
                     }}
                   >
                     {link.name}

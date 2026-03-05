@@ -6,16 +6,20 @@ export const FooterWrap = styled.div`
       color: transparent;
     }
 
+    25% {
+      color: transparent;
+    }
+
     50% {
       color: transparent;
     }
 
     75% {
-      color: lightgrey;
+      color: ghostwhite;
     }
 
     from {
-      margin-left: -10rem;
+      margin-left: -3rem;
     }
 
     to {
@@ -26,8 +30,8 @@ export const FooterWrap = styled.div`
   .Footer {
     background: linear-gradient(
       to right,
-      transparent 65%,
-      rgb(40, 40, 40) 100%
+      transparent 20%,
+      rgb(1, 200, 200) 100%
     );
     top: 0;
     position: absolute;
@@ -41,7 +45,7 @@ export const FooterWrap = styled.div`
     .social-hover {
       position: absolute;
       transition: ease-in-out 300ms;
-      animation: 1s slideleft;
+      animation: 1.2s slideleft;
       /* margin-left: 7rem; */
       padding-right: 0.4rem;
       z-index: 0;
@@ -71,86 +75,114 @@ export const FooterWrap = styled.div`
         margin-right: 7rem;
 
         & > .git {
-          color: lightgrey;
+          color: ghostwhite;
           display: flex;
           justify-content: center;
           align-items: center;
+          border: 3px solid ghostwhite;
+          border-radius: 1.5rem;
+          height: 1.5rem;
+          width: 1.5rem;
+          transition: ease-in-out 0.5s;
+
+          &:hover {
+            transition: ease-in-out 0.5s;
+            color: darkgrey;
+            border: 5px solid darkgrey;
+            border-radius: 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+          }
 
           & > svg {
             height: 1rem;
             width: 1rem;
             transition: ease-in-out 0.5s;
             z-index: 1;
-
-            &:hover {
-              height: 1.5rem;
-              width: 1.5rem;
-              transition: ease-in-out 0.5s;
-              color: darkgrey;
-            }
           }
         }
 
         & > .linkedin {
-          color: lightgrey;
+          color: ghostwhite;
           display: flex;
           justify-content: center;
           align-items: center;
+          border: 3px solid ghostwhite;
+          border-radius: 1.5rem;
+          height: 1.5rem;
+          width: 1.5rem;
+          transition: ease-in-out 0.5s;
+
+          &:hover {
+            transition: ease-in-out 0.5s;
+            color: rgb(8, 91, 187);
+            border: 5px solid rgb(8, 91, 187);
+            border-radius: 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+          }
 
           & > svg {
             height: 1rem;
             width: 1rem;
             transition: ease-in-out 0.5s;
             z-index: 1;
-
-            &:hover {
-              height: 1.5rem;
-              width: 1.5rem;
-              transition: ease-in-out 0.5s;
-              color: rgb(8, 91, 187);
-            }
           }
         }
 
         & > .instagram {
-          color: lightgrey;
+          color: ghostwhite;
           display: flex;
           justify-content: center;
           align-items: center;
+          border: 3px solid ghostwhite;
+          border-radius: 1.5rem;
+          height: 1.5rem;
+          width: 1.5rem;
+          transition: ease-in-out 0.5s;
+
+          &:hover {
+            transition: ease-in-out 0.5s;
+            color: rgb(255, 101, 0);
+            border: 5px solid rgb(255, 0, 95);
+            border-radius: 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+          }
 
           & > svg {
             height: 1rem;
             width: 1rem;
             transition: ease-in-out 0.5s;
             z-index: 1;
-
-            &:hover {
-              height: 1.5rem;
-              width: 1.5rem;
-              transition: ease-in-out 0.5s;
-              color: rgb(255, 0, 95);
-            }
           }
         }
 
         & > .soundcloud {
-          color: lightgrey;
+          color: ghostwhite;
           display: flex;
           justify-content: center;
           align-items: center;
+          border: 3px solid ghostwhite;
+          border-radius: 1.5rem;
+          height: 1.5rem;
+          width: 1.5rem;
+          transition: ease-in-out 0.5s;
 
-          & > svg {
+          &:hover {
+            transition: ease-in-out 0.5s;
+            color: rgb(255, 101, 0);
+            border: 5px solid rgb(255, 101, 0);
+            border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
+          }
+
+          & > svg {
+            height: 1rem;
+            width: 1rem;
             transition: ease-in-out 0.5s;
             z-index: 1;
-
-            &:hover {
-              height: 2rem;
-              width: 2rem;
-              transition: ease-in-out 0.5s;
-              color: rgb(255, 101, 0);
-            }
           }
         }
       }
@@ -167,7 +199,7 @@ export const FooterWrap = styled.div`
     }
 
     75% {
-      color: lightgrey;
+      color: ghostwhite;
     }
 
     from {
@@ -219,7 +251,7 @@ export const FooterWrap = styled.div`
           margin-right: 0.5rem;
 
           & > .git {
-            color: lightgrey;
+            color: ghostwhite;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -239,7 +271,7 @@ export const FooterWrap = styled.div`
           }
 
           & > .linkedin {
-            color: lightgrey;
+            color: ghostwhite;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -259,7 +291,7 @@ export const FooterWrap = styled.div`
           }
 
           & > .instagram {
-            color: lightgrey;
+            color: ghostwhite;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -279,7 +311,7 @@ export const FooterWrap = styled.div`
           }
 
           & > .soundcloud {
-            color: lightgrey;
+            color: ghostwhite;
             display: flex;
             justify-content: center;
             align-items: center;

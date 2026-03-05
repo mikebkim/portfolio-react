@@ -35,8 +35,8 @@ export const ProjectsPageWrap = styled.div`
 
     h3 {
       margin: 0 0 1rem 0;
-      color: lightgrey;
-      border-bottom: 3px solid lightgrey;
+      color: black;
+      border-bottom: 3px solid black;
     }
 
     h6 {
@@ -45,7 +45,7 @@ export const ProjectsPageWrap = styled.div`
     }
 
     p {
-      color: lightgrey;
+      color: black;
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -101,7 +101,7 @@ export const ProjectsPageWrap = styled.div`
             padding: 0.5rem;
             border-radius: 50px;
             background-color: rgb(1, 200, 200, 0.5);
-            color: rgb(1, 200, 200);
+            color: white;
           }
         }
       }
@@ -124,11 +124,11 @@ export const ProjectsPageWrap = styled.div`
 
       h3 {
         margin: 0 0 1rem 0;
-        color: lightgrey;
+        color: black;
       }
 
       p {
-        color: lightgrey;
+        color: black;
         margin: 1rem auto;
       }
 
@@ -220,8 +220,8 @@ export const ProjectsPageWrap = styled.div`
 
     h3 {
       margin: 0 0 1rem 0;
-      color: lightgrey;
-      border-bottom: 3px solid lightgrey;
+      color: black;
+      border-bottom: 3px solid black;
     }
 
     h6 {
@@ -230,7 +230,7 @@ export const ProjectsPageWrap = styled.div`
     }
 
     p {
-      color: lightgrey;
+      color: black;
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -309,11 +309,11 @@ export const ProjectsPageWrap = styled.div`
 
       h3 {
         margin: 0 0 1rem 0;
-        color: lightgrey;
+        color: black;
       }
 
       p {
-        color: lightgrey;
+        color: black;
         margin: 1rem auto;
       }
 

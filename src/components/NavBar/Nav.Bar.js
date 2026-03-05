@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const NavBarWrap = styled.div`
   @keyframes slideleft {
     0% {
-      color: lightgrey;
+      color: ghostwhite;
       fill: transparent;
     }
 
     50% {
-      color: lightgrey;
+      color: ghostwhite;
       fill: transparent;
     }
 
@@ -28,12 +28,12 @@ export const NavBarWrap = styled.div`
 
   @keyframes slideham {
     0% {
-      color: lightgrey;
+      color: ghostwhite;
       fill: transparent;
     }
 
     50% {
-      color: lightgrey;
+      color: ghostwhite;
       fill: transparent;
     }
 
@@ -53,12 +53,12 @@ export const NavBarWrap = styled.div`
 
   @keyframes slideright {
     0% {
-      color: lightgrey;
+      color: ghostwhite;
       fill: transparent;
     }
 
     50% {
-      color: lightgrey;
+      color: ghostwhite;
       fill: transparent;
     }
 
@@ -94,7 +94,7 @@ export const NavBarWrap = styled.div`
       align-items: center;
 
       & > .git {
-        color: lightgrey;
+        color: ghostwhite;
 
         & > svg {
           height: 1rem;
@@ -111,7 +111,7 @@ export const NavBarWrap = styled.div`
       }
 
       & > .linkedin {
-        color: lightgrey;
+        color: ghostwhite;
 
         & > svg {
           height: 1rem;
@@ -128,7 +128,7 @@ export const NavBarWrap = styled.div`
       }
 
       & > .instagram {
-        color: lightgrey;
+        color: ghostwhite;
 
         & > svg {
           height: 1rem;
@@ -145,7 +145,7 @@ export const NavBarWrap = styled.div`
       }
 
       & > .soundcloud {
-        color: lightgrey;
+        color: ghostwhite;
 
         & > svg {
           height: 1rem;
@@ -165,15 +165,15 @@ export const NavBarWrap = styled.div`
 
   a:hover {
     text-decoration: none;
-    color: lightgrey;
+    color: ghostwhite;
   }
   a:focus {
     text-decoration: none;
-    color: lightgrey;
+    color: ghostwhite;
   }
   a:active {
     text-decoration: none;
-    color: lightgrey;
+    color: ghostwhite;
   }
 
   .burger-open {
@@ -183,7 +183,7 @@ export const NavBarWrap = styled.div`
   }
 
   .burger-close {
-    color: lightgrey;
+    color: ghostwhite;
     transition: ease-in-out 0.5s;
   }
 
@@ -194,7 +194,7 @@ export const NavBarWrap = styled.div`
   }
 
   .burger-close-rebel {
-    color: lightgrey;
+    color: ghostwhite;
     transition: ease-in-out 0.5s;
   }
 
@@ -214,7 +214,8 @@ export const NavBarWrap = styled.div`
       justify-content: space-around;
       align-items: center;
       width: 4.5rem;
-      background-color: rgb(40, 40, 40);
+      /* background-color: rgb(40, 40, 40); */
+      background-color: ghostwhite;
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
       height: 15.5rem;
@@ -249,7 +250,7 @@ export const NavBarWrap = styled.div`
         &.selected-box {
           transition: ease-in-out 300ms;
           text-decoration: none !important;
-          color: lightgrey;
+          color: ghostwhite;
         }
 
         & > .nav-link {
@@ -265,8 +266,8 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: lightgrey;
-            fill: lightgrey;
+            color: ghostwhite;
+            fill: ghostwhite;
             transition: ease-in-out 300ms;
 
             &:hover {
@@ -336,7 +337,7 @@ export const NavBarWrap = styled.div`
         &.selected-box {
           transition: ease-in-out 300ms;
           text-decoration: none !important;
-          color: lightgrey;
+          color: ghostwhite;
         }
 
         & > .nav-link {
@@ -348,8 +349,8 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: lightgrey;
-            fill: lightgrey;
+            color: ghostwhite;
+            fill: ghostwhite;
             transition: ease-in-out 300ms;
 
             &:hover {
@@ -404,10 +405,12 @@ export const NavBarWrap = styled.div`
     height: fill-available;
     -webkit-box-align: center;
     align-items: center;
-    background-color: rgb(40, 40, 40);
+    /* background-color: rgb(40, 40, 40); */
+    background-color: ghostwhite;
     z-index: 1;
     padding: 0 1rem;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    /* border-right: 2px solid rgb(1, 200, 200); */
 
     & > .nav-line {
       border-bottom: 2px solid rgb(1, 200, 200);
@@ -417,7 +420,7 @@ export const NavBarWrap = styled.div`
 
     a {
       text-decoration: none;
-      color: lightgrey;
+      color: ghostwhite;
     }
 
     & > .nav-box {
@@ -429,13 +432,14 @@ export const NavBarWrap = styled.div`
       height: 5rem;
       width: 5rem;
       border-radius: 10px;
-      background-color: rgb(30, 30, 30);
+      /* background-color: rgb(30, 30, 30); */
+      background-color: ghostwhite;
       cursor: pointer;
 
       &:hover {
         border: 5px solid rgb(1, 200, 200);
         transition: ease-in-out 300ms;
-        background-color: rgb(1, 200, 200, 0.5);
+        background-color: rgb(1, 200, 200, 0.7);
       }
 
       & > .nav-title {
@@ -451,7 +455,7 @@ export const NavBarWrap = styled.div`
       }
 
       &.selected-box {
-        background-color: rgb(1, 200, 200, 0.5);
+        background-color: rgb(1, 200, 200);
         transition: ease-in-out 300ms;
         border: 5px solid rgb(1, 200, 200);
       }
@@ -474,8 +478,8 @@ export const NavBarWrap = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        color: lightgrey;
-        fill: lightgrey;
+        color: ghostwhite;
+        fill: ghostwhite;
         height: 2rem;
         width: 2rem;
         transition: ease-in-out 300ms;
@@ -487,8 +491,8 @@ export const NavBarWrap = styled.div`
           display: flex;
           justify-content: center;
           background-color: transparent;
-          color: lightgrey;
-          fill: lightgrey;
+          color: ghostwhite;
+          fill: ghostwhite;
           transition: ease-in-out 300ms;
         }
       }
@@ -498,8 +502,8 @@ export const NavBarWrap = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        color: lightgrey;
-        fill: lightgrey;
+        color: ghostwhite;
+        fill: ghostwhite;
         height: 2rem;
         width: 2rem;
         transition: ease-in-out 300ms;
@@ -524,7 +528,8 @@ export const NavBarWrap = styled.div`
       height: 5rem;
       width: 5rem;
       border-radius: 10px;
-      background-color: rgb(30, 30, 30);
+      /* background-color: rgb(30, 30, 30); */
+      background-color: ghostwhite;
       cursor: pointer;
 
       &:hover {
@@ -557,8 +562,8 @@ export const NavBarWrap = styled.div`
           transition: ease-in-out 300ms;
 
           &:hover {
-            color: lightgrey;
-            fill: lightgrey;
+            color: ghostwhite;
+            fill: ghostwhite;
           }
         }
       }
@@ -568,8 +573,8 @@ export const NavBarWrap = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        color: lightgrey;
-        fill: lightgrey;
+        color: ghostwhite;
+        fill: ghostwhite;
         height: 2rem;
         width: 2rem;
         transition: ease-in-out 300ms;

@@ -3,12 +3,12 @@ import styled from "styled-components";
 export const HomePageWrap = styled.div`
   @keyframes slideup {
     0% {
-      color: lightgrey;
+      color: black;
       fill: transparent;
     }
 
     50% {
-      color: lightgrey;
+      color: black;
       fill: transparent;
     }
 
@@ -46,14 +46,14 @@ export const HomePageWrap = styled.div`
     }
 
     h1 {
-      color: lightgrey;
+      color: black;
       margin: 4rem 0 0 0;
       font-size: 4rem;
       word-wrap: none;
     }
 
     h2 {
-      color: lightgrey;
+      color: black;
       margin: 0 0 0 0;
       font-size: 7rem;
 
@@ -64,7 +64,7 @@ export const HomePageWrap = styled.div`
     }
 
     h3 {
-      color: lightgrey;
+      color: black;
       margin: 0 0 0 0;
       font-size: 2rem;
     }
@@ -77,7 +77,7 @@ export const HomePageWrap = styled.div`
     }
 
     p {
-      color: lightgrey;
+      color: black;
       margin: 0;
       font-size: 1.2rem;
       margin-top: 0.5rem;
@@ -148,7 +148,7 @@ export const HomePageWrap = styled.div`
             border-radius: 2rem;
             height: 2rem;
             width: 13rem;
-            background: rgb(1, 200, 200, 0.5);
+            background: white;
             border: 2px solid rgb(1, 200, 200);
             transition: ease-in-out 300ms;
             cursor: pointer;
@@ -165,8 +165,8 @@ export const HomePageWrap = styled.div`
               border: 5px solid rgb(1, 200, 200);
               transition: ease-in-out 300ms;
               cursor: pointer;
-              color: lightgrey;
-              fill: lightgrey;
+              color: black;
+              fill: black;
 
               & > svg {
                 margin-bottom: 0.2rem;
@@ -214,8 +214,8 @@ export const HomePageWrap = styled.div`
               border: 5px solid rgb(200, 1, 1);
               transition: ease-in-out 300ms;
               cursor: pointer;
-              color: lightgrey;
-              fill: lightgrey;
+              color: black;
+              fill: black;
 
               & > svg {
                 margin-bottom: 0.2rem;
@@ -268,7 +268,7 @@ export const HomePageWrap = styled.div`
       }
 
       h2 {
-        color: lightgrey;
+        color: black;
         margin: 0 0 0 0;
         font-size: 2rem;
 
@@ -278,7 +278,7 @@ export const HomePageWrap = styled.div`
       }
 
       h3 {
-        color: lightgrey;
+        color: black;
         margin: 0 0 1rem 0;
         font-size: 1.5rem;
       }
@@ -291,7 +291,7 @@ export const HomePageWrap = styled.div`
       }
 
       p {
-        color: lightgrey;
+        color: black;
         margin: 1rem 0;
         width: 100%;
       }
@@ -325,8 +325,8 @@ export const HomePageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: rgb(1, 200, 200, 0.5);
-              border: 2px solid rgb(1, 200, 200, 0.5);
+              background: white;
+              border: 2px solid white;
               transition: ease-in-out 300ms;
               cursor: pointer;
               color: rgb(1, 200, 200);
@@ -342,8 +342,8 @@ export const HomePageWrap = styled.div`
                 border: 5px solid rgb(1, 200, 200);
                 transition: ease-in-out 300ms;
                 cursor: pointer;
-                color: lightgrey;
-                fill: lightgrey;
+                color: black;
+                fill: black;
 
                 & > svg {
                   margin-bottom: 0.2rem;

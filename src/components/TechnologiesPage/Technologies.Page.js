@@ -47,7 +47,7 @@ export const TechnologiesPageWrap = styled.div`
         border-radius: 2rem;
         height: 2rem;
         width: 10rem;
-        background: rgb(1, 200, 200, 0.5);
+        background: white;
         border: 2px solid rgb(1, 200, 200, 0.5);
         transition: ease-in-out 300ms;
         cursor: pointer;
@@ -64,8 +64,8 @@ export const TechnologiesPageWrap = styled.div`
           border: 5px solid rgb(1, 200, 200);
           transition: ease-in-out 300ms;
           cursor: pointer;
-          color: lightgrey;
-          fill: lightgrey;
+          color: white;
+          fill: black;
         }
       }
 
@@ -76,7 +76,7 @@ export const TechnologiesPageWrap = styled.div`
         border-radius: 2rem;
         height: 2rem;
         width: 10rem;
-        background: rgb(1, 200, 200, 0.5);
+        background: white;
         border: 2px solid rgb(1, 200, 200, 0.5);
         transition: ease-in-out 300ms;
         cursor: pointer;
@@ -93,8 +93,8 @@ export const TechnologiesPageWrap = styled.div`
           border: 5px solid rgb(1, 200, 200);
           transition: ease-in-out 300ms;
           cursor: pointer;
-          color: lightgrey;
-          fill: lightgrey;
+          color: white;
+          fill: black;
         }
       }
     }
@@ -119,7 +119,7 @@ export const TechnologiesPageWrap = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(1, 200, 200, 0.5) !important;
+        background-color: white !important;
         text-align: center;
         text-decoration: none;
         transition: transform 0.6s;
@@ -144,7 +144,7 @@ export const TechnologiesPageWrap = styled.div`
     }
 
     p {
-      color: lightgrey;
+      color: black;
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -204,8 +204,8 @@ export const TechnologiesPageWrap = styled.div`
       z-index: 1;
       transition: transform 0.6s ease 0s;
       transform-style: preserve-3d;
-      background-color: rgb(1, 200, 200, 0.2);
-      color: rgb(1, 200, 200);
+      background-color: rgb(1, 200, 200);
+      color: white;
       fill: rgb(1, 200, 200);
       font-size: 9px;
       border-radius: 10px;
@@ -254,7 +254,7 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       p {
-        color: lightgrey;
+        color: white;
         margin: 1rem auto;
       }
 
@@ -357,8 +357,8 @@ export const TechnologiesPageWrap = styled.div`
           border: 5px solid rgb(200, 1, 1);
           transition: ease-in-out 300ms;
           cursor: pointer;
-          color: lightgrey;
-          fill: lightgrey;
+          color: white;
+          fill: black;
         }
       }
 
@@ -386,8 +386,8 @@ export const TechnologiesPageWrap = styled.div`
           border: 5px solid rgb(200, 1, 1);
           transition: ease-in-out 300ms;
           cursor: pointer;
-          color: lightgrey;
-          fill: lightgrey;
+          color: white;
+          fill: black;
         }
       }
     }
@@ -437,7 +437,7 @@ export const TechnologiesPageWrap = styled.div`
     }
 
     p {
-      color: lightgrey;
+      color: white;
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -547,7 +547,7 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       p {
-        color: lightgrey;
+        color: white;
         margin: 1rem auto;
       }
 

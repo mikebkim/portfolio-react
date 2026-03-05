@@ -22,7 +22,7 @@ export const ProjectsPageWrap = styled.div`
       margin: 4rem 0 0 0;
       border-bottom: 5px solid rgb(1, 200, 200);
       padding-bottom: 0.5rem;
-      text-shadow: 0px 0px 10px;
+      /* text-shadow: 0px 0px 10px; */
     }
 
     h2 {
@@ -30,7 +30,7 @@ export const ProjectsPageWrap = styled.div`
       font-weight: 700;
       font-size: 36px;
       margin: 0;
-      text-shadow: 0px 0px 10px;
+      /* text-shadow: 0px 0px 10px; */
     }
 
     h3 {

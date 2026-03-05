@@ -64,7 +64,7 @@ const App = () => {
           </div>
         )} */}
         <Routes>
-          <Route path="/" element={<Navigate replace to="/home" />} />
+          <Route path="/" element={<Navigate to="/lander" />} />
           <Route
             exact
             path="/home"

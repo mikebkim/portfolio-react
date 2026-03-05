@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  BrowserRouter as Router,
+  HashRouter,
   Routes,
   Route,
   Navigate,
@@ -46,7 +46,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Router>
+      <HashRouter>
         <NavBar personalLogo={personal_logo} toggleHeader={toggleHeader} />
         {/* {toggleHeader ? (
           <div
@@ -108,7 +108,7 @@ const App = () => {
             element={<ContactPage toggleHeader={toggleHeader} />}
           />
         </Routes>
-      </Router>
+      </HashRouter>
       <React.Fragment>
         <Footer />
       </React.Fragment>

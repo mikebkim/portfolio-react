@@ -65,6 +65,7 @@ const App = () => {
         )} */}
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
+           <Route path="lander" element={<Lander />} />
           <Route
             exact
             path="/home"

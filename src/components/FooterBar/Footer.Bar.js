@@ -4,26 +4,62 @@ export const FooterWrap = styled.div`
   @keyframes slideleft {
     0% {
       color: transparent;
+      transition: ease-in-out 300ms;
     }
 
-    25% {
-      color: transparent;
+    10% {
+      color: rgba(247, 247, 255, 0.1);
+      transition: ease-in-out 300ms;
+    }
+
+    20% {
+      color: rgba(247, 247, 255, 0.2);
+      transition: ease-in-out 300ms;
+    }
+
+    30% {
+      color: rgba(247, 247, 255, 0.3);
+      transition: ease-in-out 300ms;
+    }
+
+    40% {
+      color: rgba(247, 247, 255, 0.4);
+      transition: ease-in-out 300ms;
     }
 
     50% {
-      color: transparent;
+      color: rgba(247, 247, 255, 0.5);
+      transition: ease-in-out 300ms;
     }
 
-    75% {
-      color: ghostwhite;
+    60% {
+      color: rgba(247, 247, 255, 0.6);
+      transition: ease-in-out 300ms;
+    }
+
+    70% {
+      color: rgba(247, 247, 255, 0.7);
+      transition: ease-in-out 300ms;
+    }
+
+    80% {
+      color: rgba(247, 247, 255, 0.8);
+      transition: ease-in-out 300ms;
+    }
+
+    90% {
+      color: rgba(247, 247, 255, 0.9);
+      transition: ease-in-out 300ms;
     }
 
     from {
       margin-left: -3rem;
+      transition: ease-in-out 300ms;
     }
 
     to {
       margin-left: 0rem;
+      transition: ease-in-out 300ms;
     }
   }
 
@@ -39,7 +75,7 @@ export const FooterWrap = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 0 auto;
+    margin-right: 1rem;
     height: 3rem;
 
     .social-hover {
@@ -63,7 +99,7 @@ export const FooterWrap = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 20rem;
+      width: 10rem;
 
       & > .social-icon {
         height: 3rem;
@@ -83,21 +119,22 @@ export const FooterWrap = styled.div`
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          transition: ease-in-out 0.5s;
+          transition: ease-in-out 600ms;
 
           &:hover {
-            transition: ease-in-out 0.5s;
-            color: darkgrey;
+            transition: ease-in-out 600ms;
+            color: ghostwhite;
             border: 5px solid darkgrey;
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
+            background-color: darkgrey;
           }
 
           & > svg {
             height: 1rem;
             width: 1rem;
-            transition: ease-in-out 0.5s;
+            transition: ease-in-out 600ms;
             z-index: 1;
           }
         }
@@ -111,21 +148,22 @@ export const FooterWrap = styled.div`
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          transition: ease-in-out 0.5s;
+          transition: ease-in-out 600ms;
 
           &:hover {
-            transition: ease-in-out 0.5s;
-            color: rgb(8, 91, 187);
+            transition: ease-in-out 600ms;
+            color: ghostwhite;
             border: 5px solid rgb(8, 91, 187);
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
+            background-color: rgb(8, 91, 187);
           }
 
           & > svg {
             height: 1rem;
             width: 1rem;
-            transition: ease-in-out 0.5s;
+            transition: ease-in-out 600ms;
             z-index: 1;
           }
         }
@@ -139,21 +177,22 @@ export const FooterWrap = styled.div`
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          transition: ease-in-out 0.5s;
+          transition: ease-in-out 600ms;
 
           &:hover {
-            transition: ease-in-out 0.5s;
-            color: rgb(255, 101, 0);
+            transition: ease-in-out 600ms;
+            color: ghostwhite;
             border: 5px solid rgb(255, 0, 95);
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
+            background-color: rgb(255, 0, 95);
           }
 
           & > svg {
             height: 1rem;
             width: 1rem;
-            transition: ease-in-out 0.5s;
+            transition: ease-in-out 600ms;
             z-index: 1;
           }
         }
@@ -167,21 +206,22 @@ export const FooterWrap = styled.div`
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          transition: ease-in-out 0.5s;
+          transition: ease-in-out 600ms;
 
           &:hover {
-            transition: ease-in-out 0.5s;
-            color: rgb(255, 101, 0);
+            transition: ease-in-out 600ms;
+            color: ghostwhite;
             border: 5px solid rgb(255, 101, 0);
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
+            background-color: rgb(255, 101, 0);
           }
 
           & > svg {
             height: 1rem;
             width: 1rem;
-            transition: ease-in-out 0.5s;
+            transition: ease-in-out 600ms;
             z-index: 1;
           }
         }
@@ -225,12 +265,16 @@ export const FooterWrap = styled.div`
       .social-hover {
         position: absolute;
         transition: ease-in-out 300ms;
-        animation: 0.5s slideup;
+        animation: 600ms slideup;
         margin: 3rem 0 auto;
         z-index: 1;
         display: flex;
         justify-content: center;
         width: fit-content;
+
+        & > .media-social-links {
+          display: flex;
+        }
       }
 
       & > .social-flex {
@@ -255,18 +299,27 @@ export const FooterWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 3px solid ghostwhite;
+            border-radius: 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            transition: ease-in-out 600ms;
+
+            &:hover {
+              transition: ease-in-out 600ms;
+              color: ghostwhite;
+              border: 5px solid darkgrey;
+              border-radius: 1.5rem;
+              height: 1.5rem;
+              width: 1.5rem;
+              background-color: darkgrey;
+            }
 
             & > svg {
               height: 1rem;
               width: 1rem;
-              transition: ease-in-out 0.5s;
-
-              &:hover {
-                height: 1.5rem;
-                width: 1.5rem;
-                transition: ease-in-out 0.5s;
-                color: darkgrey;
-              }
+              transition: ease-in-out 600ms;
+              z-index: 1;
             }
           }
 
@@ -275,18 +328,27 @@ export const FooterWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 3px solid ghostwhite;
+            border-radius: 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            transition: ease-in-out 600ms;
+
+            &:hover {
+              transition: ease-in-out 600ms;
+              color: ghostwhite;
+              border: 5px solid rgb(8, 91, 187);
+              border-radius: 1.5rem;
+              height: 1.5rem;
+              width: 1.5rem;
+              background-color: rgb(8, 91, 187);
+            }
 
             & > svg {
               height: 1rem;
               width: 1rem;
-              transition: ease-in-out 0.5s;
-
-              &:hover {
-                height: 1.5rem;
-                width: 1.5rem;
-                transition: ease-in-out 0.5s;
-                color: rgb(8, 91, 187);
-              }
+              transition: ease-in-out 600ms;
+              z-index: 1;
             }
           }
 
@@ -295,18 +357,27 @@ export const FooterWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 3px solid ghostwhite;
+            border-radius: 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            transition: ease-in-out 600ms;
+
+            &:hover {
+              transition: ease-in-out 600ms;
+              color: ghostwhite;
+              border: 5px solid rgb(255, 0, 95);
+              border-radius: 1.5rem;
+              height: 1.5rem;
+              width: 1.5rem;
+              background-color: rgb(255, 0, 95);
+            }
 
             & > svg {
               height: 1rem;
               width: 1rem;
-              transition: ease-in-out 0.5s;
-
-              &:hover {
-                height: 1.5rem;
-                width: 1.5rem;
-                transition: ease-in-out 0.5s;
-                color: rgb(255, 0, 95);
-              }
+              transition: ease-in-out 600ms;
+              z-index: 1;
             }
           }
 
@@ -315,18 +386,27 @@ export const FooterWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
+            border: 3px solid ghostwhite;
+            border-radius: 1.5rem;
+            height: 1.5rem;
+            width: 1.5rem;
+            transition: ease-in-out 600ms;
 
-            & > svg {
+            &:hover {
+              transition: ease-in-out 600ms;
+              color: ghostwhite;
+              border: 5px solid rgb(255, 101, 0);
+              border-radius: 1.5rem;
               height: 1.5rem;
               width: 1.5rem;
-              transition: ease-in-out 0.5s;
+              background-color: rgb(255, 101, 0);
+            }
 
-              &:hover {
-                height: 2rem;
-                width: 2rem;
-                transition: ease-in-out 0.5s;
-                color: rgb(255, 101, 0);
-              }
+            & > svg {
+              height: 1rem;
+              width: 1rem;
+              transition: ease-in-out 600ms;
+              z-index: 1;
             }
           }
         }

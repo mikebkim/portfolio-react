@@ -183,7 +183,7 @@ export const NavBarWrap = styled.div`
   }
 
   .burger-close {
-    color: ghostwhite;
+    color: rgb(1, 200, 200);
     transition: ease-in-out 0.5s;
   }
 
@@ -266,8 +266,8 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: ghostwhite;
-            fill: ghostwhite;
+            color: rgb(1, 200, 200);
+            fill: rgb(1, 200, 200);
             transition: ease-in-out 300ms;
 
             &:hover {

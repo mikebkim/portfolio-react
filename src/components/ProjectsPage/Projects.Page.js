@@ -26,7 +26,7 @@ export const ProjectsPageWrap = styled.div`
     }
 
     h2 {
-      color: rgb(1, 200, 200);
+      color: rgb(100, 100, 100);
       font-weight: 700;
       font-size: 36px;
       margin: 0;
@@ -35,8 +35,8 @@ export const ProjectsPageWrap = styled.div`
 
     h3 {
       margin: 0 0 1rem 0;
-      color: black;
-      border-bottom: 3px solid black;
+      color: rgb(100, 100, 100);
+      border-bottom: 3px solid rgb(100, 100, 100);
     }
 
     h6 {
@@ -45,7 +45,7 @@ export const ProjectsPageWrap = styled.div`
     }
 
     p {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -100,8 +100,8 @@ export const ProjectsPageWrap = styled.div`
             margin: 0.5rem;
             padding: 0.5rem;
             border-radius: 50px;
-            background-color: rgb(1, 200, 200, 0.5);
-            color: white;
+            background-color: rgb(1, 200, 200);
+            color: ghostwhite;
           }
         }
       }
@@ -124,11 +124,11 @@ export const ProjectsPageWrap = styled.div`
 
       h3 {
         margin: 0 0 1rem 0;
-        color: black;
+        color: rgb(100, 100, 100);
       }
 
       p {
-        color: black;
+        color: rgb(100, 100, 100);
         margin: 1rem auto;
       }
 
@@ -220,8 +220,8 @@ export const ProjectsPageWrap = styled.div`
 
     h3 {
       margin: 0 0 1rem 0;
-      color: black;
-      border-bottom: 3px solid black;
+      color: rgb(100, 100, 100);
+      border-bottom: 3px solid rgb(100, 100, 100);
     }
 
     h6 {
@@ -230,7 +230,7 @@ export const ProjectsPageWrap = styled.div`
     }
 
     p {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -309,11 +309,11 @@ export const ProjectsPageWrap = styled.div`
 
       h3 {
         margin: 0 0 1rem 0;
-        color: black;
+        color: rgb(100, 100, 100);
       }
 
       p {
-        color: black;
+        color: rgb(100, 100, 100);
         margin: 1rem auto;
       }
 

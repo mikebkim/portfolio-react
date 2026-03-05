@@ -28,7 +28,7 @@ export const ContactPageWrap = styled.div`
     }
 
     p {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -63,8 +63,8 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: black;
-          border-bottom: 3px solid white;
+          color: rgb(100, 100, 100);
+          border-bottom: 3px solid rgb(100, 100, 100);
           outline: none;
           padding: 5px 0;
         }
@@ -74,8 +74,8 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: black;
-          border-bottom: 3px solid white;
+          color: rgb(100, 100, 100);
+          border-bottom: 3px solid rgb(100, 100, 100);
           outline: none;
           padding: 5px 0;
         }
@@ -85,8 +85,8 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: black;
-          border-bottom: 3px solid white;
+          color: rgb(100, 100, 100);
+          border-bottom: 3px solid rgb(100, 100, 100);
           outline: none;
           padding: 5px 0;
         }
@@ -96,8 +96,8 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: black;
-          border-bottom: 3px solid white;
+          color: rgb(100, 100, 100);
+          border-bottom: 3px solid rgb(100, 100, 100);
           outline: none;
           height: 8rem;
           padding: 5px 0;
@@ -112,8 +112,8 @@ export const ContactPageWrap = styled.div`
           height: 2rem;
           width: 13rem;
           background: white;
-          border: 2px solid white;
-          transition: ease-in-out 300ms;
+          border: 2px solid rgb(1, 200, 200);
+          transition: ease-in-out 500ms;
           cursor: pointer;
           color: rgb(1, 200, 200);
           margin: 0.5rem auto;
@@ -126,12 +126,12 @@ export const ContactPageWrap = styled.div`
             border-radius: 2rem;
             height: 2rem;
             width: 13rem;
-            background: white;
+            background: rgb(1, 200, 200);
             border: 5px solid rgb(1, 200, 200);
-            transition: ease-in-out 300ms;
+            transition: ease-in-out 500ms;
             cursor: pointer;
-            color: black;
-            fill: black;
+            color: ghostwhite;
+            fill: ghostwhite;
           }
         }
       }
@@ -146,7 +146,7 @@ export const ContactPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       p {
-        color: black;
+        color: rgb(100, 100, 100);
         margin: 1rem auto;
       }
 
@@ -180,8 +180,8 @@ export const ContactPageWrap = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: black;
-            border-bottom: 3px solid white;
+            color: rgb(100, 100, 100);
+            border-bottom: 3px solid rgb(100, 100, 100);
             outline: none;
             padding: 5px 0;
           }
@@ -191,8 +191,8 @@ export const ContactPageWrap = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: black;
-            border-bottom: 3px solid white;
+            color: rgb(100, 100, 100);
+            border-bottom: 3px solid rgb(100, 100, 100);
             outline: none;
             padding: 5px 0;
           }
@@ -202,8 +202,8 @@ export const ContactPageWrap = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: black;
-            border-bottom: 3px solid white;
+            color: rgb(100, 100, 100);
+            border-bottom: 3px solid rgb(100, 100, 100);
             outline: none;
             height: 8rem;
             padding: 5px 0;
@@ -236,8 +236,8 @@ export const ContactPageWrap = styled.div`
               border: 5px solid rgb(1, 200, 200);
               transition: ease-in-out 300ms;
               cursor: pointer;
-              color: black;
-              fill: black;
+              color: rgb(100, 100, 100);
+              fill: rgb(100, 100, 100);
             }
           }
         }
@@ -268,7 +268,7 @@ export const ContactPageWrap = styled.div`
     }
 
     p {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -303,7 +303,7 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: black;
+          color: rgb(100, 100, 100);
           border-bottom: 3px solid rgb(200, 1, 1, 0.5);
           outline: none;
           padding: 5px 0;
@@ -314,7 +314,7 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: black;
+          color: rgb(100, 100, 100);
           border-bottom: 3px solid rgb(200, 1, 1, 0.5);
           outline: none;
           padding: 5px 0;
@@ -325,7 +325,7 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: black;
+          color: rgb(100, 100, 100);
           border-bottom: 3px solid rgb(200, 1, 1, 0.5);
           outline: none;
           padding: 5px 0;
@@ -336,7 +336,7 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: black;
+          color: rgb(100, 100, 100);
           border-bottom: 3px solid rgb(200, 1, 1, 0.5);
           outline: none;
           height: 8rem;
@@ -370,8 +370,8 @@ export const ContactPageWrap = styled.div`
             border: 5px solid rgb(200, 1, 1);
             transition: ease-in-out 300ms;
             cursor: pointer;
-            color: black;
-            fill: black;
+            color: rgb(100, 100, 100);
+            fill: rgb(100, 100, 100);
           }
         }
       }
@@ -386,7 +386,7 @@ export const ContactPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       p {
-        color: black;
+        color: rgb(100, 100, 100);
         margin: 1rem auto;
       }
 
@@ -420,7 +420,7 @@ export const ContactPageWrap = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: black;
+            color: rgb(100, 100, 100);
             border-bottom: 3px solid rgb(200, 1, 1, 0.5);
             outline: none;
             padding: 5px 0;
@@ -431,7 +431,7 @@ export const ContactPageWrap = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: black;
+            color: rgb(100, 100, 100);
             border-bottom: 3px solid rgb(200, 1, 1, 0.5);
             outline: none;
             padding: 5px 0;
@@ -442,7 +442,7 @@ export const ContactPageWrap = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: black;
+            color: rgb(100, 100, 100);
             border-bottom: 3px solid rgb(200, 1, 1, 0.5);
             outline: none;
             height: 8rem;
@@ -476,8 +476,8 @@ export const ContactPageWrap = styled.div`
               border: 5px solid rgb(200, 1, 1);
               transition: ease-in-out 300ms;
               cursor: pointer;
-              color: black;
-              fill: black;
+              color: rgb(100, 100, 100);
+              fill: rgb(100, 100, 100);
             }
           }
         }

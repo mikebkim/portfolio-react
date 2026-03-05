@@ -26,7 +26,7 @@ const HomePage = ({ resume, toggleHeader }) => {
             <h2>
               <span className="home-name">MIKE KIM</span>
             </h2>
-            <h3>Technical Professional</h3>
+            <h3>Web Developer | Music Producer | Project Coordinator</h3>
             <h5>Los Angeles, CA</h5>
           </div>
         )}
@@ -42,15 +42,16 @@ const HomePage = ({ resume, toggleHeader }) => {
             </p>
           ) : (
             <p className="home-about">
-              I am a Full-Stack Developer with a focus on Front-End development.
+              I enjoy solving problems and turning complexity into simple
+              solutions.
               <br />
               <br />
-              Versatile professional with experience spanning web
-              development, entertainment, music, recruiting, and consumer
-              internet, combining big-picture thinking with agile, high-quality
-              execution. Strong communicator and self-starter who thrives in
-              fast-paced environments, driven to build products that improve
-              everyday life and create meaningful impact.
+              I'm a versatile professional with experience spanning web development,
+              entertainment, music, recruiting, and consumer internet, combining
+              big-picture thinking with agile, high-quality execution. I'm a strong
+              communicator and self-starter who thrives in fast-paced
+              environments, driven to build products that improve everyday life
+              and create meaningful impact.
             </p>
           )}
           {toggleHeader ? (

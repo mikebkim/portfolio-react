@@ -3,28 +3,30 @@ import styled from "styled-components";
 export const HomePageWrap = styled.div`
   @keyframes slideup {
     0% {
-      color: black;
+      color: ghostwhite;
       fill: transparent;
     }
 
     50% {
-      color: black;
+      color: ghostwhite;
       fill: transparent;
     }
 
     75% {
-      color: rgb(29, 29, 29);
+      color: ghostwhite;
       fill: transparent;
     }
 
     from {
-      margin-bottom: 0.2rem;
+      margin-top: 0.5rem;
       margin-left: 0.5rem;
+      /* transition: ease-in-out 300ms; */
     }
 
     to {
-      margin-top: 5rem;
-      margin-bottom: 5rem;
+      margin-bottom: 0.5rem;
+      /* margin-bottom: 1rem; */
+      /* transition: ease-in-out 300ms; */
     }
   }
 
@@ -46,14 +48,14 @@ export const HomePageWrap = styled.div`
     }
 
     h1 {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 4rem 0 0 0;
       font-size: 4rem;
       word-wrap: none;
     }
 
     h2 {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 0 0 0 0;
       font-size: 7rem;
 
@@ -64,7 +66,7 @@ export const HomePageWrap = styled.div`
     }
 
     h3 {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 0 0 0 0;
       font-size: 2rem;
     }
@@ -77,7 +79,7 @@ export const HomePageWrap = styled.div`
     }
 
     p {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 0;
       font-size: 1.2rem;
       margin-top: 0.5rem;
@@ -120,8 +122,8 @@ export const HomePageWrap = styled.div`
 
       & > .rebel-name {
         color: rgb(200, 1, 1);
-        transition: ease-in-out 300ms;
-        animation: pulse-black 2s infinite;
+        transition: ease-in-out 500ms;
+        /* animation: pulse-rgb(100, 100, 100) 2s infinite; */
         /* text-shadow: 0px 0px 10px; */
       }
 
@@ -150,7 +152,7 @@ export const HomePageWrap = styled.div`
             width: 13rem;
             background: white;
             border: 2px solid rgb(1, 200, 200);
-            transition: ease-in-out 300ms;
+            transition: ease-in-out 500ms;
             cursor: pointer;
             color: rgb(1, 200, 200);
 
@@ -161,17 +163,18 @@ export const HomePageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: rgb(1, 200, 200, 0.6);
+              background: rgb(1, 200, 200);
               border: 5px solid rgb(1, 200, 200);
-              transition: ease-in-out 300ms;
+              transition: ease-in-out 500ms;
               cursor: pointer;
-              color: black;
-              fill: black;
+              color: ghostwhite;
+              fill: ghostwhite;
 
               & > svg {
                 margin-bottom: 0.2rem;
                 margin-left: 0.5rem;
-                animation: 1s slideup;
+                /* animation: 500ms slideup; */
+                transition: ease-in-out 500ms;
               }
             }
             & > svg {
@@ -197,9 +200,9 @@ export const HomePageWrap = styled.div`
             border-radius: 2rem;
             height: 2rem;
             width: 13rem;
-            background: rgb(200, 1, 1, 0.5);
+            background: rgb(200, 1, 1);
             border: 2px solid rgb(200, 1, 1);
-            transition: ease-in-out 300ms;
+            transition: ease-in-out 500ms;
             cursor: pointer;
             color: rgb(299, 1, 1);
 
@@ -210,17 +213,17 @@ export const HomePageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background-color: rgb(200, 1, 1, 0.6);
+              background-color: rgb(200, 1, 1);
               border: 5px solid rgb(200, 1, 1);
-              transition: ease-in-out 300ms;
+              transition: ease-in-out 500ms;
               cursor: pointer;
-              color: black;
-              fill: black;
+              color: ghostwhite;
+              fill: ghostwhite;
 
               & > svg {
                 margin-bottom: 0.2rem;
                 margin-left: 0.5rem;
-                animation: 1s slideup;
+                /* animation: 500ms slideup; */
               }
             }
             & > svg {
@@ -244,21 +247,21 @@ export const HomePageWrap = styled.div`
       justify-content: center;
 
       & > .dont-click {
-        top: 1rem;
-        left: 3rem;
-        position: absolute;
-        width: max-content;
         cursor: pointer;
         color: rgb(299, 1, 1);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
       }
 
       & > .dont-click-fix {
-        top: 1rem;
-        left: 3rem;
-        position: absolute;
-        width: max-content;
         cursor: pointer;
         color: green;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 1rem;
       }
 
       h1 {
@@ -268,7 +271,7 @@ export const HomePageWrap = styled.div`
       }
 
       h2 {
-        color: black;
+        color: rgb(100, 100, 100);
         margin: 0 0 0 0;
         font-size: 2rem;
 
@@ -278,7 +281,7 @@ export const HomePageWrap = styled.div`
       }
 
       h3 {
-        color: black;
+        color: rgb(100, 100, 100);
         margin: 0 0 1rem 0;
         font-size: 1.5rem;
       }
@@ -291,7 +294,7 @@ export const HomePageWrap = styled.div`
       }
 
       p {
-        color: black;
+        color: rgb(100, 100, 100);
         margin: 1rem 0;
         width: 100%;
       }
@@ -327,7 +330,7 @@ export const HomePageWrap = styled.div`
               width: 13rem;
               background: white;
               border: 2px solid white;
-              transition: ease-in-out 300ms;
+              transition: ease-in-out 500ms;
               cursor: pointer;
               color: rgb(1, 200, 200);
 
@@ -340,15 +343,15 @@ export const HomePageWrap = styled.div`
                 width: 13rem;
                 background: rgb(1, 200, 200);
                 border: 5px solid rgb(1, 200, 200);
-                transition: ease-in-out 300ms;
+                transition: ease-in-out 500ms;
                 cursor: pointer;
-                color: black;
-                fill: black;
+                color: rgb(100, 100, 100);
+                fill: rgb(100, 100, 100);
 
                 & > svg {
                   margin-bottom: 0.2rem;
                   margin-left: 0.5rem;
-                  animation: 1s slideup;
+                  /* animation: 500ms slideup; */
                 }
               }
               & > svg {

@@ -46,10 +46,10 @@ export const TechnologiesPageWrap = styled.div`
         align-items: center;
         border-radius: 2rem;
         height: 2rem;
-        width: 10rem;
+        width: 13rem;
         background: white;
-        border: 2px solid rgb(1, 200, 200, 0.5);
-        transition: ease-in-out 300ms;
+        border: 2px solid rgb(1, 200, 200);
+        transition: ease-in-out 500ms;
         cursor: pointer;
         color: rgb(1, 200, 200);
 
@@ -59,13 +59,13 @@ export const TechnologiesPageWrap = styled.div`
           align-items: center;
           border-radius: 2rem;
           height: 2rem;
-          width: 10rem;
-          background: rgb(1, 200, 200, 0.5);
+          width: 13rem;
+          background: rgb(1, 200, 200);
           border: 5px solid rgb(1, 200, 200);
-          transition: ease-in-out 300ms;
+          transition: ease-in-out 500ms;
           cursor: pointer;
-          color: white;
-          fill: black;
+          color: ghostwhite;
+          fill: ghostwhite;
         }
       }
 
@@ -75,10 +75,10 @@ export const TechnologiesPageWrap = styled.div`
         align-items: center;
         border-radius: 2rem;
         height: 2rem;
-        width: 10rem;
+        width: 13rem;
         background: white;
-        border: 2px solid rgb(1, 200, 200, 0.5);
-        transition: ease-in-out 300ms;
+        border: 2px solid rgb(1, 200, 200);
+        transition: ease-in-out 500ms;
         cursor: pointer;
         color: rgb(1, 200, 200);
 
@@ -88,13 +88,13 @@ export const TechnologiesPageWrap = styled.div`
           align-items: center;
           border-radius: 2rem;
           height: 2rem;
-          width: 10rem;
-          background: rgb(1, 200, 200, 0.5);
+          width: 13rem;
+          background: rgb(1, 200, 200);
           border: 5px solid rgb(1, 200, 200);
-          transition: ease-in-out 300ms;
+          transition: ease-in-out 500ms;
           cursor: pointer;
-          color: white;
-          fill: black;
+          color: ghostwhite;
+          fill: ghostwhite;
         }
       }
     }
@@ -144,7 +144,7 @@ export const TechnologiesPageWrap = styled.div`
     }
 
     p {
-      color: black;
+      color: rgb(100, 100, 100);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -339,12 +339,12 @@ export const TechnologiesPageWrap = styled.div`
         align-items: center;
         border-radius: 2rem;
         height: 2rem;
-        width: 10rem;
-        background: rgb(200, 1, 1, 0.5);
-        border: 2px solid rgb(200, 1, 1, 0.5);
-        transition: ease-in-out 300ms;
+        width: 13rem;
+        background: white;
+        border: 2px solid rgb(1, 200, 200);
+        transition: ease-in-out 500ms;
         cursor: pointer;
-        color: rgb(299, 1, 1);
+        color: rgb(1, 200, 200);
 
         &:hover {
           display: flex;
@@ -352,13 +352,13 @@ export const TechnologiesPageWrap = styled.div`
           align-items: center;
           border-radius: 2rem;
           height: 2rem;
-          width: 10rem;
-          background: rgb(200, 1, 1, 0.5);
-          border: 5px solid rgb(200, 1, 1);
-          transition: ease-in-out 300ms;
+          width: 13rem;
+          background: rgb(1, 200, 200);
+          border: 5px solid rgb(1, 200, 200);
+          transition: ease-in-out 500ms;
           cursor: pointer;
-          color: white;
-          fill: black;
+          color: ghostwhite;
+          fill: ghostwhite;
         }
       }
 
@@ -368,12 +368,12 @@ export const TechnologiesPageWrap = styled.div`
         align-items: center;
         border-radius: 2rem;
         height: 2rem;
-        width: 10rem;
-        background: rgb(200, 1, 1, 0.5);
-        border: 2px solid rgb(200, 1, 1, 0.5);
-        transition: ease-in-out 300ms;
+        width: 13rem;
+        background: white;
+        border: 2px solid rgb(1, 200, 200);
+        transition: ease-in-out 500ms;
         cursor: pointer;
-        color: rgb(299, 1, 1);
+        color: rgb(1, 200, 200);
 
         &:hover {
           display: flex;
@@ -381,13 +381,13 @@ export const TechnologiesPageWrap = styled.div`
           align-items: center;
           border-radius: 2rem;
           height: 2rem;
-          width: 10rem;
-          background: rgb(200, 1, 1, 0.5);
-          border: 5px solid rgb(200, 1, 1);
-          transition: ease-in-out 300ms;
+          width: 13rem;
+          background: rgb(1, 200, 200);
+          border: 5px solid rgb(1, 200, 200);
+          transition: ease-in-out 500ms;
           cursor: pointer;
-          color: white;
-          fill: black;
+          color: ghostwhite;
+          fill: ghostwhite;
         }
       }
     }

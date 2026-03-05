@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -65,7 +65,6 @@ const App = () => {
         )} */}
         <Routes>
           <Route path="/" element={<Navigate replace to="/home" />} />
-           <Route path="lander" element={<Lander />} />
           <Route
             exact
             path="/home"

@@ -15,9 +15,9 @@ export const ContactPageWrap = styled.div`
     }
 
     h1 {
-      color: rgb(1, 200, 200);
+      color: black;
       margin: 4rem 0 0 0;
-      border-bottom: 5px solid rgb(1, 200, 200);
+      border-bottom: 5px solid black;
       padding-bottom: 0.5rem;
       /* text-shadow: 0px 0px 10px; */
     }
@@ -54,7 +54,7 @@ export const ContactPageWrap = styled.div`
 
         & > .form-inputs {
           margin-bottom: 0rem;
-          color: rgb(1, 200, 200);
+          color: black;
           font-weight: bolder;
         }
 
@@ -112,10 +112,10 @@ export const ContactPageWrap = styled.div`
           height: 2rem;
           width: 13rem;
           background: white;
-          border: 2px solid rgb(1, 200, 200);
+          border: 2px solid black;
           transition: ease-in-out 500ms;
           cursor: pointer;
-          color: rgb(1, 200, 200);
+          color: black;
           margin: 0.5rem auto;
 
           &:hover {
@@ -126,8 +126,8 @@ export const ContactPageWrap = styled.div`
             border-radius: 2rem;
             height: 2rem;
             width: 13rem;
-            background: rgb(1, 200, 200);
-            border: 5px solid rgb(1, 200, 200);
+            background: black;
+            border: 5px solid black;
             transition: ease-in-out 500ms;
             cursor: pointer;
             color: ghostwhite;
@@ -171,7 +171,7 @@ export const ContactPageWrap = styled.div`
 
           & > .form-inputs {
             margin-bottom: 0rem;
-            color: rgb(1, 200, 200);
+            color: black;
             font-weight: bolder;
           }
 
@@ -218,10 +218,10 @@ export const ContactPageWrap = styled.div`
             height: 2rem;
             width: 13rem;
             background: white;
-            border: 2px solid rgb(1, 200, 200);
+            border: 2px solid black;
             transition: ease-in-out 300ms;
             cursor: pointer;
-            color: rgb(1, 200, 200);
+            color: black;
             margin: 0.5rem auto;
 
             &:hover {
@@ -233,7 +233,7 @@ export const ContactPageWrap = styled.div`
               height: 2rem;
               width: 13rem;
               background: white;
-              border: 5px solid rgb(1, 200, 200);
+              border: 5px solid black;
               transition: ease-in-out 300ms;
               cursor: pointer;
               color: rgb(100, 100, 100);

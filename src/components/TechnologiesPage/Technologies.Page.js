@@ -48,10 +48,10 @@ export const TechnologiesPageWrap = styled.div`
         height: 2rem;
         width: 10rem;
         background: white;
-        border: 2px solid rgb(1, 200, 200);
+        border: 2px solid black;
         transition: ease-in-out 500ms;
         cursor: pointer;
-        color: rgb(1, 200, 200);
+        color: black;
 
         &:hover {
           display: flex;
@@ -60,8 +60,8 @@ export const TechnologiesPageWrap = styled.div`
           border-radius: 2rem;
           height: 2rem;
           width: 10rem;
-          background: rgb(1, 200, 200);
-          border: 5px solid rgb(1, 200, 200);
+          background: black;
+          border: 5px solid black;
           transition: ease-in-out 500ms;
           cursor: pointer;
           color: ghostwhite;
@@ -77,10 +77,10 @@ export const TechnologiesPageWrap = styled.div`
         height: 2rem;
         width: 10rem;
         background: white;
-        border: 2px solid rgb(1, 200, 200);
+        border: 2px solid black;
         transition: ease-in-out 500ms;
         cursor: pointer;
-        color: rgb(1, 200, 200);
+        color: black;
 
         &:hover {
           display: flex;
@@ -89,8 +89,8 @@ export const TechnologiesPageWrap = styled.div`
           border-radius: 2rem;
           height: 2rem;
           width: 10rem;
-          background: rgb(1, 200, 200);
-          border: 5px solid rgb(1, 200, 200);
+          background: black;
+          border: 5px solid black;
           transition: ease-in-out 500ms;
           cursor: pointer;
           color: ghostwhite;
@@ -101,7 +101,7 @@ export const TechnologiesPageWrap = styled.div`
 
     & > .tech-box {
       height: 20rem;
-      border: 5px solid rgb(1, 200, 200) !important;
+      border: 5px solid black !important;
       border-radius: 10px;
       position: relative !important;
       display: flex;
@@ -125,15 +125,15 @@ export const TechnologiesPageWrap = styled.div`
         transition: transform 0.6s;
         transform-style: preserve-3d;
         border-radius: 10px;
-        border: 5px solid rgb(1, 200, 200) !important;
+        border: 5px solid black !important;
         position: relative !important;
       }
     }
 
     h1 {
-      color: rgb(1, 200, 200);
+      color: black;
       margin: 4rem 0 0 0;
-      border-bottom: 5px solid rgb(1, 200, 200);
+      border-bottom: 5px solid black;
       padding-bottom: 0.5rem;
       /* text-shadow: 0px 0px 10px; */
     }
@@ -204,9 +204,9 @@ export const TechnologiesPageWrap = styled.div`
       z-index: 1;
       transition: transform 0.6s ease 0s;
       transform-style: preserve-3d;
-      background-color: rgb(1, 200, 200);
+      background-color: black;
       color: white;
-      fill: rgb(1, 200, 200);
+      fill: black;
       font-size: 9px;
       border-radius: 10px;
       animation: 1s ease-in-out openfrommiddle;
@@ -225,7 +225,7 @@ export const TechnologiesPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       & > .tech-box {
-        border: 5px solid rgb(1, 200, 200) !important;
+        border: 5px solid black !important;
         border-radius: 10px;
         position: relative !important;
         display: flex;
@@ -248,7 +248,7 @@ export const TechnologiesPageWrap = styled.div`
           transition: transform 0.6s;
           transform-style: preserve-3d;
           border-radius: 10px;
-          border: 5px solid rgb(1, 200, 200) !important;
+          border: 5px solid black !important;
           position: relative !important;
         }
       }
@@ -341,10 +341,10 @@ export const TechnologiesPageWrap = styled.div`
         height: 2rem;
         width: 10rem;
         background: white;
-        border: 2px solid rgb(1, 200, 200);
+        border: 2px solid black;
         transition: ease-in-out 500ms;
         cursor: pointer;
-        color: rgb(1, 200, 200);
+        color: black;
 
         &:hover {
           display: flex;
@@ -353,8 +353,8 @@ export const TechnologiesPageWrap = styled.div`
           border-radius: 2rem;
           height: 2rem;
           width: 10rem;
-          background: rgb(1, 200, 200);
-          border: 5px solid rgb(1, 200, 200);
+          background: black;
+          border: 5px solid black;
           transition: ease-in-out 500ms;
           cursor: pointer;
           color: ghostwhite;
@@ -370,10 +370,10 @@ export const TechnologiesPageWrap = styled.div`
         height: 2rem;
         width: 10rem;
         background: white;
-        border: 2px solid rgb(1, 200, 200);
+        border: 2px solid black;
         transition: ease-in-out 500ms;
         cursor: pointer;
-        color: rgb(1, 200, 200);
+        color: black;
 
         &:hover {
           display: flex;
@@ -382,8 +382,8 @@ export const TechnologiesPageWrap = styled.div`
           border-radius: 2rem;
           height: 2rem;
           width: 10rem;
-          background: rgb(1, 200, 200);
-          border: 5px solid rgb(1, 200, 200);
+          background: black;
+          border: 5px solid black;
           transition: ease-in-out 500ms;
           cursor: pointer;
           color: ghostwhite;

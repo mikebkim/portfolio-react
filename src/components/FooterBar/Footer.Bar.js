@@ -54,7 +54,7 @@ export const FooterWrap = styled.div`
     }
 
     from {
-      margin-left: 0;
+      margin-left: 0rem;
       transition: ease-in-out 300ms;
     }
 
@@ -68,7 +68,7 @@ export const FooterWrap = styled.div`
     background: linear-gradient(
       to right,
       transparent 20%,
-      rgb(1, 200, 200) 100%
+      black 100%
     );
     top: 0;
     position: fixed;

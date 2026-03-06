@@ -8,9 +8,9 @@
 }
 
 hr {
-  border-color: rgb(1, 200, 200);
+  border-color: black;
   height: 5px;
-  /* background-color: rgb(1, 200, 200); */
+  /* background-color: black; */
   background-color: ghostwhite;
 }
 
@@ -30,7 +30,7 @@ hr {
   bottom: 0;
   right: 0;
   cursor: pointer;
-  color: rgb(1, 200, 200);
+  color: black;
   z-index: 1;
   margin: 1rem;
 }
@@ -50,7 +50,7 @@ hr {
     bottom: 0;
     right: 0;
     cursor: pointer;
-    color: rgb(1, 200, 200);
+    color: black;
     margin: 1rem;
   }
 }

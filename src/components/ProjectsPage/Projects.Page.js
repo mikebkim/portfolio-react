@@ -18,9 +18,9 @@ export const ProjectsPageWrap = styled.div`
     }
 
     h1 {
-      color: rgb(1, 200, 200);
+      color: black;
       margin: 4rem 0 0 0;
-      border-bottom: 5px solid rgb(1, 200, 200);
+      border-bottom: 5px solid black;
       padding-bottom: 0.5rem;
       /* text-shadow: 0px 0px 10px; */
     }
@@ -100,7 +100,7 @@ export const ProjectsPageWrap = styled.div`
             margin: 0.5rem;
             padding: 0.5rem;
             border-radius: 50px;
-            background-color: rgb(1, 200, 200);
+            background-color: black;
             color: ghostwhite;
           }
         }
@@ -116,7 +116,7 @@ export const ProjectsPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       h2 {
-        color: rgb(1, 200, 200);
+        color: black;
         font-weight: 700;
         font-size: 36px;
         margin: 0;
@@ -182,7 +182,7 @@ export const ProjectsPageWrap = styled.div`
               padding: 0.5rem;
               border-radius: 50px;
               background-color: rgb(1, 200, 200, 0.5);
-              color: rgb(1, 200, 200);
+              color: black;
             }
           }
         }

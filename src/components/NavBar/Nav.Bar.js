@@ -177,13 +177,13 @@ export const NavBarWrap = styled.div`
   }
 
   .burger-open {
-    color: rgb(1, 200, 200);
+    color: black;
     transform: rotate(180deg);
     transition: ease-in-out 0.5s;
   }
 
   .burger-close {
-    color: rgb(1, 200, 200);
+    color: black;
     transition: ease-in-out 0.5s;
   }
 
@@ -222,7 +222,7 @@ export const NavBarWrap = styled.div`
       animation: 0.5s slideham;
 
       & > .nav-line {
-        border-bottom: 2px solid rgb(1, 200, 200);
+        border-bottom: 2px solid black;
         width: 100%;
         border-radius: 50px;
       }
@@ -244,7 +244,7 @@ export const NavBarWrap = styled.div`
           font-size: 8px;
           font-weight: 700;
           transition: ease-in-out 300ms;
-          color: rgb(1, 200, 200);
+          color: black;
         }
 
         &.selected-box {
@@ -266,13 +266,13 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: rgb(1, 200, 200);
-            fill: rgb(1, 200, 200);
+            color: black;
+            fill: black;
             transition: ease-in-out 300ms;
 
             &:hover {
-              color: rgb(1, 200, 200);
-              fill: rgb(1, 200, 200);
+              color: black;
+              fill: black;
             }
           }
         }
@@ -282,8 +282,8 @@ export const NavBarWrap = styled.div`
           align-items: center;
           display: flex;
           justify-content: center;
-          color: rgb(1, 200, 200);
-          fill: rgb(1, 200, 200);
+          color: black;
+          fill: black;
           height: 1.5rem;
           width: 1.5rem;
           transition: ease-in-out 300ms;
@@ -297,13 +297,13 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: rgb(1, 200, 200);
-            fill: rgb(1, 200, 200);
+            color: black;
+            fill: black;
             transition: ease-in-out 300ms;
 
             &:hover {
-              color: rgb(1, 200, 200);
-              fill: rgb(1, 200, 200);
+              color: black;
+              fill: black;
             }
           }
         }
@@ -410,10 +410,10 @@ export const NavBarWrap = styled.div`
     z-index: 1;
     padding: 0 1rem;
     /* border-radius: 5px; */
-    /* border-right: 2px solid rgb(1, 200, 200); */
+    /* border-right: 2px solid black; */
 
     & > .nav-line {
-      border-bottom: 2px solid rgb(1, 200, 200);
+      border-bottom: 2px solid black;
       width: 100%;
       border-radius: 50px;
     }
@@ -428,7 +428,7 @@ export const NavBarWrap = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 5px solid rgb(1, 200, 200);
+      border: 5px solid black;
       height: 5rem;
       width: 5rem;
       border-radius: 10px;
@@ -437,7 +437,7 @@ export const NavBarWrap = styled.div`
       cursor: pointer;
 
       &:hover {
-        border: 5px solid rgb(1, 200, 200);
+        border: 5px solid black;
         transition: ease-in-out 300ms;
         background-color: rgb(1, 200, 200, 0.7);
       }
@@ -455,9 +455,9 @@ export const NavBarWrap = styled.div`
       }
 
       &.selected-box {
-        background-color: rgb(1, 200, 200);
+        background-color: black;
         transition: ease-in-out 300ms;
-        border: 5px solid rgb(1, 200, 200);
+        border: 5px solid black;
       }
 
       & > .nav-link {
@@ -467,8 +467,8 @@ export const NavBarWrap = styled.div`
           display: flex;
           justify-content: center;
           background-color: transparent;
-          color: rgb(1, 200, 200);
-          fill: rgb(1, 200, 200);
+          color: black;
+          fill: black;
           transition: ease-in-out 300ms;
         }
       }

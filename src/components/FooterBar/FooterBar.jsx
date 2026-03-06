@@ -32,8 +32,10 @@ const Footer = () => {
       id: "git",
       url: "https://github.com/mikebkim",
       fontId: faGithub,
-      backgroundColor: "linear-gradient(to right, transparent 50%, darkgrey",
+      backgroundColor:
+        "linear-gradient(to right, transparent 0%, darkgrey 50%)",
       color: "ghostwhite",
+      marginLeft: "3rem",
     },
     {
       name: "LinkedIn",
@@ -41,8 +43,9 @@ const Footer = () => {
       url: "https://www.linkedin.com/in/mikebkim/",
       fontId: faLinkedin,
       backgroundColor:
-        "linear-gradient(to right, transparent 50%, rgb(8, 91, 187) 100%)",
+        "linear-gradient(to right, transparent 0%, rgb(8, 91, 187) 50%)",
       color: "ghostwhite",
+      marginLeft: "4.5rem",
     },
     {
       name: "Instagram",
@@ -50,8 +53,9 @@ const Footer = () => {
       url: "https://www.instagram.com/mikebkim/",
       fontId: faInstagram,
       backgroundColor:
-        "linear-gradient(to right, transparent 50%, rgb(255, 0, 95)",
+        "linear-gradient(to right, transparent 0%, rgb(255, 0, 95) 50%)",
       color: "ghostwhite",
+      marginLeft: "5.5rem",
     },
     {
       name: "Soundcloud",
@@ -59,17 +63,23 @@ const Footer = () => {
       url: "https://soundcloud.com/mikekim-1",
       fontId: faSoundcloud,
       backgroundColor:
-        "linear-gradient(to right, transparent 50%, rgb(255, 101, 0)",
+        "linear-gradient(to right, transparent 0%, rgb(255, 101, 0) 50%)",
       color: "ghostwhite",
+      marginLeft: "7rem",
     },
   ];
 
   return (
-    <FooterWrap hoveredSocial={hoveredSocial}>
+    <FooterWrap hoveredSocial={hoveredSocial} socialLinks={socialLinks}>
       <div className="Footer">
         <div className="social-flex"></div>
         {socialLinks.map((link) => (
-          <div class="social-links" linkId={link.id}>
+          <div
+            className="social-links"
+            linkId={link.id}
+            $marginLeft={link.marginLeft}
+            $gradient={link.backgroundColor}
+          >
             <div className="social-icon">
               <a
                 href={link.url}
@@ -98,8 +108,8 @@ const Footer = () => {
                         hoveredSocial === link.id
                           ? `${windowWidth >= 768 ? link.backgroundColor : ""}`
                           : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
-                      color:
-                        hoveredSocial === link.id ? link.color : link.color,
+                      color: link.color,
+                      marginLeft: link.marginLeft || "0px",
                     }}
                   >
                     {link.name}

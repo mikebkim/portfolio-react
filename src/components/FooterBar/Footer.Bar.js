@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const FooterWrap = styled.div`
+  margin-left: ${(props) => props.$marginLeft};
   @keyframes slideleft {
     0% {
       color: transparent;
@@ -53,12 +54,12 @@ export const FooterWrap = styled.div`
     }
 
     from {
-      margin-left: -3rem;
+      margin-left: 0;
       transition: ease-in-out 300ms;
     }
 
     to {
-      margin-left: 0rem;
+      margin-left: margin-left;
       transition: ease-in-out 300ms;
     }
   }
@@ -70,25 +71,26 @@ export const FooterWrap = styled.div`
       rgb(1, 200, 200) 100%
     );
     top: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 1rem;
     height: 3rem;
+    z-index: 0;
 
     .social-hover {
       position: absolute;
       transition: ease-in-out 300ms;
       animation: 1.2s slideleft;
-      /* margin-left: 7rem; */
       padding-right: 0.4rem;
-      z-index: 0;
-      width: 12rem;
+      z-index: 1;
+      width: 5rem;
       display: flex;
       justify-content: flex-end;
       border-radius: 5px;
+      margin-left: 7em;
     }
 
     & > .social-flex {
@@ -99,7 +101,7 @@ export const FooterWrap = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 10rem;
+      width: fit-content;
 
       & > .social-icon {
         height: 3rem;
@@ -115,26 +117,30 @@ export const FooterWrap = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-          border: 3px solid ghostwhite;
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          transition: ease-in-out 600ms;
+          border: 3px solid ghostwhite;
+          background: linear-gradient(to right, darkgrey 0%, transparent 50%);
+          background-size: 200% 100%;
+          background-position: right;
+          transition:
+            background-position 0.3s ease-in-out,
+            color 0.3s ease-in-out;
 
           &:hover {
-            transition: ease-in-out 600ms;
-            color: ghostwhite;
-            border: 5px solid darkgrey;
-            border-radius: 1.5rem;
-            height: 1.5rem;
-            width: 1.5rem;
-            background-color: darkgrey;
+            height: 2rem;
+            width: 2rem;
+            background-position: left;
+            transition: ease-in-out 0.3s;
+            border: transparent;
+            border-image: linear-gradient(to right, transparent, darkgrey);
           }
 
           & > svg {
             height: 1rem;
             width: 1rem;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 0.3s;
             z-index: 1;
           }
         }
@@ -144,26 +150,38 @@ export const FooterWrap = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-          border: 3px solid ghostwhite;
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          transition: ease-in-out 600ms;
+          border: 3px solid ghostwhite;
+          background: linear-gradient(
+            to right,
+            rgb(8, 91, 187) 0%,
+            transparent 50%
+          );
+          background-size: 200% 100%;
+          background-position: right;
+          transition:
+            background-position 0.3s ease-in-out,
+            color 0.3s ease-in-out;
 
           &:hover {
-            transition: ease-in-out 600ms;
-            color: ghostwhite;
-            border: 5px solid rgb(8, 91, 187);
-            border-radius: 1.5rem;
-            height: 1.5rem;
-            width: 1.5rem;
-            background-color: rgb(8, 91, 187);
+            height: 2rem;
+            width: 2rem;
+            background-position: left;
+            transition: ease-in-out 0.3s;
+            border: transparent;
+            border-image: linear-gradient(
+              to right,
+              transparent,
+              rgb(8, 91, 187)
+            );
           }
 
           & > svg {
             height: 1rem;
             width: 1rem;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 0.3s;
             z-index: 1;
           }
         }
@@ -173,26 +191,38 @@ export const FooterWrap = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-          border: 3px solid ghostwhite;
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          transition: ease-in-out 600ms;
+          border: 3px solid ghostwhite;
+          background: linear-gradient(
+            to right,
+            rgb(255, 0, 95) 0%,
+            transparent 50%
+          );
+          background-size: 200% 100%;
+          background-position: right;
+          transition:
+            background-position 0.3s ease-in-out,
+            color 0.3s ease-in-out;
 
           &:hover {
-            transition: ease-in-out 600ms;
-            color: ghostwhite;
-            border: 5px solid rgb(255, 0, 95);
-            border-radius: 1.5rem;
-            height: 1.5rem;
-            width: 1.5rem;
-            background-color: rgb(255, 0, 95);
+            height: 2rem;
+            width: 2rem;
+            background-position: left;
+            transition: ease-in-out 0.3s;
+            border: transparent;
+            border-image: linear-gradient(
+              to right,
+              transparent,
+              rgb(255, 0, 95)
+            );
           }
 
           & > svg {
             height: 1rem;
             width: 1rem;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 0.3s;
             z-index: 1;
           }
         }
@@ -202,26 +232,38 @@ export const FooterWrap = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-          border: 3px solid ghostwhite;
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          transition: ease-in-out 600ms;
+          border: 3px solid ghostwhite;
+          background: linear-gradient(
+            to right,
+            rgb(255, 101, 0) 0%,
+            transparent 50%
+          );
+          background-size: 200% 100%;
+          background-position: right;
+          transition:
+            background-position 0.3s ease-in-out,
+            color 0.3s ease-in-out;
 
           &:hover {
-            transition: ease-in-out 600ms;
-            color: ghostwhite;
-            border: 5px solid rgb(255, 101, 0);
-            border-radius: 1.5rem;
-            height: 1.5rem;
-            width: 1.5rem;
-            background-color: rgb(255, 101, 0);
+            height: 2rem;
+            width: 2rem;
+            background-position: left;
+            transition: ease-in-out 0.3s;
+            border: transparent;
+            border-image: linear-gradient(
+              to right,
+              transparent,
+              rgb(255, 101, 0)
+            );
           }
 
           & > svg {
             height: 1rem;
             width: 1rem;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 0.3s;
             z-index: 1;
           }
         }
@@ -254,7 +296,7 @@ export const FooterWrap = styled.div`
   @media only screen and (max-width: 768px) {
     .Footer {
       top: 0;
-      position: absolute;
+      position: fixed;
       width: 100%;
       display: flex;
       justify-content: flex-end;
@@ -265,7 +307,7 @@ export const FooterWrap = styled.div`
       .social-hover {
         position: absolute;
         transition: ease-in-out 300ms;
-        animation: 600ms slideup;
+        animation: 0.3s slideup;
         margin: 3rem 0 auto;
         z-index: 1;
         display: flex;
@@ -303,10 +345,10 @@ export const FooterWrap = styled.div`
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 0.3s;
 
             &:hover {
-              transition: ease-in-out 600ms;
+              transition: ease-in-out 0.3s;
               color: ghostwhite;
               border: 5px solid darkgrey;
               border-radius: 1.5rem;
@@ -318,7 +360,7 @@ export const FooterWrap = styled.div`
             & > svg {
               height: 1rem;
               width: 1rem;
-              transition: ease-in-out 600ms;
+              transition: ease-in-out 0.3s;
               z-index: 1;
             }
           }
@@ -332,10 +374,10 @@ export const FooterWrap = styled.div`
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 0.3s;
 
             &:hover {
-              transition: ease-in-out 600ms;
+              transition: ease-in-out 0.3s;
               color: ghostwhite;
               border: 5px solid rgb(8, 91, 187);
               border-radius: 1.5rem;
@@ -347,7 +389,7 @@ export const FooterWrap = styled.div`
             & > svg {
               height: 1rem;
               width: 1rem;
-              transition: ease-in-out 600ms;
+              transition: ease-in-out 0.3s;
               z-index: 1;
             }
           }
@@ -361,10 +403,10 @@ export const FooterWrap = styled.div`
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 0.3s;
 
             &:hover {
-              transition: ease-in-out 600ms;
+              transition: ease-in-out 0.3s;
               color: ghostwhite;
               border: 5px solid rgb(255, 0, 95);
               border-radius: 1.5rem;
@@ -376,7 +418,7 @@ export const FooterWrap = styled.div`
             & > svg {
               height: 1rem;
               width: 1rem;
-              transition: ease-in-out 600ms;
+              transition: ease-in-out 0.3s;
               z-index: 1;
             }
           }
@@ -390,10 +432,10 @@ export const FooterWrap = styled.div`
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
-            transition: ease-in-out 600ms;
+            transition: ease-in-out 0.3s;
 
             &:hover {
-              transition: ease-in-out 600ms;
+              transition: ease-in-out 0.3s;
               color: ghostwhite;
               border: 5px solid rgb(255, 101, 0);
               border-radius: 1.5rem;
@@ -405,7 +447,7 @@ export const FooterWrap = styled.div`
             & > svg {
               height: 1rem;
               width: 1rem;
-              transition: ease-in-out 600ms;
+              transition: ease-in-out 0.3s;
               z-index: 1;
             }
           }

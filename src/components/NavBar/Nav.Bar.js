@@ -439,7 +439,7 @@ export const NavBarWrap = styled.div`
       &:hover {
         border: 5px solid black;
         transition: ease-in-out 300ms;
-        background-color: rgb(1, 200, 200, 0.7);
+        background-color: black;
       }
 
       & > .nav-title {

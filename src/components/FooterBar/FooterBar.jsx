@@ -45,7 +45,7 @@ const Footer = () => {
       backgroundColor:
         "linear-gradient(to right, transparent 0%, rgb(8, 91, 187) 50%)",
       color: "ghostwhite",
-      marginLeft: "4.5rem",
+      marginLeft: "4rem",
     },
     {
       name: "Instagram",
@@ -55,7 +55,7 @@ const Footer = () => {
       backgroundColor:
         "linear-gradient(to right, transparent 0%, rgb(255, 0, 95) 50%)",
       color: "ghostwhite",
-      marginLeft: "5.5rem",
+      marginLeft: "5rem",
     },
     {
       name: "Soundcloud",
@@ -65,7 +65,7 @@ const Footer = () => {
       backgroundColor:
         "linear-gradient(to right, transparent 0%, rgb(255, 101, 0) 50%)",
       color: "ghostwhite",
-      marginLeft: "7rem",
+      marginLeft: "6.5rem",
     },
   ];
 

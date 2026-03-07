@@ -26,7 +26,7 @@ export const ProjectsPageWrap = styled.div`
     }
 
     h2 {
-      color: rgb(100, 100, 100);
+      color: black;
       font-weight: 700;
       font-size: 36px;
       margin: 0;
@@ -100,7 +100,7 @@ export const ProjectsPageWrap = styled.div`
             margin: 0.5rem;
             padding: 0.5rem;
             border-radius: 50px;
-            background-color: black;
+            background-color: rgb(100, 100, 100);
             color: ghostwhite;
           }
         }
@@ -211,7 +211,7 @@ export const ProjectsPageWrap = styled.div`
     }
 
     h2 {
-      color: rgb(200, 1, 1);
+      color: black;
       font-weight: 700;
       font-size: 36px;
       margin: 0;
@@ -301,7 +301,7 @@ export const ProjectsPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       h2 {
-        color: rgb(200, 1, 1);
+        color: black;
         font-weight: 700;
         font-size: 36px;
         margin: 0;

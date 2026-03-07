@@ -32,8 +32,7 @@ const Footer = () => {
       id: "git",
       url: "https://github.com/mikebkim",
       fontId: faGithub,
-      backgroundColor:
-        "linear-gradient(to right, transparent 0%, darkgrey 50%)",
+      backgroundColor: "linear-gradient(to right, transparent 0%, darkgrey 50)",
       color: "ghostwhite",
       marginLeft: "3rem",
     },
@@ -43,7 +42,7 @@ const Footer = () => {
       url: "https://www.linkedin.com/in/mikebkim/",
       fontId: faLinkedin,
       backgroundColor:
-        "linear-gradient(to right, transparent 0%, rgb(8, 91, 187) 50%)",
+        "linear-gradient(to right, transparent 0%, rgb(8, 91, 187) 50)",
       color: "ghostwhite",
       marginLeft: "4rem",
     },
@@ -53,7 +52,7 @@ const Footer = () => {
       url: "https://www.instagram.com/mikebkim/",
       fontId: faInstagram,
       backgroundColor:
-        "linear-gradient(to right, transparent 0%, rgb(255, 0, 95) 50%)",
+        "linear-gradient(to right, transparent 0%, rgb(255, 0, 95) 50)",
       color: "ghostwhite",
       marginLeft: "5rem",
     },
@@ -63,7 +62,7 @@ const Footer = () => {
       url: "https://soundcloud.com/mikekim-1",
       fontId: faSoundcloud,
       backgroundColor:
-        "linear-gradient(to right, transparent 0%, rgb(255, 101, 0) 50%)",
+        "linear-gradient(to right, transparent 0%, rgb(255, 101, 0) 50)",
       color: "ghostwhite",
       marginLeft: "6.5rem",
     },

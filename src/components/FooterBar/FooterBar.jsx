@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { FooterWrap } from "./Footer.Bar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,21 +9,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "aos/dist/aos.css";
 
-const Footer = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
+const Footer = ({ screenWidth }) => {
   const [hoveredSocial, setHoveredSocial] = useState(null);
 
   const socialLinks = [
@@ -70,16 +56,11 @@ const Footer = () => {
   ];
 
   return (
-    <FooterWrap hoveredSocial={hoveredSocial} socialLinks={socialLinks}>
+    <FooterWrap hoveredSocial={hoveredSocial}>
       <div className="Footer">
         <div className="social-flex"></div>
         {socialLinks.map((link) => (
-          <div
-            className="social-links"
-            linkId={link.id}
-            $marginLeft={link.marginLeft}
-            $gradient={link.backgroundColor}
-          >
+          <div className="social-links" key={link.id}>
             <div className="social-icon">
               <a
                 href={link.url}
@@ -106,7 +87,7 @@ const Footer = () => {
                     style={{
                       background:
                         hoveredSocial === link.id
-                          ? `${windowWidth >= 768 ? link.backgroundColor : ""}`
+                          ? `${screenWidth >= 768 ? link.backgroundColor : ""}`
                           : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
                       color: link.color,
                       marginLeft: link.marginLeft || "0px",

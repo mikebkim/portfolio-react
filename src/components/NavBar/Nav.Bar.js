@@ -406,7 +406,8 @@ export const NavBarWrap = styled.div`
     -webkit-box-align: center;
     align-items: center;
     /* background-color: rgb(40, 40, 40); */
-    background-color: transparent;
+    /* background-color: transparent; */
+    background: linear-gradient(to bottom, transparent 10%, black 100%);
     z-index: 1;
     padding: 0 1rem;
     /* border-radius: 5px; */

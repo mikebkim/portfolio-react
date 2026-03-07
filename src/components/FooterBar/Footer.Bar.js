@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterWrap = styled.div`
-  margin-left: ${(props) => props.$marginLeft};
   @keyframes slideleft {
     0% {
       color: transparent;
@@ -65,11 +64,7 @@ export const FooterWrap = styled.div`
   }
 
   .Footer {
-    background: linear-gradient(
-      to right,
-      transparent 0%,
-      black 100%
-    );
+    background: linear-gradient(to right, transparent 15%, black 100%);
     top: 0;
     position: fixed;
     width: 100%;
@@ -101,7 +96,7 @@ export const FooterWrap = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: fit-content;
+      width: 10rem;
 
       & > .social-icon {
         height: 3rem;

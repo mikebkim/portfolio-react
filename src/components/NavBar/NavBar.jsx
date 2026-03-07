@@ -12,9 +12,16 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const NavBar = ({ toggleHeader }) => {
+const NavBar = ({ toggleHeader, screenWidth }) => {
   const [selectedTab, setSelectedTab] = useState("");
   const location = useLocation();
+
+  const breakpoints = {
+    mobile: 480,
+    tablet: 880,
+    laptop: 1024,
+    desktop: 1280,
+  };
 
   useEffect(() => {
     setSelectedTab(JSON.stringify(location));
@@ -24,27 +31,13 @@ const NavBar = ({ toggleHeader }) => {
     AOS.init();
   }, []);
 
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
   const [hoveredLink, setHoveredLink] = useState(null);
 
   return (
     <NavBarWrap>
-      {windowWidth >= 768 ? (
+      {screenWidth >= breakpoints.tablet ? (
         <div className="NavBar">
           <Link
             to="/home"
@@ -54,8 +47,8 @@ const NavBar = ({ toggleHeader }) => {
                   ? `${"nav-box-rebel selected-box"}`
                   : `${"nav-box selected-box"}`
                 : toggleHeader
-                ? `${"nav-box-rebel"}`
-                : `${"nav-box"}`
+                  ? `${"nav-box-rebel"}`
+                  : `${"nav-box"}`
             }
             title="Home"
             onMouseEnter={() => setHoveredLink("home")}
@@ -66,8 +59,8 @@ const NavBar = ({ toggleHeader }) => {
                 selectedTab.includes("home")
                   ? "selected"
                   : hoveredLink === "home"
-                  ? "nav-link-hover"
-                  : "nav-link"
+                    ? "nav-link-hover"
+                    : "nav-link"
               }
             >
               <FontAwesomeIcon icon={faHome} />
@@ -89,8 +82,8 @@ const NavBar = ({ toggleHeader }) => {
                   ? `${"nav-box-rebel selected-box"}`
                   : `${"nav-box selected-box"}`
                 : toggleHeader
-                ? `${"nav-box-rebel"}`
-                : `${"nav-box"}`
+                  ? `${"nav-box-rebel"}`
+                  : `${"nav-box"}`
             }
             title="Technologies"
             onMouseEnter={() => setHoveredLink("technologies")}
@@ -101,8 +94,8 @@ const NavBar = ({ toggleHeader }) => {
                 selectedTab.includes("technologies")
                   ? "selected"
                   : hoveredLink === "technologies"
-                  ? "nav-link-hover"
-                  : "nav-link"
+                    ? "nav-link-hover"
+                    : "nav-link"
               }
             >
               <FontAwesomeIcon icon={faCode} />
@@ -124,8 +117,8 @@ const NavBar = ({ toggleHeader }) => {
                   ? `${"nav-box-rebel selected-box"}`
                   : `${"nav-box selected-box"}`
                 : toggleHeader
-                ? `${"nav-box-rebel"}`
-                : `${"nav-box"}`
+                  ? `${"nav-box-rebel"}`
+                  : `${"nav-box"}`
             }
             title="Projects"
             onMouseEnter={() => setHoveredLink("projects")}
@@ -136,8 +129,8 @@ const NavBar = ({ toggleHeader }) => {
                 selectedTab.includes("projects")
                   ? "selected"
                   : hoveredLink === "projects"
-                  ? "nav-link-hover"
-                  : "nav-link"
+                    ? "nav-link-hover"
+                    : "nav-link"
               }
             >
               <FontAwesomeIcon icon={faLayerGroup} />
@@ -159,8 +152,8 @@ const NavBar = ({ toggleHeader }) => {
                   ? `${"nav-box-rebel selected-box"}`
                   : `${"nav-box selected-box"}`
                 : toggleHeader
-                ? `${"nav-box-rebel"}`
-                : `${"nav-box"}`
+                  ? `${"nav-box-rebel"}`
+                  : `${"nav-box"}`
             }
             title="Contact"
             onMouseEnter={() => setHoveredLink("contact")}
@@ -171,8 +164,8 @@ const NavBar = ({ toggleHeader }) => {
                 selectedTab.includes("contact")
                   ? "selected"
                   : hoveredLink === "contact"
-                  ? "nav-link-hover"
-                  : "nav-link"
+                    ? "nav-link-hover"
+                    : "nav-link"
               }
             >
               <FontAwesomeIcon icon={faPhone} />
@@ -211,8 +204,8 @@ const NavBar = ({ toggleHeader }) => {
                       ? `${"nav-box-rebel selected-box"}`
                       : `${"nav-box selected-box"}`
                     : toggleHeader
-                    ? `${"nav-box-rebel"}`
-                    : `${"nav-box"}`
+                      ? `${"nav-box-rebel"}`
+                      : `${"nav-box"}`
                 }
                 title="Home"
                 // onClick={() => setIsBurgerOpen(false)}
@@ -241,8 +234,8 @@ const NavBar = ({ toggleHeader }) => {
                       ? `${"nav-box-rebel selected-box"}`
                       : `${"nav-box selected-box"}`
                     : toggleHeader
-                    ? `${"nav-box-rebel"}`
-                    : `${"nav-box"}`
+                      ? `${"nav-box-rebel"}`
+                      : `${"nav-box"}`
                 }
                 title="Technologies"
                 // onClick={() => setIsBurgerOpen(false)}
@@ -273,8 +266,8 @@ const NavBar = ({ toggleHeader }) => {
                       ? `${"nav-box-rebel selected-box"}`
                       : `${"nav-box selected-box"}`
                     : toggleHeader
-                    ? `${"nav-box-rebel"}`
-                    : `${"nav-box"}`
+                      ? `${"nav-box-rebel"}`
+                      : `${"nav-box"}`
                 }
                 title="Projects"
                 // onClick={() => setIsBurgerOpen(false)}
@@ -303,8 +296,8 @@ const NavBar = ({ toggleHeader }) => {
                       ? `${"nav-box-rebel selected-box"}`
                       : `${"nav-box selected-box"}`
                     : toggleHeader
-                    ? `${"nav-box-rebel"}`
-                    : `${"nav-box"}`
+                      ? `${"nav-box-rebel"}`
+                      : `${"nav-box"}`
                 }
                 title="Contact"
                 // onClick={() => setIsBurgerOpen(false)}

@@ -93,7 +93,7 @@ const Footer = ({ screenWidth }) => {
                       marginLeft: link.marginLeft || "0px",
                     }}
                   >
-                    {link.name}
+                    {screenWidth >= 768 ? link.name : ""}
                   </div>
                 ) : (
                   ""

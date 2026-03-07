@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
 import { DndProvider } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 
@@ -12,60 +17,96 @@ import ContactPage from "./components/ContactPage/ContactPage";
 // Components
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/FooterBar/FooterBar";
+import "./App.css";
 import { useWindowSize } from "./hooks/useWindowSize";
+
+// Images
+import MK_Resume from "./files/MK_Resume.pdf";
+
+// Icons
+import blackjackicon from "./icons/blackjackicon.png";
+import gameiticon from "./icons/gameiticon.png";
+import marbleicon from "./icons/marbleicon.png";
+import sessionsicon from "./icons/sessionsicon.png";
+import personal_logo from "./icons/personal_logo.png";
 
 const App = () => {
   const width = useWindowSize();
+  function importAll(r) {
+    let images = {};
+    r.keys().forEach((item, index) => {
+      images[item.replace("./", "")] = r(item);
+    });
+    return images;
+  }
+  const allImages = importAll(
+    require.context("./images", false, /\.(png|jpe?g|svg)$/),
+  );
   const [toggleHeader, setToggleHeader] = useState(false);
-
   return (
-    <BrowserRouter
-      future={{
-        v7_startTransition: true,
-        v7_relativeSplatPath: true,
-      }}
-    >
-      <div className="App">
-        <NavBar toggleHeader={toggleHeader} screenWidth={width} />
-
+    <div className="App">
+      {" "}
+      <Router>
+        {" "}
+        <NavBar
+          personalLogo={personal_logo}
+          toggleHeader={toggleHeader}
+          screenWidth={width}
+        />{" "}
+        {/* {toggleHeader ? ( <div className="dont-click-fix" onClick={() => setToggleHeader(!toggleHeader)} > FIX ME! </div> ) : ( <div className="dont-click" onClick={() => setToggleHeader(!toggleHeader)} > DON'T CLICK ME! </div> )} */}{" "}
         <Routes>
-          {/* Redirect "/" → "/home" */}
-          <Route path="/" element={<Navigate to="/home" replace />} />
-
-          {/* Home */}
+          {" "}
+          <Route path="/" element={<Navigate replace to="/home" />} />{" "}
           <Route
+            exact
             path="/home"
             element={
               <HomePage
-                toggleHeader={toggleHeader}
+                resume={MK_Resume}
                 setToggleHeader={setToggleHeader}
+                toggleHeader={toggleHeader}
               />
             }
-          />
-
-          {/* Technologies */}
+          />{" "}
           <Route
+            exact
             path="/technologies"
             element={
               <DndProvider backend={HTML5Backend}>
-                <TechnologiesPage />
+                {" "}
+                <TechnologiesPage
+                  allImages={allImages}
+                  toggleHeader={toggleHeader}
+                />{" "}
               </DndProvider>
             }
-          />
-
-          {/* Projects */}
-          <Route path="/projects" element={<ProjectsPage />} />
-
-          {/* Contact */}
-          <Route path="/contact" element={<ContactPage />} />
-
-          {/* 404 Catch-all */}
-          <Route path="*" element={<Navigate to="/home" replace />} />
-        </Routes>
-
-        <Footer screenWidth={width} />
-      </div>
-    </BrowserRouter>
+          />{" "}
+          <Route
+            exact
+            path="/projects"
+            element={
+              <ProjectsPage
+                iconBlackjack={blackjackicon}
+                iconMarble={marbleicon}
+                iconSessions={sessionsicon}
+                iconGameit={gameiticon}
+                allImages={allImages}
+                toggleHeader={toggleHeader}
+              />
+            }
+          />{" "}
+          <Route
+            exact
+            path="/contact"
+            element={<ContactPage toggleHeader={toggleHeader} />}
+          />{" "}
+        </Routes>{" "}
+      </Router>{" "}
+      <React.Fragment>
+        {" "}
+        <Footer screenWidth={width} />{" "}
+      </React.Fragment>{" "}
+    </div>
   );
 };
 

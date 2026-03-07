@@ -67,7 +67,7 @@ export const FooterWrap = styled.div`
   .Footer {
     background: linear-gradient(
       to right,
-      transparent 20%,
+      transparent 0%,
       black 100%
     );
     top: 0;

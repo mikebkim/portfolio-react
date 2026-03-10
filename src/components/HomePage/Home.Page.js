@@ -155,6 +155,7 @@ export const HomePageWrap = styled.div`
             transition: ease-in-out 500ms;
             cursor: pointer;
             color: rgb(50, 50, 50);
+            font-weight: bold;
 
             &:hover {
               display: flex;
@@ -205,6 +206,7 @@ export const HomePageWrap = styled.div`
             transition: ease-in-out 500ms;
             cursor: pointer;
             color: rgb(299, 1, 1);
+            font-weight: bold;
 
             &:hover {
               display: flex;
@@ -273,7 +275,7 @@ export const HomePageWrap = styled.div`
       h2 {
         color: rgb(100, 100, 100);
         margin: 0 0 0 0;
-        font-size: 2rem;
+        font-size: 4rem;
 
         & > .home-name {
           color: rgb(50, 50, 50);
@@ -283,7 +285,7 @@ export const HomePageWrap = styled.div`
       h3 {
         color: rgb(100, 100, 100);
         margin: 0 0 1rem 0;
-        font-size: 1.5rem;
+        font-size: 1rem;
       }
 
       h5 {
@@ -329,10 +331,11 @@ export const HomePageWrap = styled.div`
               height: 2rem;
               width: 13rem;
               background: white;
-              border: 2px solid white;
+              border: 2px solid rgb(50, 50, 50);
               transition: ease-in-out 500ms;
               cursor: pointer;
               color: rgb(50, 50, 50);
+              font-weight: bold;
 
               &:hover {
                 display: flex;
@@ -345,8 +348,8 @@ export const HomePageWrap = styled.div`
                 border: 5px solid rgb(50, 50, 50);
                 transition: ease-in-out 500ms;
                 cursor: pointer;
-                color: rgb(100, 100, 100);
-                fill: rgb(100, 100, 100);
+                color: ghostwhite;
+                fill: ghostwhite;
 
                 & > svg {
                   margin-bottom: 0.2rem;

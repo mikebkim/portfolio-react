@@ -4,7 +4,7 @@ import TechnologiesPageWrap from "./Technologies.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const TechnologiesPage = ({ allImages, toggleHeader }) => {
+const TechnologiesPage = ({ allImages, toggleHeader, screenWidth }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlipCards = () => {
@@ -12,6 +12,13 @@ const TechnologiesPage = ({ allImages, toggleHeader }) => {
   };
 
   const allImagesArray = Object.entries(allImages);
+
+  const breakpoints = {
+    mobile: 480,
+    tablet: 880,
+    laptop: 1024,
+    desktop: 1280,
+  };
 
   const defaultBoxes = {
     a: {
@@ -209,13 +216,15 @@ const TechnologiesPage = ({ allImages, toggleHeader }) => {
             >
               FLIP CARDS
             </button>
-            <button
-              className="reset-button"
-              type="submit"
-              onClick={() => setBoxes(defaultBoxes)}
-            >
-              RESET BOX
-            </button>
+            {screenWidth <= breakpoints.mobile ? null : (
+              <button
+                className="reset-button"
+                type="submit"
+                onClick={() => setBoxes(defaultBoxes)}
+              >
+                RESET BOX
+              </button>
+            )}
           </div>
         </div>
       ) : (
@@ -242,13 +251,15 @@ const TechnologiesPage = ({ allImages, toggleHeader }) => {
             >
               FLIP CARDS
             </button>
-            <button
-              className="reset-button"
-              type="submit"
-              onClick={() => setBoxes(defaultBoxes)}
-            >
-              RESET BOX
-            </button>
+            {screenWidth <= breakpoints.mobile ? null : (
+              <button
+                className="reset-button"
+                type="submit"
+                onClick={() => setBoxes(defaultBoxes)}
+              >
+                RESET BOX
+              </button>
+            )}
           </div>
         </div>
       )}

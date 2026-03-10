@@ -75,6 +75,7 @@ const App = () => {
               <DndProvider backend={HTML5Backend}>
                 {" "}
                 <TechnologiesPage
+                  screenWidth={width}
                   allImages={allImages}
                   toggleHeader={toggleHeader}
                 />{" "}

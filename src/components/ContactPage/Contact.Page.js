@@ -28,7 +28,7 @@ export const ContactPageWrap = styled.div`
     }
 
     p {
-      color: rgb(100, 100, 100);
+      color: rgb(50, 50, 50);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -121,6 +121,7 @@ export const ContactPageWrap = styled.div`
           cursor: pointer;
           color: rgb(50, 50, 50);
           margin: 0.5rem auto;
+          font-weight: bold;
 
           &:hover {
             font-family:
@@ -231,10 +232,11 @@ export const ContactPageWrap = styled.div`
             width: 13rem;
             background: ghostwhite;
             border: 2px solid rgb(50, 50, 50);
-            transition: ease-in-out 300ms;
+            transition: ease-in-out 500ms;
             cursor: pointer;
             color: rgb(50, 50, 50);
             margin: 0.5rem auto;
+            font-weight: bold;
 
             &:hover {
               font-family:
@@ -248,12 +250,12 @@ export const ContactPageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: ghostwhite;
+              background: rgb(50, 50, 50);
               border: 5px solid rgb(50, 50, 50);
-              transition: ease-in-out 300ms;
+              transition: ease-in-out 500ms;
               cursor: pointer;
-              color: rgb(50, 50, 50);
-              fill: rgb(50, 50, 50);
+              color: ghostwhite;
+              fill: ghostwhite;
             }
           }
         }
@@ -377,6 +379,7 @@ export const ContactPageWrap = styled.div`
           cursor: pointer;
           color: rgb(299, 1, 1);
           margin: 0.5rem auto;
+          font-weight: bold;
 
           &:hover {
             font-family:
@@ -491,6 +494,7 @@ export const ContactPageWrap = styled.div`
             cursor: pointer;
             color: rgb(299, 1, 1);
             margin: 0.5rem auto;
+            font-weight: bold;
 
             &:hover {
               font-family:

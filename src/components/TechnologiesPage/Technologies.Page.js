@@ -36,9 +36,9 @@ export const TechnologiesPageWrap = styled.div`
 
     & > .drag-options {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       width: 100%;
-      margin: 1rem 0;
+      margin: 0 auto;
 
       & > .reset-button {
         display: flex;
@@ -52,6 +52,8 @@ export const TechnologiesPageWrap = styled.div`
         transition: ease-in-out 500ms;
         cursor: pointer;
         color: rgb(50, 50, 50);
+        margin: 1rem;
+        font-weight: bold;
 
         &:hover {
           display: flex;
@@ -81,6 +83,8 @@ export const TechnologiesPageWrap = styled.div`
         transition: ease-in-out 500ms;
         cursor: pointer;
         color: rgb(50, 50, 50);
+        margin: 1rem;
+        font-weight: bold;
 
         &:hover {
           display: flex;
@@ -329,7 +333,7 @@ export const TechnologiesPageWrap = styled.div`
 
     & > .drag-options {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       width: 100%;
       margin: 1rem 0;
 
@@ -345,6 +349,7 @@ export const TechnologiesPageWrap = styled.div`
         transition: ease-in-out 500ms;
         cursor: pointer;
         color: rgb(50, 50, 50);
+        font-weight: bold;
 
         &:hover {
           display: flex;
@@ -374,6 +379,7 @@ export const TechnologiesPageWrap = styled.div`
         transition: ease-in-out 500ms;
         cursor: pointer;
         color: rgb(50, 50, 50);
+        font-weight: bold;
 
         &:hover {
           display: flex;

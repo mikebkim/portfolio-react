@@ -181,8 +181,8 @@ export const ProjectsPageWrap = styled.div`
               margin: 0.5rem;
               padding: 0.5rem;
               border-radius: 50px;
-              background-color: rgb(1, 200, 200, 0.5);
-              color: rgb(50, 50, 50);
+              background-color: rgb(100, 100, 100);
+              color: ghostwhite;
             }
           }
         }
@@ -285,7 +285,7 @@ export const ProjectsPageWrap = styled.div`
             margin: 0.5rem;
             padding: 0.5rem;
             border-radius: 50px;
-            background-color: rgb(200, 1, 1, 0.5);
+            background-color: rgb(100, 100, 100);
             color: rgb(299, 1, 1);
           }
         }

@@ -64,12 +64,12 @@ export const FooterWrap = styled.div`
   }
 
   .Footer {
-    background: linear-gradient(
+    /* background: linear-gradient(
       to right,
       transparent 15%,
       rgb(50, 50, 50) 100%
-    );
-    top: 0;
+    ); */
+    bottom: 0;
     position: fixed;
     width: 100%;
     display: flex;
@@ -78,6 +78,7 @@ export const FooterWrap = styled.div`
     margin-right: 1rem;
     height: 3rem;
     z-index: 0;
+    background-color: ghostwhite;
 
     .social-hover {
       position: absolute;
@@ -112,14 +113,14 @@ export const FooterWrap = styled.div`
         margin-right: 7rem;
 
         & > .git {
-          color: ghostwhite;
+          color: rgb(100, 100, 100);
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          border: 3px solid ghostwhite;
+          border: 3px solid rgb(100, 100, 100);
           background: linear-gradient(to right, darkgrey 0%, transparent 50%);
           background-size: 200% 100%;
           background-position: right;
@@ -128,6 +129,7 @@ export const FooterWrap = styled.div`
             color 0.3s ease-in-out;
 
           &:hover {
+            color: ghostwhite;
             height: 2rem;
             width: 2rem;
             background-position: left;
@@ -145,14 +147,14 @@ export const FooterWrap = styled.div`
         }
 
         & > .linkedin {
-          color: ghostwhite;
+          color: rgb(100, 100, 100);
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          border: 3px solid ghostwhite;
+          border: 3px solid rgb(100, 100, 100);
           background: linear-gradient(
             to right,
             rgb(8, 91, 187) 0%,
@@ -165,6 +167,7 @@ export const FooterWrap = styled.div`
             color 0.3s ease-in-out;
 
           &:hover {
+            color: ghostwhite;
             height: 2rem;
             width: 2rem;
             background-position: left;
@@ -186,14 +189,14 @@ export const FooterWrap = styled.div`
         }
 
         & > .instagram {
-          color: ghostwhite;
+          color: rgb(100, 100, 100);
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          border: 3px solid ghostwhite;
+          border: 3px solid rgb(100, 100, 100);
           background: linear-gradient(
             to right,
             rgb(255, 0, 95) 0%,
@@ -206,6 +209,7 @@ export const FooterWrap = styled.div`
             color 0.3s ease-in-out;
 
           &:hover {
+            color: ghostwhite;
             height: 2rem;
             width: 2rem;
             background-position: left;
@@ -227,14 +231,14 @@ export const FooterWrap = styled.div`
         }
 
         & > .soundcloud {
-          color: ghostwhite;
+          color: rgb(100, 100, 100);
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 1.5rem;
           height: 1.5rem;
           width: 1.5rem;
-          border: 3px solid ghostwhite;
+          border: 3px solid rgb(100, 100, 100);
           background: linear-gradient(
             to right,
             rgb(255, 101, 0) 0%,
@@ -247,6 +251,7 @@ export const FooterWrap = styled.div`
             color 0.3s ease-in-out;
 
           &:hover {
+            color: ghostwhite;
             height: 2rem;
             width: 2rem;
             background-position: left;
@@ -340,7 +345,7 @@ export const FooterWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid ghostwhite;
+            border: 3px solid rgb(100, 100, 100);
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -369,7 +374,7 @@ export const FooterWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid ghostwhite;
+            border: 3px solid rgb(100, 100, 100);
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -398,7 +403,7 @@ export const FooterWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid ghostwhite;
+            border: 3px solid rgb(100, 100, 100);
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -427,7 +432,7 @@ export const FooterWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid ghostwhite;
+            border: 3px solid rgb(100, 100, 100);
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;

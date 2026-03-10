@@ -89,6 +89,7 @@ export const FooterWrap = styled.div`
       display: flex;
       justify-content: flex-end;
       color: transparent;
+      z-index: -1;
     }
 
     .social-icon:hover .social-hover {
@@ -110,11 +111,10 @@ export const FooterWrap = styled.div`
       & > .social-icon {
         height: 3rem;
         width: 3rem;
-        margin: 0 2rem;
+        margin: 0px 7rem 0px 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 7rem;
 
         & > .git {
           color: rgb(100, 100, 100);

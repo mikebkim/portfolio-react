@@ -20,8 +20,8 @@ const Footer = ({ screenWidth }) => {
       fontId: faGithub,
       backgroundColor:
         "linear-gradient(to right, transparent 0%, darkgrey 50%)",
-      color: "ghostwhite",
-      marginLeft: "3rem",
+      color: "transparent",
+      marginLeft: "4.5rem",
     },
     {
       name: "LinkedIn",
@@ -30,8 +30,8 @@ const Footer = ({ screenWidth }) => {
       fontId: faLinkedin,
       backgroundColor:
         "linear-gradient(to right, transparent 0%, rgb(8, 91, 187) 50%)",
-      color: "ghostwhite",
-      marginLeft: "4rem",
+      color: "transparent",
+      marginLeft: "5rem",
     },
     {
       name: "Instagram",
@@ -40,7 +40,7 @@ const Footer = ({ screenWidth }) => {
       fontId: faInstagram,
       backgroundColor:
         "linear-gradient(to right, transparent 0%, rgb(255, 0, 95) 50%)",
-      color: "ghostwhite",
+      color: "transparent",
       marginLeft: "5.5rem",
     },
     {
@@ -50,7 +50,7 @@ const Footer = ({ screenWidth }) => {
       fontId: faSoundcloud,
       backgroundColor:
         "linear-gradient(to right, transparent 0%, rgb(255, 101, 0) 50%)",
-      color: "ghostwhite",
+      color: "transparent",
       marginLeft: "7rem",
     },
   ];
@@ -70,34 +70,25 @@ const Footer = ({ screenWidth }) => {
                 title={link.id}
                 onMouseEnter={() => setHoveredSocial(link.id)}
                 onMouseLeave={() => setHoveredSocial(null)}
-                // style={{
-                //   background:
-                //     hoveredSocial === link.id
-                //       ? `${
-                //           windowWidth >= 768
-                //             ? link.backgroundColor
-                //             : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)"
-                //         }`
-                //       : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
-                // }}
               >
-                {hoveredSocial === link.id ? (
-                  <div
-                    className="social-hover"
-                    style={{
-                      background:
-                        hoveredSocial === link.id
-                          ? `${screenWidth >= 768 ? link.backgroundColor : ""}`
-                          : "linear-gradient(to right, transparent 65%, rgb(40, 40, 40) 100%)",
-                      color: link.color,
-                      marginLeft: link.marginLeft || "0px",
-                    }}
-                  >
-                    {screenWidth >= 768 ? link.name : ""}
-                  </div>
-                ) : (
-                  ""
-                )}
+                <div
+                  className="social-hover"
+                  style={{
+                    opacity: hoveredSocial === link.id ? 1 : 0,
+                    transform:
+                      hoveredSocial === link.id
+                        ? "translateX(0)"
+                        : "translateX(-4rem)",
+                    background:
+                      hoveredSocial === link.id && screenWidth >= 768
+                        ? link.backgroundColor
+                        : "transparent",
+                    color: link.color,
+                    marginLeft: link.marginLeft || "0px",
+                  }}
+                >
+                  {screenWidth >= 768 ? link.name : ""}
+                </div>
                 <FontAwesomeIcon icon={link.fontId} />
               </a>
             </div>

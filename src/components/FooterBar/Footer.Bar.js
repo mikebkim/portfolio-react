@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterWrap = styled.div`
-  @keyframes slideleft {
+  /* @keyframes slideleft {
     0% {
       color: transparent;
       transition: ease-in-out 300ms;
@@ -61,7 +61,7 @@ export const FooterWrap = styled.div`
       margin-left: margin-left;
       transition: ease-in-out 300ms;
     }
-  }
+  } */
 
   .Footer {
     /* background: linear-gradient(
@@ -69,7 +69,7 @@ export const FooterWrap = styled.div`
       transparent 15%,
       rgb(50, 50, 50) 100%
     ); */
-    bottom: 0;
+    top: 0;
     position: fixed;
     width: 100%;
     display: flex;
@@ -77,20 +77,25 @@ export const FooterWrap = styled.div`
     align-items: center;
     margin-right: 1rem;
     height: 3rem;
-    z-index: 0;
     background-color: ghostwhite;
 
     .social-hover {
       position: absolute;
-      transition: ease-in-out 300ms;
-      animation: 1.2s slideleft;
-      padding-right: 0.4rem;
-      z-index: 1;
-      width: 5rem;
+      transition:
+        transform 500ms ease-in-out,
+        opacity 500ms ease-in-out;
+      padding: 0 0.4rem;
+      border-radius: 5px;
       display: flex;
       justify-content: flex-end;
-      border-radius: 5px;
-      margin-left: 7em;
+      color: transparent;
+    }
+
+    .social-icon:hover .social-hover {
+      transform: translateX(0rem);
+      opacity: 1;
+      transition: 500ms ease-in-out;
+      color: ghostwhite !important;
     }
 
     & > .social-flex {
@@ -101,7 +106,6 @@ export const FooterWrap = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 10rem;
 
       & > .social-icon {
         height: 3rem;

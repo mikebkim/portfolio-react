@@ -104,7 +104,11 @@ export const ContactPageWrap = styled.div`
         }
 
         & > .contact-button {
-          font-family: "Gill Sans";
+          font-family:
+            Futura,
+            Trebuchet MS,
+            Arial,
+            sans-serif;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -119,7 +123,11 @@ export const ContactPageWrap = styled.div`
           margin: 0.5rem auto;
 
           &:hover {
-            font-family: "Gill Sans";
+            font-family:
+              Futura,
+              Trebuchet MS,
+              Arial,
+              sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -210,7 +218,11 @@ export const ContactPageWrap = styled.div`
           }
 
           & > .contact-button {
-            font-family: "Gill Sans";
+            font-family:
+              Futura,
+              Trebuchet MS,
+              Arial,
+              sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -225,7 +237,11 @@ export const ContactPageWrap = styled.div`
             margin: 0.5rem auto;
 
             &:hover {
-              font-family: "Gill Sans";
+              font-family:
+                Futura,
+                Trebuchet MS,
+                Arial,
+                sans-serif;
               display: flex;
               justify-content: center;
               align-items: center;
@@ -344,7 +360,11 @@ export const ContactPageWrap = styled.div`
         }
 
         & > .contact-button {
-          font-family: "Gill Sans";
+          font-family:
+            Futura,
+            Trebuchet MS,
+            Arial,
+            sans-serif;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -359,7 +379,11 @@ export const ContactPageWrap = styled.div`
           margin: 0.5rem auto;
 
           &:hover {
-            font-family: "Gill Sans";
+            font-family:
+              Futura,
+              Trebuchet MS,
+              Arial,
+              sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -450,7 +474,11 @@ export const ContactPageWrap = styled.div`
           }
 
           & > .contact-button {
-            font-family: "Gill Sans";
+            font-family:
+              Futura,
+              Trebuchet MS,
+              Arial,
+              sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -465,7 +493,11 @@ export const ContactPageWrap = styled.div`
             margin: 0.5rem auto;
 
             &:hover {
-              font-family: "Gill Sans";
+              font-family:
+                Futura,
+                Trebuchet MS,
+                Arial,
+                sans-serif;
               display: flex;
               justify-content: center;
               align-items: center;

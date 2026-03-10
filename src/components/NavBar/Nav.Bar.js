@@ -407,7 +407,7 @@ export const NavBarWrap = styled.div`
     align-items: center;
     /* background-color: rgb(40, 40, 40); */
     /* background-color: transparent; */
-    background: linear-gradient(to bottom, transparent 10%, black 100%);
+    background: linear-gradient(to bottom, transparent 15%, black 100%);
     z-index: 1;
     padding: 0 1rem;
     /* border-radius: 5px; */

@@ -346,7 +346,7 @@ export const FooterWrap = styled.div`
           margin-right: 0.5rem;
 
           & > .git {
-            color: ghostwhite;
+            color: rgb(100, 100, 100);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -375,7 +375,7 @@ export const FooterWrap = styled.div`
           }
 
           & > .linkedin {
-            color: ghostwhite;
+            color: rgb(100, 100, 100);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -404,7 +404,7 @@ export const FooterWrap = styled.div`
           }
 
           & > .instagram {
-            color: ghostwhite;
+            color: rgb(100, 100, 100);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -433,7 +433,7 @@ export const FooterWrap = styled.div`
           }
 
           & > .soundcloud {
-            color: ghostwhite;
+            color: rgb(100, 100, 100);
             display: flex;
             justify-content: center;
             align-items: center;

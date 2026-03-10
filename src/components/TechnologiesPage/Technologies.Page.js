@@ -254,7 +254,7 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       p {
-        color: rgb(50, 50, 50);
+        color: rgb(100, 100, 100);
         margin: 1rem auto;
       }
 
@@ -437,7 +437,7 @@ export const TechnologiesPageWrap = styled.div`
     }
 
     p {
-      color: rgb(50, 50, 50);
+      color: rgb(100, 100, 100);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -547,7 +547,7 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       p {
-        color: rgb(50, 50, 50);
+        color: rgb(100, 100, 100);
         margin: 1rem auto;
       }
 

@@ -28,7 +28,7 @@ export const ContactPageWrap = styled.div`
     }
 
     p {
-      color: rgb(50, 50, 50);
+      color: rgb(100, 100, 100);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -96,7 +96,7 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: rgb(50, 50, 50);
+          color: rgb(100, 100, 100);
           border-bottom: 3px solid rgb(50, 50, 50);
           outline: none;
           height: 8rem;
@@ -154,7 +154,7 @@ export const ContactPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       p {
-        color: rgb(50, 50, 50);
+        color: rgb(100, 100, 100);
         margin: 1rem auto;
       }
 
@@ -210,7 +210,7 @@ export const ContactPageWrap = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: rgb(50, 50, 50);
+            color: rgb(100, 100, 100);
             border-bottom: 3px solid rgb(50, 50, 50);
             outline: none;
             height: 8rem;
@@ -284,7 +284,7 @@ export const ContactPageWrap = styled.div`
     }
 
     p {
-      color: rgb(50, 50, 50);
+      color: rgb(100, 100, 100);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -352,7 +352,7 @@ export const ContactPageWrap = styled.div`
           width: 100%;
           background-color: transparent;
           border: none;
-          color: rgb(50, 50, 50);
+          color: rgb(100, 100, 100);
           border-bottom: 3px solid rgb(200, 1, 1, 0.5);
           outline: none;
           height: 8rem;
@@ -410,7 +410,7 @@ export const ContactPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       p {
-        color: rgb(50, 50, 50);
+        color: rgb(100, 100, 100);
         margin: 1rem auto;
       }
 
@@ -466,7 +466,7 @@ export const ContactPageWrap = styled.div`
             width: 100%;
             background-color: transparent;
             border: none;
-            color: rgb(50, 50, 50);
+            color: rgb(100, 100, 100);
             border-bottom: 3px solid rgb(200, 1, 1, 0.5);
             outline: none;
             height: 8rem;

@@ -18,15 +18,15 @@ export const ProjectsPageWrap = styled.div`
     }
 
     h1 {
-      color: black;
+      color: rgb(50, 50, 50);
       margin: 4rem 0 0 0;
-      border-bottom: 5px solid black;
+      border-bottom: 5px solid rgb(50, 50, 50);
       padding-bottom: 0.5rem;
       /* text-shadow: 0px 0px 10px; */
     }
 
     h2 {
-      color: black;
+      color: rgb(50, 50, 50);
       font-weight: 700;
       font-size: 36px;
       margin: 0;
@@ -116,7 +116,7 @@ export const ProjectsPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       h2 {
-        color: black;
+        color: rgb(50, 50, 50);
         font-weight: 700;
         font-size: 36px;
         margin: 0;
@@ -182,7 +182,7 @@ export const ProjectsPageWrap = styled.div`
               padding: 0.5rem;
               border-radius: 50px;
               background-color: rgb(1, 200, 200, 0.5);
-              color: black;
+              color: rgb(50, 50, 50);
             }
           }
         }
@@ -211,7 +211,7 @@ export const ProjectsPageWrap = styled.div`
     }
 
     h2 {
-      color: black;
+      color: rgb(50, 50, 50);
       font-weight: 700;
       font-size: 36px;
       margin: 0;
@@ -301,7 +301,7 @@ export const ProjectsPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       h2 {
-        color: black;
+        color: rgb(50, 50, 50);
         font-weight: 700;
         font-size: 36px;
         margin: 0;

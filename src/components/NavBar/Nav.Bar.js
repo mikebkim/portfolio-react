@@ -177,13 +177,13 @@ export const NavBarWrap = styled.div`
   }
 
   .burger-open {
-    color: black;
+    color: rgb(50, 50, 50);
     transform: rotate(180deg);
     transition: ease-in-out 0.5s;
   }
 
   .burger-close {
-    color: black;
+    color: rgb(50, 50, 50);
     transition: ease-in-out 0.5s;
   }
 
@@ -222,7 +222,7 @@ export const NavBarWrap = styled.div`
       animation: 0.5s slideham;
 
       & > .nav-line {
-        border-bottom: 2px solid black;
+        border-bottom: 2px solid rgb(50, 50, 50);
         width: 100%;
         border-radius: 50px;
       }
@@ -244,7 +244,7 @@ export const NavBarWrap = styled.div`
           font-size: 8px;
           font-weight: 700;
           transition: ease-in-out 300ms;
-          color: black;
+          color: rgb(50, 50, 50);
         }
 
         &.selected-box {
@@ -266,13 +266,13 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: black;
-            fill: black;
+            color: rgb(50, 50, 50);
+            fill: rgb(50, 50, 50);
             transition: ease-in-out 300ms;
 
             &:hover {
-              color: black;
-              fill: black;
+              color: rgb(50, 50, 50);
+              fill: rgb(50, 50, 50);
             }
           }
         }
@@ -282,8 +282,8 @@ export const NavBarWrap = styled.div`
           align-items: center;
           display: flex;
           justify-content: center;
-          color: black;
-          fill: black;
+          color: rgb(50, 50, 50);
+          fill: rgb(50, 50, 50);
           height: 1.5rem;
           width: 1.5rem;
           transition: ease-in-out 300ms;
@@ -297,13 +297,13 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: black;
-            fill: black;
+            color: rgb(50, 50, 50);
+            fill: rgb(50, 50, 50);
             transition: ease-in-out 300ms;
 
             &:hover {
-              color: black;
-              fill: black;
+              color: rgb(50, 50, 50);
+              fill: rgb(50, 50, 50);
             }
           }
         }
@@ -407,14 +407,14 @@ export const NavBarWrap = styled.div`
     align-items: center;
     /* background-color: rgb(40, 40, 40); */
     /* background-color: transparent; */
-    background: linear-gradient(to bottom, transparent 15%, black 100%);
+    background: linear-gradient(to bottom, transparent 15%, rgb(50, 50, 50) 100%);
     z-index: 1;
     padding: 0 1rem;
     /* border-radius: 5px; */
-    /* border-right: 2px solid black; */
+    /* border-right: 2px solid rgb(50, 50, 50); */
 
     & > .nav-line {
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid rgb(50, 50, 50);
       width: 100%;
       border-radius: 50px;
     }
@@ -429,7 +429,7 @@ export const NavBarWrap = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: 5px solid black;
+      border: 5px solid rgb(50, 50, 50);
       height: 5rem;
       width: 5rem;
       border-radius: 10px;
@@ -438,9 +438,9 @@ export const NavBarWrap = styled.div`
       cursor: pointer;
 
       &:hover {
-        border: 5px solid black;
+        border: 5px solid rgb(50, 50, 50);
         transition: ease-in-out 300ms;
-        background-color: black;
+        background-color: rgb(50, 50, 50);
       }
 
       & > .nav-title {
@@ -456,9 +456,9 @@ export const NavBarWrap = styled.div`
       }
 
       &.selected-box {
-        background-color: black;
+        background-color: rgb(50, 50, 50);
         transition: ease-in-out 300ms;
-        border: 5px solid black;
+        border: 5px solid rgb(50, 50, 50);
       }
 
       & > .nav-link {
@@ -468,8 +468,8 @@ export const NavBarWrap = styled.div`
           display: flex;
           justify-content: center;
           background-color: transparent;
-          color: black;
-          fill: black;
+          color: rgb(50, 50, 50);
+          fill: rgb(50, 50, 50);
           transition: ease-in-out 300ms;
         }
       }

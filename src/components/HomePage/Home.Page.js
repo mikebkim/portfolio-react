@@ -60,7 +60,7 @@ export const HomePageWrap = styled.div`
       font-size: 7rem;
 
       & > .home-name {
-        color: black;
+        color: rgb(50, 50, 50);
         /* text-shadow: 0px 0px 10px; */
       }
     }
@@ -91,7 +91,7 @@ export const HomePageWrap = styled.div`
       justify-content: center;
       width: 100%;
       align-items: start;
-      border-bottom: 5px solid black;
+      border-bottom: 5px solid rgb(50, 50, 50);
       padding-bottom: 0.5rem;
 
       & > hr {
@@ -151,10 +151,10 @@ export const HomePageWrap = styled.div`
             height: 2rem;
             width: 13rem;
             background: white;
-            border: 2px solid black;
+            border: 2px solid rgb(50, 50, 50);
             transition: ease-in-out 500ms;
             cursor: pointer;
-            color: black;
+            color: rgb(50, 50, 50);
 
             &:hover {
               display: flex;
@@ -163,8 +163,8 @@ export const HomePageWrap = styled.div`
               border-radius: 2rem;
               height: 2rem;
               width: 13rem;
-              background: black;
-              border: 5px solid black;
+              background: rgb(50, 50, 50);
+              border: 5px solid rgb(50, 50, 50);
               transition: ease-in-out 500ms;
               cursor: pointer;
               color: ghostwhite;
@@ -276,7 +276,7 @@ export const HomePageWrap = styled.div`
         font-size: 2rem;
 
         & > .home-name {
-          color: black;
+          color: rgb(50, 50, 50);
         }
       }
 
@@ -332,7 +332,7 @@ export const HomePageWrap = styled.div`
               border: 2px solid white;
               transition: ease-in-out 500ms;
               cursor: pointer;
-              color: black;
+              color: rgb(50, 50, 50);
 
               &:hover {
                 display: flex;
@@ -341,8 +341,8 @@ export const HomePageWrap = styled.div`
                 border-radius: 2rem;
                 height: 2rem;
                 width: 13rem;
-                background: black;
-                border: 5px solid black;
+                background: rgb(50, 50, 50);
+                border: 5px solid rgb(50, 50, 50);
                 transition: ease-in-out 500ms;
                 cursor: pointer;
                 color: rgb(100, 100, 100);

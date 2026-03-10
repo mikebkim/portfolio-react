@@ -47,11 +47,11 @@ export const TechnologiesPageWrap = styled.div`
         border-radius: 2rem;
         height: 2rem;
         width: 10rem;
-        background: white;
-        border: 2px solid black;
+        background: ghostwhite;
+        border: 2px solid rgb(50, 50, 50);
         transition: ease-in-out 500ms;
         cursor: pointer;
-        color: black;
+        color: rgb(50, 50, 50);
 
         &:hover {
           display: flex;
@@ -60,8 +60,8 @@ export const TechnologiesPageWrap = styled.div`
           border-radius: 2rem;
           height: 2rem;
           width: 10rem;
-          background: black;
-          border: 5px solid black;
+          background: rgb(50, 50, 50);
+          border: 5px solid rgb(50, 50, 50);
           transition: ease-in-out 500ms;
           cursor: pointer;
           color: ghostwhite;
@@ -76,11 +76,11 @@ export const TechnologiesPageWrap = styled.div`
         border-radius: 2rem;
         height: 2rem;
         width: 10rem;
-        background: white;
-        border: 2px solid black;
+        background: ghostwhite;
+        border: 2px solid rgb(50, 50, 50);
         transition: ease-in-out 500ms;
         cursor: pointer;
-        color: black;
+        color: rgb(50, 50, 50);
 
         &:hover {
           display: flex;
@@ -89,8 +89,8 @@ export const TechnologiesPageWrap = styled.div`
           border-radius: 2rem;
           height: 2rem;
           width: 10rem;
-          background: black;
-          border: 5px solid black;
+          background: rgb(50, 50, 50);
+          border: 5px solid rgb(50, 50, 50);
           transition: ease-in-out 500ms;
           cursor: pointer;
           color: ghostwhite;
@@ -101,7 +101,7 @@ export const TechnologiesPageWrap = styled.div`
 
     & > .tech-box {
       height: 20rem;
-      border: 5px solid black !important;
+      border: 5px solid rgb(50, 50, 50) !important;
       border-radius: 10px;
       position: relative !important;
       display: flex;
@@ -119,21 +119,21 @@ export const TechnologiesPageWrap = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: white !important;
+        background-color: ghostwhite !important;
         text-align: center;
         text-decoration: none;
         transition: transform 0.6s;
         transform-style: preserve-3d;
         border-radius: 10px;
-        border: 5px solid black !important;
+        border: 5px solid rgb(50, 50, 50) !important;
         position: relative !important;
       }
     }
 
     h1 {
-      color: black;
+      color: rgb(50, 50, 50);
       margin: 4rem 0 0 0;
-      border-bottom: 5px solid black;
+      border-bottom: 5px solid rgb(50, 50, 50);
       padding-bottom: 0.5rem;
       /* text-shadow: 0px 0px 10px; */
     }
@@ -204,9 +204,9 @@ export const TechnologiesPageWrap = styled.div`
       z-index: 1;
       transition: transform 0.6s ease 0s;
       transform-style: preserve-3d;
-      background-color: black;
-      color: white;
-      fill: black;
+      background-color: rgb(50, 50, 50);
+      color: ghostwhite;
+      fill: rgb(50, 50, 50);
       font-size: 9px;
       border-radius: 10px;
       animation: 1s ease-in-out openfrommiddle;
@@ -225,7 +225,7 @@ export const TechnologiesPageWrap = styled.div`
       padding: 0 0 0 4rem;
 
       & > .tech-box {
-        border: 5px solid black !important;
+        border: 5px solid rgb(50, 50, 50) !important;
         border-radius: 10px;
         position: relative !important;
         display: flex;
@@ -248,13 +248,13 @@ export const TechnologiesPageWrap = styled.div`
           transition: transform 0.6s;
           transform-style: preserve-3d;
           border-radius: 10px;
-          border: 5px solid black !important;
+          border: 5px solid rgb(50, 50, 50) !important;
           position: relative !important;
         }
       }
 
       p {
-        color: white;
+        color: rgb(50, 50, 50);
         margin: 1rem auto;
       }
 
@@ -340,11 +340,11 @@ export const TechnologiesPageWrap = styled.div`
         border-radius: 2rem;
         height: 2rem;
         width: 10rem;
-        background: white;
-        border: 2px solid black;
+        background: ghostwhite;
+        border: 2px solid rgb(50, 50, 50);
         transition: ease-in-out 500ms;
         cursor: pointer;
-        color: black;
+        color: rgb(50, 50, 50);
 
         &:hover {
           display: flex;
@@ -353,8 +353,8 @@ export const TechnologiesPageWrap = styled.div`
           border-radius: 2rem;
           height: 2rem;
           width: 10rem;
-          background: black;
-          border: 5px solid black;
+          background: rgb(50, 50, 50);
+          border: 5px solid rgb(50, 50, 50);
           transition: ease-in-out 500ms;
           cursor: pointer;
           color: ghostwhite;
@@ -369,11 +369,11 @@ export const TechnologiesPageWrap = styled.div`
         border-radius: 2rem;
         height: 2rem;
         width: 10rem;
-        background: white;
-        border: 2px solid black;
+        background: ghostwhite;
+        border: 2px solid rgb(50, 50, 50);
         transition: ease-in-out 500ms;
         cursor: pointer;
-        color: black;
+        color: rgb(50, 50, 50);
 
         &:hover {
           display: flex;
@@ -382,8 +382,8 @@ export const TechnologiesPageWrap = styled.div`
           border-radius: 2rem;
           height: 2rem;
           width: 10rem;
-          background: black;
-          border: 5px solid black;
+          background: rgb(50, 50, 50);
+          border: 5px solid rgb(50, 50, 50);
           transition: ease-in-out 500ms;
           cursor: pointer;
           color: ghostwhite;
@@ -437,7 +437,7 @@ export const TechnologiesPageWrap = styled.div`
     }
 
     p {
-      color: white;
+      color: rgb(50, 50, 50);
       margin: 1rem auto;
       font-size: 1.2rem;
     }
@@ -547,7 +547,7 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       p {
-        color: white;
+        color: rgb(50, 50, 50);
         margin: 1rem auto;
       }
 

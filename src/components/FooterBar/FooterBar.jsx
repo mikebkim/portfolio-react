@@ -41,7 +41,7 @@ const Footer = ({ screenWidth }) => {
       backgroundColor:
         "linear-gradient(to right, transparent 0%, rgb(255, 0, 95) 50%)",
       color: "ghostwhite",
-      marginLeft: "5rem",
+      marginLeft: "5.5rem",
     },
     {
       name: "Soundcloud",
@@ -51,7 +51,7 @@ const Footer = ({ screenWidth }) => {
       backgroundColor:
         "linear-gradient(to right, transparent 0%, rgb(255, 101, 0) 50%)",
       color: "ghostwhite",
-      marginLeft: "6.5rem",
+      marginLeft: "7rem",
     },
   ];
 

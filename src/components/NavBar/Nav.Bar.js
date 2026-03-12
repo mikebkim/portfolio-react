@@ -165,10 +165,11 @@ export const NavBarWrap = styled.div`
   .NavBar {
     position: fixed;
     display: flex;
-    width: 100%;
     justify-content: flex-end;
     background-color: ghostwhite;
     z-index: 1;
+    right: 0;
+    /* width: 100%; */
 
     a {
       text-decoration: none;
@@ -181,19 +182,26 @@ export const NavBarWrap = styled.div`
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      margin: 0 2rem;
+      padding: 0 2rem;
+      transition: ease-in-out 300ms;
 
       &:hover {
         transition: ease-in-out 300ms;
+        color: ghostwhite;
+        background-color: rgb(100, 100, 100);
       }
 
       & > .nav-title {
         display: flex;
         padding: 1rem 0.3rem;
+        transition: ease-in-out 300ms;
       }
 
       &.selected-box {
         transition: ease-in-out 300ms;
+        background-color: rgb(100, 100, 100);
+        width: 100%;
+        color: ghostwhite;
       }
 
       & > .nav-link {
@@ -214,8 +222,6 @@ export const NavBarWrap = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        color: rgb(50, 50, 50);
-        fill: rgb(50, 50, 50);
         transition: ease-in-out 300ms;
 
         & > svg {
@@ -223,9 +229,8 @@ export const NavBarWrap = styled.div`
           align-items: center;
           display: flex;
           justify-content: center;
-          background-color: transparent;
-          color: rgb(50, 50, 50);
-          fill: rgb(50, 50, 50);
+          color: ghostwhite;
+          fill: ghostwhite;
           transition: ease-in-out 300ms;
         }
       }
@@ -235,8 +240,8 @@ export const NavBarWrap = styled.div`
         align-items: center;
         display: flex;
         justify-content: center;
-        color: rgb(50, 50, 50);
-        fill: rgb(50, 50, 50);
+        color: ghostwhite;
+        fill: ghostwhite;
         transition: ease-in-out 300ms;
       }
     }

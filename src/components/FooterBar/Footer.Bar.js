@@ -21,11 +21,9 @@ export const FooterWrap = styled.div`
       position: absolute;
       transform: translateX(-20px); /* hidden left */
       opacity: 0;
-
       transition:
         transform 500ms ease-in-out,
         opacity 500ms ease-in-out;
-
       padding: 0 0.4rem;
       border-radius: 5px;
       display: flex;

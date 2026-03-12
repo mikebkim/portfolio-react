@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
-  faInstagram,
+  // faInstagram,
   faSoundcloud,
 } from "@fortawesome/free-brands-svg-icons";
 import "aos/dist/aos.css";
@@ -33,16 +33,16 @@ const Footer = ({ screenWidth }) => {
       color: "transparent",
       marginLeft: "5rem",
     },
-    {
-      name: "Instagram",
-      id: "instagram",
-      url: "https://www.instagram.com/mikebkim/",
-      fontId: faInstagram,
-      backgroundColor:
-        "linear-gradient(to right, transparent 0%, rgb(255, 0, 95) 50%)",
-      color: "transparent",
-      marginLeft: "5.5rem",
-    },
+    // {
+    //   name: "Instagram",
+    //   id: "instagram",
+    //   url: "https://www.instagram.com/mikebkim/",
+    //   fontId: faInstagram,
+    //   backgroundColor:
+    //     "linear-gradient(to right, transparent 0%, rgb(255, 0, 95) 50%)",
+    //   color: "transparent",
+    //   marginLeft: "5.5rem",
+    // },
     {
       name: "Soundcloud",
       id: "soundcloud",

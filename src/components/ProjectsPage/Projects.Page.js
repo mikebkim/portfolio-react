@@ -96,12 +96,13 @@ export const ProjectsPageWrap = styled.div`
             justify-content: center;
             align-items: center;
             width: 7rem;
-            font-size: 15px;
+            font-size: 14px;
             margin: 0.5rem;
             padding: 0.5rem;
             border-radius: 50px;
             background-color: rgb(100, 100, 100);
             color: ghostwhite;
+            font-weight: bold;
           }
         }
       }

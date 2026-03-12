@@ -12,7 +12,7 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const NavBar = ({ toggleHeader, screenWidth }) => {
+const NavBar = ({ screenWidth }) => {
   const [selectedTab, setSelectedTab] = useState("");
   const location = useLocation();
 
@@ -32,23 +32,17 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
   }, []);
 
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
-
   const [hoveredLink, setHoveredLink] = useState(null);
 
   return (
     <NavBarWrap>
       {screenWidth >= breakpoints.tablet ? (
         <div className="NavBar">
+          {/* HOME */}
           <Link
             to="/home"
             className={
-              selectedTab.includes("home")
-                ? toggleHeader
-                  ? `${"nav-box-rebel selected-box"}`
-                  : `${"nav-box selected-box"}`
-                : toggleHeader
-                  ? `${"nav-box-rebel"}`
-                  : `${"nav-box"}`
+              selectedTab.includes("home") ? "nav-box selected-box" : "nav-box"
             }
             title="Home"
             onMouseEnter={() => setHoveredLink("home")}
@@ -65,25 +59,21 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
             >
               <FontAwesomeIcon icon={faHome} />
             </div>
-            {selectedTab.includes("home") ? (
+            {/* {(selectedTab.includes("home") || hoveredLink === "home") && (
               <div className="nav-title">HOME</div>
-            ) : hoveredLink === "home" ? (
-              <div className="nav-title-hover">HOME</div>
-            ) : (
-              ""
-            )}
+            )} */}
+            <div className="nav-title">HOME</div>
           </Link>
-          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
+
+          <div className="nav-line"></div>
+
+          {/* TECHNOLOGIES */}
           <Link
             to="/technologies"
             className={
               selectedTab.includes("technologies")
-                ? toggleHeader
-                  ? `${"nav-box-rebel selected-box"}`
-                  : `${"nav-box selected-box"}`
-                : toggleHeader
-                  ? `${"nav-box-rebel"}`
-                  : `${"nav-box"}`
+                ? "nav-box selected-box"
+                : "nav-box"
             }
             title="Technologies"
             onMouseEnter={() => setHoveredLink("technologies")}
@@ -100,25 +90,22 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
             >
               <FontAwesomeIcon icon={faCode} />
             </div>
-            {selectedTab.includes("technologies") ? (
+            {/* {(selectedTab.includes("technologies") ||
+              hoveredLink === "technologies") && (
               <div className="nav-title">TECHNOLOGIES</div>
-            ) : hoveredLink === "technologies" ? (
-              <div className="nav-title">TECHNOLOGIES</div>
-            ) : (
-              ""
-            )}
+            )} */}
+            <div className="nav-title">TECHNOLOGIES</div>
           </Link>
-          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
+
+          <div className="nav-line"></div>
+
+          {/* PROJECTS */}
           <Link
             to="/projects"
             className={
               selectedTab.includes("projects")
-                ? toggleHeader
-                  ? `${"nav-box-rebel selected-box"}`
-                  : `${"nav-box selected-box"}`
-                : toggleHeader
-                  ? `${"nav-box-rebel"}`
-                  : `${"nav-box"}`
+                ? "nav-box selected-box"
+                : "nav-box"
             }
             title="Projects"
             onMouseEnter={() => setHoveredLink("projects")}
@@ -135,25 +122,22 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
             >
               <FontAwesomeIcon icon={faLayerGroup} />
             </div>
-            {selectedTab.includes("projects") ? (
+            {/* {(selectedTab.includes("projects") ||
+              hoveredLink === "projects") && (
               <div className="nav-title">PROJECTS</div>
-            ) : hoveredLink === "projects" ? (
-              <div className="nav-title">PROJECTS</div>
-            ) : (
-              ""
-            )}
+            )} */}
+            <div className="nav-title">PROJECTS</div>
           </Link>
-          <div className={toggleHeader ? "nav-line-rebel" : "nav-line"}></div>
+
+          <div className="nav-line"></div>
+
+          {/* CONTACT */}
           <Link
             to="/contact"
             className={
               selectedTab.includes("contact")
-                ? toggleHeader
-                  ? `${"nav-box-rebel selected-box"}`
-                  : `${"nav-box selected-box"}`
-                : toggleHeader
-                  ? `${"nav-box-rebel"}`
-                  : `${"nav-box"}`
+                ? "nav-box selected-box"
+                : "nav-box"
             }
             title="Contact"
             onMouseEnter={() => setHoveredLink("contact")}
@@ -170,45 +154,29 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
             >
               <FontAwesomeIcon icon={faPhone} />
             </div>
-            {selectedTab.includes("contact") ? (
+            {/* {(selectedTab.includes("contact") || hoveredLink === "contact") && (
               <div className="nav-title">CONTACT</div>
-            ) : hoveredLink === "contact" ? (
-              <div className="nav-title">CONTACT</div>
-            ) : (
-              ""
-            )}
+            )} */}
+            <div className="nav-title">CONTACT</div>
           </Link>
         </div>
       ) : (
         <div className="nav-burger">
-          {isBurgerOpen ? (
-            <FontAwesomeIcon
-              icon={faBars}
-              onClick={() => setIsBurgerOpen(!isBurgerOpen)}
-              className={toggleHeader ? "burger-open-rebel" : "burger-open"}
-            />
-          ) : (
-            <FontAwesomeIcon
-              icon={faBars}
-              onClick={() => setIsBurgerOpen(!isBurgerOpen)}
-              className={toggleHeader ? "burger-close-rebel" : "burger-close"}
-            />
-          )}
-          {isBurgerOpen ? (
+          <FontAwesomeIcon
+            icon={faBars}
+            onClick={() => setIsBurgerOpen(!isBurgerOpen)}
+            className={isBurgerOpen ? "burger-open" : "burger-close"}
+          />
+
+          {isBurgerOpen && (
             <div className="nav-burger-menu">
               <Link
                 to="/home"
                 className={
                   selectedTab.includes("home")
-                    ? toggleHeader
-                      ? `${"nav-box-rebel selected-box"}`
-                      : `${"nav-box selected-box"}`
-                    : toggleHeader
-                      ? `${"nav-box-rebel"}`
-                      : `${"nav-box"}`
+                    ? "nav-box selected-box"
+                    : "nav-box"
                 }
-                title="Home"
-                // onClick={() => setIsBurgerOpen(false)}
               >
                 <div
                   className={
@@ -217,28 +185,20 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
                 >
                   <FontAwesomeIcon icon={faHome} />
                 </div>
-                {selectedTab.includes("home") ? (
+                {selectedTab.includes("home") && (
                   <div className="nav-title">HOME</div>
-                ) : (
-                  ""
                 )}
               </Link>
-              <div
-                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
-              ></div>
+
+              <div className="nav-line"></div>
+
               <Link
                 to="/technologies"
                 className={
                   selectedTab.includes("technologies")
-                    ? toggleHeader
-                      ? `${"nav-box-rebel selected-box"}`
-                      : `${"nav-box selected-box"}`
-                    : toggleHeader
-                      ? `${"nav-box-rebel"}`
-                      : `${"nav-box"}`
+                    ? "nav-box selected-box"
+                    : "nav-box"
                 }
-                title="Technologies"
-                // onClick={() => setIsBurgerOpen(false)}
               >
                 <div
                   className={
@@ -249,28 +209,20 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
                 >
                   <FontAwesomeIcon icon={faCode} />
                 </div>
-                {selectedTab.includes("technologies") ? (
+                {selectedTab.includes("technologies") && (
                   <div className="nav-title">TECHNOLOGIES</div>
-                ) : (
-                  ""
                 )}
               </Link>
-              <div
-                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
-              ></div>
+
+              <div className="nav-line"></div>
+
               <Link
                 to="/projects"
                 className={
                   selectedTab.includes("projects")
-                    ? toggleHeader
-                      ? `${"nav-box-rebel selected-box"}`
-                      : `${"nav-box selected-box"}`
-                    : toggleHeader
-                      ? `${"nav-box-rebel"}`
-                      : `${"nav-box"}`
+                    ? "nav-box selected-box"
+                    : "nav-box"
                 }
-                title="Projects"
-                // onClick={() => setIsBurgerOpen(false)}
               >
                 <div
                   className={
@@ -279,28 +231,20 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
                 >
                   <FontAwesomeIcon icon={faLayerGroup} />
                 </div>
-                {selectedTab.includes("projects") ? (
+                {selectedTab.includes("projects") && (
                   <div className="nav-title">PROJECTS</div>
-                ) : (
-                  ""
                 )}
               </Link>
-              <div
-                className={toggleHeader ? "nav-line-rebel" : "nav-line"}
-              ></div>
+
+              <div className="nav-line"></div>
+
               <Link
                 to="/contact"
                 className={
                   selectedTab.includes("contact")
-                    ? toggleHeader
-                      ? `${"nav-box-rebel selected-box"}`
-                      : `${"nav-box selected-box"}`
-                    : toggleHeader
-                      ? `${"nav-box-rebel"}`
-                      : `${"nav-box"}`
+                    ? "nav-box selected-box"
+                    : "nav-box"
                 }
-                title="Contact"
-                // onClick={() => setIsBurgerOpen(false)}
               >
                 <div
                   className={
@@ -309,14 +253,12 @@ const NavBar = ({ toggleHeader, screenWidth }) => {
                 >
                   <FontAwesomeIcon icon={faPhone} />
                 </div>
-                {selectedTab.includes("contact") ? (
+                {selectedTab.includes("contact") && (
                   <div className="nav-title">CONTACT</div>
-                ) : (
-                  ""
                 )}
               </Link>
             </div>
-          ) : null}
+          )}
         </div>
       )}
     </NavBarWrap>

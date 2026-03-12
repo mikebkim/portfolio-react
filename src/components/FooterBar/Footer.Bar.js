@@ -7,7 +7,7 @@ export const FooterWrap = styled.div`
       transparent 15%,
       rgb(50, 50, 50) 100%
     ); */
-    top: 0;
+    bottom: 0;
     position: fixed;
     width: 100%;
     display: flex;

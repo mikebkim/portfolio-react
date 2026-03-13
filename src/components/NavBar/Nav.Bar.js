@@ -169,39 +169,69 @@ export const NavBarWrap = styled.div`
     background-color: ghostwhite;
     z-index: 1;
     right: 0;
+    height: 2rem;
     /* width: 100%; */
 
     a {
       text-decoration: none;
-      color: rgb(50, 50, 50);
+      color: rgb(100, 100, 100);
     }
 
     & > .nav-box {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       cursor: pointer;
       padding: 0 2rem;
       transition: ease-in-out 300ms;
 
-      &:hover {
-        transition: ease-in-out 300ms;
-        color: ghostwhite;
-        background-color: rgb(100, 100, 100);
-      }
-
       & > .nav-title {
         display: flex;
-        padding: 1rem 0.3rem;
-        transition: ease-in-out 300ms;
+        margin: 1rem 0.3rem;
+        align-items: center;
+        position: relative;
+
+        & > svg {
+          height: 0.7em;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: -2px;
+          left: 50%;
+          width: 0;
+          height: 2px;
+          background: rgb(100, 100, 100);
+          transform: translateX(-50%);
+          transition: width 300ms ease-in-out;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+
+        & > .nav-header {
+          margin-left: 0.3rem;
+        }
       }
 
       &.selected-box {
         transition: ease-in-out 300ms;
-        background-color: rgb(100, 100, 100);
         width: 100%;
-        color: ghostwhite;
+        color: rgb(50, 50, 50);
+
+        & > .nav-title {
+          display: flex;
+          margin: 1rem 0.3rem;
+          align-items: center;
+          border-bottom: 2px solid rgb(50, 50, 50);
+
+          & > .nav-header {
+            margin-left: 0.3rem;
+          }
+        }
       }
 
       & > .nav-link {
@@ -229,7 +259,7 @@ export const NavBarWrap = styled.div`
           align-items: center;
           display: flex;
           justify-content: center;
-          color: ghostwhite;
+          color: rgb(100, 100, 100);
           fill: ghostwhite;
           transition: ease-in-out 300ms;
         }

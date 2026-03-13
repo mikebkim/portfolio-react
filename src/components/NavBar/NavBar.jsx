@@ -56,16 +56,16 @@ const NavBar = ({ screenWidth }) => {
                     ? "nav-link-hover"
                     : "nav-link"
               }
-            >
-              <FontAwesomeIcon icon={faHome} />
-            </div>
+            ></div>
             {/* {(selectedTab.includes("home") || hoveredLink === "home") && (
               <div className="nav-title">HOME</div>
             )} */}
-            <div className="nav-title">HOME</div>
+            <div className="nav-title">
+              {" "}
+              <FontAwesomeIcon icon={faHome} />
+              <div className="nav-header">HOME</div>
+            </div>
           </Link>
-
-          <div className="nav-line"></div>
 
           {/* TECHNOLOGIES */}
           <Link
@@ -87,17 +87,17 @@ const NavBar = ({ screenWidth }) => {
                     ? "nav-link-hover"
                     : "nav-link"
               }
-            >
-              <FontAwesomeIcon icon={faCode} />
-            </div>
+            ></div>
             {/* {(selectedTab.includes("technologies") ||
               hoveredLink === "technologies") && (
               <div className="nav-title">TECHNOLOGIES</div>
             )} */}
-            <div className="nav-title">TECHNOLOGIES</div>
+            <div className="nav-title">
+              {" "}
+              <FontAwesomeIcon icon={faCode} />
+              <div className="nav-header">TECHNOLOGIES</div>
+            </div>
           </Link>
-
-          <div className="nav-line"></div>
 
           {/* PROJECTS */}
           <Link
@@ -119,17 +119,17 @@ const NavBar = ({ screenWidth }) => {
                     ? "nav-link-hover"
                     : "nav-link"
               }
-            >
-              <FontAwesomeIcon icon={faLayerGroup} />
-            </div>
+            ></div>
             {/* {(selectedTab.includes("projects") ||
               hoveredLink === "projects") && (
               <div className="nav-title">PROJECTS</div>
             )} */}
-            <div className="nav-title">PROJECTS</div>
+            <div className="nav-title">
+              {" "}
+              <FontAwesomeIcon icon={faLayerGroup} />
+              <div className="nav-header">PROJECTS</div>
+            </div>
           </Link>
-
-          <div className="nav-line"></div>
 
           {/* CONTACT */}
           <Link
@@ -151,13 +151,15 @@ const NavBar = ({ screenWidth }) => {
                     ? "nav-link-hover"
                     : "nav-link"
               }
-            >
-              <FontAwesomeIcon icon={faPhone} />
-            </div>
+            ></div>
             {/* {(selectedTab.includes("contact") || hoveredLink === "contact") && (
               <div className="nav-title">CONTACT</div>
             )} */}
-            <div className="nav-title">CONTACT</div>
+            <div className="nav-title">
+              {" "}
+              <FontAwesomeIcon icon={faPhone} />
+              <div className="nav-header">CONTACT</div>
+            </div>
           </Link>
         </div>
       ) : (
@@ -190,8 +192,6 @@ const NavBar = ({ screenWidth }) => {
                 )}
               </Link>
 
-              <div className="nav-line"></div>
-
               <Link
                 to="/technologies"
                 className={
@@ -214,8 +214,6 @@ const NavBar = ({ screenWidth }) => {
                 )}
               </Link>
 
-              <div className="nav-line"></div>
-
               <Link
                 to="/projects"
                 className={
@@ -235,8 +233,6 @@ const NavBar = ({ screenWidth }) => {
                   <div className="nav-title">PROJECTS</div>
                 )}
               </Link>
-
-              <div className="nav-line"></div>
 
               <Link
                 to="/contact"

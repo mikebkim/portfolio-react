@@ -15,7 +15,7 @@ export const FooterWrap = styled.div`
     align-items: center;
     margin-right: 1rem;
     height: 3rem;
-    background-color: ghostwhite;
+    background-color: rgb(222, 222, 222);
 
     .social-hover {
       position: absolute;

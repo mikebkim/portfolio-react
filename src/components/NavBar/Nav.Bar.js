@@ -164,7 +164,7 @@ export const NavBarWrap = styled.div`
 
   .nav-flex {
     width: 100%;
-    background-color: ghostwhite;
+    background-color: rgb(222, 222, 222);
     height: 2rem;
     top: 0;
     position: fixed;
@@ -176,7 +176,7 @@ export const NavBarWrap = styled.div`
     position: fixed;
     display: flex;
     justify-content: flex-end;
-    background-color: ghostwhite;
+    background-color: rgb(222, 222, 222);
     z-index: 1;
     left: 0;
     height: 2rem;
@@ -202,6 +202,7 @@ export const NavBarWrap = styled.div`
         align-items: center;
         position: relative;
         transition: ease-in-out 300ms;
+        font-size: 13px;
 
         .nav-header:hover {
           text-shadow: 0 0 1px currentColor;

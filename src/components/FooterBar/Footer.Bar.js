@@ -16,6 +16,7 @@ export const FooterWrap = styled.div`
     margin-right: 1rem;
     height: 3rem;
     background-color: rgb(222, 222, 222);
+    z-index: 1;
 
     .social-hover {
       position: absolute;
@@ -222,7 +223,7 @@ export const FooterWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .Footer {
-      top: 0;
+      bottom: 0;
       position: fixed;
       width: 100%;
       display: flex;

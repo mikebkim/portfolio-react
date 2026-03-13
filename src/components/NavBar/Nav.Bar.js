@@ -55,10 +55,10 @@ export const NavBarWrap = styled.div`
     width: 1rem;
     height: 1rem;
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 1.5rem;
     position: absolute;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 
     & > .nav-burger-menu {
       display: flex;
@@ -86,6 +86,7 @@ export const NavBarWrap = styled.div`
         height: 4rem;
         width: 4rem;
         cursor: pointer;
+        border-bottom: 2px solid rgb(50, 50, 50);
 
         &:last-child {
           border-bottom: none;

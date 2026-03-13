@@ -1,35 +1,6 @@
 import styled from "styled-components";
 
 export const HomePageWrap = styled.div`
-  @keyframes slideup {
-    0% {
-      color: ghostwhite;
-      fill: transparent;
-    }
-
-    50% {
-      color: ghostwhite;
-      fill: transparent;
-    }
-
-    75% {
-      color: ghostwhite;
-      fill: transparent;
-    }
-
-    from {
-      margin-top: 0.5rem;
-      margin-left: 0.5rem;
-      /* transition: ease-in-out 300ms; */
-    }
-
-    to {
-      margin-bottom: 0.5rem;
-      /* margin-bottom: 1rem; */
-      /* transition: ease-in-out 300ms; */
-    }
-  }
-
   [data-aos] {
     transition-duration: 1s !important;
   }
@@ -205,7 +176,6 @@ export const HomePageWrap = styled.div`
                 & > svg {
                   margin-bottom: 0.2rem;
                   margin-left: 0.5rem;
-                  /* animation: 500ms slideup; */
                 }
               }
               & > svg {

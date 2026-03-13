@@ -112,29 +112,10 @@ export const HomePageWrap = styled.div`
     .HomePage {
       margin: 0px auto;
       width: 65vw;
-      /* height: 84vh; */
       padding: 3rem 0px 0px 4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      & > .dont-click {
-        cursor: pointer;
-        color: rgb(299, 1, 1);
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 1rem;
-      }
-
-      & > .dont-click-fix {
-        cursor: pointer;
-        color: green;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        margin: 1rem;
-      }
 
       h1 {
         margin-bottom: 0.2rem;
@@ -148,7 +129,7 @@ export const HomePageWrap = styled.div`
         font-size: 4rem;
 
         & > .home-name {
-          color: rgb(50, 50, 50);
+          color: ghostwhite;
         }
       }
 

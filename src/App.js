@@ -23,6 +23,8 @@ import { useWindowSize } from "./hooks/useWindowSize";
 // Images
 import MK_Resume from "./files/MK_Resume.pdf";
 import Patagonia4 from "./files/Patagonia4.jpg";
+import Iceland1 from "./files/Iceland1.jpg";
+import Greenland4 from "./files/Greenland4.jpg";
 
 // Icons
 import blackjackicon from "./icons/blackjackicon.png";
@@ -30,6 +32,7 @@ import gameiticon from "./icons/gameiticon.png";
 import marbleicon from "./icons/marbleicon.png";
 import sessionsicon from "./icons/sessionsicon.png";
 import personal_logo from "./icons/personal_logo.png";
+import skphotography from "./icons/skphotography.png";
 
 const App = () => {
   const width = useWindowSize();
@@ -78,6 +81,8 @@ const App = () => {
               <DndProvider backend={HTML5Backend}>
                 {" "}
                 <TechnologiesPage
+                  Greenland4={Greenland4}
+                  Iceland1={Iceland1}
                   screenWidth={width}
                   allImages={allImages}
                   toggleHeader={toggleHeader}
@@ -94,6 +99,7 @@ const App = () => {
                 iconMarble={marbleicon}
                 iconSessions={sessionsicon}
                 iconGameit={gameiticon}
+                iconSkphotography={skphotography}
                 allImages={allImages}
                 toggleHeader={toggleHeader}
               />

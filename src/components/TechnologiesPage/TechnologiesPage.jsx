@@ -4,7 +4,12 @@ import TechnologiesPageWrap from "./Technologies.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const TechnologiesPage = ({ allImages, toggleHeader, screenWidth }) => {
+const TechnologiesPage = ({
+  allImages,
+  toggleHeader,
+  screenWidth,
+  Greenland4,
+}) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
   const handleFlipCards = () => {
@@ -191,78 +196,42 @@ const TechnologiesPage = ({ allImages, toggleHeader, screenWidth }) => {
 
   return (
     <TechnologiesPageWrap>
-      {toggleHeader ? (
-        <div className="TechnologiesPage-rebel" data-aos="fade-up">
-          <div className="header">
-            <h1 style={{ fontSize: `${fontSize}px` }}>TECHNOLOGIES</h1>
-            <h6>you're still a rebel...</h6>
-            <p className="description">
-              Below are languages, frameworks, tools, and ancillary technologies
-              I provide when building websites.
-            </p>
-          </div>
-          <Container
-            allImagesArray={allImagesArray}
-            setBoxes={setBoxes}
-            boxes={boxes}
-            defaultBoxes={defaultBoxes}
-            isFlipped={isFlipped}
-          />
-          <div className="drag-options">
-            <button
-              className="flip-button"
-              type="submit"
-              onClick={() => handleFlipCards()}
-            >
-              FLIP CARDS
-            </button>
-            {screenWidth <= breakpoints.mobile ? null : (
-              <button
-                className="reset-button"
-                type="submit"
-                onClick={() => setBoxes(defaultBoxes)}
-              >
-                RESET BOX
-              </button>
-            )}
-          </div>
+      <img className="greenland" src={Greenland4} alt="greenland" />
+
+      <div className="TechnologiesPage" data-aos="fade-up">
+        <div className="header">
+          <h1 style={{ fontSize: `${fontSize}px` }}>TECHNOLOGIES</h1>
+          <p className="description">
+            Below are languages, frameworks, tools, and ancillary technologies I
+            provide when building websites.
+          </p>
         </div>
-      ) : (
-        <div className="TechnologiesPage" data-aos="fade-up">
-          <div className="header">
-            <h1 style={{ fontSize: `${fontSize}px` }}>TECHNOLOGIES</h1>
-            <p className="description">
-              Below are languages, frameworks, tools, and ancillary technologies
-              I provide when building websites.
-            </p>
-          </div>
-          <Container
-            allImagesArray={allImagesArray}
-            setBoxes={setBoxes}
-            boxes={boxes}
-            defaultBoxes={defaultBoxes}
-            isFlipped={isFlipped}
-          />
-          <div className="drag-options">
+        <Container
+          allImagesArray={allImagesArray}
+          setBoxes={setBoxes}
+          boxes={boxes}
+          defaultBoxes={defaultBoxes}
+          isFlipped={isFlipped}
+        />
+        <div className="drag-options">
+          <button
+            className="flip-button"
+            type="submit"
+            onClick={() => handleFlipCards()}
+          >
+            FLIP CARDS
+          </button>
+          {screenWidth <= breakpoints.mobile ? null : (
             <button
-              className="flip-button"
+              className="reset-button"
               type="submit"
-              onClick={() => handleFlipCards()}
+              onClick={() => setBoxes(defaultBoxes)}
             >
-              FLIP CARDS
+              RESET BOX
             </button>
-            {screenWidth <= breakpoints.mobile ? null : (
-              <button
-                className="reset-button"
-                type="submit"
-                onClick={() => setBoxes(defaultBoxes)}
-              >
-                RESET BOX
-              </button>
-            )}
-          </div>
+          )}
         </div>
-      )}
+      </div>
     </TechnologiesPageWrap>
   );
 };

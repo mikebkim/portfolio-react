@@ -162,13 +162,23 @@ export const NavBarWrap = styled.div`
     }
   }
 
+  .nav-flex {
+    width: 100%;
+    background-color: ghostwhite;
+    height: 2rem;
+    top: 0;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+  }
+
   .NavBar {
     position: fixed;
     display: flex;
     justify-content: flex-end;
     background-color: ghostwhite;
     z-index: 1;
-    right: 0;
+    left: 0;
     height: 2rem;
     /* width: 100%; */
 

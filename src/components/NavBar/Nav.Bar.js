@@ -74,6 +74,53 @@ export const NavBarWrap = styled.div`
     position: fixed;
     z-index: 2;
 
+    & > .resume {
+      position: fixed;
+      top: 0;
+      right: 0;
+      margin-right: 0.5rem;
+
+      & > form {
+        display: flex;
+        align-items: center;
+        height: 2rem;
+
+        & > .resume-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: transparent;
+          border: none;
+          cursor: pointer;
+          color: ghostwhite;
+          position: relative;
+          transition: ease-in-out 300ms;
+          font-size: 13px;
+
+          &:hover {
+            background: linear-gradient(
+              120deg,
+              rgb(50, 50, 50) 20%,
+              rgb(255, 255, 255) 40%,
+              rgb(50, 50, 50) 60%
+            );
+            background-size: 200% auto;
+            animation: shimmerText 2s ease-in-out infinite alternate;
+
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+
+          & > svg {
+            margin-bottom: 0.2rem;
+            margin-left: 0.5rem;
+            transition: ease-in-out 500ms;
+          }
+        }
+      }
+    }
+
     & > .nav-burger-menu {
       display: flex;
       flex-direction: column;
@@ -218,22 +265,6 @@ export const NavBarWrap = styled.div`
           transition: ease-in-out 300ms;
           font-size: 13px;
 
-          &::after {
-            content: "";
-            position: absolute;
-            bottom: -2px;
-            left: 50%;
-            width: 0;
-            height: 2px;
-            background: rgb(100, 100, 100);
-            transform: translateX(-50%);
-            transition: width 300ms ease-in-out;
-          }
-
-          &:hover svg {
-            filter: brightness(1.4);
-          }
-
           &:hover {
             background: linear-gradient(
               120deg,
@@ -242,8 +273,9 @@ export const NavBarWrap = styled.div`
               rgb(50, 50, 50) 60%
             );
             background-size: 200% auto;
-            animation: shimmerText 1.2s linear infinite;
+            animation: shimmerText 2s ease-in-out infinite alternate;
 
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }

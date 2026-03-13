@@ -8,7 +8,7 @@ import {
   faLayerGroup,
   faPhone,
   faBars,
-  faDownload,
+  // faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -167,8 +167,8 @@ const NavBar = ({ screenWidth, resume }) => {
           </Link>
           <div className="resume">
             <form method="get" action={resume} target="_blank">
-              <button className="resume-button" type="submit">
-                DOWNLOAD RESUME <FontAwesomeIcon icon={faDownload} />
+              <button className="resume-button">
+                <span className="resume-text">DOWNLOAD RESUME</span>
               </button>
             </form>
           </div>
@@ -266,6 +266,13 @@ const NavBar = ({ screenWidth, resume }) => {
               </Link>
             </div>
           )}
+          <div className="resume">
+            <form method="get" action={resume} target="_blank">
+              <button className="resume-button">
+                <span className="resume-text">DOWNLOAD RESUME</span>
+              </button>
+            </form>
+          </div>
         </div>
       )}
     </NavBarWrap>

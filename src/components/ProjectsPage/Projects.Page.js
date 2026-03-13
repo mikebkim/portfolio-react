@@ -95,7 +95,7 @@ export const ProjectsPageWrap = styled.div`
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 7rem;
+            width: 8rem;
             font-size: 14px;
             margin: 0.5rem;
             padding: 0.5rem;
@@ -177,7 +177,7 @@ export const ProjectsPageWrap = styled.div`
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 7rem;
+              width: 8rem;
               font-size: 15px;
               margin: 0.5rem;
               padding: 0.5rem;

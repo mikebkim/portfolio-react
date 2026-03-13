@@ -36,7 +36,9 @@ const NavBar = ({ screenWidth }) => {
 
   return (
     <NavBarWrap>
-      <div className="nav-flex"></div>
+      {screenWidth >= breakpoints.tablet ? (
+        <div className="nav-flex"></div>
+      ) : null}
       {screenWidth >= breakpoints.tablet ? (
         <div className="NavBar">
           {/* HOME */}

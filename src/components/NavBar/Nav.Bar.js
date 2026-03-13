@@ -191,6 +191,12 @@ export const NavBarWrap = styled.div`
         margin: 1rem 0.3rem;
         align-items: center;
         position: relative;
+        transition: ease-in-out 300ms;
+
+        .nav-header:hover {
+          text-shadow: 0 0 1px currentColor;
+          transition: ease-in-out 300ms;
+        }
 
         & > svg {
           height: 0.7em;
@@ -214,6 +220,7 @@ export const NavBarWrap = styled.div`
 
         & > .nav-header {
           margin-left: 0.3rem;
+          transition: ease-in-out 300ms;
         }
       }
 

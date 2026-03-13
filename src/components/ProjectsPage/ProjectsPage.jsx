@@ -55,7 +55,7 @@ const ProjectsPage = ({
             />
           </a>
           <div className="project">
-            <h2>Seanna Kim Photography</h2>
+            <h2>SK-Photography</h2>
             <p className="project-description">
               A photography site showcasing icredible images from around the
               world!

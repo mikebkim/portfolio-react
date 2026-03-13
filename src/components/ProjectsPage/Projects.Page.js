@@ -15,7 +15,6 @@ export const ProjectsPageWrap = styled.div`
       margin: 4rem 0 0 0;
       border-bottom: 5px solid rgb(50, 50, 50);
       padding-bottom: 0.5rem;
-      /* text-shadow: 0px 0px 10px; */
     }
 
     h2 {
@@ -23,7 +22,6 @@ export const ProjectsPageWrap = styled.div`
       font-weight: 700;
       font-size: 36px;
       margin: 0;
-      /* text-shadow: 0px 0px 10px; */
     }
 
     h3 {
@@ -40,7 +38,7 @@ export const ProjectsPageWrap = styled.div`
     p {
       color: rgb(100, 100, 100);
       margin: 1rem auto;
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
 
     .project-laptop {
@@ -59,7 +57,7 @@ export const ProjectsPageWrap = styled.div`
 
     & > .projects-flex {
       display: flex;
-      padding: 3rem 0px;
+      padding: 0 0 3rem 0;
 
       &:last-child {
         border: none;
@@ -82,14 +80,14 @@ export const ProjectsPageWrap = styled.div`
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          width: 22rem;
+          width: 20rem;
 
           & > .tech-name {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 9rem;
-            font-size: 14px;
+            width: 8rem;
+            font-size: 12px;
             margin: 0.5rem;
             padding: 0.5rem;
             border-radius: 50px;
@@ -166,8 +164,8 @@ export const ProjectsPageWrap = styled.div`
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 9rem;
-              font-size: 15px;
+              width: 8rem;
+              font-size: 12px;
               margin: 0.5rem;
               padding: 0.5rem;
               border-radius: 50px;

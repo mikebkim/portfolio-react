@@ -1,132 +1,84 @@
-import React, { useState } from "react";
+import React, { Suspense, lazy, useState } from "react";
 import {
   BrowserRouter as Router,
   Routes,
   Route,
   Navigate,
 } from "react-router-dom";
-import { DndProvider } from "react-dnd";
-import { HTML5Backend } from "react-dnd-html5-backend";
-
-// Pages
-import HomePage from "./components/HomePage/HomePage";
-import TechnologiesPage from "./components/TechnologiesPage/TechnologiesPage";
-import ProjectsPage from "./components/ProjectsPage/ProjectsPage";
-import ContactPage from "./components/ContactPage/ContactPage";
-
-// Components
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/FooterBar/FooterBar";
-import "./App.css";
 import { useWindowSize } from "./hooks/useWindowSize";
+import "./App.css";
 
-// Images
 import MK_Resume from "./files/MK_Resume.pdf";
-import Patagonia4 from "./files/Patagonia4.jpg";
-import Iceland1 from "./files/Iceland1.jpg";
-import Greenland4 from "./files/Greenland4.jpg";
-import Lofoten11 from "./files/Lofoten11.jpg";
-import Patagonia6 from "./files/Patagonia6.jpg";
-import Seoul from "./files/Seoul.jpg";
-
-// Icons
-import blackjackicon from "./icons/blackjackicon.png";
-import gameiticon from "./icons/gameiticon.png";
-import marbleicon from "./icons/marbleicon.png";
-import sessionsicon from "./icons/sessionsicon.png";
 import personal_logo from "./icons/personal_logo.png";
-import skphotography from "./icons/skphotography.png";
+
+const HomePage = lazy(() => import("./components/HomePage/HomePage"));
+const TechnologiesPage = lazy(
+  () => import("./components/TechnologiesPage/TechnologiesPage"),
+);
+const ProjectsPage = lazy(
+  () => import("./components/ProjectsPage/ProjectsPage"),
+);
+const ContactPage = lazy(() => import("./components/ContactPage/ContactPage"));
 
 const App = () => {
-  const width = useWindowSize();
-  function importAll(r) {
-    let images = {};
-    r.keys().forEach((item, index) => {
-      images[item.replace("./", "")] = r(item);
-    });
-    return images;
-  }
-  const allImages = importAll(
-    require.context("./images", false, /\.(png|jpe?g|svg)$/),
-  );
+  const screenWidth = useWindowSize();
   const [toggleHeader, setToggleHeader] = useState(false);
+
   return (
     <div className="App">
-      {" "}
       <Router
         future={{
           v7_startTransition: true,
           v7_relativeSplatPath: true,
         }}
       >
-        {" "}
         <NavBar
           personalLogo={personal_logo}
-          toggleHeader={toggleHeader}
-          screenWidth={width}
+          screenWidth={screenWidth}
           resume={MK_Resume}
-        />{" "}
-        <Routes>
-          {" "}
-          <Route path="/" element={<Navigate replace to="/home" />} />{" "}
-          <Route
-            exact
-            path="/home"
-            element={
-              <HomePage
-                Patagonia4={Patagonia4}
-                resume={MK_Resume}
-                setToggleHeader={setToggleHeader}
-                toggleHeader={toggleHeader}
-              />
-            }
-          />{" "}
-          <Route
-            exact
-            path="/technologies"
-            element={
-              <DndProvider backend={HTML5Backend}>
-                {" "}
-                <TechnologiesPage
-                  greenland4={Greenland4}
-                  Iceland1={Iceland1}
-                  screenWidth={width}
-                  allImages={allImages}
+        />
+
+        <Suspense fallback={<div className="page-loading">Loading...</div>}>
+          <Routes>
+            <Route path="/" element={<Navigate replace to="/home" />} />
+
+            <Route
+              path="/home"
+              element={
+                <HomePage
+                  resume={MK_Resume}
+                  setToggleHeader={setToggleHeader}
                   toggleHeader={toggleHeader}
-                />{" "}
-              </DndProvider>
-            }
-          />{" "}
-          <Route
-            exact
-            path="/projects"
-            element={
-              <ProjectsPage
-                iconBlackjack={blackjackicon}
-                iconMarble={marbleicon}
-                iconSessions={sessionsicon}
-                iconGameit={gameiticon}
-                iconSkphotography={skphotography}
-                allImages={allImages}
-                toggleHeader={toggleHeader}
-                patagonia6={Patagonia6}
-                seoul={Seoul}
-              />
-            }
-          />{" "}
-          <Route
-            exact
-            path="/contact"
-            element={
-              <ContactPage lofoten11={Lofoten11} toggleHeader={toggleHeader} />
-            }
-          />{" "}
-        </Routes>{" "}
-      </Router>{" "}
-      <React.Fragment>
-        {" "}
-        <Footer screenWidth={width} />{" "}
-      </React.Fragment>{" "}
+                />
+              }
+            />
+
+            <Route
+              path="/technologies"
+              element={
+                <TechnologiesPage
+                  screenWidth={screenWidth}
+                  toggleHeader={toggleHeader}
+                />
+              }
+            />
+
+            <Route
+              path="/projects"
+              element={<ProjectsPage toggleHeader={toggleHeader} />}
+            />
+
+            <Route
+              path="/contact"
+              element={<ContactPage toggleHeader={toggleHeader} />}
+            />
+          </Routes>
+        </Suspense>
+      </Router>
+
+      <Footer screenWidth={screenWidth} />
     </div>
   );
 };

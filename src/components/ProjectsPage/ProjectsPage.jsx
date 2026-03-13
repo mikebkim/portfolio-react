@@ -2,17 +2,14 @@ import React, { useEffect, useState } from "react";
 import { ProjectsPageWrap } from "./Projects.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import blackjackicon from "../../icons/blackjackicon.png";
+// import gameiticon from "../../icons/gameiticon.png";
+// import marbleicon from "../../icons/marbleicon.png";
+// import sessionsicon from "../../icons/sessionsicon.png";
+import skphotography from "../../icons/skphotography.png";
+import Seoul from "../../files/Seoul.jpg";
 
-const ProjectsPage = ({
-  iconBlackjack,
-  iconMarble,
-  iconSessions,
-  iconGameit,
-  iconSkphotography,
-  toggleHeader,
-  patagonia6,
-  seoul,
-}) => {
+const ProjectsPage = ({ toggleHeader }) => {
   useEffect(() => {
     AOS.init();
   }, [toggleHeader]);
@@ -35,7 +32,7 @@ const ProjectsPage = ({
 
   return (
     <ProjectsPageWrap>
-      <img className="seoul" src={seoul} alt="seoul" />
+      <img className="seoul" src={Seoul} alt="seoul" />
 
       <div className="ProjectsPage" data-aos="fade-up">
         <div className="header">
@@ -54,7 +51,7 @@ const ProjectsPage = ({
           >
             <img
               className="project-laptop"
-              src={iconSkphotography}
+              src={skphotography}
               alt="skphotography"
             />
           </a>
@@ -145,7 +142,7 @@ const ProjectsPage = ({
           >
             <img
               className="project-laptop"
-              src={iconBlackjack}
+              src={blackjackicon}
               alt="blackjack"
             />
           </a>

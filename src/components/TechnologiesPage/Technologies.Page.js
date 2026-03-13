@@ -25,6 +25,10 @@ export const TechnologiesPageWrap = styled.div`
     transition-duration: 1s !important;
   }
 
+  .technologies-title {
+    font-size: clamp(2rem, 5vw, 5rem);
+  }
+
   .greenland {
     position: absolute;
     z-index: -1;

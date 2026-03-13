@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { ContactPageWrap } from "./Contact.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Lofoten11 from "../../files/Lofoten11.jpg";
 
-const ContactPage = ({ toggleHeader, lofoten11 }) => {
+const ContactPage = ({ toggleHeader }) => {
   useEffect(() => {
     AOS.init();
   }, [toggleHeader]);
@@ -26,7 +27,7 @@ const ContactPage = ({ toggleHeader, lofoten11 }) => {
 
   return (
     <ContactPageWrap>
-      <img className="lofoten" src={lofoten11} alt="lofoten" />
+      <img className="lofoten" src={Lofoten11} alt="lofoten" />
 
       <div className="ContactPage" data-aos="fade-up">
         <div className="header">

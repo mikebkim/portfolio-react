@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
 import { HomePageWrap } from "./Home.Page";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Patagonia4 from "../../files/Patagonia4.jpg";
 
-const HomePage = ({ resume, toggleHeader, Patagonia4 }) => {
+const HomePage = () => {
   useEffect(() => {
     AOS.init();
   }, []);

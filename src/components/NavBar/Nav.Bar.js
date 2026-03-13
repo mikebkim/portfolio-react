@@ -26,27 +26,41 @@ export const NavBarWrap = styled.div`
     }
   }
 
+  @keyframes shimmerText {
+    0% {
+      background-position: -200% center;
+    }
+    100% {
+      background-position: 200% center;
+    }
+  }
+
   a:hover {
     text-decoration: none;
-    color: rgb(50, 50, 50);
+    color: ghostwhite;
+    fill: ghostwhite;
   }
   a:focus {
     text-decoration: none;
-    color: rgb(50, 50, 50);
+    color: ghostwhite;
+    fill: ghostwhite;
   }
   a:active {
     text-decoration: none;
-    color: rgb(50, 50, 50);
+    color: ghostwhite;
+    fill: ghostwhite;
   }
 
   .burger-open {
-    color: rgb(50, 50, 50);
+    color: ghostwhite;
+    fill: ghostwhite;
     transform: rotate(180deg);
     transition: ease-in-out 0.5s;
   }
 
   .burger-close {
-    color: rgb(50, 50, 50);
+    color: ghostwhite;
+    fill: ghostwhite;
     transition: ease-in-out 0.5s;
   }
 
@@ -66,7 +80,6 @@ export const NavBarWrap = styled.div`
       justify-content: space-around;
       align-items: center;
       width: 4.5rem;
-      background-color: ghostwhite;
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
       height: 15.5rem;
@@ -86,7 +99,7 @@ export const NavBarWrap = styled.div`
         height: 4rem;
         width: 4rem;
         cursor: pointer;
-        border-bottom: 2px solid rgb(50, 50, 50);
+        border-bottom: 2px solid ghostwhite;
 
         &:last-child {
           border-bottom: none;
@@ -96,13 +109,15 @@ export const NavBarWrap = styled.div`
           font-size: 8px;
           font-weight: 700;
           transition: ease-in-out 300ms;
-          color: rgb(50, 50, 50);
+          color: ghostwhite;
+          fill: ghostwhite;
         }
 
         &.selected-box {
           transition: ease-in-out 300ms;
           text-decoration: none !important;
-          color: rgb(50, 50, 50);
+          color: ghostwhite;
+          fill: ghostwhite;
         }
 
         & > .nav-link {
@@ -118,13 +133,13 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: rgb(50, 50, 50);
-            fill: rgb(50, 50, 50);
+            color: ghostwhite;
+            fill: ghostwhite;
             transition: ease-in-out 300ms;
 
             &:hover {
-              color: rgb(50, 50, 50);
-              fill: rgb(50, 50, 50);
+              color: ghostwhite;
+              fill: ghostwhite;
             }
           }
         }
@@ -134,8 +149,8 @@ export const NavBarWrap = styled.div`
           align-items: center;
           display: flex;
           justify-content: center;
-          color: rgb(50, 50, 50);
-          fill: rgb(50, 50, 50);
+          color: ghostwhite;
+          fill: ghostwhite;
           height: 1.5rem;
           width: 1.5rem;
           transition: ease-in-out 300ms;
@@ -149,13 +164,13 @@ export const NavBarWrap = styled.div`
             display: flex;
             justify-content: center;
             background-color: transparent;
-            color: rgb(50, 50, 50);
-            fill: rgb(50, 50, 50);
+            color: ghostwhite;
+            fill: ghostwhite;
             transition: ease-in-out 300ms;
 
             &:hover {
-              color: rgb(50, 50, 50);
-              fill: rgb(50, 50, 50);
+              color: ghostwhite;
+              fill: ghostwhite;
             }
           }
         }
@@ -215,8 +230,22 @@ export const NavBarWrap = styled.div`
             transition: width 300ms ease-in-out;
           }
 
-          &:hover::after {
-            width: 100%;
+          &:hover svg {
+            filter: brightness(1.4);
+          }
+
+          &:hover {
+            background: linear-gradient(
+              120deg,
+              rgb(50, 50, 50) 20%,
+              rgb(255, 255, 255) 40%,
+              rgb(50, 50, 50) 60%
+            );
+            background-size: 200% auto;
+            animation: shimmerText 1.2s linear infinite;
+
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
           }
 
           & > svg {

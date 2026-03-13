@@ -266,7 +266,7 @@ export const TechnologiesPageWrap = styled.div`
       }
 
       p {
-        color: rgb(100, 100, 100);
+        color: ghostwhite;
         margin: 1rem auto;
       }
 

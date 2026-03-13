@@ -25,6 +25,9 @@ import MK_Resume from "./files/MK_Resume.pdf";
 import Patagonia4 from "./files/Patagonia4.jpg";
 import Iceland1 from "./files/Iceland1.jpg";
 import Greenland4 from "./files/Greenland4.jpg";
+import Lofoten11 from "./files/Lofoten11.jpg";
+import Patagonia6 from "./files/Patagonia6.jpg";
+import Seoul from "./files/Seoul.jpg";
 
 // Icons
 import blackjackicon from "./icons/blackjackicon.png";
@@ -85,7 +88,7 @@ const App = () => {
               <DndProvider backend={HTML5Backend}>
                 {" "}
                 <TechnologiesPage
-                  Greenland4={Greenland4}
+                  greenland4={Greenland4}
                   Iceland1={Iceland1}
                   screenWidth={width}
                   allImages={allImages}
@@ -106,13 +109,17 @@ const App = () => {
                 iconSkphotography={skphotography}
                 allImages={allImages}
                 toggleHeader={toggleHeader}
+                patagonia6={Patagonia6}
+                seoul={Seoul}
               />
             }
           />{" "}
           <Route
             exact
             path="/contact"
-            element={<ContactPage toggleHeader={toggleHeader} />}
+            element={
+              <ContactPage lofoten11={Lofoten11} toggleHeader={toggleHeader} />
+            }
           />{" "}
         </Routes>{" "}
       </Router>{" "}

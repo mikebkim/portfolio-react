@@ -5,20 +5,31 @@ export const ProjectsPageWrap = styled.div`
     transition-duration: 1s !important;
   }
 
+  .seoul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+
   .ProjectsPage {
     margin: 0 auto;
     width: 60vw;
-    height: 84vh;
+    min-height: 84vh;
+    height: auto;
 
     h1 {
-      color: rgb(50, 50, 50);
+      color: ghostwhite;
       margin: 4rem 0 0 0;
-      border-bottom: 5px solid rgb(50, 50, 50);
+      border-bottom: 5px solid ghostwhite;
       padding-bottom: 0.5rem;
     }
 
     h2 {
-      color: rgb(50, 50, 50);
+      color: ghostwhite;
       font-weight: 700;
       font-size: 36px;
       margin: 0;
@@ -26,17 +37,12 @@ export const ProjectsPageWrap = styled.div`
 
     h3 {
       margin: 0 0 1rem 0;
-      color: rgb(100, 100, 100);
-      border-bottom: 3px solid rgb(100, 100, 100);
-    }
-
-    h6 {
-      margin: 0.5rem;
-      color: rgb(200, 1, 1);
+      color: ghostwhite;
+      border-bottom: 3px solid ghostwhite;
     }
 
     p {
-      color: rgb(100, 100, 100);
+      color: ghostwhite;
       margin: 1rem auto;
       font-size: 1rem;
     }
@@ -104,11 +110,12 @@ export const ProjectsPageWrap = styled.div`
     .ProjectsPage {
       margin: 0 auto;
       width: 65vw;
-      height: 84vh;
+      min-height: 84vh;
+      height: auto;
       padding: 0 0 0 4rem;
 
       h2 {
-        color: rgb(50, 50, 50);
+        color: ghostwhite;
         font-weight: 700;
         font-size: 36px;
         margin: 0;
@@ -116,11 +123,11 @@ export const ProjectsPageWrap = styled.div`
 
       h3 {
         margin: 0 0 1rem 0;
-        color: rgb(100, 100, 100);
+        color: ghostwhite;
       }
 
       p {
-        color: rgb(100, 100, 100);
+        color: ghostwhite;
         margin: 1rem auto;
       }
 

@@ -10,6 +10,8 @@ const ProjectsPage = ({
   iconGameit,
   iconSkphotography,
   toggleHeader,
+  patagonia6,
+  seoul,
 }) => {
   useEffect(() => {
     AOS.init();
@@ -33,6 +35,8 @@ const ProjectsPage = ({
 
   return (
     <ProjectsPageWrap>
+      <img className="seoul" src={seoul} alt="seoul" />
+
       <div className="ProjectsPage" data-aos="fade-up">
         <div className="header">
           <h1 style={{ fontSize: `${fontSize}px` }}>PROJECTS</h1>

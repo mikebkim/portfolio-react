@@ -8,7 +8,7 @@ const TechnologiesPage = ({
   allImages,
   toggleHeader,
   screenWidth,
-  Greenland4,
+  greenland4,
 }) => {
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -196,7 +196,7 @@ const TechnologiesPage = ({
 
   return (
     <TechnologiesPageWrap>
-      <img className="greenland" src={Greenland4} alt="greenland" />
+      <img className="greenland" src={greenland4} alt="greenland" />
 
       <div className="TechnologiesPage" data-aos="fade-up">
         <div className="header">

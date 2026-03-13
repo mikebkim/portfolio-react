@@ -1,12 +1,10 @@
 body {
   margin: 0;
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
-  /* font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif; */
   letter-spacing: -0.5px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: ghostwhite;
-  /* background-color: rgb(230, 230, 230); */
 }
 
 * {

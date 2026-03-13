@@ -65,8 +65,8 @@ const ProjectsPage = ({
               <p className="tech-name">React</p>
               <p className="tech-name">React Router</p>
               <p className="tech-name">Styled-Components</p>
-              <p className="tech-name">Node</p>
-              <p className="tech-name">HTML</p>
+              <p className="tech-name">Node + npm</p>
+              <p className="tech-name">JSX / HTML</p>
               <p className="tech-name">JavaScript</p>
               <p className="tech-name">GitHub Pages</p>
             </div>

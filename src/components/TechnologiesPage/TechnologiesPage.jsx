@@ -104,18 +104,18 @@ const TechnologiesPage = ({
       title: allImagesArray[12][1],
       titleBack: allImagesArray[12][0],
     },
-    n: {
-      top: 0,
-      left: 0,
-      title: allImagesArray[13][1],
-      titleBack: allImagesArray[13][0],
-    },
-    o: {
-      top: 0,
-      left: 0,
-      title: allImagesArray[14][1],
-      titleBack: allImagesArray[14][0],
-    },
+    // n: {
+    //   top: 0,
+    //   left: 0,
+    //   title: allImagesArray[13][1],
+    //   titleBack: allImagesArray[13][0],
+    // },
+    // o: {
+    //   top: 0,
+    //   left: 0,
+    //   title: allImagesArray[14][1],
+    //   titleBack: allImagesArray[14][0],
+    // },
     p: {
       top: 0,
       left: 0,

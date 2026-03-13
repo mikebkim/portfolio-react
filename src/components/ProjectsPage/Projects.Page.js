@@ -10,13 +10,6 @@ export const ProjectsPageWrap = styled.div`
     width: 60vw;
     height: 84vh;
 
-    hr {
-      max-width: 80rem;
-      margin: 0 auto;
-      border-radius: 50px;
-      height: 0.1rem;
-    }
-
     h1 {
       color: rgb(50, 50, 50);
       margin: 4rem 0 0 0;
@@ -66,7 +59,7 @@ export const ProjectsPageWrap = styled.div`
 
     & > .projects-flex {
       display: flex;
-      margin: 2rem 0;
+      padding: 3rem 0px;
 
       &:last-child {
         border: none;
@@ -144,10 +137,6 @@ export const ProjectsPageWrap = styled.div`
         justify-content: center;
         width: 100%;
         align-items: center;
-
-        & > hr {
-          width: 100%;
-        }
       }
 
       & > .projects-flex {

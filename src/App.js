@@ -50,7 +50,12 @@ const App = () => {
   return (
     <div className="App">
       {" "}
-      <Router>
+      <Router
+        future={{
+          v7_startTransition: true,
+          v7_relativeSplatPath: true,
+        }}
+      >
         {" "}
         <NavBar
           personalLogo={personal_logo}
@@ -58,7 +63,6 @@ const App = () => {
           screenWidth={width}
           resume={MK_Resume}
         />{" "}
-        {/* {toggleHeader ? ( <div className="dont-click-fix" onClick={() => setToggleHeader(!toggleHeader)} > FIX ME! </div> ) : ( <div className="dont-click" onClick={() => setToggleHeader(!toggleHeader)} > DON'T CLICK ME! </div> )} */}{" "}
         <Routes>
           {" "}
           <Route path="/" element={<Navigate replace to="/home" />} />{" "}

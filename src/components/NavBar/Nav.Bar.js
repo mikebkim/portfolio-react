@@ -181,7 +181,52 @@ export const NavBarWrap = styled.div`
     z-index: 1;
     left: 0;
     height: 2rem;
-    /* width: 100%; */
+
+    & > .resume {
+      position: fixed;
+      right: 0;
+
+      & > form {
+        display: flex;
+        align-items: center;
+        height: 2rem;
+
+        & > .resume-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(222, 222, 222);
+          border: none;
+          cursor: pointer;
+          color: rgb(50, 50, 50);
+          position: relative;
+          transition: ease-in-out 300ms;
+          font-size: 13px;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: rgb(100, 100, 100);
+            transform: translateX(-50%);
+            transition: width 300ms ease-in-out;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+
+          & > svg {
+            margin-bottom: 0.2rem;
+            margin-left: 0.5rem;
+            transition: ease-in-out 500ms;
+          }
+        }
+      }
+    }
 
     a {
       text-decoration: none;

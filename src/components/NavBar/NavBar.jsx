@@ -8,11 +8,12 @@ import {
   faLayerGroup,
   faPhone,
   faBars,
+  faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const NavBar = ({ screenWidth }) => {
+const NavBar = ({ screenWidth, resume }) => {
   const [selectedTab, setSelectedTab] = useState("");
   const location = useLocation();
 
@@ -164,6 +165,13 @@ const NavBar = ({ screenWidth }) => {
               <div className="nav-header">CONTACT</div>
             </div>
           </Link>
+          <div className="resume">
+            <form method="get" action={resume} target="_blank">
+              <button className="resume-button" type="submit">
+                DOWNLOAD RESUME <FontAwesomeIcon icon={faDownload} />
+              </button>
+            </form>
+          </div>
         </div>
       ) : (
         <div className="nav-burger">

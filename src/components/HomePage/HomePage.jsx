@@ -1,17 +1,18 @@
 import React, { useEffect } from "react";
 import { HomePageWrap } from "./Home.Page";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const HomePage = ({ resume, toggleHeader }) => {
+const HomePage = ({ resume, toggleHeader, Patagonia4 }) => {
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
     <HomePageWrap>
+      <img className="patagonia" src={Patagonia4} alt="Patagonia" />
       <div className="HomePage" data-aos="fade-up">
         {toggleHeader ? (
           <div className="header-rebel">
@@ -46,15 +47,15 @@ const HomePage = ({ resume, toggleHeader }) => {
               solutions.
               <br />
               <br />
-              I'm a versatile professional with experience spanning web development,
-              entertainment, music, recruiting, and consumer internet, combining
-              big-picture thinking with agile, high-quality execution. I'm a strong
-              communicator and self-starter who thrives in fast-paced
-              environments, driven to build products that improve everyday life
-              and create meaningful impact.
+              I'm a versatile professional with experience spanning web
+              development, entertainment, music, recruiting, and consumer
+              internet, combining big-picture thinking with agile, high-quality
+              execution. I'm a strong communicator and self-starter who thrives
+              in fast-paced environments, driven to build products that improve
+              everyday life and create meaningful impact.
             </p>
           )}
-          {toggleHeader ? (
+          {/* {toggleHeader ? (
             <div className="resume-rebel">
               <form method="get" action={resume} target="_blank">
                 <button className="resume-button" type="submit">
@@ -70,7 +71,7 @@ const HomePage = ({ resume, toggleHeader }) => {
                 </button>
               </form>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </HomePageWrap>

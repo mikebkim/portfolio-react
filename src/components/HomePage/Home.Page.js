@@ -34,6 +34,14 @@ export const HomePageWrap = styled.div`
     transition-duration: 1s !important;
   }
 
+  .patagonia {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .HomePage {
     margin: 0 auto;
     width: 65vw;
@@ -48,25 +56,25 @@ export const HomePageWrap = styled.div`
     }
 
     h1 {
-      color: rgb(100, 100, 100);
+      color: ghostwhite;
       margin: 4rem 0 0 0;
       font-size: 4rem;
       word-wrap: none;
     }
 
     h2 {
-      color: rgb(100, 100, 100);
+      color: ghostwhite;
       margin: 0 0 0 0;
       font-size: 7rem;
 
       & > .home-name {
-        color: rgb(50, 50, 50);
+        color: ghostwhite;
         /* text-shadow: 0px 0px 10px; */
       }
     }
 
     h3 {
-      color: rgb(100, 100, 100);
+      color: ghostwhite;
       margin: 0 0 0 0;
       font-size: 2rem;
     }
@@ -79,7 +87,7 @@ export const HomePageWrap = styled.div`
     }
 
     p {
-      color: rgb(100, 100, 100);
+      color: ghostwhite;
       margin: 0;
       font-size: 1.2rem;
       margin-top: 0.5rem;
@@ -91,7 +99,7 @@ export const HomePageWrap = styled.div`
       justify-content: center;
       width: 100%;
       align-items: start;
-      border-bottom: 5px solid rgb(50, 50, 50);
+      border-bottom: 5px solid ghostwhite;
       padding-bottom: 0.5rem;
 
       & > hr {
@@ -123,7 +131,7 @@ export const HomePageWrap = styled.div`
       & > .rebel-name {
         color: rgb(200, 1, 1);
         transition: ease-in-out 500ms;
-        /* animation: pulse-rgb(100, 100, 100) 2s infinite; */
+        /* animation: pulse-ghostwhite 2s infinite; */
         /* text-shadow: 0px 0px 10px; */
       }
 
@@ -273,7 +281,7 @@ export const HomePageWrap = styled.div`
       }
 
       h2 {
-        color: rgb(100, 100, 100);
+        color: ghostwhite;
         margin: 0 0 0 0;
         font-size: 4rem;
 
@@ -283,7 +291,7 @@ export const HomePageWrap = styled.div`
       }
 
       h3 {
-        color: rgb(100, 100, 100);
+        color: ghostwhite;
         margin: 0 0 1rem 0;
         font-size: 1rem;
       }
@@ -296,7 +304,7 @@ export const HomePageWrap = styled.div`
       }
 
       p {
-        color: rgb(100, 100, 100);
+        color: ghostwhite;
         margin: 1rem 0;
         width: 100%;
       }

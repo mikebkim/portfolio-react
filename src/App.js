@@ -22,6 +22,7 @@ import { useWindowSize } from "./hooks/useWindowSize";
 
 // Images
 import MK_Resume from "./files/MK_Resume.pdf";
+import Patagonia4 from "./files/Patagonia4.jpg";
 
 // Icons
 import blackjackicon from "./icons/blackjackicon.png";
@@ -52,6 +53,7 @@ const App = () => {
           personalLogo={personal_logo}
           toggleHeader={toggleHeader}
           screenWidth={width}
+          resume={MK_Resume}
         />{" "}
         {/* {toggleHeader ? ( <div className="dont-click-fix" onClick={() => setToggleHeader(!toggleHeader)} > FIX ME! </div> ) : ( <div className="dont-click" onClick={() => setToggleHeader(!toggleHeader)} > DON'T CLICK ME! </div> )} */}{" "}
         <Routes>
@@ -62,6 +64,7 @@ const App = () => {
             path="/home"
             element={
               <HomePage
+                Patagonia4={Patagonia4}
                 resume={MK_Resume}
                 setToggleHeader={setToggleHeader}
                 toggleHeader={toggleHeader}

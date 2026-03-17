@@ -82,12 +82,11 @@ export const HomePageWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .HomePage {
-      margin: 0px auto;
       width: 65vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-right: 2rem;
+      padding-left: 4rem;
 
       h2 {
         color: ghostwhite;

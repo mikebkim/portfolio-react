@@ -30,17 +30,19 @@ export const TechnologiesPageWrap = styled.div`
   }
 
   .greenland {
-    position: absolute;
+    position: fixed;
+    inset: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
 
   .TechnologiesPage {
     margin: 0 auto;
     width: 60vw;
-    height: 84vh;
+    min-height: 84vh;
+    height: auto;
 
     img {
       max-width: 100% !important;

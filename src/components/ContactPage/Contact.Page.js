@@ -6,21 +6,19 @@ export const ContactPageWrap = styled.div`
   }
 
   .lofoten {
-    position: absolute;
+    position: fixed;
+    inset: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
 
   .ContactPage {
     margin: 0 auto;
     width: 60vw;
-    height: 84vh;
-
-    [data-aos] {
-      transition-duration: 2s;
-    }
+    min-height: 84vh;
+    height: auto;
 
     h1 {
       color: ghostwhite;

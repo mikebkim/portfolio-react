@@ -16,19 +16,19 @@ export const HomePageWrap = styled.div`
   }
 
   .patagonia {
-    position: absolute;
+    position: fixed;
+    inset: 0;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
   }
 
   .HomePage {
     margin: 0 auto;
-    width: 65vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    width: 60vw;
+    min-height: 84vh;
+    height: auto;
 
     .panda {
       display: flex;

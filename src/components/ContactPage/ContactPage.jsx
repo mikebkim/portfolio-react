@@ -4,10 +4,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Lofoten11 from "../../files/Lofoten11.jpg";
 
-const ContactPage = ({ toggleHeader }) => {
+const ContactPage = () => {
   useEffect(() => {
     AOS.init();
-  }, [toggleHeader]);
+  }, []);
 
   const [fontSize, setFontSize] = useState(20);
 

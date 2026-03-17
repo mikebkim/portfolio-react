@@ -9,10 +9,10 @@ import blackjackicon from "../../icons/blackjackicon.png";
 import skphotography from "../../icons/skphotography.png";
 import Seoul from "../../files/Seoul.jpg";
 
-const ProjectsPage = ({ toggleHeader }) => {
+const ProjectsPage = () => {
   useEffect(() => {
     AOS.init();
-  }, [toggleHeader]);
+  }, []);
 
   const [fontSize, setFontSize] = useState(20);
 

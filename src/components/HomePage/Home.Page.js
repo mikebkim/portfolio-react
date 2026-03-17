@@ -1,4 +1,14 @@
 import styled from "styled-components";
+export const NameHead = styled.h1`
+  color: ${({ color }) => color};
+  transition: color 0.2s ease;
+  font-size: 5rem;
+  margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 4rem;
+  }
+`;
 
 export const HomePageWrap = styled.div`
   [data-aos] {
@@ -16,7 +26,6 @@ export const HomePageWrap = styled.div`
   .HomePage {
     margin: 0 auto;
     width: 65vw;
-    /* height: 84vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,10 +36,7 @@ export const HomePageWrap = styled.div`
     }
 
     h1 {
-      color: ghostwhite;
-      margin: 4rem 0 0 0;
-      font-size: 4rem;
-      word-wrap: none;
+      margin-bottom: 0;
     }
 
     h2 {
@@ -40,7 +46,6 @@ export const HomePageWrap = styled.div`
 
       & > .home-name {
         color: ghostwhite;
-        /* text-shadow: 0px 0px 10px; */
       }
     }
 
@@ -71,7 +76,7 @@ export const HomePageWrap = styled.div`
       width: 100%;
       align-items: start;
       border-bottom: 5px solid ghostwhite;
-      padding-bottom: 0.5rem;
+      padding: 2rem 0 0.5rem 0;
 
       & > hr {
         width: 100%;
@@ -87,12 +92,6 @@ export const HomePageWrap = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      h1 {
-        margin-bottom: 0.2rem;
-        font-size: 2rem;
-        margin-top: 1rem;
-      }
 
       h2 {
         color: ghostwhite;

@@ -6,7 +6,7 @@ export const NameHead = styled.h1`
   margin: 0;
 
   @media only screen and (max-width: 768px) {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 `;
 
@@ -43,10 +43,6 @@ export const HomePageWrap = styled.div`
       color: ghostwhite;
       margin: 0 0 0 0;
       font-size: 7rem;
-
-      & > .home-name {
-        color: ghostwhite;
-      }
     }
 
     h3 {
@@ -88,19 +84,14 @@ export const HomePageWrap = styled.div`
     .HomePage {
       margin: 0px auto;
       width: 65vw;
-      padding: 3rem 0px 0px 4rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-right: 2rem;
 
       h2 {
         color: ghostwhite;
-        margin: 0 0 0 0;
         font-size: 4rem;
-
-        & > .home-name {
-          color: ghostwhite;
-        }
       }
 
       h3 {

@@ -96,7 +96,7 @@ const HomePage = () => {
       <div className="HomePage" data-aos="fade-up">
         <div className="header">
           <h1>HI, I'M</h1>
-          <NameHead color={color}>MIKE KIM</NameHead>
+          <NameHead style={{ color }}>MIKE KIM</NameHead>
           <h3>Web Developer | Music Producer | Project Coordinator</h3>
           <h5>Los Angeles, CA</h5>
         </div>

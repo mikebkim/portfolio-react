@@ -42,6 +42,7 @@ const NavBar = ({ screenWidth, resume }) => {
       ) : null}
       {screenWidth >= breakpoints.tablet ? (
         <div className="NavBar">
+          <div className="nav-box-name">MIKE KIM</div>
           {/* HOME */}
           <Link
             to="/home"

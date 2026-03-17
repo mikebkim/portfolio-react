@@ -274,7 +274,7 @@ export const NavBarWrap = styled.div`
             );
             background-size: 200% auto;
             animation: shimmerText 2s ease-in-out infinite alternate;
-
+            cursor: pointer;
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -294,13 +294,24 @@ export const NavBarWrap = styled.div`
       color: rgb(100, 100, 100);
     }
 
+    & > .nav-box-name {
+      white-space: nowrap;
+      flex-shrink: 0;
+      align-items: center;
+      padding: 0 1rem;
+      color: rgb(50, 50, 50);
+      display: flex;
+      font-weight: bold;
+      border-right: 2px solid rgb(50, 50, 50);
+    }
+
     & > .nav-box {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      padding: 0 2rem;
+      padding: 0 1rem;
       transition: ease-in-out 300ms;
 
       & > .nav-title {

@@ -2,11 +2,6 @@ import styled from "styled-components";
 
 export const FooterWrap = styled.div`
   .Footer {
-    /* background: linear-gradient(
-      to right,
-      transparent 15%,
-      rgb(50, 50, 50) 100%
-    ); */
     bottom: 0;
     position: fixed;
     width: 100%;

@@ -220,12 +220,13 @@ export const FooterWrap = styled.div`
     .Footer {
       bottom: 0;
       position: fixed;
-      width: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: flex-end;
-      align-items: center;
-      margin: 0 auto;
-      height: 3rem;
+      align-items: start;
+      background-color: transparent;
+      z-index: 1;
+      width: 100%;
 
       .social-hover {
         position: absolute;
@@ -256,14 +257,14 @@ export const FooterWrap = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-right: 0.5rem;
+          margin: 0;
 
           & > .git {
-            color: rgb(100, 100, 100);
+            color: ghostwhite;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid rgb(100, 100, 100);
+            border: 3px solid ghostwhite;
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -288,11 +289,11 @@ export const FooterWrap = styled.div`
           }
 
           & > .linkedin {
-            color: rgb(100, 100, 100);
+            color: ghostwhite;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid rgb(100, 100, 100);
+            border: 3px solid ghostwhite;
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -317,11 +318,11 @@ export const FooterWrap = styled.div`
           }
 
           & > .instagram {
-            color: rgb(100, 100, 100);
+            color: ghostwhite;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid rgb(100, 100, 100);
+            border: 3px solid ghostwhite;
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;
@@ -346,11 +347,11 @@ export const FooterWrap = styled.div`
           }
 
           & > .soundcloud {
-            color: rgb(100, 100, 100);
+            color: ghostwhite;
             display: flex;
             justify-content: center;
             align-items: center;
-            border: 3px solid rgb(100, 100, 100);
+            border: 3px solid ghostwhite;
             border-radius: 1.5rem;
             height: 1.5rem;
             width: 1.5rem;

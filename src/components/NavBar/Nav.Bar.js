@@ -326,12 +326,12 @@ export const NavBarWrap = styled.div`
   }
 
   .nav-burger .resume-button {
-    background: transparent;
+    background-color: transparent;
     color: ghostwhite;
   }
 
   .NavBar .resume-button {
-    background: rgb(222, 222, 222);
+    background-color: rgb(222, 222, 222);
     color: rgb(50, 50, 50);
   }
 `;

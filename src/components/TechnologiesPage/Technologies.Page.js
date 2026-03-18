@@ -2,11 +2,7 @@ import styled from "styled-components";
 
 export const TechnologiesPageWrap = styled.div`
   @keyframes openfrommiddle {
-    0% {
-      color: transparent;
-      fill: transparent;
-    }
-
+    0%,
     50% {
       color: transparent;
       fill: transparent;
@@ -42,110 +38,11 @@ export const TechnologiesPageWrap = styled.div`
     margin: 0 auto;
     width: 60vw;
     min-height: 84vh;
-    height: auto;
+    display: flex;
+    flex-direction: column;
 
     img {
       max-width: 100% !important;
-    }
-
-    & > .drag-options {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-      margin: 0 auto;
-
-      & > .reset-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2rem;
-        height: 2rem;
-        width: 10rem;
-        background: ghostwhite;
-        border: 2px solid ghostwhite;
-        transition: ease-in-out 500ms;
-        cursor: pointer;
-        color: rgb(100, 100, 100);
-        margin: 1rem;
-        font-weight: bold;
-
-        &:hover {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 2rem;
-          height: 2rem;
-          width: 10rem;
-          background-color: rgb(100, 100, 100) !important;
-          border: 5px solid ghostwhite;
-          transition: ease-in-out 500ms;
-          cursor: pointer;
-          color: ghostwhite;
-          fill: ghostwhite;
-        }
-      }
-
-      & > .flip-button {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 2rem;
-        height: 2rem;
-        width: 10rem;
-        background: ghostwhite;
-        border: 2px solid ghostwhite;
-        transition: ease-in-out 500ms;
-        cursor: pointer;
-        color: rgb(100, 100, 100);
-        margin: 1rem;
-        font-weight: bold;
-
-        &:hover {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 2rem;
-          height: 2rem;
-          width: 10rem;
-          background-color: rgb(100, 100, 100) !important;
-          border: 5px solid ghostwhite;
-          transition: ease-in-out 500ms;
-          cursor: pointer;
-          color: ghostwhite;
-          fill: ghostwhite;
-        }
-      }
-    }
-
-    & > .tech-box {
-      height: 20rem;
-      border: 5px solid ghostwhite !important;
-      border-radius: 10px;
-      position: relative !important;
-      display: flex;
-      flex-wrap: wrap;
-      overflow: auto;
-      align-items: center;
-      justify-content: center !important;
-      padding: 1rem 0;
-
-      & > .box {
-        width: 40px;
-        height: 55px;
-        perspective: 1000px;
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: ghostwhite !important;
-        text-align: center;
-        text-decoration: none;
-        transition: transform 0.6s;
-        transform-style: preserve-3d;
-        border-radius: 10px;
-        border: 5px solid ghostwhite !important;
-        position: relative !important;
-      }
     }
 
     h1 {
@@ -153,7 +50,6 @@ export const TechnologiesPageWrap = styled.div`
       margin: 4rem 0 0 0;
       border-bottom: 5px solid ghostwhite;
       padding-bottom: 0.5rem;
-      /* text-shadow: 0px 0px 10px; */
     }
 
     h6 {
@@ -179,13 +75,77 @@ export const TechnologiesPageWrap = styled.div`
       }
     }
 
+    & > .drag-options {
+      display: flex;
+      justify-content: space-evenly;
+      width: 100%;
+      margin: 0 auto;
+
+      & > .reset-button,
+      & > .flip-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        height: 2rem;
+        width: 10rem;
+        background: ghostwhite;
+        border: 2px solid ghostwhite;
+        transition: ease-in-out 500ms;
+        cursor: pointer;
+        color: rgb(100, 100, 100);
+        margin: 1rem;
+        font-weight: bold;
+
+        &:hover {
+          background-color: rgb(100, 100, 100) !important;
+          border: 5px solid ghostwhite;
+          color: ghostwhite;
+          fill: ghostwhite;
+        }
+      }
+    }
+
+    & > .tech-box {
+      flex: 1;
+      min-height: 0;
+      width: 100%;
+      border: 5px solid ghostwhite !important;
+      border-radius: 10px;
+      position: relative !important;
+      display: flex;
+      flex-wrap: wrap;
+      overflow: auto;
+      align-items: flex-start;
+      align-content: flex-start;
+      justify-content: center !important;
+      padding: 1rem 0;
+
+      & > .box {
+        width: 40px;
+        height: 55px;
+        perspective: 1000px;
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: ghostwhite !important;
+        text-align: center;
+        text-decoration: none;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        border-radius: 10px;
+        border: 5px solid ghostwhite !important;
+        position: relative !important;
+      }
+    }
+
     & > .technologies-list {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      margin-top: 10vh;
-      align-items: center;
       margin: 0 auto;
+      align-items: center;
     }
 
     .flip-card {
@@ -237,101 +197,27 @@ export const TechnologiesPageWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .TechnologiesPage {
-      margin: 0 auto;
       width: 65vw;
-      height: 84vh;
+      min-height: 84vh;
       padding: 0 0 0 4rem;
 
-      & > .tech-box {
-        border: 5px solid ghostwhite !important;
-        border-radius: 10px;
-        position: relative !important;
-        display: flex;
-        flex-wrap: wrap;
-        overflow: auto;
-        align-items: center;
-        justify-content: center !important;
-        padding: 1rem 0;
-
-        & > .box {
-          width: 40px;
-          height: 55px;
-          perspective: 1000px;
-          margin: 10px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          text-decoration: none;
-          transition: transform 0.6s;
-          transform-style: preserve-3d;
-          border-radius: 10px;
-          border: 5px solid ghostwhite !important;
-          position: relative !important;
-        }
-      }
-
       p {
-        color: ghostwhite;
         margin: 1rem auto;
       }
 
-      & > .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-
-        & > hr {
-          width: 100%;
-        }
-      }
-
       & > .technologies-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
         max-width: 90vw;
       }
 
-      .flip-card {
-        width: 100px;
-        height: 100px;
-        perspective: 1000px;
-        margin: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .flip-card-inner {
-        position: relative;
-        height: auto;
-        max-width: 100% !important;
-        text-align: center;
-      }
-
-      .flip-card-inner-max {
-        position: relative;
-        max-width: 27px !important;
-        height: auto;
-        text-align: center;
+      & > .tech-box {
+        flex: 1;
+        min-height: 0;
       }
 
       .flip-card-back {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         border-radius: 10px;
         position: absolute;
         animation: 1s ease-in-out openfrommiddle;
-      }
-
-      [data-aos] {
-        transition-duration: 2s;
       }
     }
   }

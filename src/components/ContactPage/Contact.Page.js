@@ -21,10 +21,10 @@ export const ContactPageWrap = styled.div`
     height: auto;
 
     h1 {
-      color: ghostwhite;
-      margin: 4rem 0 0 0;
-      border-bottom: 5px solid ghostwhite;
+      margin: 4rem 0 0;
       padding-bottom: 0.5rem;
+      color: ghostwhite;
+      border-bottom: 5px solid ghostwhite;
     }
 
     h6 {
@@ -33,8 +33,8 @@ export const ContactPageWrap = styled.div`
     }
 
     p {
-      color: ghostwhite;
       margin: 1rem auto;
+      color: ghostwhite;
       font-size: 1.2rem;
     }
 
@@ -42,8 +42,8 @@ export const ContactPageWrap = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 100%;
       align-items: center;
+      width: 100%;
 
       & > hr {
         width: 100%;
@@ -58,92 +58,59 @@ export const ContactPageWrap = styled.div`
         flex-direction: column;
 
         & > .form-inputs {
-          margin-bottom: 0rem;
+          margin-bottom: 0;
           color: ghostwhite;
           font-weight: bolder;
         }
 
-        & > .contact-name {
-          margin-bottom: 2.5rem;
+        & > .contact-name,
+        & > .contact-email,
+        & > .contact-subject,
+        & > .contact-message {
           width: 100%;
+          padding: 5px 0;
           background-color: transparent;
           border: none;
-          color: ghostwhite;
           border-bottom: 3px solid ghostwhite;
           outline: none;
-          padding: 5px 0;
         }
 
-        & > .contact-email {
-          margin-bottom: 2.5rem;
-          width: 100%;
-          background-color: transparent;
-          border: none;
-          color: ghostwhite;
-          border-bottom: 3px solid ghostwhite;
-          outline: none;
-          padding: 5px 0;
-        }
-
+        & > .contact-name,
+        & > .contact-email,
         & > .contact-subject {
           margin-bottom: 2.5rem;
-          width: 100%;
-          background-color: transparent;
-          border: none;
           color: ghostwhite;
-          border-bottom: 3px solid ghostwhite;
-          outline: none;
-          padding: 5px 0;
         }
 
         & > .contact-message {
-          margin-bottom: 0.5rem;
-          width: 100%;
-          background-color: transparent;
-          border: none;
-          color: rgb(100, 100, 100);
-          border-bottom: 3px solid ghostwhite;
-          outline: none;
           height: 8rem;
-          padding: 5px 0;
+          margin-bottom: 0.5rem;
+          color: rgb(100, 100, 100);
         }
 
         & > .contact-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 13rem;
+          height: 2rem;
+          margin: 0.5rem auto;
+          border: 2px solid ghostwhite;
+          border-radius: 2rem;
+          background: ghostwhite;
+          color: rgb(100, 100, 100);
+          cursor: pointer;
           font-family:
             Futura,
             Trebuchet MS,
             Arial,
             sans-serif;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          border-radius: 2rem;
-          height: 2rem;
-          width: 13rem;
-          background: ghostwhite;
-          border: 2px solid ghostwhite;
-          transition: ease-in-out 500ms;
-          cursor: pointer;
-          color: rgb(100, 100, 100);
-          margin: 0.5rem auto;
           font-weight: bold;
+          transition: all 500ms ease-in-out;
 
           &:hover {
-            font-family:
-              Futura,
-              Trebuchet MS,
-              Arial,
-              sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 2rem;
-            height: 2rem;
-            width: 13rem;
-            background: rgb(100, 100, 100);
             border: 5px solid rgb(100, 100, 100);
-            transition: ease-in-out 500ms;
-            cursor: pointer;
+            background: rgb(100, 100, 100);
             color: ghostwhite;
             fill: ghostwhite;
           }
@@ -154,114 +121,20 @@ export const ContactPageWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .ContactPage {
-      margin: 0 auto;
       width: 65vw;
-      height: 84vh;
-      padding: 0 0 0 4rem;
-
-      p {
-        color: ghostwhite;
-        margin: 1rem auto;
-      }
-
-      & > .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-
-        & > hr {
-          width: 100%;
-        }
-      }
+      min-height: 84vh;
+      padding-left: 4rem;
 
       & > form {
         margin: 0;
 
         & > .contact-form {
-          display: flex;
-          flex-direction: column;
-
-          & > .form-inputs {
-            margin-bottom: 0rem;
-            color: ghostwhite;
-            font-weight: bolder;
-          }
-
-          & > .contact-name {
-            margin-bottom: 2.5rem;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            color: ghostwhite;
-            border-bottom: 3px solid ghostwhite;
-            outline: none;
-            padding: 5px 0;
-          }
-
-          & > .contact-email {
-            margin-bottom: 2.5rem;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            color: ghostwhite;
-            border-bottom: 3px solid ghostwhite;
-            outline: none;
-            padding: 5px 0;
-          }
-
           & > .contact-message {
-            margin-bottom: 0.5rem;
-            width: 100%;
-            background-color: transparent;
-            border: none;
             color: ghostwhite;
-            border-bottom: 3px solid ghostwhite;
-            outline: none;
-            height: 8rem;
-            padding: 5px 0;
           }
 
           & > .contact-button {
-            font-family:
-              Futura,
-              Trebuchet MS,
-              Arial,
-              sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 2rem;
-            height: 2rem;
-            width: 13rem;
-            background: ghostwhite;
             border: 2px solid rgb(100, 100, 100);
-            transition: ease-in-out 500ms;
-            cursor: pointer;
-            color: rgb(100, 100, 100);
-            margin: 0.5rem auto;
-            font-weight: bold;
-
-            &:hover {
-              font-family:
-                Futura,
-                Trebuchet MS,
-                Arial,
-                sans-serif;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              border-radius: 2rem;
-              height: 2rem;
-              width: 13rem;
-              background: rgb(100, 100, 100);
-              border: 5px solid rgb(100, 100, 100);
-              transition: ease-in-out 500ms;
-              cursor: pointer;
-              color: ghostwhite;
-              fill: ghostwhite;
-            }
           }
         }
       }

@@ -21,28 +21,28 @@ export const ProjectsPageWrap = styled.div`
     height: auto;
 
     h1 {
-      color: ghostwhite;
-      margin: 4rem 0 0 0;
-      border-bottom: 5px solid ghostwhite;
+      margin: 4rem 0 0;
       padding-bottom: 0.5rem;
+      color: ghostwhite;
+      border-bottom: 5px solid ghostwhite;
     }
 
     h2 {
-      color: ghostwhite;
-      font-weight: 700;
-      font-size: 36px;
       margin: 0;
+      color: ghostwhite;
+      font-size: 36px;
+      font-weight: 700;
     }
 
     h3 {
-      margin: 0 0 1rem 0;
+      margin: 0 0 1rem;
       color: ghostwhite;
       border-bottom: 3px solid ghostwhite;
     }
 
     p {
-      color: ghostwhite;
       margin: 1rem auto;
+      color: ghostwhite;
       font-size: 1rem;
     }
 
@@ -56,13 +56,13 @@ export const ProjectsPageWrap = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 100%;
       align-items: center;
+      width: 100%;
     }
 
     & > .projects-flex {
       display: flex;
-      padding: 0 0 3rem 0;
+      padding: 0 0 3rem;
 
       &:last-child {
         border: none;
@@ -77,9 +77,9 @@ export const ProjectsPageWrap = styled.div`
       & > .project {
         display: flex;
         flex-direction: column;
-        width: 90vw;
         justify-content: center;
         align-items: center;
+        width: 90vw;
 
         & > .tech-list {
           display: flex;
@@ -92,13 +92,13 @@ export const ProjectsPageWrap = styled.div`
             justify-content: center;
             align-items: center;
             width: 8rem;
-            font-size: 12px;
             margin: 0.5rem;
             padding: 0.5rem;
-            border-radius: 50px;
-            background-color: rgb(100, 100, 100);
-            color: ghostwhite;
+            font-size: 12px;
             font-weight: bold;
+            color: ghostwhite;
+            background-color: rgb(100, 100, 100);
+            border-radius: 50px;
           }
         }
       }
@@ -107,77 +107,19 @@ export const ProjectsPageWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .ProjectsPage {
-      margin: 0 auto;
       width: 65vw;
-      min-height: 84vh;
-      height: auto;
-      padding: 0 0 0 4rem;
-
-      h2 {
-        color: ghostwhite;
-        font-weight: 700;
-        font-size: 36px;
-        margin: 0;
-      }
-
-      h3 {
-        margin: 0 0 1rem 0;
-        color: ghostwhite;
-      }
-
-      p {
-        color: ghostwhite;
-        margin: 1rem auto;
-      }
-
-      .project-laptop {
-        position: relative;
-        width: 100%;
-      }
-
-      & > .header {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        align-items: center;
-      }
+      padding-left: 4rem;
 
       & > .projects-flex {
-        display: flex;
         flex-direction: column;
         margin: 1rem 0;
 
-        & > .project-link {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
         & > .project {
-          display: flex;
-          flex-direction: column;
           width: auto;
-          justify-content: start;
-          align-items: center;
+          justify-content: flex-start;
 
           & > .tech-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-
-            & > .tech-name {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 8rem;
-              font-size: 12px;
-              margin: 0.5rem;
-              padding: 0.5rem;
-              border-radius: 50px;
-              background-color: rgb(100, 100, 100);
-              color: ghostwhite;
-            }
+            width: 100%;
           }
         }
       }

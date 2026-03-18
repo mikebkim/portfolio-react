@@ -1,9 +1,10 @@
 import styled from "styled-components";
+
 export const NameHead = styled.h1`
   color: ${({ color }) => color};
-  transition: color 0.2s ease;
-  font-size: 5rem;
   margin: 0;
+  font-size: 5rem;
+  transition: color 0.2s ease;
 
   @media only screen and (max-width: 768px) {
     font-size: 3rem;
@@ -40,39 +41,38 @@ export const HomePageWrap = styled.div`
     }
 
     h2 {
+      margin: 0;
       color: ghostwhite;
-      margin: 0 0 0 0;
       font-size: 7rem;
     }
 
     h3 {
+      margin: 0;
       color: ghostwhite;
-      margin: 0 0 0 0;
       font-size: 2rem;
     }
 
     h5 {
       display: flex;
       flex-direction: row-reverse;
-      margin: 0;
       width: 100%;
+      margin: 0;
     }
 
     p {
+      margin: 0.5rem 0 0;
       color: ghostwhite;
-      margin: 0;
       font-size: 1.2rem;
-      margin-top: 0.5rem;
     }
 
     & > .header {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      width: 100%;
       align-items: start;
+      width: 100%;
+      padding: 2rem 0 0.5rem;
       border-bottom: 5px solid ghostwhite;
-      padding: 2rem 0 0.5rem 0;
 
       & > hr {
         width: 100%;
@@ -82,33 +82,27 @@ export const HomePageWrap = styled.div`
 
   @media only screen and (max-width: 768px) {
     .HomePage {
-      width: 65vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      width: 65vw;
       padding-left: 4rem;
 
       h2 {
-        color: ghostwhite;
         font-size: 4rem;
       }
 
       h3 {
-        color: ghostwhite;
-        margin: 0 0 1rem 0;
+        margin: 0 0 1rem;
         font-size: 1rem;
       }
 
-      h5 {
-        display: flex;
-        flex-direction: row-reverse;
-        margin: 0;
+      p {
         width: 100%;
+        margin: 1rem 0;
       }
 
-      p {
-        color: ghostwhite;
-        margin: 1rem 0;
+      h5 {
         width: 100%;
       }
 
@@ -118,7 +112,6 @@ export const HomePageWrap = styled.div`
       }
 
       & > .header {
-        display: flex;
         justify-content: space-between;
         align-items: baseline;
       }
@@ -131,45 +124,33 @@ export const HomePageWrap = styled.div`
           margin-left: 0.5rem;
 
           & > form {
-            justify-content: center;
             display: flex;
+            justify-content: center;
 
             & > .resume-button {
               display: flex;
               justify-content: center;
               align-items: center;
-              border-radius: 2rem;
-              height: 2rem;
               width: 13rem;
-              background: white;
+              height: 2rem;
               border: 2px solid rgb(50, 50, 50);
-              transition: ease-in-out 500ms;
-              cursor: pointer;
+              border-radius: 2rem;
+              background: white;
               color: rgb(50, 50, 50);
               font-weight: bold;
+              cursor: pointer;
+              transition: all 500ms ease-in-out;
 
-              &:hover {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 2rem;
-                height: 2rem;
-                width: 13rem;
-                background: rgb(50, 50, 50);
-                border: 5px solid rgb(50, 50, 50);
-                transition: ease-in-out 500ms;
-                cursor: pointer;
-                color: ghostwhite;
-                fill: ghostwhite;
-
-                & > svg {
-                  margin-bottom: 0.2rem;
-                  margin-left: 0.5rem;
-                }
-              }
               & > svg {
                 margin-bottom: 0.2rem;
                 margin-left: 0.5rem;
+              }
+
+              &:hover {
+                border: 5px solid rgb(50, 50, 50);
+                background: rgb(50, 50, 50);
+                color: ghostwhite;
+                fill: ghostwhite;
               }
             }
           }

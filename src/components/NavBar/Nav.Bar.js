@@ -2,11 +2,7 @@ import styled from "styled-components";
 
 export const NavBarWrap = styled.div`
   @keyframes slideham {
-    0% {
-      color: rgb(50, 50, 50);
-      fill: transparent;
-    }
-
+    0%,
     50% {
       color: rgb(50, 50, 50);
       fill: transparent;
@@ -30,49 +26,48 @@ export const NavBarWrap = styled.div`
     0% {
       background-position: -200% center;
     }
+
     100% {
       background-position: 200% center;
     }
   }
 
-  a:hover {
-    text-decoration: none;
-    color: ghostwhite;
-    fill: ghostwhite;
-  }
-  a:focus {
-    text-decoration: none;
-    color: ghostwhite;
-    fill: ghostwhite;
-  }
+  a,
+  a:hover,
+  a:focus,
   a:active {
     text-decoration: none;
-    color: ghostwhite;
-    fill: ghostwhite;
   }
 
-  .burger-open {
-    color: ghostwhite;
-    fill: ghostwhite;
-    transform: rotate(180deg);
-    transition: ease-in-out 0.5s;
-  }
-
+  .burger-open,
   .burger-close {
     color: ghostwhite;
     fill: ghostwhite;
     transition: ease-in-out 0.5s;
   }
 
+  .burger-open {
+    transform: rotate(180deg);
+  }
+
+  .nav-flex {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(222, 222, 222);
+  }
+
   .nav-burger {
+    position: fixed;
+    z-index: 2;
     margin: 0.5rem;
     width: 1rem;
     height: 1rem;
     cursor: pointer;
     font-size: 1.5rem;
-    position: absolute;
-    position: fixed;
-    z-index: 2;
 
     & > .resume {
       position: fixed;
@@ -84,40 +79,6 @@ export const NavBarWrap = styled.div`
         display: flex;
         align-items: center;
         height: 2rem;
-
-        & > .resume-button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: transparent;
-          border: none;
-          cursor: pointer;
-          color: ghostwhite;
-          position: relative;
-          transition: ease-in-out 300ms;
-          font-size: 13px;
-
-          &:hover {
-            background: linear-gradient(
-              120deg,
-              rgb(50, 50, 50) 20%,
-              rgb(255, 255, 255) 40%,
-              rgb(50, 50, 50) 60%
-            );
-            background-size: 200% auto;
-            animation: shimmerText 2s ease-in-out infinite alternate;
-
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-
-          & > svg {
-            margin-bottom: 0.2rem;
-            margin-left: 0.5rem;
-            transition: ease-in-out 500ms;
-          }
-        }
       }
     }
 
@@ -127,14 +88,14 @@ export const NavBarWrap = styled.div`
       justify-content: space-around;
       align-items: center;
       width: 4.5rem;
+      height: 15.5rem;
       margin: 0.5rem 0;
       transition: ease-in-out 300ms;
-      height: 15.5rem;
       animation: 0.5s slideham;
 
       & > .nav-line {
-        border-bottom: 2px solid rgb(50, 50, 50);
         width: 100%;
+        border-bottom: 2px solid rgb(50, 50, 50);
         border-radius: 50px;
       }
 
@@ -143,8 +104,8 @@ export const NavBarWrap = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 4rem;
         width: 4rem;
+        height: 4rem;
         cursor: pointer;
         border-bottom: 2px solid ghostwhite;
 
@@ -155,94 +116,64 @@ export const NavBarWrap = styled.div`
         & > .nav-title {
           font-size: 8px;
           font-weight: 700;
-          transition: ease-in-out 300ms;
           color: ghostwhite;
           fill: ghostwhite;
+          transition: ease-in-out 300ms;
         }
 
         &.selected-box {
-          transition: ease-in-out 300ms;
-          text-decoration: none !important;
           color: ghostwhite;
           fill: ghostwhite;
+          transition: ease-in-out 300ms;
         }
 
         & > .nav-link {
           & > .nav-hover-home {
             display: none;
           }
+        }
+
+        & > .nav-link,
+        & > .selected {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-decoration: none;
+          transition: ease-in-out 300ms;
 
           & > svg {
-            height: 1.5rem;
-            width: 1.5rem;
-            text-decoration: none;
-            align-items: center;
             display: flex;
             justify-content: center;
+            align-items: center;
+            width: 1.5rem;
+            height: 1.5rem;
             background-color: transparent;
             color: ghostwhite;
             fill: ghostwhite;
             transition: ease-in-out 300ms;
-
-            &:hover {
-              color: ghostwhite;
-              fill: ghostwhite;
-            }
           }
         }
 
         & > .selected {
-          text-decoration: none;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          color: ghostwhite;
-          fill: ghostwhite;
-          height: 1.5rem;
-          width: 1.5rem;
-          transition: ease-in-out 300ms;
           margin-bottom: 0.5rem;
-
-          & > svg {
-            height: 1.5rem;
-            width: 1.5rem;
-            text-decoration: none;
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            background-color: transparent;
-            color: ghostwhite;
-            fill: ghostwhite;
-            transition: ease-in-out 300ms;
-
-            &:hover {
-              color: ghostwhite;
-              fill: ghostwhite;
-            }
-          }
         }
       }
     }
   }
 
-  .nav-flex {
-    width: 100%;
-    background-color: rgb(222, 222, 222);
-    height: 2rem;
-    top: 0;
-    position: fixed;
-    right: 0;
-    z-index: 1;
-  }
-
   .NavBar {
     position: fixed;
+    left: 0;
+    z-index: 1;
+    height: 2rem;
     display: flex;
     justify-content: flex-end;
     background-color: rgb(222, 222, 222);
-    z-index: 1;
-    left: 0;
-    height: 2rem;
+
+    a {
+      color: rgb(100, 100, 100);
+      text-decoration: none;
+    }
 
     & > .resume {
       position: fixed;
@@ -252,56 +183,17 @@ export const NavBarWrap = styled.div`
         display: flex;
         align-items: center;
         height: 2rem;
-
-        & > .resume-button {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          background: rgb(222, 222, 222);
-          border: none;
-          cursor: pointer;
-          color: rgb(50, 50, 50);
-          position: relative;
-          transition: ease-in-out 300ms;
-          font-size: 13px;
-
-          &:hover {
-            background: linear-gradient(
-              120deg,
-              rgb(50, 50, 50) 20%,
-              rgb(255, 255, 255) 40%,
-              rgb(50, 50, 50) 60%
-            );
-            background-size: 200% auto;
-            animation: shimmerText 2s ease-in-out infinite alternate;
-            cursor: pointer;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-          }
-
-          & > svg {
-            margin-bottom: 0.2rem;
-            margin-left: 0.5rem;
-            transition: ease-in-out 500ms;
-          }
-        }
       }
     }
 
-    a {
-      text-decoration: none;
-      color: rgb(100, 100, 100);
-    }
-
     & > .nav-box-name {
-      white-space: nowrap;
-      flex-shrink: 0;
-      align-items: center;
-      padding: 0 1rem;
-      color: rgb(50, 50, 50);
       display: flex;
+      align-items: center;
+      flex-shrink: 0;
+      padding: 0 1rem;
+      white-space: nowrap;
       font-weight: bold;
+      color: rgb(50, 50, 50);
       border-right: 2px solid rgb(50, 50, 50);
     }
 
@@ -310,32 +202,36 @@ export const NavBarWrap = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
       padding: 0 1rem;
+      cursor: pointer;
       transition: ease-in-out 300ms;
 
       & > .nav-title {
-        display: flex;
-        margin: 1rem 0.3rem;
-        align-items: center;
         position: relative;
-        transition: ease-in-out 300ms;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0.3rem;
         font-size: 13px;
-
-        .nav-header:hover {
-          text-shadow: 0 0 1px currentColor;
-          transition: ease-in-out 300ms;
-        }
+        transition: ease-in-out 300ms;
 
         & > svg {
           height: 0.7em;
         }
 
+        & > .nav-header {
+          margin-left: 0.3rem;
+          transition: ease-in-out 300ms;
+        }
+
+        .nav-header:hover {
+          text-shadow: 0 0 1px currentColor;
+        }
+
         &::after {
           content: "";
           position: absolute;
-          bottom: -2px;
           left: 50%;
+          bottom: -2px;
           width: 0;
           height: 2px;
           background: rgb(100, 100, 100);
@@ -346,71 +242,97 @@ export const NavBarWrap = styled.div`
         &:hover::after {
           width: 100%;
         }
-
-        & > .nav-header {
-          margin-left: 0.3rem;
-          transition: ease-in-out 300ms;
-        }
       }
 
       &.selected-box {
-        transition: ease-in-out 300ms;
         width: 100%;
         color: rgb(50, 50, 50);
+        transition: ease-in-out 300ms;
 
         & > .nav-title {
-          display: flex;
-          margin: 1rem 0.3rem;
-          align-items: center;
           border-bottom: 2px solid rgb(50, 50, 50);
 
-          & > .nav-header {
-            margin-left: 0.3rem;
+          &::after {
+            display: none;
           }
         }
       }
 
-      & > .nav-link {
+      & > .nav-link,
+      & > .nav-link-hover,
+      & > .selected {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        transition: ease-in-out 300ms;
+
         & > svg {
-          text-decoration: none;
-          align-items: center;
           display: flex;
           justify-content: center;
+          align-items: center;
           background-color: transparent;
-          color: rgb(50, 50, 50);
-          fill: rgb(50, 50, 50);
           transition: ease-in-out 300ms;
         }
       }
 
-      & > .nav-link-hover {
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        justify-content: center;
-        transition: ease-in-out 300ms;
+      & > .nav-link > svg {
+        color: rgb(50, 50, 50);
+        fill: rgb(50, 50, 50);
+      }
 
-        & > svg {
-          text-decoration: none;
-          align-items: center;
-          display: flex;
-          justify-content: center;
-          color: rgb(100, 100, 100);
-          fill: ghostwhite;
-          transition: ease-in-out 300ms;
-        }
+      & > .nav-link-hover > svg {
+        color: rgb(100, 100, 100);
+        fill: ghostwhite;
       }
 
       & > .selected {
-        text-decoration: none;
-        align-items: center;
-        display: flex;
-        justify-content: center;
         color: ghostwhite;
         fill: ghostwhite;
-        transition: ease-in-out 300ms;
       }
     }
+  }
+
+  .resume-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    transition: ease-in-out 300ms;
+
+    & > svg {
+      margin-left: 0.5rem;
+      margin-bottom: 0.2rem;
+      transition: ease-in-out 500ms;
+    }
+
+    &:hover {
+      background: linear-gradient(
+        120deg,
+        rgb(50, 50, 50) 20%,
+        rgb(255, 255, 255) 40%,
+        rgb(50, 50, 50) 60%
+      );
+      background-size: 200% auto;
+      animation: shimmerText 2s ease-in-out infinite alternate;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .nav-burger .resume-button {
+    background: transparent;
+    color: ghostwhite;
+  }
+
+  .NavBar .resume-button {
+    background: rgb(222, 222, 222);
+    color: rgb(50, 50, 50);
   }
 `;
 

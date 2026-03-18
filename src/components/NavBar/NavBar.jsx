@@ -176,6 +176,7 @@ const NavBar = ({ screenWidth, resume }) => {
         </div>
       ) : (
         <div className="nav-burger">
+          <div className="nav-box-name">MIKE KIM</div>
           <FontAwesomeIcon
             icon={faBars}
             onClick={() => setIsBurgerOpen(!isBurgerOpen)}

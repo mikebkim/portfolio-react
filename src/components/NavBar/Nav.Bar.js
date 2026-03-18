@@ -69,6 +69,15 @@ export const NavBarWrap = styled.div`
     cursor: pointer;
     font-size: 1.5rem;
 
+    & > .nav-box-name {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+      font-weight: bold;
+      color: ghostwhite;
+      font-size: 1rem;
+    }
+
     & > .resume {
       position: fixed;
       top: 0;
@@ -193,8 +202,8 @@ export const NavBarWrap = styled.div`
       padding: 0 1rem;
       white-space: nowrap;
       font-weight: bold;
-      color: rgb(50, 50, 50);
-      border-right: 2px solid rgb(50, 50, 50);
+      color: ghostwhite;
+      background-color: rgb(50, 50, 50);
     }
 
     & > .nav-box {

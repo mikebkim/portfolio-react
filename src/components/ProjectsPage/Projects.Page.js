@@ -22,9 +22,8 @@ export const ProjectsPageWrap = styled.div`
 
     h1 {
       margin: 4rem 0 0;
-      padding-bottom: 0.5rem;
       color: ghostwhite;
-      border-bottom: 5px solid ghostwhite;
+      border-bottom: 8px solid ghostwhite;
     }
 
     h2 {

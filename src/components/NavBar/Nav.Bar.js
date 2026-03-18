@@ -43,7 +43,7 @@ export const NavBarWrap = styled.div`
   .burger-close {
     color: ghostwhite;
     fill: ghostwhite;
-    transition: ease-in-out 0.5s;
+    transition: 0.5s ease-in-out;
   }
 
   .burger-open {
@@ -60,27 +60,76 @@ export const NavBarWrap = styled.div`
     background-color: rgb(222, 222, 222);
   }
 
-  .nav-burger {
+  .resume-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 2rem;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 300ms ease-in-out;
+
+    & > svg {
+      margin: 0 0 0.2rem 0.5rem;
+      transition: 500ms ease-in-out;
+    }
+
+    &:hover {
+      background: linear-gradient(
+        120deg,
+        rgb(50, 50, 50) 20%,
+        rgb(255, 255, 255) 40%,
+        rgb(50, 50, 50) 60%
+      );
+      background-size: 200% auto;
+      animation: shimmerText 2s ease-in-out infinite alternate;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .nav-burger .resume-button {
+    background: transparent;
+    color: ghostwhite;
+  }
+
+  .NavBar .resume-button {
+    background: rgb(222, 222, 222);
+    color: rgb(50, 50, 50);
+  }
+
+  .nav-burger,
+  .NavBar > .resume,
+  .nav-burger > .resume {
     position: fixed;
+  }
+
+  .nav-burger > .resume,
+  .NavBar > .resume {
+    right: 0;
+
+    & > form {
+      display: flex;
+      align-items: center;
+      height: 2rem;
+    }
+  }
+
+  .nav-burger > .resume {
+    top: 0;
+    margin-right: 0.5rem;
+  }
+
+  .nav-burger {
     z-index: 2;
     margin: 0.5rem;
     width: 1rem;
     height: 1rem;
     cursor: pointer;
     font-size: 1.5rem;
-
-    & > .resume {
-      position: fixed;
-      top: 0;
-      right: 0;
-      margin-right: 0.5rem;
-
-      & > form {
-        display: flex;
-        align-items: center;
-        height: 2rem;
-      }
-    }
 
     & > .nav-burger-menu {
       display: flex;
@@ -90,7 +139,7 @@ export const NavBarWrap = styled.div`
       width: 4.5rem;
       height: 15.5rem;
       margin: 0.5rem 0;
-      transition: ease-in-out 300ms;
+      transition: 300ms ease-in-out;
       animation: 0.5s slideham;
 
       & > .nav-line {
@@ -118,19 +167,17 @@ export const NavBarWrap = styled.div`
           font-weight: 700;
           color: ghostwhite;
           fill: ghostwhite;
-          transition: ease-in-out 300ms;
+          transition: 300ms ease-in-out;
         }
 
         &.selected-box {
           color: ghostwhite;
           fill: ghostwhite;
-          transition: ease-in-out 300ms;
+          transition: 300ms ease-in-out;
         }
 
-        & > .nav-link {
-          & > .nav-hover-home {
-            display: none;
-          }
+        & > .nav-link > .nav-hover-home {
+          display: none;
         }
 
         & > .nav-link,
@@ -138,8 +185,7 @@ export const NavBarWrap = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
-          text-decoration: none;
-          transition: ease-in-out 300ms;
+          transition: 300ms ease-in-out;
 
           & > svg {
             display: flex;
@@ -150,7 +196,7 @@ export const NavBarWrap = styled.div`
             background-color: transparent;
             color: ghostwhite;
             fill: ghostwhite;
-            transition: ease-in-out 300ms;
+            transition: 300ms ease-in-out;
           }
         }
 
@@ -165,25 +211,13 @@ export const NavBarWrap = styled.div`
     position: fixed;
     left: 0;
     z-index: 1;
-    height: 2rem;
     display: flex;
     justify-content: flex-end;
+    height: 2rem;
     background-color: rgb(222, 222, 222);
 
     a {
       color: rgb(100, 100, 100);
-      text-decoration: none;
-    }
-
-    & > .resume {
-      position: fixed;
-      right: 0;
-
-      & > form {
-        display: flex;
-        align-items: center;
-        height: 2rem;
-      }
     }
 
     & > .nav-box-name {
@@ -204,7 +238,7 @@ export const NavBarWrap = styled.div`
       align-items: center;
       padding: 0 1rem;
       cursor: pointer;
-      transition: ease-in-out 300ms;
+      transition: 300ms ease-in-out;
 
       & > .nav-title {
         position: relative;
@@ -212,7 +246,7 @@ export const NavBarWrap = styled.div`
         align-items: center;
         margin: 1rem 0.3rem;
         font-size: 13px;
-        transition: ease-in-out 300ms;
+        transition: 300ms ease-in-out;
 
         & > svg {
           height: 0.7em;
@@ -220,7 +254,7 @@ export const NavBarWrap = styled.div`
 
         & > .nav-header {
           margin-left: 0.3rem;
-          transition: ease-in-out 300ms;
+          transition: 300ms ease-in-out;
         }
 
         .nav-header:hover {
@@ -247,7 +281,7 @@ export const NavBarWrap = styled.div`
       &.selected-box {
         width: 100%;
         color: rgb(50, 50, 50);
-        transition: ease-in-out 300ms;
+        transition: 300ms ease-in-out;
 
         & > .nav-title {
           border-bottom: 2px solid rgb(50, 50, 50);
@@ -264,15 +298,14 @@ export const NavBarWrap = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
-        transition: ease-in-out 300ms;
+        transition: 300ms ease-in-out;
 
         & > svg {
           display: flex;
           justify-content: center;
           align-items: center;
           background-color: transparent;
-          transition: ease-in-out 300ms;
+          transition: 300ms ease-in-out;
         }
       }
 
@@ -291,48 +324,6 @@ export const NavBarWrap = styled.div`
         fill: ghostwhite;
       }
     }
-  }
-
-  .resume-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: 2rem;
-    border: none;
-    cursor: pointer;
-    font-size: 13px;
-    transition: ease-in-out 300ms;
-
-    & > svg {
-      margin-left: 0.5rem;
-      margin-bottom: 0.2rem;
-      transition: ease-in-out 500ms;
-    }
-
-    &:hover {
-      background: linear-gradient(
-        120deg,
-        rgb(50, 50, 50) 20%,
-        rgb(255, 255, 255) 40%,
-        rgb(50, 50, 50) 60%
-      );
-      background-size: 200% auto;
-      animation: shimmerText 2s ease-in-out infinite alternate;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-
-  .nav-burger .resume-button {
-    background: transparent;
-    color: ghostwhite;
-  }
-
-  .NavBar .resume-button {
-    background: rgb(222, 222, 222);
-    color: rgb(50, 50, 50);
   }
 `;
 

@@ -221,6 +221,7 @@ export const NavBarWrap = styled.div`
 
         & > svg {
           height: 0.9em;
+          padding-top: 0.1rem;
         }
 
         & > .nav-header {

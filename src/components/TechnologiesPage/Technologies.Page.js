@@ -48,7 +48,6 @@ export const TechnologiesPageWrap = styled.div`
     h1 {
       color: ghostwhite;
       margin: 4rem 0 0 0;
-      border-bottom: 8px solid ghostwhite;
     }
 
     h6 {

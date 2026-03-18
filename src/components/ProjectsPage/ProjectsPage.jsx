@@ -2,12 +2,14 @@ import React, { useEffect, useState } from "react";
 import { ProjectsPageWrap } from "./Projects.Page";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import blackjackicon from "../../icons/blackjackicon.png";
+// import blackjackicon from "../../icons/blackjackicon.png";
 // import gameiticon from "../../icons/gameiticon.png";
 // import marbleicon from "../../icons/marbleicon.png";
 // import sessionsicon from "../../icons/sessionsicon.png";
-import skphotography from "../../icons/skphotography.png";
-import Seoul from "../../files/Seoul.jpg";
+import blackjackapp from "../../icons/blackjackapp.png";
+import seannakimapp from "../../icons/seannakimapp.png";
+import Greenland5 from "../../files/Greenland5.jpg";
+// import Seoul from "../../files/Seoul.jpg";
 
 const ProjectsPage = () => {
   useEffect(() => {
@@ -32,16 +34,19 @@ const ProjectsPage = () => {
 
   return (
     <ProjectsPageWrap>
-      <img className="seoul" src={Seoul} alt="seoul" />
+      <img className="seoul" src={Greenland5} alt="seoul" />
 
       <div className="ProjectsPage" data-aos="fade-up">
         <div className="header">
           <h1 style={{ fontSize: `${fontSize}px` }}>PROJECTS</h1>
           <p className="description">
-            Below are my projects and technologies I used to create them.
+            below are my projects and technologies i used to create them.
           </p>
         </div>
-
+        <h2>Seanna Kim Photography</h2>
+        <p className="project-description">
+          a photography site showcasing icredible images from around the world!
+        </p>
         <div className="projects-flex">
           <a
             className="project-link"
@@ -51,16 +56,11 @@ const ProjectsPage = () => {
           >
             <img
               className="project-laptop"
-              src={skphotography}
+              src={seannakimapp}
               alt="skphotography"
             />
           </a>
           <div className="project">
-            <h2>SK-Photography</h2>
-            <p className="project-description">
-              A photography site showcasing icredible images from around the
-              world!
-            </p>
             <h3>Technologies Used</h3>
             <div className="tech-list">
               <p className="tech-name">React</p>
@@ -73,7 +73,6 @@ const ProjectsPage = () => {
             </div>
           </div>
         </div>
-
         {/* <div className="projects-flex">
             <a
               className="project-link"
@@ -103,7 +102,6 @@ const ProjectsPage = () => {
               </div>
             </div>
           </div> */}
-
         {/* <div className="projects-flex">
             <a
               className="project-link"
@@ -132,7 +130,11 @@ const ProjectsPage = () => {
               </div>
             </div>
           </div> */}
-
+        <h2>Blackjack</h2>
+        <p className="project-description">
+          it's blackjack...you start off with $1,000. how much will you
+          win?
+        </p>
         <div className="projects-flex">
           <a
             className="project-link"
@@ -142,16 +144,11 @@ const ProjectsPage = () => {
           >
             <img
               className="project-laptop"
-              src={blackjackicon}
+              src={blackjackapp}
               alt="blackjack"
             />
           </a>
           <div className="project">
-            <h2>Blackjack</h2>
-            <p className="project-description">
-              A simple Blackjack game. You start off with $1,000. How much will
-              you win?
-            </p>
             <h3>Technologies Used</h3>
             <div className="tech-list">
               <p className="tech-name">HTML</p>

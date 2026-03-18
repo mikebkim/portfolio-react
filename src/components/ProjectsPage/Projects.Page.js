@@ -30,26 +30,32 @@ export const ProjectsPageWrap = styled.div`
     h2 {
       margin: 0;
       color: ghostwhite;
-      font-size: 36px;
-      font-weight: 700;
+      font-size: 2rem;
+      font-weight: bold;
+      text-decoration: underline;
     }
 
     h3 {
-      margin: 0 0 1rem;
+      margin: 0;
       color: ghostwhite;
-      border-bottom: 3px solid ghostwhite;
+      font-size: 1rem;
+      text-decoration: underline;
     }
 
-    p {
+    .description {
       margin: 1rem auto;
       color: ghostwhite;
       font-size: 1rem;
     }
 
+    .project-description {
+      margin: 0;
+    }
+
     .project-laptop {
-      position: relative;
+      border: 2px solid ghostwhite;
+      border-radius: 5px;
       width: 100%;
-      margin-top: 1rem;
     }
 
     & > .header {
@@ -62,7 +68,9 @@ export const ProjectsPageWrap = styled.div`
 
     & > .projects-flex {
       display: flex;
-      padding: 0 0 3rem;
+      flex-direction: row;
+      padding: 0.5rem 0px 3rem;
+      width: fit-content;
 
       &:last-child {
         border: none;
@@ -72,6 +80,7 @@ export const ProjectsPageWrap = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 1rem;
       }
 
       & > .project {
@@ -79,13 +88,14 @@ export const ProjectsPageWrap = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 90vw;
+        flex: 1;
+        padding-left: 1rem;
 
         & > .tech-list {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          width: 20rem;
+          width: 21rem;
 
           & > .tech-name {
             display: flex;
@@ -99,20 +109,30 @@ export const ProjectsPageWrap = styled.div`
             color: ghostwhite;
             background-color: rgb(100, 100, 100);
             border-radius: 50px;
+            border: 2px solid ghostwhite;
           }
         }
       }
     }
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 840px) {
     .ProjectsPage {
       width: 65vw;
       padding-left: 4rem;
 
+      h2 {
+        font-size: 24px;
+      }
+
+      .project-laptop {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
       & > .projects-flex {
         flex-direction: column;
-        margin: 1rem 0;
 
         & > .project {
           width: auto;

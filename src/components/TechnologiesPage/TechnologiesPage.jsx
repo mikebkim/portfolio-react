@@ -113,8 +113,8 @@ const TechnologiesPage = ({ screenWidth }) => {
           <div className="header">
             <h1 style={{ fontSize: `${fontSize}px` }}>TECHNOLOGIES</h1>
             <p className="description">
-              Below are languages, frameworks, tools, and ancillary technologies
-              I provide when building websites.
+              below are languages, frameworks, tools, and ancillary technologies
+              i provide when building websites.
             </p>
           </div>
 

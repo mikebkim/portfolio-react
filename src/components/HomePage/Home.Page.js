@@ -41,9 +41,9 @@ export const HomePageWrap = styled.div`
     }
 
     h2 {
-      margin: 0;
+      margin: 2rem 0 0 0;
       color: ghostwhite;
-      font-size: 7rem;
+      font-size: 2rem;
     }
 
     h3 {

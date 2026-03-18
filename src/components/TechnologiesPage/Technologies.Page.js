@@ -99,7 +99,7 @@ export const TechnologiesPageWrap = styled.div`
 
         &:hover {
           background-color: rgb(100, 100, 100) !important;
-          border: 5px solid ghostwhite;
+          border: 5px solid rgb(100, 100, 100);
           color: ghostwhite;
           fill: ghostwhite;
         }

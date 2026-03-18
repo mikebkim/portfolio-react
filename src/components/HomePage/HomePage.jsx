@@ -95,22 +95,22 @@ const HomePage = () => {
 
       <div className="HomePage" data-aos="fade-up">
         <div className="header">
-          <h1>HI, I'M</h1>
-          <NameHead style={{ color }}>MIKE KIM</NameHead>
-          <h3>Web Developer | Music Producer | Project Coordinator</h3>
-          <h5>Los Angeles, CA</h5>
+          <h2>hi, i'm</h2>
+          <NameHead style={{ color }}>mike kim</NameHead>
+          <h3>web developer | music producer | project builder</h3>
+          <h5>los angeles, ca</h5>
         </div>
 
         <div className="home">
           <p className="home-about">
-            I enjoy solving problems and turning complexity into simple
+            i enjoy solving problems and turning complexity into simple
             solutions.
             <br />
             <br />
-            I'm a versatile professional with experience spanning web
+            i'm a versatile professional with experience spanning web
             development, entertainment, music, recruiting, and consumer
             internet, combining big-picture thinking with agile, high-quality
-            execution. I'm a strong communicator and self-starter who thrives in
+            execution. i'm a strong communicator and self-starter who thrives in
             fast-paced environments, driven to build products that improve
             everyday life and create meaningful impact.
           </p>

@@ -171,7 +171,7 @@ export const NavBarWrap = styled.div`
     background-color: rgb(222, 222, 222);
 
     a {
-      color: rgb(100, 100, 100);
+      color: rgb(125, 125, 125);
       text-decoration: none;
     }
 
@@ -206,6 +206,11 @@ export const NavBarWrap = styled.div`
       cursor: pointer;
       transition: ease-in-out 300ms;
 
+      &:hover {
+        color: rgb(50, 50, 50);
+        transition: ease-in-out 300ms;
+      }
+
       & > .nav-title {
         position: relative;
         display: flex;
@@ -215,16 +220,12 @@ export const NavBarWrap = styled.div`
         transition: ease-in-out 300ms;
 
         & > svg {
-          height: 0.7em;
+          height: 0.9em;
         }
 
         & > .nav-header {
           margin-left: 0.3rem;
           transition: ease-in-out 300ms;
-        }
-
-        .nav-header:hover {
-          text-shadow: 0 0 1px currentColor;
         }
 
         &::after {

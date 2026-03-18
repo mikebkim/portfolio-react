@@ -3,11 +3,11 @@ import { Link, useLocation } from "react-router-dom";
 import { NavBarWrap } from "./Nav.Bar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faHome,
+  faHouse,
   faCode,
   faLayerGroup,
-  faPhone,
   faBars,
+  faEnvelope,
   // faDownload,
 } from "@fortawesome/free-solid-svg-icons";
 import AOS from "aos";
@@ -67,7 +67,7 @@ const NavBar = ({ screenWidth, resume }) => {
             )} */}
             <div className="nav-title">
               {" "}
-              <FontAwesomeIcon icon={faHome} />
+              <FontAwesomeIcon icon={faHouse} />
               <div className="nav-header">HOME</div>
             </div>
           </Link>
@@ -162,7 +162,7 @@ const NavBar = ({ screenWidth, resume }) => {
             )} */}
             <div className="nav-title">
               {" "}
-              <FontAwesomeIcon icon={faPhone} />
+              <FontAwesomeIcon icon={faEnvelope} />
               <div className="nav-header">CONTACT</div>
             </div>
           </Link>
@@ -197,7 +197,7 @@ const NavBar = ({ screenWidth, resume }) => {
                     selectedTab.includes("home") ? "selected" : "nav-link"
                   }
                 >
-                  <FontAwesomeIcon icon={faHome} />
+                  <FontAwesomeIcon icon={faHouse} />
                 </div>
                 {selectedTab.includes("home") && (
                   <div className="nav-title">HOME</div>
@@ -259,7 +259,7 @@ const NavBar = ({ screenWidth, resume }) => {
                     selectedTab.includes("contact") ? "selected" : "nav-link"
                   }
                 >
-                  <FontAwesomeIcon icon={faPhone} />
+                  <FontAwesomeIcon icon={faEnvelope} />
                 </div>
                 {selectedTab.includes("contact") && (
                   <div className="nav-title">CONTACT</div>

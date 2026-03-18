@@ -118,43 +118,6 @@ export const HomePageWrap = styled.div`
 
       & > .home {
         margin-left: 1rem;
-
-        & > .resume {
-          margin-top: 1.5rem;
-          margin-left: 0.5rem;
-
-          & > form {
-            display: flex;
-            justify-content: center;
-
-            & > .resume-button {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              width: 13rem;
-              height: 2rem;
-              border: 2px solid rgb(50, 50, 50);
-              border-radius: 2rem;
-              background: white;
-              color: rgb(50, 50, 50);
-              font-weight: bold;
-              cursor: pointer;
-              transition: all 500ms ease-in-out;
-
-              & > svg {
-                margin-bottom: 0.2rem;
-                margin-left: 0.5rem;
-              }
-
-              &:hover {
-                border: 5px solid rgb(50, 50, 50);
-                background: rgb(50, 50, 50);
-                color: ghostwhite;
-                fill: ghostwhite;
-              }
-            }
-          }
-        }
       }
     }
   }
